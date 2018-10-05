@@ -1,16 +1,14 @@
 {
   "name": "ledgerloops",
-  "version": "0.8.3",
+  "version": "0.8.5",
   "description": "Hashlocked IOUs make the world go round",
-  "main": "src/index.js",
+  "main": "src/loops.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "hubbie": "3.2.2",
-    "node-fetch": "^2.2.0",
-    "randombytes": "^2.0.6",
-    "sha.js": "git+https://github.com/crypto-browserify/sha.js.git"
+    "hashlocks": "^1.0.0",
+    "randombytes": "^2.0.6"
   },
   "devDependencies": {
     "eslint": "^5.6.0",
@@ -32,26 +30,16 @@
     "test": "grunt test",
     "lint": "eslint src/**/*.js test/**/*.js",
     "build": "grunt build",
-    "start": "node examples/monetized-blog-heroku/agent-heroku.js",
     "watch": "grunt watch"
-  },
-  "testling": {
-    "harness": "mocha-tdd",
-    "files": "test/*/*.js",
-    "browsers": [
-      "ie/8..latest",
-      "chrome/latest",
-      "firefox/latest"
-    ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ledgerloops/ledgerloops.git"
+    "url": "git+https://github.com/ledgerloops/loops.git"
   },
   "author": "Michiel de Jong",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ledgerloops/ledgerloops/issues"
+    "url": "https://github.com/ledgerloops/loops/issues"
   },
   "homepage": "https://ledgerloops.com"
 }

@@ -1,4 +1,4 @@
-var sha256 = require('./hashlocks').sha256;
+var sha256 = require('hashlocks').sha256;
 var randomBytes = require('randombytes');
 
 function Loops(agent) {
