@@ -38,21 +38,11 @@ Loops.prototype = {
   },
   getResponse: function (peerName, msgObj) {
     console.log('getResponse', peerName, msgObj);
-    if (msgObj.msgType === 'ADD') {
-      const routeId = this._agent._myName + '-' + randomBytes(8).toString('hex');
-      console.log('starting probe after ACK to', peerName, routeId);
-      this._setSent(peerName, 'cwise', routeId, false);
-      this._setRcvd(peerName, 'fwise', routeId, true);
-      return Promise.resolve({
-          msgId: msgObj.msgId,
-          msgType: 'ACK'
-        });
-    }
-    if (msgObj.msgType === 'COND') {
+    if (msgObj.condition) {
       if (this._preimages[msgObj.condition]) {
         return Promise.resolve({
           msgId: msgObj.msgId,
-          msgType: 'FULFILL', 
+          msgType: 'ACCEPT',
           preimage: this._preimages[msgObj.condition].toString('hex')
         });
       }
@@ -62,14 +52,16 @@ Loops.prototype = {
           return this._agent._propose(fwdPeerName, msgObj.amount, msgObj.condition, msgObj.routeId).then((result) => {
             console.log('passing back fulfill', peerName, fwdPeerName, result);
             return {
+              protocol: 'networkledger-1.0',
               msgId: msgObj.msgId,
-              msgType: 'FULFILL',
+              msgType: 'ACCEPT',
               preimage: result
             };
           }, (err) => {
             console.log('onward peer rejected', err.message);
             // panic();
             return {
+              protocol: 'networkledger-1.0',
               msgId: msgObj.msgId,
               msgType: 'REJECT',
               reason: err.message
@@ -78,16 +70,22 @@ Loops.prototype = {
         }
       }
       return Promise.resolve({
+        protocol: 'networkledger-1.0',
         msgId: msgObj.msgId,
         msgType: 'REJECT',
         reason: 'cannot route ' + msgObj.routeId
       });
+    } else {
+      const routeId = this._agent._myName + '-' + randomBytes(8).toString('hex');
+      console.log('starting probe after accepting an unconditional proposal from', peerName, routeId);
+      this._setSent(peerName, 'cwise', routeId, false);
+      this._setRcvd(peerName, 'fwise', routeId, true);
+      return Promise.resolve({
+        protocol: 'networkledger-1.0',
+        msgId: msgObj.msgId,
+        msgType: 'ACCEPT'
+      });
     }
-    return Promise.resolve({
-      msgId: msgObj.msgId,
-      msgType: 'REJECT',
-      reason: 'can only respond to ADD or COND requests'
-    });
   },
   handleControlMessage: function (peerName, msgObj) {
     if (msgObj.msgType === 'PROBES') {
