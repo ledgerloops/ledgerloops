@@ -38,21 +38,11 @@ Loops.prototype = {
   },
   getResponse: function (peerName, msgObj) {
     console.log('getResponse', peerName, msgObj);
-    if (msgObj.msgType === 'ADD') {
-      const routeId = this._agent._myName + '-' + randomBytes(8).toString('hex');
-      console.log('starting probe after ACK to', peerName, routeId);
-      this._setSent(peerName, 'cwise', routeId, false);
-      this._setRcvd(peerName, 'fwise', routeId, true);
-      return Promise.resolve({
-          msgId: msgObj.msgId,
-          msgType: 'ACK'
-        });
-    }
-    if (msgObj.msgType === 'COND') {
+    if (msgObj.condition) {
       if (this._preimages[msgObj.condition]) {
         return Promise.resolve({
           msgId: msgObj.msgId,
-          msgType: 'FULFILL', 
+          msgType: 'ACCEPT',
           preimage: this._preimages[msgObj.condition].toString('hex')
         });
       }
@@ -61,33 +51,21 @@ Loops.prototype = {
           console.log('forwarding from', peerName, 'to', fwdPeerName);
           return this._agent._propose(fwdPeerName, msgObj.amount, msgObj.condition, msgObj.routeId).then((result) => {
             console.log('passing back fulfill', peerName, fwdPeerName, result);
-            return {
-              msgId: msgObj.msgId,
-              msgType: 'FULFILL',
-              preimage: result
-            };
+            return result;
           }, (err) => {
             console.log('onward peer rejected', err.message);
-            // panic();
-            return {
-              msgId: msgObj.msgId,
-              msgType: 'REJECT',
-              reason: err.message
-            };
+            throw err;
           });
         }
       }
-      return Promise.resolve({
-        msgId: msgObj.msgId,
-        msgType: 'REJECT',
-        reason: 'cannot route ' + msgObj.routeId
-      });
+      return Promise.reject(new Error('cannot route ' + msgObj.routeId));
+    } else {
+      const routeId = this._agent._myName + '-' + randomBytes(8).toString('hex');
+      console.log('starting probe after accepting an unconditional proposal from', peerName, routeId);
+      this._setSent(peerName, 'cwise', routeId, false);
+      this._setRcvd(peerName, 'fwise', routeId, true);
+      return Promise.resolve();
     }
-    return Promise.resolve({
-      msgId: msgObj.msgId,
-      msgType: 'REJECT',
-      reason: 'can only respond to ADD or COND requests'
-    });
   },
   handleControlMessage: function (peerName, msgObj) {
     if (msgObj.msgType === 'PROBES') {
