@@ -51,40 +51,20 @@ Loops.prototype = {
           console.log('forwarding from', peerName, 'to', fwdPeerName);
           return this._agent._propose(fwdPeerName, msgObj.amount, msgObj.condition, msgObj.routeId).then((result) => {
             console.log('passing back fulfill', peerName, fwdPeerName, result);
-            return {
-              protocol: 'networkledger-1.0',
-              msgId: msgObj.msgId,
-              msgType: 'ACCEPT',
-              preimage: result
-            };
+            return result;
           }, (err) => {
             console.log('onward peer rejected', err.message);
-            // panic();
-            return {
-              protocol: 'networkledger-1.0',
-              msgId: msgObj.msgId,
-              msgType: 'REJECT',
-              reason: err.message
-            };
+            throw err;
           });
         }
       }
-      return Promise.resolve({
-        protocol: 'networkledger-1.0',
-        msgId: msgObj.msgId,
-        msgType: 'REJECT',
-        reason: 'cannot route ' + msgObj.routeId
-      });
+      return Promise.reject(new Error('cannot route ' + msgObj.routeId));
     } else {
       const routeId = this._agent._myName + '-' + randomBytes(8).toString('hex');
       console.log('starting probe after accepting an unconditional proposal from', peerName, routeId);
       this._setSent(peerName, 'cwise', routeId, false);
       this._setRcvd(peerName, 'fwise', routeId, true);
-      return Promise.resolve({
-        protocol: 'networkledger-1.0',
-        msgId: msgObj.msgId,
-        msgType: 'ACCEPT'
-      });
+      return Promise.resolve();
     }
   },
   handleControlMessage: function (peerName, msgObj) {
