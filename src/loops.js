@@ -1,6 +1,11 @@
 var sha256 = require('hashlocks').sha256;
 var randomBytes = require('randombytes');
 
+/**
+ * Finds LedgerLoops for a SNAP agent
+ * @constructor
+ * @param {object} agent - the SNAP agent to message through
+ */
 function Loops(agent) {
   this._agent = agent;
   this._probesSent = {};
@@ -36,15 +41,17 @@ Loops.prototype = {
     // console.log('comparing', minBalanceDiff, '2*', amount);
     return (minBalanceDiff > 2 * amount);
   },
+
+  /**
+   * Get a response for an incoming conditional transfer
+   * @param {string} peerName - peer the COND comes in from
+   * @param (object} msgObj - the SNAP message
+   */
   getResponse: function (peerName, msgObj) {
     // console.log('getResponse', peerName, msgObj);
     if (msgObj.condition) {
       if (this._preimages[msgObj.condition]) {
-        return Promise.resolve({
-          msgId: msgObj.msgId,
-          msgType: 'ACCEPT',
-          preimage: this._preimages[msgObj.condition].toString('hex')
-        });
+        return this._preimages[msgObj.condition].toString('hex')
       }
       for (let fwdPeerName in this._probesRcvd) {
         if (this._probesRcvd[fwdPeerName].fwise[msgObj.routeId] && this._beneficial(peerName, fwdPeerName, msgObj.amount)) {
