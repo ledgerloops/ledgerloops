@@ -35,11 +35,11 @@ Loops.prototype = {
   _beneficial: function (from, to, amount) {
     const balances = this._agent.getBalances();
     const minBalanceDiff = + balances[from].current
-        - balances[from].payable
+        - (balances[from].payable - amount)
         - balances[to].current
         - balances[to].receivable;
-    // console.log('comparing', minBalanceDiff, '2*', amount);
-    return (minBalanceDiff > 2 * amount);
+    console.log('comparing', minBalanceDiff, '2*', amount, balances);
+    return (minBalanceDiff >= 2 * amount);
   },
 
   /**
@@ -51,7 +51,7 @@ Loops.prototype = {
     // console.log('getResponse', peerName, msgObj);
     if (msgObj.condition) {
       if (this._preimages[msgObj.condition]) {
-        return this._preimages[msgObj.condition].toString('hex')
+        return Promise.resolve(this._preimages[msgObj.condition].toString('hex'));
       }
       for (let fwdPeerName in this._probesRcvd) {
         if (this._probesRcvd[fwdPeerName].fwise[msgObj.routeId] && this._beneficial(peerName, fwdPeerName, msgObj.amount)) {
@@ -67,12 +67,10 @@ Loops.prototype = {
       }
       return Promise.reject(new Error('cannot route ' + msgObj.routeId));
     } else {
-      if (this._agent._myName === 'Mia') {
-        const routeId = this._agent._myName + '-' + randomBytes(8).toString('hex');
-        // console.log('starting probe after accepting an unconditional proposal from', peerName, routeId);
-        this._setSent(peerName, 'cwise', routeId, false);
-        this._setRcvd(peerName, 'fwise', routeId, true);
-      }
+      const routeId = this._agent._myName + '-' + randomBytes(8).toString('hex');
+      // console.log('starting probe after accepting an unconditional proposal from', peerName, routeId);
+      this._setSent(peerName, 'cwise', routeId, false);
+      this._setRcvd(peerName, 'fwise', routeId, true);
       return Promise.resolve();
     }
   },
@@ -95,14 +93,16 @@ Loops.prototype = {
       if (this._probesSent[to] && this._probesSent[to][direction][routeId]) {
         if (direction == 'cwise' && balanceDiff > 0) {
           // console.log('LOOP FOUND!');
-          const preimage = randomBytes(32);
-          const hashHex = sha256(preimage).toString('hex');
-          this._preimages[hashHex] = preimage;
-          this._agent._propose(to, Math.floor(balanceDiff / 2), hashHex, routeId).then(preimage => {
-            // console.log('that worked!', routeId);
-          }, (err) => {
-            // console.log('that did not work!', routeId, err.message);
-          });
+          setTimeout(() => {
+            const preimage = randomBytes(32);
+            const hashHex = sha256(preimage).toString('hex');
+            this._preimages[hashHex] = preimage;
+            this._agent._propose(to, Math.floor(balanceDiff / 2), hashHex, routeId).then(preimage => {
+              // console.log('that worked!', routeId);
+            }, (err) => {
+              // console.log('that did not work!', routeId, err.message);
+            });
+          }, Math.random()*10); // avoid race conditions where all three propose and reject at the same time
         }
       } else {
         this._setSent(to, direction, routeId, false);
