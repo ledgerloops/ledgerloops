@@ -84,32 +84,30 @@ Loops.prototype = {
       });
     }
   },
-  _considerPair: function (from, to, direction, balanceDiff) {
+  _considerPair: function (from, to, direction, balanceDiff, startLoops) {
     if (!this._probesRcvd[from]) {
       return;
     }
     // console.log('considering pair', from, to, direction);
     for (let routeId in this._probesRcvd[from][direction]) {
       if (this._probesSent[to] && this._probesSent[to][direction][routeId]) {
-        if (direction == 'cwise' && balanceDiff > 0) {
+        if (startLoops && balanceDiff > 0) {
           // console.log('LOOP FOUND!');
-          setTimeout(() => {
-            const preimage = randomBytes(32);
-            const hashHex = sha256(preimage).toString('hex');
-            this._preimages[hashHex] = preimage;
-            this._agent._propose(to, Math.floor(balanceDiff / 2), hashHex, routeId).then(preimage => {
-              // console.log('that worked!', routeId);
-            }, (err) => {
-              // console.log('that did not work!', routeId, err.message);
-            });
-          }, Math.random()*10); // avoid race conditions where all three propose and reject at the same time
+          const preimage = randomBytes(32);
+          const hashHex = sha256(preimage).toString('hex');
+          this._preimages[hashHex] = preimage;
+          this._agent._propose(to, Math.floor(balanceDiff / 2), hashHex, routeId).then(preimage => {
+            // console.log('that worked!', routeId);
+          }, (err) => {
+            // console.log('that did not work!', routeId, err.message);
+          });
         }
       } else {
         this._setSent(to, direction, routeId, false);
       }
     }
   },
-  forwardProbes: function () {
+  forwardProbes: function (startLoops) {
     // a cwise probe should be forwarded to peers whose balance is lower
     // an fwise probe should be forwarded to peers whose balance is higher
     const balances = this._agent.getBalances();
@@ -132,8 +130,7 @@ Loops.prototype = {
           + balances[ladder[j]].current
           - balances[ladder[j]].payable
           - balances[ladder[i]].current
-          - balances[ladder[i]].receivable
-        );
+          - balances[ladder[i]].receivable, startLoops); // even if set to true, only do it on cwise
       }
     }
   },

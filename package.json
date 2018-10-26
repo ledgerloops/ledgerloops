@@ -1,6 +1,6 @@
 {
   "name": "ledgerloops",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "Hashlocked IOUs make the world go round",
   "main": "src/loops.js",
   "directories": {
