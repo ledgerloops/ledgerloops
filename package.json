@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "hashlocks": "^1.0.0",
+    "ngraph.generators": "^20.1.0",
     "randombytes": "^2.0.6"
   },
   "devDependencies": {

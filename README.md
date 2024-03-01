@@ -8,6 +8,14 @@ Following [new insights in 2024](https://github.com/ledgerloops/ledgerloops.com/
 that require loop detection to work on undirected graphs rather than on directed ones,
 I'm rewriting this code from scratch.
 
+What I have so far:
+
+```
+npm install ngraph.generators
+node ./src/network-generator.js
+```
+
+
 See `node ./src/cofi-sim.js` for a small code example from 2023.
 
 See also https://github.com/ledgerloops/snap-checker/issues/21 for some code examples from 2018.
