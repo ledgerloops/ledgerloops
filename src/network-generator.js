@@ -1,5 +1,6 @@
 const ngraphGen = require('ngraph.generators')
 const graph = ngraphGen.wattsStrogatz(100, 20, 0.50)
+console.log('from to fromMaxBalance fromExchangeRate toMaxBalance toExchangeRate')
 graph.forEachLink(function(link) {
     link.data = {
         fromMaxBalance: Math.floor(Math.random() * 1000),
@@ -7,8 +8,8 @@ graph.forEachLink(function(link) {
         toMaxBalance: Math.floor(Math.random() * 1000),
         toExchangeRate: Math.random() * 5 + 1
     }
-    console.dir(link);
-});
+    console.log(`${link.fromId} ${link.toId} ${link.data.fromMaxBalance} ${link.data.fromExchangeRate} ${link.data.toMaxBalance} ${link.data.toExchangeRate}`)
+})
 // const NUM_NODES = 100;
 // const NUM_NEIGHBORS = 10; // each node will have 10 neighbors
 // const maxMaxBalance = 1000;

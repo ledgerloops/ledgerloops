@@ -12,7 +12,7 @@ What I have so far:
 
 ```
 npm install ngraph.generators
-node ./src/network-generator.js
+node ./src/network-generator.js > testnet.csv
 ```
 
 
