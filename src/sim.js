@@ -64,7 +64,8 @@ function addLink ({ from, to, fromMaxBalance, fromExchangeRate, toMaxBalance, to
     peer: to,
     ourMinBalance: -parseInt(toMaxBalance),
     ourMaxBalance: parseInt(fromMaxBalance),
-    ourExchangeRate: parseFloat(fromExchangeRate)
+    ourExchangeRate: parseFloat(fromExchangeRate),
+    whoInitiated: 'us'
   })
   if (!graph[to]) {
     graph[to] = new Node(to, createMsgCallback(to))
@@ -73,7 +74,8 @@ function addLink ({ from, to, fromMaxBalance, fromExchangeRate, toMaxBalance, to
     peer: from,
     ourMinBalance: -parseInt(fromMaxBalance),
     ourMaxBalance: parseInt(toMaxBalance),
-    ourExchangeRate: parseFloat(toExchangeRate)
+    ourExchangeRate: parseFloat(toExchangeRate),
+    whoInitiated: 'they'
   })
 }
 

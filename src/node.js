@@ -1,3 +1,5 @@
+const genRanHex = size => [...Array(size)].map(() => Math.floor(Math.random() * 16).toString(16)).join('')
+
 class Node {
   // id
   // links
@@ -31,7 +33,14 @@ class Node {
       console.log(`Node ${this.id} processing message from ${from}: ${msg.msg}`)
       if (msg === 'Link was added') {
         console.log(`Node ${this.id} processing addLink from ${from}`)
-        this.msgCallback(from, { msg: 'nice to meet you!' })
+        if (typeof this.links[from] === 'undefined') {
+          throw new Error('Link data not found!')
+        }
+        if (this.links[from].whoInitiated === 'us') {
+          const newProbeForlink = genRanHex(16)
+          this.msgCallback(from, { msg: 'here is a probe!', probe: newProbeForlink })
+        } else if (this.links[from].whoInitiated === 'they') {
+        }
       }
     }
   }
