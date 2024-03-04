@@ -40,7 +40,7 @@ const inFlight = []
 
 function createMsgCallback (id) {
   return function (to, msg) {
-    console.log(`Message from ${id} to ${to} going into flight: ${msg}`)
+    console.log(`Message from ${id} to ${to} going into flight: ${msg.msg}`)
     inFlight.push({ from: id, to, msg })
   }
 }

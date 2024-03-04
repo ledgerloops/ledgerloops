@@ -12,25 +12,26 @@ class Node {
     this.msgCallback = msgCallback
   }
 
-  addLink ({ peer, ourMinBalance, ourMaxBalance, ourExchangeRate }) {
+  addLink ({ peer, ourMinBalance, ourMaxBalance, ourExchangeRate, whoInitiated }) {
     this.links[peer] = {
       ourMinBalance,
       ourMaxBalance,
-      ourExchangeRate
+      ourExchangeRate,
+      whoInitiated
     }
-    this.inbox.push({ from: peer, msg: 'addLink' })
+    this.inbox.push({ from: peer, msg: 'Link was added' })
   }
   receiveMessage (from, msg) {
-    console.log(`Node ${this.id} received message from ${from}: ${msg}`)
+    console.log(`Node ${this.id} received message from ${from}: ${msg.msg}`)
     this.inbox.push({ from, msg })
   }
   processMessages () {
     while (this.inbox.length) {
       const { from, msg } = this.inbox.shift()
-      console.log(`Node ${this.id} processing message from ${from}: ${msg}`)
-      if (msg === 'addLink') {
+      console.log(`Node ${this.id} processing message from ${from}: ${msg.msg}`)
+      if (msg === 'Link was added') {
         console.log(`Node ${this.id} processing addLink from ${from}`)
-        this.msgCallback(from, 'nice to meet you!')
+        this.msgCallback(from, { msg: 'nice to meet you!' })
       }
     }
   }
