@@ -91,8 +91,8 @@ async function run () {
       graph[id].processMessages()
     }
     if (simStep % 10 === 0) {
-        const line = lines[simStep / 10]
-        console.log(`Sim step ${simStep}, phase II: adding link from ${line.from} to ${line.to}`)
+      const line = lines[simStep / 10]
+      console.log(`Sim step ${simStep}, phase II: adding link from ${line.from} to ${line.to}`)
       addLink(line)
     }
     console.log(`Sim step ${simStep} complete, delivering messages`)
