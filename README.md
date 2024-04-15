@@ -16,6 +16,8 @@ node ./src/network-generator.js > testnet.csv
 ```
 
 
-See `node ./src/cofi-sim.js` for a small code example from 2023.
+See `node ./src/sim.js` for a small code example from 2023.
+
+See also 2024 work in [strategy-pit](https://github.com/ledgerloops/strategy-pit).
 
 See also https://github.com/ledgerloops/snap-checker/issues/21 for some code examples from 2018.
