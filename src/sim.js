@@ -45,11 +45,17 @@ function createMsgCallback (id) {
   }
 }
 function simMessages () {
+  console.log(`simulating ${inFlight.length} messages`)
   while (inFlight.length) {
     const { from, to, msg } = inFlight.shift()
-    if (graph[to]) {
-      graph[to].receiveMessage(from, msg)
+    console.log('msg from-to', from, to, msg)
+    if (!graph[to]) {
+      throw new Error('Message to non-existing node!')
     }
+    if (typeof msg.msg === 'undefined') {
+      throw new Error('Message text not found!')
+    }
+    // graph[to].receiveMessage(from, msg)
   }
 }
 function addLink ({ from, to, fromMaxBalance, fromExchangeRate, toMaxBalance, toExchangeRate }) {
@@ -97,8 +103,7 @@ async function run () {
       console.log(`Sim step ${simStep}, phase II: adding link from ${line.from} to ${line.to}`)
       addLink(line)
     }
-    console.log(`Sim step ${simStep} complete, delivering messages`)
-    simMessages()
+    console.log(`Sim step ${simStep} complete`)
     simStep++
   }
 //   console.log(graph)
