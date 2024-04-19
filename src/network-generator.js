@@ -1,5 +1,5 @@
 const ngraphGen = require('ngraph.generators')
-const graph = ngraphGen.wattsStrogatz(10, 5, 0.50)
+const graph = ngraphGen.wattsStrogatz(30, 4, 0.10)
 console.log('from to fromMaxBalance fromExchangeRate toMaxBalance toExchangeRate')
 graph.forEachLink(function (link) {
   link.data = {
