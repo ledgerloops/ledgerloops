@@ -1,23 +1,13 @@
 # LedgerLoops
 
-This repository holds the code you need to run a LedgerLoops node.
+This repository contains a miminal LedgerLoops node that implements DLD, greedy lift negotiation, and cooperative lift resolution.
 
-> :warning: **It's currently out of service for a complete rewrite.**
-
-Following [new insights in 2024](https://github.com/ledgerloops/ledgerloops.com/issues/92)
-that require loop detection to work on undirected graphs rather than on directed ones,
-I'm rewriting this code from scratch.
-
-What I have so far:
 
 ```
-npm install ngraph.generators
-node ./src/network-generator.js > testnet.csv
+npm install ledgerloops
+node ./node_modules/esm/cli.js init
+node ./node_modules/esm/cli.js run
 ```
 
-
-See `node ./src/sim.js` for a small code example from 2023.
-
-See also 2024 work in [strategy-pit](https://github.com/ledgerloops/strategy-pit).
-
-See also https://github.com/ledgerloops/snap-checker/issues/21 for some code examples from 2018.
+If you want to try out the [Earthstar](https://earthstar-project.org/) transport for messaging ([not working yet](https://github.com/ledgerloops/saiga/issues/1)!),
+see [the Earthstar branch](https://github.com/ledgerloops/saiga/tree/earthstar).

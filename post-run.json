@@ -1,0 +1,633 @@
+{
+  "nodes": {
+    "0": {
+      "friends": {
+        "1": {
+          "name": "1",
+          "maxBalance": 10,
+          "exchangeRate": 1
+        },
+        "2": {
+          "name": "2",
+          "maxBalance": 10,
+          "exchangeRate": 1
+        }
+      },
+      "probes": {
+        "probes": {
+          "9f9e771a": {
+            "probeId": "9f9e771a",
+            "from": [],
+            "to": [
+              "1",
+              "2"
+            ],
+            "homeMinted": true
+          },
+          "e973c79e": {
+            "probeId": "e973c79e",
+            "from": [],
+            "to": [
+              "1",
+              "2"
+            ],
+            "homeMinted": true
+          }
+        },
+        "friends": {
+          "1": {
+            "handRaisingStatus": 2
+          },
+          "2": {
+            "handRaisingStatus": 2
+          }
+        }
+      },
+      "traces": {
+        "tracesCreated": {},
+        "tracesForwarded": {}
+      },
+      "loops": {
+        "loops": [],
+        "lifts": {},
+        "profit": 0.01
+      },
+      "debugLog": [
+        "I meet 1 [1/4]",
+        "I queue 1 all my flood probes [2/4]",
+        "Done onMeet 1 [4/4]",
+        "I meet 2 [1/4]",
+        "I queue 2 all my flood probes [2/4]",
+        "Done onMeet 2 [4/4]"
+      ],
+      "name": "0"
+    },
+    "1": {
+      "friends": {
+        "2": {
+          "name": "2",
+          "maxBalance": 10,
+          "exchangeRate": 1
+        },
+        "3": {
+          "name": "3",
+          "maxBalance": 10,
+          "exchangeRate": 1
+        }
+      },
+      "probes": {
+        "probes": {
+          "b6c9b9e0": {
+            "probeId": "b6c9b9e0",
+            "from": [],
+            "to": [
+              "2",
+              "3"
+            ],
+            "homeMinted": true
+          },
+          "fefd5ba3": {
+            "probeId": "fefd5ba3",
+            "from": [],
+            "to": [
+              "2",
+              "3"
+            ],
+            "homeMinted": true
+          }
+        },
+        "friends": {
+          "2": {
+            "handRaisingStatus": 2
+          },
+          "3": {
+            "handRaisingStatus": 2
+          }
+        }
+      },
+      "traces": {
+        "tracesCreated": {},
+        "tracesForwarded": {}
+      },
+      "loops": {
+        "loops": [],
+        "lifts": {},
+        "profit": 0.01
+      },
+      "debugLog": [
+        "I meet 2 [1/4]",
+        "I queue 2 all my flood probes [2/4]",
+        "Done onMeet 2 [4/4]",
+        "I meet 3 [1/4]",
+        "I queue 3 all my flood probes [2/4]",
+        "Done onMeet 3 [4/4]"
+      ],
+      "name": "1"
+    },
+    "2": {
+      "friends": {
+        "3": {
+          "name": "3",
+          "maxBalance": 10,
+          "exchangeRate": 1
+        },
+        "4": {
+          "name": "4",
+          "maxBalance": 10,
+          "exchangeRate": 1
+        }
+      },
+      "probes": {
+        "probes": {
+          "7db8aa9e": {
+            "probeId": "7db8aa9e",
+            "from": [],
+            "to": [
+              "3",
+              "4"
+            ],
+            "homeMinted": true
+          },
+          "298fce59": {
+            "probeId": "298fce59",
+            "from": [],
+            "to": [
+              "3",
+              "4"
+            ],
+            "homeMinted": true
+          }
+        },
+        "friends": {
+          "3": {
+            "handRaisingStatus": 2
+          },
+          "4": {
+            "handRaisingStatus": 2
+          }
+        }
+      },
+      "traces": {
+        "tracesCreated": {},
+        "tracesForwarded": {}
+      },
+      "loops": {
+        "loops": [],
+        "lifts": {},
+        "profit": 0.01
+      },
+      "debugLog": [
+        "I meet 3 [1/4]",
+        "I queue 3 all my flood probes [2/4]",
+        "Done onMeet 3 [4/4]",
+        "I meet 4 [1/4]",
+        "I queue 4 all my flood probes [2/4]",
+        "Done onMeet 4 [4/4]"
+      ],
+      "name": "2"
+    },
+    "3": {
+      "friends": {
+        "4": {
+          "name": "4",
+          "maxBalance": 10,
+          "exchangeRate": 1
+        },
+        "5": {
+          "name": "5",
+          "maxBalance": 10,
+          "exchangeRate": 1
+        }
+      },
+      "probes": {
+        "probes": {
+          "792c82ed": {
+            "probeId": "792c82ed",
+            "from": [],
+            "to": [
+              "4",
+              "5"
+            ],
+            "homeMinted": true
+          },
+          "64536b8e": {
+            "probeId": "64536b8e",
+            "from": [],
+            "to": [
+              "4",
+              "5"
+            ],
+            "homeMinted": true
+          }
+        },
+        "friends": {
+          "4": {
+            "handRaisingStatus": 2
+          },
+          "5": {
+            "handRaisingStatus": 2
+          }
+        }
+      },
+      "traces": {
+        "tracesCreated": {},
+        "tracesForwarded": {}
+      },
+      "loops": {
+        "loops": [],
+        "lifts": {},
+        "profit": 0.01
+      },
+      "debugLog": [
+        "I meet 4 [1/4]",
+        "I queue 4 all my flood probes [2/4]",
+        "Done onMeet 4 [4/4]",
+        "I meet 5 [1/4]",
+        "I queue 5 all my flood probes [2/4]",
+        "Done onMeet 5 [4/4]"
+      ],
+      "name": "3"
+    },
+    "4": {
+      "friends": {
+        "0": {
+          "name": "0",
+          "maxBalance": 10,
+          "exchangeRate": 1
+        },
+        "5": {
+          "name": "5",
+          "maxBalance": 10,
+          "exchangeRate": 1
+        }
+      },
+      "probes": {
+        "probes": {
+          "a2c3255d": {
+            "probeId": "a2c3255d",
+            "from": [],
+            "to": [
+              "5",
+              "0"
+            ],
+            "homeMinted": true
+          },
+          "d5c412ff": {
+            "probeId": "d5c412ff",
+            "from": [],
+            "to": [
+              "0",
+              "5"
+            ],
+            "homeMinted": true
+          }
+        },
+        "friends": {
+          "0": {
+            "handRaisingStatus": 2
+          },
+          "5": {
+            "handRaisingStatus": 2
+          }
+        }
+      },
+      "traces": {
+        "tracesCreated": {},
+        "tracesForwarded": {}
+      },
+      "loops": {
+        "loops": [],
+        "lifts": {},
+        "profit": 0.01
+      },
+      "debugLog": [
+        "I meet 5 [1/4]",
+        "I queue 5 all my flood probes [2/4]",
+        "Done onMeet 5 [4/4]",
+        "I meet 0 [1/4]",
+        "I queue 0 all my flood probes [2/4]",
+        "Done onMeet 0 [4/4]"
+      ],
+      "name": "4"
+    },
+    "5": {
+      "friends": {
+        "6": {
+          "name": "6",
+          "maxBalance": 10,
+          "exchangeRate": 1
+        },
+        "7": {
+          "name": "7",
+          "maxBalance": 10,
+          "exchangeRate": 1
+        }
+      },
+      "probes": {
+        "probes": {
+          "10c0d4e7": {
+            "probeId": "10c0d4e7",
+            "from": [],
+            "to": [
+              "6",
+              "7"
+            ],
+            "homeMinted": true
+          },
+          "bad8205f": {
+            "probeId": "bad8205f",
+            "from": [],
+            "to": [
+              "6",
+              "7"
+            ],
+            "homeMinted": true
+          }
+        },
+        "friends": {
+          "6": {
+            "handRaisingStatus": 2
+          },
+          "7": {
+            "handRaisingStatus": 2
+          }
+        }
+      },
+      "traces": {
+        "tracesCreated": {},
+        "tracesForwarded": {}
+      },
+      "loops": {
+        "loops": [],
+        "lifts": {},
+        "profit": 0.01
+      },
+      "debugLog": [
+        "I meet 6 [1/4]",
+        "I queue 6 all my flood probes [2/4]",
+        "Done onMeet 6 [4/4]",
+        "I meet 7 [1/4]",
+        "I queue 7 all my flood probes [2/4]",
+        "Done onMeet 7 [4/4]"
+      ],
+      "name": "5"
+    },
+    "6": {
+      "friends": {
+        "7": {
+          "name": "7",
+          "maxBalance": 10,
+          "exchangeRate": 1
+        },
+        "8": {
+          "name": "8",
+          "maxBalance": 10,
+          "exchangeRate": 1
+        }
+      },
+      "probes": {
+        "probes": {
+          "df901f8f": {
+            "probeId": "df901f8f",
+            "from": [],
+            "to": [
+              "7",
+              "8"
+            ],
+            "homeMinted": true
+          },
+          "4d7ea3e1": {
+            "probeId": "4d7ea3e1",
+            "from": [],
+            "to": [
+              "7",
+              "8"
+            ],
+            "homeMinted": true
+          }
+        },
+        "friends": {
+          "7": {
+            "handRaisingStatus": 2
+          },
+          "8": {
+            "handRaisingStatus": 2
+          }
+        }
+      },
+      "traces": {
+        "tracesCreated": {},
+        "tracesForwarded": {}
+      },
+      "loops": {
+        "loops": [],
+        "lifts": {},
+        "profit": 0.01
+      },
+      "debugLog": [
+        "I meet 7 [1/4]",
+        "I queue 7 all my flood probes [2/4]",
+        "Done onMeet 7 [4/4]",
+        "I meet 8 [1/4]",
+        "I queue 8 all my flood probes [2/4]",
+        "Done onMeet 8 [4/4]"
+      ],
+      "name": "6"
+    },
+    "7": {
+      "friends": {
+        "8": {
+          "name": "8",
+          "maxBalance": 10,
+          "exchangeRate": 1
+        },
+        "9": {
+          "name": "9",
+          "maxBalance": 10,
+          "exchangeRate": 1
+        }
+      },
+      "probes": {
+        "probes": {
+          "b2f7705c": {
+            "probeId": "b2f7705c",
+            "from": [],
+            "to": [
+              "8",
+              "9"
+            ],
+            "homeMinted": true
+          },
+          "6dab5f69": {
+            "probeId": "6dab5f69",
+            "from": [],
+            "to": [
+              "8",
+              "9"
+            ],
+            "homeMinted": true
+          }
+        },
+        "friends": {
+          "8": {
+            "handRaisingStatus": 2
+          },
+          "9": {
+            "handRaisingStatus": 2
+          }
+        }
+      },
+      "traces": {
+        "tracesCreated": {},
+        "tracesForwarded": {}
+      },
+      "loops": {
+        "loops": [],
+        "lifts": {},
+        "profit": 0.01
+      },
+      "debugLog": [
+        "I meet 8 [1/4]",
+        "I queue 8 all my flood probes [2/4]",
+        "Done onMeet 8 [4/4]",
+        "I meet 9 [1/4]",
+        "I queue 9 all my flood probes [2/4]",
+        "Done onMeet 9 [4/4]"
+      ],
+      "name": "7"
+    },
+    "8": {
+      "friends": {
+        "0": {
+          "name": "0",
+          "maxBalance": 10,
+          "exchangeRate": 1
+        },
+        "3": {
+          "name": "3",
+          "maxBalance": 10,
+          "exchangeRate": 1
+        }
+      },
+      "probes": {
+        "probes": {
+          "a5a658a3": {
+            "probeId": "a5a658a3",
+            "from": [],
+            "to": [
+              "0",
+              "3"
+            ],
+            "homeMinted": true
+          },
+          "b9fd7b7d": {
+            "probeId": "b9fd7b7d",
+            "from": [],
+            "to": [
+              "0",
+              "3"
+            ],
+            "homeMinted": true
+          }
+        },
+        "friends": {
+          "0": {
+            "handRaisingStatus": 2
+          },
+          "3": {
+            "handRaisingStatus": 2
+          }
+        }
+      },
+      "traces": {
+        "tracesCreated": {},
+        "tracesForwarded": {}
+      },
+      "loops": {
+        "loops": [],
+        "lifts": {},
+        "profit": 0.01
+      },
+      "debugLog": [
+        "I meet 0 [1/4]",
+        "I queue 0 all my flood probes [2/4]",
+        "Done onMeet 0 [4/4]",
+        "I meet 3 [1/4]",
+        "I queue 3 all my flood probes [2/4]",
+        "Done onMeet 3 [4/4]"
+      ],
+      "name": "8"
+    },
+    "9": {
+      "friends": {
+        "0": {
+          "name": "0",
+          "maxBalance": 10,
+          "exchangeRate": 1
+        },
+        "1": {
+          "name": "1",
+          "maxBalance": 10,
+          "exchangeRate": 1
+        }
+      },
+      "probes": {
+        "probes": {
+          "2220801e": {
+            "probeId": "2220801e",
+            "from": [],
+            "to": [
+              "0",
+              "1"
+            ],
+            "homeMinted": true
+          },
+          "519db1d0": {
+            "probeId": "519db1d0",
+            "from": [],
+            "to": [
+              "0",
+              "1"
+            ],
+            "homeMinted": true
+          }
+        },
+        "friends": {
+          "0": {
+            "handRaisingStatus": 2
+          },
+          "1": {
+            "handRaisingStatus": 2
+          }
+        }
+      },
+      "traces": {
+        "tracesCreated": {},
+        "tracesForwarded": {}
+      },
+      "loops": {
+        "loops": [],
+        "lifts": {},
+        "profit": 0.01
+      },
+      "debugLog": [
+        "I meet 0 [1/4]",
+        "I queue 0 all my flood probes [2/4]",
+        "Done onMeet 0 [4/4]",
+        "I meet 1 [1/4]",
+        "I queue 1 all my flood probes [2/4]",
+        "Done onMeet 1 [4/4]"
+      ],
+      "name": "9"
+    }
+  },
+  "log": [
+    {
+      "sender": "---",
+      "receiver": "---",
+      "message": "---",
+      "event": "sent"
+    }
+  ],
+  "batch": []
+}

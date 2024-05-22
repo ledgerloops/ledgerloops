@@ -1,0 +1,369 @@
+{
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "jsr:@deno/cache-dir@^0.8.0": "jsr:@deno/cache-dir@0.8.0",
+      "jsr:@deno/dnt@^0.41.1": "jsr:@deno/dnt@0.41.1",
+      "jsr:@std/assert@^0.218.2": "jsr:@std/assert@0.218.2",
+      "jsr:@std/bytes@^0.218.2": "jsr:@std/bytes@0.218.2",
+      "jsr:@std/fmt@^0.218.2": "jsr:@std/fmt@0.218.2",
+      "jsr:@std/fs@^0.218.2": "jsr:@std/fs@0.218.2",
+      "jsr:@std/io@^0.218.2": "jsr:@std/io@0.218.2",
+      "jsr:@std/path@^0.218.2": "jsr:@std/path@0.218.2",
+      "npm:@ts-morph/bootstrap@0.22": "npm:@ts-morph/bootstrap@0.22.0",
+      "npm:code-block-writer@^13.0.1": "npm:code-block-writer@13.0.1",
+      "npm:fast-json-stable-stringify@2.1.0": "npm:fast-json-stable-stringify@2.1.0"
+    },
+    "jsr": {
+      "@deno/cache-dir@0.8.0": {
+        "integrity": "e87e80a404958f6350d903e6238b72afb92468378b0b32111f7a1e4916ac7fe7",
+        "dependencies": [
+          "jsr:@std/fs@^0.218.2",
+          "jsr:@std/io@^0.218.2"
+        ]
+      },
+      "@deno/dnt@0.41.1": {
+        "integrity": "8746a773e031ae19ef43d0eece850217b76cf1d0118fdd8e059652d7023d4aff",
+        "dependencies": [
+          "jsr:@deno/cache-dir@^0.8.0",
+          "jsr:@std/fmt@^0.218.2",
+          "jsr:@std/fs@^0.218.2",
+          "jsr:@std/path@^0.218.2",
+          "npm:@ts-morph/bootstrap@0.22",
+          "npm:code-block-writer@^13.0.1"
+        ]
+      },
+      "@std/assert@0.218.2": {
+        "integrity": "7f0a5a1a8cf86607cd6c2c030584096e1ffad27fc9271429a8cb48cfbdee5eaf"
+      },
+      "@std/bytes@0.218.2": {
+        "integrity": "91fe54b232dcca73856b79a817247f4a651dbb60d51baafafb6408c137241670"
+      },
+      "@std/fmt@0.218.2": {
+        "integrity": "99526449d2505aa758b6cbef81e7dd471d8b28ec0dcb1491d122b284c548788a"
+      },
+      "@std/fs@0.218.2": {
+        "integrity": "dd9431453f7282e8c577cc22c9e6d036055a9a980b5549f887d6012969fabcca",
+        "dependencies": [
+          "jsr:@std/assert@^0.218.2",
+          "jsr:@std/path@^0.218.2"
+        ]
+      },
+      "@std/io@0.218.2": {
+        "integrity": "c64fbfa087b7c9d4d386c5672f291f607d88cb7d44fc299c20c713e345f2785f",
+        "dependencies": [
+          "jsr:@std/bytes@^0.218.2"
+        ]
+      },
+      "@std/path@0.218.2": {
+        "integrity": "b568fd923d9e53ad76d17c513e7310bda8e755a3e825e6289a0ce536404e2662",
+        "dependencies": [
+          "jsr:@std/assert@^0.218.2"
+        ]
+      }
+    },
+    "npm": {
+      "@nodelib/fs.scandir@2.1.5": {
+        "integrity": "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==",
+        "dependencies": {
+          "@nodelib/fs.stat": "@nodelib/fs.stat@2.0.5",
+          "run-parallel": "run-parallel@1.2.0"
+        }
+      },
+      "@nodelib/fs.stat@2.0.5": {
+        "integrity": "sha512-RkhPPp2zrqDAQA/2jNhnztcPAlv64XdhIp7a7454A5ovI7Bukxgt7MX7udwAu3zg1DcpPU0rz3VV1SeaqvY4+A==",
+        "dependencies": {}
+      },
+      "@nodelib/fs.walk@1.2.8": {
+        "integrity": "sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==",
+        "dependencies": {
+          "@nodelib/fs.scandir": "@nodelib/fs.scandir@2.1.5",
+          "fastq": "fastq@1.17.1"
+        }
+      },
+      "@ts-morph/bootstrap@0.22.0": {
+        "integrity": "sha512-MI5q7pid4swAlE2lcHwHRa6rcjoIMyT6fy8uuZm8BGg7DHGi/H5bQ0GMZzbk3N0r/LfStMdOYPkl+3IwvfIQ2g==",
+        "dependencies": {
+          "@ts-morph/common": "@ts-morph/common@0.22.0"
+        }
+      },
+      "@ts-morph/common@0.22.0": {
+        "integrity": "sha512-HqNBuV/oIlMKdkLshXd1zKBqNQCsuPEsgQOkfFQ/eUKjRlwndXW1AjN9LVkBEIukm00gGXSRmfkl0Wv5VXLnlw==",
+        "dependencies": {
+          "fast-glob": "fast-glob@3.3.2",
+          "minimatch": "minimatch@9.0.4",
+          "mkdirp": "mkdirp@3.0.1",
+          "path-browserify": "path-browserify@1.0.1"
+        }
+      },
+      "balanced-match@1.0.2": {
+        "integrity": "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==",
+        "dependencies": {}
+      },
+      "brace-expansion@2.0.1": {
+        "integrity": "sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==",
+        "dependencies": {
+          "balanced-match": "balanced-match@1.0.2"
+        }
+      },
+      "braces@3.0.3": {
+        "integrity": "sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==",
+        "dependencies": {
+          "fill-range": "fill-range@7.1.1"
+        }
+      },
+      "code-block-writer@13.0.1": {
+        "integrity": "sha512-c5or4P6erEA69TxaxTNcHUNcIn+oyxSRTOWV+pSYF+z4epXqNvwvJ70XPGjPNgue83oAFAPBRQYwpAJ/Hpe/Sg==",
+        "dependencies": {}
+      },
+      "fast-glob@3.3.2": {
+        "integrity": "sha512-oX2ruAFQwf/Orj8m737Y5adxDQO0LAB7/S5MnxCdTNDd4p6BsyIVsv9JQsATbTSq8KHRpLwIHbVlUNatxd+1Ow==",
+        "dependencies": {
+          "@nodelib/fs.stat": "@nodelib/fs.stat@2.0.5",
+          "@nodelib/fs.walk": "@nodelib/fs.walk@1.2.8",
+          "glob-parent": "glob-parent@5.1.2",
+          "merge2": "merge2@1.4.1",
+          "micromatch": "micromatch@4.0.7"
+        }
+      },
+      "fast-json-stable-stringify@2.1.0": {
+        "integrity": "sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==",
+        "dependencies": {}
+      },
+      "fastq@1.17.1": {
+        "integrity": "sha512-sRVD3lWVIXWg6By68ZN7vho9a1pQcN/WBFaAAsDDFzlJjvoGx0P8z7V1t72grFJfJhu3YPZBuu25f7Kaw2jN1w==",
+        "dependencies": {
+          "reusify": "reusify@1.0.4"
+        }
+      },
+      "fill-range@7.1.1": {
+        "integrity": "sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==",
+        "dependencies": {
+          "to-regex-range": "to-regex-range@5.0.1"
+        }
+      },
+      "glob-parent@5.1.2": {
+        "integrity": "sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==",
+        "dependencies": {
+          "is-glob": "is-glob@4.0.3"
+        }
+      },
+      "is-extglob@2.1.1": {
+        "integrity": "sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==",
+        "dependencies": {}
+      },
+      "is-glob@4.0.3": {
+        "integrity": "sha512-xelSayHH36ZgE7ZWhli7pW34hNbNl8Ojv5KVmkJD4hBdD3th8Tfk9vYasLM+mXWOZhFkgZfxhLSnrwRr4elSSg==",
+        "dependencies": {
+          "is-extglob": "is-extglob@2.1.1"
+        }
+      },
+      "is-number@7.0.0": {
+        "integrity": "sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==",
+        "dependencies": {}
+      },
+      "merge2@1.4.1": {
+        "integrity": "sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==",
+        "dependencies": {}
+      },
+      "micromatch@4.0.7": {
+        "integrity": "sha512-LPP/3KorzCwBxfeUuZmaR6bG2kdeHSbe0P2tY3FLRU4vYrjYz5hI4QZwV0njUx3jeuKe67YukQ1LSPZBKDqO/Q==",
+        "dependencies": {
+          "braces": "braces@3.0.3",
+          "picomatch": "picomatch@2.3.1"
+        }
+      },
+      "minimatch@9.0.4": {
+        "integrity": "sha512-KqWh+VchfxcMNRAJjj2tnsSJdNbHsVgnkBhTNrW7AjVo6OvLtxw8zfT9oLw1JSohlFzJ8jCoTgaoXvJ+kHt6fw==",
+        "dependencies": {
+          "brace-expansion": "brace-expansion@2.0.1"
+        }
+      },
+      "mkdirp@3.0.1": {
+        "integrity": "sha512-+NsyUUAZDmo6YVHzL/stxSu3t9YS1iljliy3BSDrXJ/dkn1KYdmtZODGGjLcc9XLgVVpH4KshHB8XmZgMhaBXg==",
+        "dependencies": {}
+      },
+      "path-browserify@1.0.1": {
+        "integrity": "sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==",
+        "dependencies": {}
+      },
+      "picomatch@2.3.1": {
+        "integrity": "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==",
+        "dependencies": {}
+      },
+      "queue-microtask@1.2.3": {
+        "integrity": "sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==",
+        "dependencies": {}
+      },
+      "reusify@1.0.4": {
+        "integrity": "sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==",
+        "dependencies": {}
+      },
+      "run-parallel@1.2.0": {
+        "integrity": "sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==",
+        "dependencies": {
+          "queue-microtask": "queue-microtask@1.2.3"
+        }
+      },
+      "to-regex-range@5.0.1": {
+        "integrity": "sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==",
+        "dependencies": {
+          "is-number": "is-number@7.0.0"
+        }
+      }
+    }
+  },
+  "remote": {
+    "https://deno.land/std@0.138.0/async/deferred.ts": "bc18e28108252c9f67dfca2bbc4587c3cbf3aeb6e155f8c864ca8ecff992b98a",
+    "https://deno.land/std@0.154.0/_util/assert.ts": "e94f2eb37cebd7f199952e242c77654e43333c1ac4c5c700e929ea3aa5489f74",
+    "https://deno.land/std@0.154.0/_util/os.ts": "3b4c6e27febd119d36a416d7a97bd3b0251b77c88942c8f16ee5953ea13e2e49",
+    "https://deno.land/std@0.154.0/fs/_util.ts": "fdc156f897197f261a1c096dcf8ff9267ed0ff42bd5b31f55053a4763a4bae3b",
+    "https://deno.land/std@0.154.0/fs/ensure_dir.ts": "76395fc1c989ca8d2de3aedfa8240eb8f5225cde20f926de957995b063135b80",
+    "https://deno.land/std@0.154.0/fs/move.ts": "6d7fa9da60dbc7a32dd7fdbc2ff812b745861213c8e92ba96dace0669b0c378c",
+    "https://deno.land/std@0.154.0/fs/walk.ts": "d6c73a2a2fb5fde60150ce27cff3fff420e72e5bb84131b4919c9a41d74712ce",
+    "https://deno.land/std@0.154.0/path/_constants.ts": "df1db3ffa6dd6d1252cc9617e5d72165cd2483df90e93833e13580687b6083c3",
+    "https://deno.land/std@0.154.0/path/_interface.ts": "ee3b431a336b80cf445441109d089b70d87d5e248f4f90ff906820889ecf8d09",
+    "https://deno.land/std@0.154.0/path/_util.ts": "d16be2a16e1204b65f9d0dfc54a9bc472cafe5f4a190b3c8471ec2016ccd1677",
+    "https://deno.land/std@0.154.0/path/common.ts": "bee563630abd2d97f99d83c96c2fa0cca7cee103e8cb4e7699ec4d5db7bd2633",
+    "https://deno.land/std@0.154.0/path/glob.ts": "cb5255638de1048973c3e69e420c77dc04f75755524cb3b2e160fe9277d939ee",
+    "https://deno.land/std@0.154.0/path/mod.ts": "56fec03ad0ebd61b6ab39ddb9b0ddb4c4a5c9f2f4f632e09dd37ec9ebfd722ac",
+    "https://deno.land/std@0.154.0/path/posix.ts": "c1f7afe274290ea0b51da07ee205653b2964bd74909a82deb07b69a6cc383aaa",
+    "https://deno.land/std@0.154.0/path/separator.ts": "fe1816cb765a8068afb3e8f13ad272351c85cbc739af56dacfc7d93d710fe0f9",
+    "https://deno.land/std@0.154.0/path/win32.ts": "bd7549042e37879c68ff2f8576a25950abbfca1d696d41d82c7bca0b7e6f452c",
+    "https://deno.land/std@0.158.0/async/deferred.ts": "c01de44b9192359cebd3fe93273fcebf9e95110bf3360023917da9a2d1489fae",
+    "https://deno.land/std@0.158.0/collections/_comparators.ts": "b9edf2170aaccbe11407d37e8948b6867cf68fbe5225f4cd4cdb02f174227157",
+    "https://deno.land/std@0.158.0/collections/binary_search_node.ts": "44ce42e032d8701d1cbce0de4a2d991742743554d2df09783198d862284eb263",
+    "https://deno.land/std@0.158.0/collections/binary_search_tree.ts": "64224e394fd3b894b5dee2f8da692405a5d6f107cd2ecbab48c478f63b9fad03",
+    "https://deno.land/std@0.158.0/collections/red_black_node.ts": "8381a2fecdd28e06f2f730f091aa2a78cab57571a78727203f42e00fd24dd12f",
+    "https://deno.land/std@0.158.0/collections/red_black_tree.ts": "b065e14cc319d1b0090aa6acbad387b7c9cb52346c259047a0c47b9695c7cc5c",
+    "https://deno.land/std@0.167.0/async/abortable.ts": "80b2ac399f142cc528f95a037a7d0e653296352d95c681e284533765961de409",
+    "https://deno.land/std@0.167.0/async/deadline.ts": "2c2deb53c7c28ca1dda7a3ad81e70508b1ebc25db52559de6b8636c9278fd41f",
+    "https://deno.land/std@0.167.0/async/debounce.ts": "60301ffb37e730cd2d6f9dadfd0ecb2a38857681bd7aaf6b0a106b06e5210a98",
+    "https://deno.land/std@0.167.0/async/deferred.ts": "77d3f84255c3627f1cc88699d8472b664d7635990d5358c4351623e098e917d6",
+    "https://deno.land/std@0.167.0/async/delay.ts": "5a9bfba8de38840308a7a33786a0155a7f6c1f7a859558ddcec5fe06e16daf57",
+    "https://deno.land/std@0.167.0/async/mod.ts": "7809ad4bb223e40f5fdc043e5c7ca04e0e25eed35c32c3c32e28697c553fa6d9",
+    "https://deno.land/std@0.167.0/async/mux_async_iterator.ts": "770a0ff26c59f8bbbda6b703a2235f04e379f73238e8d66a087edc68c2a2c35f",
+    "https://deno.land/std@0.167.0/async/pool.ts": "6854d8cd675a74c73391c82005cbbe4cc58183bddcd1fbbd7c2bcda42b61cf69",
+    "https://deno.land/std@0.167.0/async/retry.ts": "e8e5173623915bbc0ddc537698fa418cf875456c347eda1ed453528645b42e67",
+    "https://deno.land/std@0.167.0/async/tee.ts": "3a47cc4e9a940904fd4341f0224907e199121c80b831faa5ec2b054c6d2eff5e",
+    "https://deno.land/std@0.167.0/bytes/concat.ts": "97a1274e117510ffffc9499c4debb9541e408732bab2e0ca624869ae13103c10",
+    "https://deno.land/std@0.167.0/bytes/equals.ts": "39006f683f6ab99ceb517ebdba5023d03e9a1d272da8bfb14154e2bda32bdbf9",
+    "https://deno.land/std@0.167.0/http/server.ts": "e99c1bee8a3f6571ee4cdeb2966efad465b8f6fe62bec1bdb59c1f007cc4d155",
+    "https://deno.land/std@0.167.0/media_types/_util.ts": "ce9b4fc4ba1c447dafab619055e20fd88236ca6bdd7834a21f98bd193c3fbfa1",
+    "https://deno.land/std@0.167.0/media_types/mod.ts": "8c0447e561dd74fb26c52ad0df92d9f2ab170329a11a3f78498e3ea94c0590fd",
+    "https://deno.land/std@0.167.0/media_types/vendor/mime-db.v1.52.0.ts": "724cee25fa40f1a52d3937d6b4fbbfdd7791ff55e1b7ac08d9319d5632c7f5af",
+    "https://deno.land/x/earthstar@v10.2.2/deps.ts": "58b37fc77d2930b8a03b7baaf5bf35069dc903d3e40dbcf059e52b8d9c649114",
+    "https://deno.land/x/earthstar@v10.2.2/mod.ts": "260f473de235e8e7c93e5222a4fde60d5c85eb083a61ccdaf05aea23e2886b8a",
+    "https://deno.land/x/earthstar@v10.2.2/src/core-validators/addresses.ts": "807761ed50d06d889a6b4ee243ac87f094de7226728c7ef715e677e61e9cc835",
+    "https://deno.land/x/earthstar@v10.2.2/src/core-validators/characters.ts": "b463e19fdf66063edcab819dd7a3cc42234da9d7d0cf43a790de0fd65a74c693",
+    "https://deno.land/x/earthstar@v10.2.2/src/core-validators/checkers.ts": "8cc7579b0fdb72b10c3f979d92a6e27f03952f1955a962846c92cb7dedb52215",
+    "https://deno.land/x/earthstar@v10.2.2/src/crypto/base32.ts": "0aad78407fd95bd12ed59258fec032d021c4d8717e841f85af6e3f94b6e0c734",
+    "https://deno.land/x/earthstar@v10.2.2/src/crypto/crypto-driver-noble.ts": "6959c4b50719ead3c9558101e898e3d1164b1091fd28833b52eacf61b3ec5272",
+    "https://deno.land/x/earthstar@v10.2.2/src/crypto/crypto-driver-sodium.ts": "e1aa0430d7766caf592205ff3e7976f95b2c30fb0d44878244aa9a596103b473",
+    "https://deno.land/x/earthstar@v10.2.2/src/crypto/crypto-types.ts": "977842a5e0ddfdb9e658d428ea3e1dae62ab255f8869d3421875283a010a93c5",
+    "https://deno.land/x/earthstar@v10.2.2/src/crypto/crypto.ts": "cb1fcea7fab68cf67e8ecfdcb14b8fc0dfdf94f4fb242b581f42d5e72f048a60",
+    "https://deno.land/x/earthstar@v10.2.2/src/crypto/default_driver.ts": "b428e7743dcf8ebd72a6360de200bea424fd9415f9f6a28ffc8f25971858a30d",
+    "https://deno.land/x/earthstar@v10.2.2/src/crypto/global-crypto-driver.ts": "8d28123e7cd07641270cd7a8e94a64cde902808e91aa63019412c74a5f557266",
+    "https://deno.land/x/earthstar@v10.2.2/src/crypto/keypair.ts": "71aa309efa4fd9ba196ea254217c1b4983f1a1168d17bd49ee7d6a4103a3525e",
+    "https://deno.land/x/earthstar@v10.2.2/src/crypto/updatable_hash.ts": "e61116adefa362f2c2bb1b297e190024cdf254a0aadef7d0fba72e4808493e88",
+    "https://deno.land/x/earthstar@v10.2.2/src/discovery/types.ts": "a5620f7361e63dc730695e0b157269e0eaccd4dadc8ffeb155b2a8be7f45557a",
+    "https://deno.land/x/earthstar@v10.2.2/src/entries/deno.ts": "b81bd3bebb96ce9e966e4ae0e5a271d0876bcf49541502393e005e0af15b3837",
+    "https://deno.land/x/earthstar@v10.2.2/src/entries/universal.ts": "4dbc8535c5e600f3ab39bedb09ab23cc67b7613a1ebf4a89a43dd9a39b268ece",
+    "https://deno.land/x/earthstar@v10.2.2/src/formats/format_es4.ts": "ef168733109c77cdcbe658e7c3a044fb8227d6507e7d4ca6c6f7bf7290fea6f3",
+    "https://deno.land/x/earthstar@v10.2.2/src/formats/format_es5.ts": "72dcc110bf1f2f744efc77f6c5ea76b86babc1d5a662ff3721a3c86c38de2dd8",
+    "https://deno.land/x/earthstar@v10.2.2/src/formats/format_types.ts": "28d42307af38bdd81551b16e1160e7d4807982b3adab70a8acc941392e051624",
+    "https://deno.land/x/earthstar@v10.2.2/src/formats/util.ts": "3959e345fa640c71c45cdba8b00db88c2ccadcd205afa78e167696ea80bd6b9c",
+    "https://deno.land/x/earthstar@v10.2.2/src/peer/peer-types.ts": "0a2e028e232427649e21fac8c3975cc3af364adeec346ee724c595573beca9d1",
+    "https://deno.land/x/earthstar@v10.2.2/src/peer/peer.ts": "beeb887b063625025a7f80ed3ed7083cb0523d1f91cb07edfea006650f883b5b",
+    "https://deno.land/x/earthstar@v10.2.2/src/query/query-helpers.ts": "9832146900cf09b26e9f630a9caabb9042d7d9db11dfeb1465b5ef5d03271b76",
+    "https://deno.land/x/earthstar@v10.2.2/src/query/query-types.ts": "9f15cb0e7e5917d9d5e7bacd8dbc6261c116211eba961998114ecd4b77f61198",
+    "https://deno.land/x/earthstar@v10.2.2/src/query/query.ts": "0db678859fb589cf03769054ec6e1a92e28f647e6e824aad09c4b6c37511489f",
+    "https://deno.land/x/earthstar@v10.2.2/src/replica/attachment_drivers/filesystem.ts": "ac77df9a8a3703d4d0544bc6856ce515af9eeab1fbb544a121f9ad17e7695236",
+    "https://deno.land/x/earthstar@v10.2.2/src/replica/attachment_drivers/memory.ts": "c4026656397fb9a7785179d44279b7f1b654c4faf97abcb029e8793926090a13",
+    "https://deno.land/x/earthstar@v10.2.2/src/replica/compare.ts": "b3a9f012925ac2dad6bc23c3e668cc10acf52165edd005bf688027c17ee3aa8d",
+    "https://deno.land/x/earthstar@v10.2.2/src/replica/doc_drivers/localstorage.ts": "31ab25a4740209ccc34179cf090e59372d7e130e93e19401112a63ec3b21b1a9",
+    "https://deno.land/x/earthstar@v10.2.2/src/replica/doc_drivers/memory.ts": "f6c3da90e2bd921896626791233ebe4333be9fedf391c00135ea8ac9112c21f4",
+    "https://deno.land/x/earthstar@v10.2.2/src/replica/doc_drivers/sqlite.deno.ts": "a58a994d654b8309a564d90095e5908c5d76daff38e9eb6bb76cae5d4f1fb9f1",
+    "https://deno.land/x/earthstar@v10.2.2/src/replica/doc_drivers/sqlite.shared.ts": "5c27e4e5ee72bca093200d8c56a244086f66aec52ae812e3b7f9d97249103802",
+    "https://deno.land/x/earthstar@v10.2.2/src/replica/driver_fs.ts": "f01efcdb94a241a1d22d30034806987505851a4f586f7877c0dfa57385459e78",
+    "https://deno.land/x/earthstar@v10.2.2/src/replica/driver_memory.ts": "de246633e2bb7287b92142a16bf045da5422728d7ed48eb7144b8efab1662ab1",
+    "https://deno.land/x/earthstar@v10.2.2/src/replica/multiformat_replica.ts": "94ae0b51c73174b6d4e7ab7580186abd7b3373c7d9ae36d0777103610fcb655c",
+    "https://deno.land/x/earthstar@v10.2.2/src/replica/replica-types.ts": "1385d998943d319a3b960786e75c457c12b73b002e7f0eca6b7807319d68a9f2",
+    "https://deno.land/x/earthstar@v10.2.2/src/replica/replica.ts": "4383520baf5bf9314e1076fcf59171d35337de573119e697f492a9e08295a27c",
+    "https://deno.land/x/earthstar@v10.2.2/src/replica/replica_cache.ts": "8cfbd1058e3d1485e306a44685df054e64295ee460d88521fc828bdef7059eca",
+    "https://deno.land/x/earthstar@v10.2.2/src/replica/util-types.ts": "390f0d926d2a85509eac4566cffd5d1af7669a7d2b313fb93ed0d4761a3e434b",
+    "https://deno.land/x/earthstar@v10.2.2/src/server/extensions/extension.ts": "cb74476bcfd236b38ba644127c6261e13b027b56f2dd2c0d448f4f23bab19038",
+    "https://deno.land/x/earthstar@v10.2.2/src/server/extensions/known_shares.ts": "1788ad4a0791fd49d410438e4aa40287727cc34516ca22c836dc3f490386a9a9",
+    "https://deno.land/x/earthstar@v10.2.2/src/server/extensions/serve_content.ts": "a7264be8ed8cf1e1e7763a4ab05fa03b0a18d789165f5bb3cd3ea3b9e76569eb",
+    "https://deno.land/x/earthstar@v10.2.2/src/server/extensions/server_settings.ts": "e567cc10ab2f2327c7f464bcae77dcd7d1906363b326b8c48dc6158f6b911464",
+    "https://deno.land/x/earthstar@v10.2.2/src/server/extensions/sync_web.ts": "633097891e4a810b824d455b974f77e9edc309f24001f9f2e75e236e9addf4e8",
+    "https://deno.land/x/earthstar@v10.2.2/src/server/server.ts": "641040287b3250124b382ab158f6112b00e594993deae760f0aa4bf81fe390b8",
+    "https://deno.land/x/earthstar@v10.2.2/src/server/server_core.ts": "377d701113df3a22a2b060eb2980aed55a5c5797af411b628fac849d3af32b73",
+    "https://deno.land/x/earthstar@v10.2.2/src/streams/stream_utils.ts": "357adfedd9ac72c07526ef1f411bac429e9873f96426e92ff0da34262e3939da",
+    "https://deno.land/x/earthstar@v10.2.2/src/sync-fs/constants.ts": "b2916aac6395c63016f69bcca59ce49c918cd68c651849c96910a34bdf9d1a9b",
+    "https://deno.land/x/earthstar@v10.2.2/src/sync-fs/sync-fs-types.ts": "835413978626cb0e53505e7a91d43aa87544c4e3a6af611719af1c32c407a6c0",
+    "https://deno.land/x/earthstar@v10.2.2/src/sync-fs/sync-fs.ts": "939bdd6da375f0b7266e76af72c6557a4f82ffc205b1aa5ed85a78a337ec5c36",
+    "https://deno.land/x/earthstar@v10.2.2/src/sync-fs/util.ts": "29235c7601c127e32cd6c2b0de294daf1af00636cdfd92d14c05353619e5dfa2",
+    "https://deno.land/x/earthstar@v10.2.2/src/syncer/attachment_transfer.ts": "b6e88f81c6112cd264ca6a7001082838cf70cfbce2dc38b685834af4f53d874e",
+    "https://deno.land/x/earthstar@v10.2.2/src/syncer/bumping_timeout.ts": "0cddef7e9c65b0966784b584f11e4556097f49b2844abccd2e0d2ba43b872028",
+    "https://deno.land/x/earthstar@v10.2.2/src/syncer/constants.ts": "3f6cd3e379a172ed6dbd24352605d75d07712fc31a870930a37fc4930bc586a6",
+    "https://deno.land/x/earthstar@v10.2.2/src/syncer/doc_thumbnail_tree.ts": "083ac1401c0d2aaa34e6a4aedeaf92b88b3960dea0a8dcaa70e4e0cd1f3790ea",
+    "https://deno.land/x/earthstar@v10.2.2/src/syncer/multi_deferred.ts": "226a92cc8b8d331be53396522572accf0c262744b732ab31cf59efc1b193f7e0",
+    "https://deno.land/x/earthstar@v10.2.2/src/syncer/partner_local.ts": "c8a7249b4737416d14cf33ad5687b5877336f9226eef197ba5afbe3c9d2851dd",
+    "https://deno.land/x/earthstar@v10.2.2/src/syncer/partner_web_client.ts": "28f1510c84b012834c8bbc67a89f20aa4f01b17fd4e14712bc34ae3d2755af85",
+    "https://deno.land/x/earthstar@v10.2.2/src/syncer/partner_web_server.ts": "ddca4318b962d301c62fe72b8dc9cd2d8e30cf802c702151b39bd1ad58e4e058",
+    "https://deno.land/x/earthstar@v10.2.2/src/syncer/plum_tree.ts": "a245ff3a2a0d5bcd75b30eb00056e2e48420c6d815b0e9b7fe50f1d873c1ca58",
+    "https://deno.land/x/earthstar@v10.2.2/src/syncer/promise_enroller.ts": "bd681bd6ee52c6d581f995111bb4ef9dc062a5eaf2734357e3b3e196267bfbb6",
+    "https://deno.land/x/earthstar@v10.2.2/src/syncer/range_messenger.ts": "95ef38fd427ba825b6a2b1d58c36ddab82f8b552dbbeb4da38b26afe10b405cb",
+    "https://deno.land/x/earthstar@v10.2.2/src/syncer/sync_agent.ts": "a148875eee179839ad808e26573f9ca4f50924f9dd6cdb30fbb66717a732f5d2",
+    "https://deno.land/x/earthstar@v10.2.2/src/syncer/syncer.ts": "0d62dcfd843c77ec90611971cee44988c527596789d917e89c629c761d271f0f",
+    "https://deno.land/x/earthstar@v10.2.2/src/syncer/syncer_manager.ts": "54561e5f1f95d1a458c3ac3c60eb47e648774f2be54e68287dba36b7f650b9be",
+    "https://deno.land/x/earthstar@v10.2.2/src/syncer/syncer_types.ts": "1bb26ae2d7d5f4f04ed54601ecfc43da7add157965f7a2527f2ba9c11ba5d0f6",
+    "https://deno.land/x/earthstar@v10.2.2/src/syncer/transfer_manager.ts": "6db02889bae3d794aa712938372c0c58a2eea91cbf5fd91f2d4b6965bb5f3877",
+    "https://deno.land/x/earthstar@v10.2.2/src/syncer/transfer_queue.ts": "af6f19efb70b3d0be8c37d3d72a6d496b8b9bc748b2c48a79b848079ec527071",
+    "https://deno.land/x/earthstar@v10.2.2/src/util/attachment_stream_info.ts": "4a18ed9ad0ce2af4b1d35d3233af2fd8d449216ed1816946efd24a4cc4846592",
+    "https://deno.land/x/earthstar@v10.2.2/src/util/bigint.ts": "1000e02531f145472b528363d246d619607416b6a65994ce43fa35615b5bd4a9",
+    "https://deno.land/x/earthstar@v10.2.2/src/util/bytes.ts": "85cbcf66f802ccc2c587fa76da391f25f89b7fe2876d900f70b3d0a1fdb88e52",
+    "https://deno.land/x/earthstar@v10.2.2/src/util/doc-types.ts": "707a16bb72562c8f4384d37d7409e9bf43eb04460ae0874e66d4f149e372211f",
+    "https://deno.land/x/earthstar@v10.2.2/src/util/errors.ts": "118ed215ec91ce4d478ef96b3c0cf3f07500698e320b2a18545084d8ba2a5a91",
+    "https://deno.land/x/earthstar@v10.2.2/src/util/invite.ts": "119b2cc2eb94e3f97266809a31037b8451e8b7cb9011e3b633e8033931b7bab3",
+    "https://deno.land/x/earthstar@v10.2.2/src/util/log.ts": "46316fa1330f8f8db0a89c6082b24472b992bbe279ac644d957db29869a16c13",
+    "https://deno.land/x/earthstar@v10.2.2/src/util/misc.ts": "6b1a7378dff8b0f76a8afd25bd15878155063bd66a2dd465065de0c8e7c3dabc",
+    "https://deno.land/x/earthstar@v10.2.2/src/util/shared_settings.ts": "f1883b897de874aed615bef200af6565c4c12082b2c07c5308811cfb62eea5f9",
+    "https://deno.land/x/earthstar@v10.2.2/src/util/streams.ts": "b9542e8949060f2bca52b9ebde709cfb2da81e7d0203314499826db7e13da1fb",
+    "https://deno.land/x/earthstar@v10.2.2/src/util/xxhash64.js": "ad885672fba660ae1df68dd9fe0580587beaf6d408bb9ed560d272c4523b74f0",
+    "https://deno.land/x/for_awaitable_queue@1.0.0/mod.ts": "a2fb2014da6401733499376cb58a9ae82819aea6471bf8df8388dcbed58a52f9",
+    "https://deno.land/x/range_reconcile@1.0.2/mod.ts": "bf886668195e27bce5a958a2b3bcb8f2ed47e1f2d2e782db08d8ab1948b6e7ae",
+    "https://deno.land/x/range_reconcile@1.0.2/src/fingerprint_tree/fingerprint_tree.ts": "8042221583ad6274d96ee1836c1a0b72cdfa6a8509dd129b06bd3f974da40ef4",
+    "https://deno.land/x/range_reconcile@1.0.2/src/lifting_monoid.ts": "9237589643088e9aff1746789a6adb7e8aff32a804a56d1d46608da208d44ffe",
+    "https://deno.land/x/range_reconcile@1.0.2/src/range_messenger/range_messenger.ts": "b7aa0e57cf46db1f1d8fc6d8d3bf9bbd43507a1267bb8e0468a383a7a9b4e706",
+    "https://deno.land/x/range_reconcile@1.0.2/src/range_messenger/range_messenger_config.ts": "898a0bf03827c721255486680c03283e8add7ba257226f1d0128f273afad5dc8",
+    "https://deno.land/x/range_reconcile@1.0.2/src/teeable_deferred.ts": "0c167f2d7d0708e24e42c08752aa2e6a82398df03266546c390f06d1e6eb7280",
+    "https://deno.land/x/range_reconcile@1.0.2/src/util.ts": "dbbdc53719ccff87ac917d2d4a3f3a0984ba0a7c5953864702d5751fb90a9951",
+    "https://deno.land/x/shallow_equal@v0.1.3/arrays.ts": "2ffe92cd73423ce89ef6b1fd2fad26c3657d114a4030cd410daa78f210754192",
+    "https://deno.land/x/shallow_equal@v0.1.3/mod.ts": "8699bbfa42900fcec42d270fdfa0f2c9c03a2098221d974088c946cbafdc8fb6",
+    "https://deno.land/x/shallow_equal@v0.1.3/objects.ts": "0859f90c3269b0b420d2e7776ecbed574bed79af4afea957050e63eb35f29f0c",
+    "https://deno.land/x/sodium@0.2.0/basic.ts": "458ec1e8e90b5df3c0d8a7a7e4747dbbbd35e3ee776ac4dc7c44d3ec70784de9",
+    "https://deno.land/x/sodium@0.2.0/basic_types.ts": "49e32fd3d239e183d71e2509def40a70ce0308f4d9f0552dd355be8094e2fe5f",
+    "https://deno.land/x/sodium@0.2.0/dist/browsers/sodium.js": "169e09bb1d056fd4700c95edbdb399d8050d685ce44b40f520e35a021167d520",
+    "https://deno.land/x/sqlite@v3.2.0/build/sqlite.js": "16fe819f3b40c0d2e100014ec922b7dcef32bc9a0c799a9ecd4f1ae104217c88",
+    "https://deno.land/x/sqlite@v3.2.0/build/vfs.js": "baff72655c0916c906327fe6703c6a47daa1346e55c2eaa2629bcd879a673c8d",
+    "https://deno.land/x/sqlite@v3.2.0/mod.ts": "0b3e066f61a149d5aa99a50e2c41c687eaa0713350d3e9bfbe4025173ec1c9a9",
+    "https://deno.land/x/sqlite@v3.2.0/src/constants.ts": "b967237b460fafa03ca03aeddb33953bed41c7cbdc309a934e2329a5c84079ac",
+    "https://deno.land/x/sqlite@v3.2.0/src/db.ts": "51e39293ba03679a779719a32fca503b3d8728f366762b4f7fb9fd8974985ab8",
+    "https://deno.land/x/sqlite@v3.2.0/src/error.ts": "6b0e5e8e5b60c928ab5b125a0801074445fbe40b20de87c95ca15f4b88592faf",
+    "https://deno.land/x/sqlite@v3.2.0/src/query.ts": "ad41895ceb1585a4f67b4cf836a3106d9be8957bf00ec48a056638026286f9b0",
+    "https://deno.land/x/sqlite@v3.2.0/src/wasm.ts": "e79d0baa6e42423257fb3c7cc98091c54399254867e0f34a09b5bdef37bd9487",
+    "https://esm.sh/rfc4648@1.5.0": "54f0845663b9de0d98f5ec86cdda655792b72ff4983eac8784c70ce282990501",
+    "https://esm.sh/sha256-uint8array@0.10.3": "bf7af11fe4803856f5c4789070f588937d6cca6cf0ee9f9fc8f0e5d573adf3c1",
+    "https://esm.sh/v135/rfc4648@1.5.0/denonext/rfc4648.mjs": "732173e270be93c61351be45cbcca9fffaed13f9b03f3a4c52dc4e1f2617b436",
+    "https://esm.sh/v135/sha256-uint8array@0.10.3/denonext/sha256-uint8array.mjs": "e4563bbe28cf94df12dc34ae14fcc088115364df5d0c32818132da8272ade5fb",
+    "https://raw.githubusercontent.com/sgwilym/noble-ed25519/153f9e7e9952ad22885f5abb3f6abf777bef4a4c/index.ts": "7bbdf74c218c856982948b3e4c63a276fee69d73f581db5c84ecfe2a37f1f371",
+    "https://raw.githubusercontent.com/sgwilym/noble-ed25519/153f9e7e9952ad22885f5abb3f6abf777bef4a4c/mod.ts": "92f8abb3961cc84a393878ab48b0223dc25ee707400207922cb544aa7cdfbbe6"
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@deno/dnt@^0.41.1"
+    ]
+  }
+}
