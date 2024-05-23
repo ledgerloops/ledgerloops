@@ -5,7 +5,6 @@ This repository contains a miminal LedgerLoops node that implements DLD, greedy 
 ## Running
 ### Using npx
 ```
-npm install ledgerloops
 npx ledgerloops init
 npx ledgerloops sim
 ```
