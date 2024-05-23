@@ -34,7 +34,7 @@ export class Saiga extends EventEmitter implements NetworkNode {
     };
   }
   fromSnapshot(snapshot: { friends: object, probes: object, traces: object, loops: object, debugLog: string[], name: string }) {
-    this.friendsEngine.fromSnapshot(snapshot.friends as { [name: string]: { name: string, maxBalance: number, exchangeRate: number } });
+    this.friendsEngine.fromSnapshot(snapshot.friends as { [name: string]: { name: string, balance: number, maxBalance: number, exchangeRate: number } });
     this.probesEngine.fromSnapshot(snapshot.probes as {
       probes: {
         [id: string]: Probe
@@ -49,6 +49,12 @@ export class Saiga extends EventEmitter implements NetworkNode {
     this.loopsEngine.fromSnapshot(snapshot.loops as { loops: string[], lifts: { [hash: string]: { loop: string, legId: string, secret?: string, incomingAmount?: number, outgoingAmount: number } }, profit: number });
     this.debugLog = snapshot.debugLog;
     this.name = snapshot.name;
+  }
+  setTrust(to: string, amount: number): void {
+    this.friendsEngine.setTrust(to, amount);
+  }
+  setBalance(to: string, amount: number): void {
+    this.friendsEngine.setBalance(to, amount);
   }
   protected connectProbesEngine(): ProbesEngine {
     const probesengine = new ProbesEngine(this.name);

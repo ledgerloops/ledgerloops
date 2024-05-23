@@ -27,7 +27,7 @@ export function after(networkSimulator: BatchedNetworkSimulator): void {
   writeFileSync(FILE, JSON.stringify(networkSimulator.toSnapshot(), null, 2) + '\n');
 }
 
-export async function setTrust(from: string, to: string, amount: number, unit: string): Promise<void> {
+export function setTrust(from: string, to: string, amount: number, unit: string) {
   if (unit !== 'CHIP') {
     throw new Error("Only CHIP units supported");
   }
@@ -35,7 +35,7 @@ export async function setTrust(from: string, to: string, amount: number, unit: s
   networkSimulator.setTrust(from, to, amount);
   after(networkSimulator);
 }
-export async function setBalance(from: string, to: string, amount: number, unit: string): Promise<void> {
+export function setBalance(from: string, to: string, amount: number, unit: string) {
   const networkSimulator = before();
   if (unit !== 'CHIP') {
     throw new Error("Only CHIP units supported");

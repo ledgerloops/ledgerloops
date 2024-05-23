@@ -3,6 +3,7 @@ export class GiraffeFriendsEngine {
   protected friends: {
     [name: string]: {
       name: string,
+      balance: number,
       maxBalance: number,
       exchangeRate: number,
     },
@@ -18,9 +19,24 @@ export class GiraffeFriendsEngine {
     }
     this.friends[otherName] = {
       name: otherName,
+      balance: 0,
       maxBalance,
       exchangeRate,
     };
+    return true;
+  }
+  setTrust(otherName: string, maxBalance: number): boolean {
+    if (typeof this.friends[otherName] === 'undefined') {
+      return false;
+    }
+    this.friends[otherName].maxBalance = maxBalance;
+    return true;
+  }
+  setBalance(otherName: string, balance: number): boolean {
+    if (typeof this.friends[otherName] === 'undefined') {
+      return false;
+    }
+    this.friends[otherName].balance = balance;
     return true;
   }
   getFriend(otherName: string): { name: string, maxBalance: number, exchangeRate: number } | undefined {
@@ -32,7 +48,7 @@ export class GiraffeFriendsEngine {
   toSnapshot() {
     return this.friends;
   }
-  fromSnapshot(snapshot: { [name: string]: { name: string, maxBalance: number, exchangeRate: number } }) {
+  fromSnapshot(snapshot: { [name: string]: { name: string, balance: number, maxBalance: number, exchangeRate: number } }) {
     this.friends = snapshot;
   }
 }

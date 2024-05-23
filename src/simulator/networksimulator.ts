@@ -7,6 +7,8 @@ export abstract class NetworkNode extends EventEmitter {
   abstract process(from: string, message: string):  void;
   abstract toSnapshot(): object;
   abstract fromSnapshot(snapshot: object): void;
+  abstract setTrust(to: string, amount: number): void;
+  abstract setBalance(to: string, amount: number): void;
 }
 export class NetworkSimulator {
   protected nodes: { [name: string]: NetworkNode } = {};
@@ -17,11 +19,23 @@ export class NetworkSimulator {
   addNode(name: string, node: NetworkNode): void {
     this.nodes[name] = node;
   }
+  ensureNode(name: string): void {
+    if (typeof this.nodes[name] === 'undefined') {
+      this.nodes[name] = new Saiga(name);
+    }
+  }
   setTrust(from: string, to: string, amount: number): void {
+    this.ensureNode(from);
+    this.ensureNode(to);
+    this.nodes[from].setTrust(to, amount);
     console.log("network simulator set trust", from, to, amount);
     // no-op
   }
   setBalance(from: string, to: string, amount: number): void {
+    this.ensureNode(from);
+    this.ensureNode(to);
+    this.nodes[from].setBalance(to, amount);
+    this.nodes[to].setBalance(to, -amount);
     console.log("network simulator set balance", from, to, amount);
     // no-op
   }

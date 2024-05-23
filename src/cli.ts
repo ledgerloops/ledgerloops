@@ -23,6 +23,6 @@ export async function cli(): Promise<void> {
       console.log("set-balance", Deno.args[1], Deno.args[2], Deno.args[3], Deno.args[4]);
       return;
     default:
-      console.log("Usage: npx ledgerloops init|run");
+      console.log("Usage: npx ledgerloops command...");
   }
 }
