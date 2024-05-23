@@ -24,7 +24,7 @@ await build({
       url: "https://github.com/ledgerloops/ledgerloops/issues",
     },
     bin: {
-      ledgerloops: "./esm/cli.js",
+      ledgerloops: "./esm/bin.js",
     }
   },
   postBuild() {
@@ -32,5 +32,6 @@ await build({
     Deno.copyFileSync("LICENSE", "npm/LICENSE");
     Deno.copyFileSync("testnet-10.csv", "npm/testnet-10.csv");
     Deno.copyFileSync("README.md", "npm/README.md");
+    Deno.copyFileSync("scripts/bin.js", "npm/esm/bin.js");
   },
 });

@@ -1,8 +1,8 @@
-#!/usr/bin/env node
-import { init } from './init.ts';
-import { run } from './run.ts';
 
-function cli(): void {
+import { init } from './init.ts';
+import { sim } from './sim.ts';
+
+export function cli(): void {
   const cmd = Deno.args[0];
   switch (cmd) {
     case 'init':
@@ -12,13 +12,10 @@ function cli(): void {
         console.log("Initialization failed", error);
       });
       return;
-    case 'run':
-      run();
+    case 'sim':
+      sim();
       return;
     default:
       console.log("Usage: npx ledgerloops init|run");
   }
 }
-
-// ...
-cli();
