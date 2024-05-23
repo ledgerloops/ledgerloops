@@ -23,6 +23,9 @@ await build({
     bugs: {
       url: "https://github.com/ledgerloops/ledgerloops/issues",
     },
+    bin: {
+      ledgerloops: "./esm/cli.js",
+    }
   },
   postBuild() {
     // steps to run after building and before running the tests

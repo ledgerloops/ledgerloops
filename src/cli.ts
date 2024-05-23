@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
+#!/usr/bin/env node
 import { init } from './init.ts';
 import { run } from './run.ts';
 
