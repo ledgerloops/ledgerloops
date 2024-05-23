@@ -17,6 +17,14 @@ export class NetworkSimulator {
   addNode(name: string, node: NetworkNode): void {
     this.nodes[name] = node;
   }
+  setTrust(from: string, to: string, amount: number): void {
+    console.log("network simulator set trust", from, to, amount);
+    // no-op
+  }
+  setBalance(from: string, to: string, amount: number): void {
+    console.log("network simulator set balance", from, to, amount);
+    // no-op
+  }
   toSnapshot(): { [index: string]: object } {
     const nodes: { [index: string]: object } = {};
     Object.keys(this.nodes).forEach(name => {
