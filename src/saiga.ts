@@ -80,9 +80,9 @@ export class Saiga extends EventEmitter implements NetworkNode {
     probesengine.on('message', (to: string, message: string) => {
       this.emit('message', to, message);
     });
-    // probesengine.on('debug', (message: string) => {
-    //   this.debugLog.push(message);
-    // });
+    probesengine.on('debug', (message: string) => {
+      this.debugLog.push(message);
+    });
     return probesengine;
   }
   protected connectTracesEngine(probesengine: ProbesEngine): TracesEngine {

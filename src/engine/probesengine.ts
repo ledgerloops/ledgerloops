@@ -164,6 +164,7 @@ export class ProbesEngine extends EventEmitter {
     this.flushProbesQueue(friend);
   }
   protected tryToSendProbes(friend: string): void {
+    this.emit('debug', `${this.name} tryToSendProbes ${friend}`);
     if (this.friends[friend].handRaisingStatus === HandRaisingStatus.Talking) {
       this.emit('debug', `${this.name} is talking to ${friend}`);
       this.flushProbesQueue(friend);
@@ -174,22 +175,26 @@ export class ProbesEngine extends EventEmitter {
   }
 
   protected queueProbe(friend: string, probeId: string, homeMinted: boolean): void {
+    this.emit('debug', `${this.name} queueProbe ${friend} ${probeId} ${homeMinted}`);
     this.ensure(probeId, homeMinted);
     this.probesToOffer[friend] = this.probesToOffer[friend] || [];
     this.probesToOffer[friend].push(probeId);
     this.tryToSendProbes(friend);
   }
   public queueAllFloodProbes(other: string): void {
-    this.emit('debug', `QUEUEING ALL FLOOD PROBES TO ${other}`);
+    this.emit('debug', `QUEUEING ALL FLOOD PROBES TO ${other} - START`);
     this.getKeys().forEach((probeId) => {
       this.emit('debug', `QUEUEING PROBE ${probeId} TO ${other}`);
       // setting homeMinted to false but we don't expect it to matter since this probe already exists
       this.queueProbe(other, probeId, false);
     });
+    this.emit('debug', `QUEUEING ALL FLOOD PROBES TO ${other} - DONE`);
   }
-  protected queueFloodProbeToAll(probeId: string, homeMinted: boolean): void {
+  protected queueFloodProbeToAll(probeId: string, homeMinted: boolean, exclude?: undefined | string): void {
     Object.keys(this.friends).forEach(friend => {
-      this.queueProbe(friend, probeId, homeMinted);
+      if (friend !== exclude) {
+        this.queueProbe(friend, probeId, homeMinted);
+      }
     });
   }
   protected createFloodProbe(): void {
@@ -201,8 +206,8 @@ export class ProbesEngine extends EventEmitter {
 
     this.queueAllFloodProbes(other);
     if (createFloodProbe) {
-      this.emit('debug', `and create a new flood probe for other friends than ${other} [3/4]`);
-      this.createFloodProbe();      
+      this.emit('debug', `and create a new flood probe for all friends including ${other} [3/4]`);
+      this.createFloodProbe();
     }
   }
   public handleProbeMessage(sender: string, message: string): void {
@@ -214,7 +219,7 @@ export class ProbesEngine extends EventEmitter {
       this.emit('debug', `INCOMING PROBE ${probeId} IS NEW TO US, FLOOD IT FORWARD`);
       probe = this.ensure(probeId, false);
       probe.recordIncoming(sender);
-      this.queueFloodProbeToAll(probeId, false);
+      this.queueFloodProbeToAll(probeId, false, sender);
     } else {
       this.emit('debug', `INCOMING PROBE ${probeId} IS KNOWN TO US`);
       if (probe.isVirginFor(sender)) {
