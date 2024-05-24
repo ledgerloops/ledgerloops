@@ -95,7 +95,11 @@ export class ProbesEngine extends EventEmitter {
   }
   fromSnapshot(snapshot: {
     probes: {
-      [id: string]: Probe
+      [id: string]: {
+        from: string[],
+        to: string[],
+        homeMinted: boolean,
+      }
     },
     friends: {
       [name: string]: {
@@ -103,7 +107,14 @@ export class ProbesEngine extends EventEmitter {
       }
     }
   }) {
-    this.probes = snapshot.probes;
+    Object.keys(snapshot.probes).forEach(probeId => {
+      this.probes[probeId] = new Probe(
+        probeId,
+        snapshot.probes[probeId].from,
+        snapshot.probes[probeId].to,
+        snapshot.probes[probeId].homeMinted,
+      );
+    }); 
     this.friends = snapshot.friends;
   }
   get(id: string): Probe | undefined {
@@ -137,6 +148,7 @@ export class ProbesEngine extends EventEmitter {
         if (typeof probe === 'undefined') {
           throw new Error(`Probe ${probeId} not found`);
         }
+        console.log(probe);
         if (probe.isVirginFor(friend)) {
           this.emit('debug', `QUEUEING PROBE ${probe.getProbeId()} TO ${friend} [3/4]`);
           probe.recordOutgoing(friend);

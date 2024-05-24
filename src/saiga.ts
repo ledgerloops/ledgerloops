@@ -1,7 +1,7 @@
 import EventEmitter from "node:events";
 import { NetworkNode } from "./simulator/networksimulator.ts";
 import { getMessageType } from "./messages.ts";
-import { HandRaisingStatus, Probe, ProbesEngine } from "./engine/probesengine.ts";
+import { HandRaisingStatus, ProbesEngine } from "./engine/probesengine.ts";
 import { SaigaFriendsEngine } from "./engine/friendsengine.ts";
 import { TracesEngine } from "./engine/tracesengine.ts";
 import { SaigaLoopsEngine } from "./engine/loopsengine.ts";
@@ -37,7 +37,11 @@ export class Saiga extends EventEmitter implements NetworkNode {
     this.friendsEngine.fromSnapshot(snapshot.friends as { [name: string]: { name: string, balance: number, maxBalance: number, exchangeRate: number } });
     this.probesEngine.fromSnapshot(snapshot.probes as {
       probes: {
-        [id: string]: Probe
+        [id: string]: {
+          from: string[],
+          to: string[],
+          homeMinted: boolean,
+        }
       },
       friends: {
         [name: string]: {
