@@ -170,6 +170,7 @@ export class Saiga extends EventEmitter implements NetworkNode {
     }
     this.debugLog.push(`I meet ${other} [1/4]`);
     // this is safe to because it will just queue them for the next message round
+    console.log(`${this.name} emits message ${other} meet`)
     this.emit('message', other, 'meet');
     this.debugLog.push(`I queue ${other} all my flood probes [2/4]`);
     this.probesEngine.addFriend(other, true, createProbe);

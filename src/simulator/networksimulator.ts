@@ -21,7 +21,7 @@ export class NetworkSimulator {
   }
   ensureNode(name: string): void {
     if (typeof this.nodes[name] === 'undefined') {
-      this.nodes[name] = new Saiga(name);
+      this.addNode(name, new Saiga(name));
     }
   }
   setTrust(from: string, to: string, amount: number): void {
@@ -142,7 +142,9 @@ export class BatchedNetworkSimulator extends LoggingNetworkSimulator {
   private batch: TransportPackage[] = [];
   addNode(name: string, node: NetworkNode): void {
     super.addNode(name, node);
+    console.log(`node added to batched network simulator: ${name}`);
     node.on('message', (to: string, message: string) => {
+      console.log("batched network simulator message", name, to, message);
       this.logMessageSent(name, to, message);
       this.batch.push({ sender: name, receiver: to, message });    
     });
