@@ -39,7 +39,7 @@ export class GiraffeFriendsEngine {
     this.friends[otherName].balance = balance;
     return true;
   }
-  getFriend(otherName: string): { name: string, maxBalance: number, exchangeRate: number } | undefined {
+  getFriend(otherName: string): { name: string, balance: number, maxBalance: number, exchangeRate: number } | undefined {
     return this.friends[otherName];
   }
   getFriends(): string[] {

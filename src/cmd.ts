@@ -43,3 +43,8 @@ export function setBalance(from: string, to: string, amount: number, unit: strin
   networkSimulator.setBalance(from, to, amount);
   after(networkSimulator);
 }
+
+export function getBalances(agent: string) {
+  const networkSimulator = before();
+  console.log(networkSimulator.getBalances(agent));
+}

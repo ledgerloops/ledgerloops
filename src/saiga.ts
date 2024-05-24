@@ -51,10 +51,25 @@ export class Saiga extends EventEmitter implements NetworkNode {
     this.name = snapshot.name;
   }
   setTrust(to: string, amount: number): void {
-    this.friendsEngine.setTrust(to, amount);
+    if (this.friendsEngine.getFriend(to) === undefined) {
+      this.meet(to, true, amount);
+    } else {  
+      this.friendsEngine.setTrust(to, amount);
+    }
   }
   setBalance(to: string, amount: number): void {
     this.friendsEngine.setBalance(to, amount);
+    this.emit('message', to, `set-balance ${amount}`);
+  }
+  getBalances(): { [name: string]: number } {
+    const balances: { [name: string]: number } = {};
+    Object.keys(this.friendsEngine.getFriends()).forEach((name: string) => {
+      const friend = this.friendsEngine.getFriend(name);
+      if (friend !== undefined) {
+        balances[name] = friend.balance;
+      }
+    });
+    return balances;
   }
   protected connectProbesEngine(): ProbesEngine {
     const probesengine = new ProbesEngine(this.name);
@@ -145,6 +160,7 @@ export class Saiga extends EventEmitter implements NetworkNode {
       case `commit`: return this.handleLoopMessage(sender, message);
       case `have-probes`: return this.probesEngine.handleHaveProbesMessage(sender);
       case `okay-to-send-probes`: return this.probesEngine.handleOkayToSendProbesMessage(sender);
+      case `set-balance`: return void this.friendsEngine.setBalance(sender, parseFloat(message.split(' ')[1]));
     }
   }
   meet(other: string, createProbe: boolean = true, maxBalance: number = 10.0): void {

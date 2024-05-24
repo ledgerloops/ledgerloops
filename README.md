@@ -46,6 +46,7 @@ So since 5 < 25, provided she trusts Bob for at least those 2 XCH, her answer to
 ### commands
 * `set-trust <from> <to> <amount> XCH`: Set the amount (in [CHIPs/XCH](https://chipcentral.net/)) agent `<from>` is willing to lend to agent `<to>`
 * `set-balance <from> <to> <amount> XCH`: Set the amount agent `<from>` is currently lending to `<to>`.
+* `get-balances <agent>`: Prints the current balances of this agent.
 
 Agents will then automatically start sending message to each other to achieve collaborative netting.
 The commands `init` and `sim` are deprecated.
@@ -53,17 +54,29 @@ The commands `init` and `sim` are deprecated.
 ## Running
 ### Using npx
 ```
-npx ledgerloops init
-npx ledgerloops sim
+npx ledgerloops set-trust alice bob 10 XCH
+npx ledgerloops set-trust bob charlie 10 XCH
+npx ledgerloops set-trust charlie alice 10 XCH
+npx ledgerloops set-balance alice bob 10 XCH
+npx ledgerloops set-balance bob charlie 5 XCH
+npx ledgerloops set-balance charlie alice 3 XCH
+npx ledgerloops get-balances alice
+npx ledgerloops get-balances bob
+npx ledgerloops get-balances charlie
 ```
+This should trigger a lift of 3 XCH, so that:
+* Alice's balance will go from [10, -3] to [7, 0]
+* Bob's balance will go from [-10, 5] to [-7, 2]
+* Charlie's balance will go from [-5, 3] to [-2, 0]
+
 
 ### Using Deno
 ```
 git clone https://github.com/ledgerloops/ledgerloops
 cd ledgerloops
-deno run -A ./src/run.ts init
-deno run -A ./src/run.ts sim
+deno run -A ./src/run.ts get-balances alice
 ```
+You can run the same commands here as through `npx`.
 
 If you want to try out the [Earthstar](https://earthstar-project.org/) transport for messaging ([not working yet](https://github.com/ledgerloops/saiga/issues/1)!),
 see [the Earthstar branch on the Saiga repo](https://github.com/ledgerloops/saiga/tree/earthstar).

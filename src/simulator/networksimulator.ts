@@ -35,9 +35,11 @@ export class NetworkSimulator {
     this.ensureNode(from);
     this.ensureNode(to);
     this.nodes[from].setBalance(to, amount);
-    this.nodes[to].setBalance(to, -amount);
     console.log("network simulator set balance", from, to, amount);
     // no-op
+  }
+  getBalances(agent: string): { [name: string]: number } {
+    return (this.nodes[agent] as Saiga).getBalances();
   }
   toSnapshot(): { [index: string]: object } {
     const nodes: { [index: string]: object } = {};
@@ -47,7 +49,7 @@ export class NetworkSimulator {
     return { nodes };
   }
   fromSnapshot(snapshot: { nodes: { [index: string]: object } }) {
-    console.log("network simulator from snapshot", snapshot);
+    // console.log("network simulator from snapshot", snapshot);
     Object.keys(snapshot.nodes).forEach(name => {
       this.nodes[name] = new Saiga(name);
       this.nodes[name].fromSnapshot(snapshot.nodes[name] as { friends: object, probes: object, traces: object, loops: object, debugLog: string[], name: string });

@@ -1,5 +1,5 @@
 
-import { setTrust } from "./cmd.ts";
+import { setBalance, setTrust, getBalances } from "./cmd.ts";
 import { init } from './init.ts';
 import { sim } from './sim.ts';
 
@@ -20,7 +20,10 @@ export async function cli(): Promise<void> {
       await setTrust(Deno.args[1], Deno.args[2], parseFloat(Deno.args[3]), Deno.args[4]);
       return;
     case 'set-balance':
-      console.log("set-balance", Deno.args[1], Deno.args[2], Deno.args[3], Deno.args[4]);
+      await setBalance(Deno.args[1], Deno.args[2], parseFloat(Deno.args[3]), Deno.args[4]);
+      return;
+    case 'get-balances':
+      await getBalances(Deno.args[1]);
       return;
     default:
       console.log("Usage: npx ledgerloops command...");
