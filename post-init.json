@@ -4,19 +4,21 @@
       "friends": {
         "1": {
           "name": "1",
+          "balance": 0,
           "maxBalance": 10,
           "exchangeRate": 1
         },
         "2": {
           "name": "2",
+          "balance": 0,
           "maxBalance": 10,
           "exchangeRate": 1
         }
       },
       "probes": {
         "probes": {
-          "6520663d": {
-            "probeId": "6520663d",
+          "dbcc3aba": {
+            "probeId": "dbcc3aba",
             "from": [],
             "to": [
               "1",
@@ -24,8 +26,8 @@
             ],
             "homeMinted": true
           },
-          "e3b62409": {
-            "probeId": "e3b62409",
+          "65ea382e": {
+            "probeId": "65ea382e",
             "from": [],
             "to": [
               "1",
@@ -66,19 +68,21 @@
       "friends": {
         "2": {
           "name": "2",
+          "balance": 0,
           "maxBalance": 10,
           "exchangeRate": 1
         },
         "3": {
           "name": "3",
+          "balance": 0,
           "maxBalance": 10,
           "exchangeRate": 1
         }
       },
       "probes": {
         "probes": {
-          "275cfff4": {
-            "probeId": "275cfff4",
+          "27538711": {
+            "probeId": "27538711",
             "from": [],
             "to": [
               "2",
@@ -86,8 +90,8 @@
             ],
             "homeMinted": true
           },
-          "2bb1c134": {
-            "probeId": "2bb1c134",
+          "6a47223c": {
+            "probeId": "6a47223c",
             "from": [],
             "to": [
               "2",
@@ -128,19 +132,21 @@
       "friends": {
         "3": {
           "name": "3",
+          "balance": 0,
           "maxBalance": 10,
           "exchangeRate": 1
         },
         "4": {
           "name": "4",
+          "balance": 0,
           "maxBalance": 10,
           "exchangeRate": 1
         }
       },
       "probes": {
         "probes": {
-          "0f7229c3": {
-            "probeId": "0f7229c3",
+          "592dea36": {
+            "probeId": "592dea36",
             "from": [],
             "to": [
               "3",
@@ -148,8 +154,8 @@
             ],
             "homeMinted": true
           },
-          "cf51c565": {
-            "probeId": "cf51c565",
+          "bd20b851": {
+            "probeId": "bd20b851",
             "from": [],
             "to": [
               "3",
@@ -190,19 +196,21 @@
       "friends": {
         "4": {
           "name": "4",
+          "balance": 0,
           "maxBalance": 10,
           "exchangeRate": 1
         },
         "5": {
           "name": "5",
+          "balance": 0,
           "maxBalance": 10,
           "exchangeRate": 1
         }
       },
       "probes": {
         "probes": {
-          "42970591": {
-            "probeId": "42970591",
+          "c8077c7c": {
+            "probeId": "c8077c7c",
             "from": [],
             "to": [
               "4",
@@ -210,8 +218,8 @@
             ],
             "homeMinted": true
           },
-          "d809864d": {
-            "probeId": "d809864d",
+          "f399041f": {
+            "probeId": "f399041f",
             "from": [],
             "to": [
               "4",
@@ -252,19 +260,21 @@
       "friends": {
         "0": {
           "name": "0",
+          "balance": 0,
           "maxBalance": 10,
           "exchangeRate": 1
         },
         "5": {
           "name": "5",
+          "balance": 0,
           "maxBalance": 10,
           "exchangeRate": 1
         }
       },
       "probes": {
         "probes": {
-          "973a7f04": {
-            "probeId": "973a7f04",
+          "bea59534": {
+            "probeId": "bea59534",
             "from": [],
             "to": [
               "5",
@@ -272,8 +282,8 @@
             ],
             "homeMinted": true
           },
-          "0a82c1fb": {
-            "probeId": "0a82c1fb",
+          "fe181bd1": {
+            "probeId": "fe181bd1",
             "from": [],
             "to": [
               "0",
@@ -314,19 +324,21 @@
       "friends": {
         "6": {
           "name": "6",
+          "balance": 0,
           "maxBalance": 10,
           "exchangeRate": 1
         },
         "7": {
           "name": "7",
+          "balance": 0,
           "maxBalance": 10,
           "exchangeRate": 1
         }
       },
       "probes": {
         "probes": {
-          "5f93a525": {
-            "probeId": "5f93a525",
+          "442f47c0": {
+            "probeId": "442f47c0",
             "from": [],
             "to": [
               "6",
@@ -334,8 +346,8 @@
             ],
             "homeMinted": true
           },
-          "68a03923": {
-            "probeId": "68a03923",
+          "1d34f749": {
+            "probeId": "1d34f749",
             "from": [],
             "to": [
               "6",
@@ -376,19 +388,21 @@
       "friends": {
         "7": {
           "name": "7",
+          "balance": 0,
           "maxBalance": 10,
           "exchangeRate": 1
         },
         "8": {
           "name": "8",
+          "balance": 0,
           "maxBalance": 10,
           "exchangeRate": 1
         }
       },
       "probes": {
         "probes": {
-          "9b6239c5": {
-            "probeId": "9b6239c5",
+          "6cdb3cd0": {
+            "probeId": "6cdb3cd0",
             "from": [],
             "to": [
               "7",
@@ -396,8 +410,8 @@
             ],
             "homeMinted": true
           },
-          "cea7e966": {
-            "probeId": "cea7e966",
+          "e1b879e8": {
+            "probeId": "e1b879e8",
             "from": [],
             "to": [
               "7",
@@ -438,19 +452,21 @@
       "friends": {
         "8": {
           "name": "8",
+          "balance": 0,
           "maxBalance": 10,
           "exchangeRate": 1
         },
         "9": {
           "name": "9",
+          "balance": 0,
           "maxBalance": 10,
           "exchangeRate": 1
         }
       },
       "probes": {
         "probes": {
-          "52c3c002": {
-            "probeId": "52c3c002",
+          "db0f095c": {
+            "probeId": "db0f095c",
             "from": [],
             "to": [
               "8",
@@ -458,8 +474,8 @@
             ],
             "homeMinted": true
           },
-          "9ec34439": {
-            "probeId": "9ec34439",
+          "24baa232": {
+            "probeId": "24baa232",
             "from": [],
             "to": [
               "8",
@@ -500,19 +516,21 @@
       "friends": {
         "0": {
           "name": "0",
+          "balance": 0,
           "maxBalance": 10,
           "exchangeRate": 1
         },
         "3": {
           "name": "3",
+          "balance": 0,
           "maxBalance": 10,
           "exchangeRate": 1
         }
       },
       "probes": {
         "probes": {
-          "8906c337": {
-            "probeId": "8906c337",
+          "92c5bafe": {
+            "probeId": "92c5bafe",
             "from": [],
             "to": [
               "0",
@@ -520,8 +538,8 @@
             ],
             "homeMinted": true
           },
-          "a14c1566": {
-            "probeId": "a14c1566",
+          "0a73a65b": {
+            "probeId": "0a73a65b",
             "from": [],
             "to": [
               "0",
@@ -562,19 +580,21 @@
       "friends": {
         "0": {
           "name": "0",
+          "balance": 0,
           "maxBalance": 10,
           "exchangeRate": 1
         },
         "1": {
           "name": "1",
+          "balance": 0,
           "maxBalance": 10,
           "exchangeRate": 1
         }
       },
       "probes": {
         "probes": {
-          "4033090f": {
-            "probeId": "4033090f",
+          "62c36ca1": {
+            "probeId": "62c36ca1",
             "from": [],
             "to": [
               "0",
@@ -582,8 +602,8 @@
             ],
             "homeMinted": true
           },
-          "36af0307": {
-            "probeId": "36af0307",
+          "2a17868d": {
+            "probeId": "2a17868d",
             "from": [],
             "to": [
               "0",
@@ -631,7 +651,7 @@
     {
       "sender": "0",
       "receiver": "1",
-      "message": "probe 6520663d",
+      "message": "probe dbcc3aba",
       "event": "sent"
     },
     {
@@ -643,7 +663,7 @@
     {
       "sender": "1",
       "receiver": "2",
-      "message": "probe 275cfff4",
+      "message": "probe 6a47223c",
       "event": "sent"
     },
     {
@@ -655,7 +675,7 @@
     {
       "sender": "2",
       "receiver": "3",
-      "message": "probe 0f7229c3",
+      "message": "probe 592dea36",
       "event": "sent"
     },
     {
@@ -667,7 +687,7 @@
     {
       "sender": "3",
       "receiver": "4",
-      "message": "probe 42970591",
+      "message": "probe c8077c7c",
       "event": "sent"
     },
     {
@@ -679,7 +699,7 @@
     {
       "sender": "4",
       "receiver": "5",
-      "message": "probe 973a7f04",
+      "message": "probe bea59534",
       "event": "sent"
     },
     {
@@ -691,7 +711,7 @@
     {
       "sender": "5",
       "receiver": "6",
-      "message": "probe 5f93a525",
+      "message": "probe 442f47c0",
       "event": "sent"
     },
     {
@@ -703,7 +723,7 @@
     {
       "sender": "6",
       "receiver": "7",
-      "message": "probe 9b6239c5",
+      "message": "probe 6cdb3cd0",
       "event": "sent"
     },
     {
@@ -715,7 +735,7 @@
     {
       "sender": "7",
       "receiver": "8",
-      "message": "probe 52c3c002",
+      "message": "probe db0f095c",
       "event": "sent"
     },
     {
@@ -727,7 +747,7 @@
     {
       "sender": "9",
       "receiver": "0",
-      "message": "probe 4033090f",
+      "message": "probe 62c36ca1",
       "event": "sent"
     },
     {
@@ -739,19 +759,19 @@
     {
       "sender": "0",
       "receiver": "2",
-      "message": "probe 6520663d",
+      "message": "probe dbcc3aba",
       "event": "sent"
     },
     {
       "sender": "0",
       "receiver": "1",
-      "message": "probe e3b62409",
+      "message": "probe 65ea382e",
       "event": "sent"
     },
     {
       "sender": "0",
       "receiver": "2",
-      "message": "probe e3b62409",
+      "message": "probe 65ea382e",
       "event": "sent"
     },
     {
@@ -763,19 +783,19 @@
     {
       "sender": "1",
       "receiver": "3",
-      "message": "probe 275cfff4",
+      "message": "probe 6a47223c",
       "event": "sent"
     },
     {
       "sender": "1",
       "receiver": "2",
-      "message": "probe 2bb1c134",
+      "message": "probe 27538711",
       "event": "sent"
     },
     {
       "sender": "1",
       "receiver": "3",
-      "message": "probe 2bb1c134",
+      "message": "probe 27538711",
       "event": "sent"
     },
     {
@@ -787,19 +807,19 @@
     {
       "sender": "2",
       "receiver": "4",
-      "message": "probe 0f7229c3",
+      "message": "probe 592dea36",
       "event": "sent"
     },
     {
       "sender": "2",
       "receiver": "3",
-      "message": "probe cf51c565",
+      "message": "probe bd20b851",
       "event": "sent"
     },
     {
       "sender": "2",
       "receiver": "4",
-      "message": "probe cf51c565",
+      "message": "probe bd20b851",
       "event": "sent"
     },
     {
@@ -811,19 +831,19 @@
     {
       "sender": "3",
       "receiver": "5",
-      "message": "probe 42970591",
+      "message": "probe c8077c7c",
       "event": "sent"
     },
     {
       "sender": "3",
       "receiver": "4",
-      "message": "probe d809864d",
+      "message": "probe f399041f",
       "event": "sent"
     },
     {
       "sender": "3",
       "receiver": "5",
-      "message": "probe d809864d",
+      "message": "probe f399041f",
       "event": "sent"
     },
     {
@@ -835,19 +855,19 @@
     {
       "sender": "5",
       "receiver": "7",
-      "message": "probe 5f93a525",
+      "message": "probe 442f47c0",
       "event": "sent"
     },
     {
       "sender": "5",
       "receiver": "6",
-      "message": "probe 68a03923",
+      "message": "probe 1d34f749",
       "event": "sent"
     },
     {
       "sender": "5",
       "receiver": "7",
-      "message": "probe 68a03923",
+      "message": "probe 1d34f749",
       "event": "sent"
     },
     {
@@ -859,19 +879,19 @@
     {
       "sender": "6",
       "receiver": "8",
-      "message": "probe 9b6239c5",
+      "message": "probe 6cdb3cd0",
       "event": "sent"
     },
     {
       "sender": "6",
       "receiver": "7",
-      "message": "probe cea7e966",
+      "message": "probe e1b879e8",
       "event": "sent"
     },
     {
       "sender": "6",
       "receiver": "8",
-      "message": "probe cea7e966",
+      "message": "probe e1b879e8",
       "event": "sent"
     },
     {
@@ -883,19 +903,19 @@
     {
       "sender": "7",
       "receiver": "9",
-      "message": "probe 52c3c002",
+      "message": "probe db0f095c",
       "event": "sent"
     },
     {
       "sender": "7",
       "receiver": "8",
-      "message": "probe 9ec34439",
+      "message": "probe 24baa232",
       "event": "sent"
     },
     {
       "sender": "7",
       "receiver": "9",
-      "message": "probe 9ec34439",
+      "message": "probe 24baa232",
       "event": "sent"
     },
     {
@@ -907,7 +927,7 @@
     {
       "sender": "8",
       "receiver": "0",
-      "message": "probe 8906c337",
+      "message": "probe 92c5bafe",
       "event": "sent"
     },
     {
@@ -919,19 +939,19 @@
     {
       "sender": "9",
       "receiver": "1",
-      "message": "probe 4033090f",
+      "message": "probe 62c36ca1",
       "event": "sent"
     },
     {
       "sender": "9",
       "receiver": "0",
-      "message": "probe 36af0307",
+      "message": "probe 2a17868d",
       "event": "sent"
     },
     {
       "sender": "9",
       "receiver": "1",
-      "message": "probe 36af0307",
+      "message": "probe 2a17868d",
       "event": "sent"
     },
     {
@@ -943,19 +963,19 @@
     {
       "sender": "8",
       "receiver": "3",
-      "message": "probe 8906c337",
+      "message": "probe 92c5bafe",
       "event": "sent"
     },
     {
       "sender": "8",
       "receiver": "0",
-      "message": "probe a14c1566",
+      "message": "probe 0a73a65b",
       "event": "sent"
     },
     {
       "sender": "8",
       "receiver": "3",
-      "message": "probe a14c1566",
+      "message": "probe 0a73a65b",
       "event": "sent"
     },
     {
@@ -967,19 +987,19 @@
     {
       "sender": "4",
       "receiver": "0",
-      "message": "probe 973a7f04",
+      "message": "probe bea59534",
       "event": "sent"
     },
     {
       "sender": "4",
       "receiver": "0",
-      "message": "probe 0a82c1fb",
+      "message": "probe fe181bd1",
       "event": "sent"
     },
     {
       "sender": "4",
       "receiver": "5",
-      "message": "probe 0a82c1fb",
+      "message": "probe fe181bd1",
       "event": "sent"
     }
   ],
@@ -992,7 +1012,7 @@
     {
       "sender": "0",
       "receiver": "1",
-      "message": "probe 6520663d"
+      "message": "probe dbcc3aba"
     },
     {
       "sender": "1",
@@ -1002,7 +1022,7 @@
     {
       "sender": "1",
       "receiver": "2",
-      "message": "probe 275cfff4"
+      "message": "probe 6a47223c"
     },
     {
       "sender": "2",
@@ -1012,7 +1032,7 @@
     {
       "sender": "2",
       "receiver": "3",
-      "message": "probe 0f7229c3"
+      "message": "probe 592dea36"
     },
     {
       "sender": "3",
@@ -1022,7 +1042,7 @@
     {
       "sender": "3",
       "receiver": "4",
-      "message": "probe 42970591"
+      "message": "probe c8077c7c"
     },
     {
       "sender": "4",
@@ -1032,7 +1052,7 @@
     {
       "sender": "4",
       "receiver": "5",
-      "message": "probe 973a7f04"
+      "message": "probe bea59534"
     },
     {
       "sender": "5",
@@ -1042,7 +1062,7 @@
     {
       "sender": "5",
       "receiver": "6",
-      "message": "probe 5f93a525"
+      "message": "probe 442f47c0"
     },
     {
       "sender": "6",
@@ -1052,7 +1072,7 @@
     {
       "sender": "6",
       "receiver": "7",
-      "message": "probe 9b6239c5"
+      "message": "probe 6cdb3cd0"
     },
     {
       "sender": "7",
@@ -1062,7 +1082,7 @@
     {
       "sender": "7",
       "receiver": "8",
-      "message": "probe 52c3c002"
+      "message": "probe db0f095c"
     },
     {
       "sender": "9",
@@ -1072,7 +1092,7 @@
     {
       "sender": "9",
       "receiver": "0",
-      "message": "probe 4033090f"
+      "message": "probe 62c36ca1"
     },
     {
       "sender": "0",
@@ -1082,17 +1102,17 @@
     {
       "sender": "0",
       "receiver": "2",
-      "message": "probe 6520663d"
+      "message": "probe dbcc3aba"
     },
     {
       "sender": "0",
       "receiver": "1",
-      "message": "probe e3b62409"
+      "message": "probe 65ea382e"
     },
     {
       "sender": "0",
       "receiver": "2",
-      "message": "probe e3b62409"
+      "message": "probe 65ea382e"
     },
     {
       "sender": "1",
@@ -1102,17 +1122,17 @@
     {
       "sender": "1",
       "receiver": "3",
-      "message": "probe 275cfff4"
+      "message": "probe 6a47223c"
     },
     {
       "sender": "1",
       "receiver": "2",
-      "message": "probe 2bb1c134"
+      "message": "probe 27538711"
     },
     {
       "sender": "1",
       "receiver": "3",
-      "message": "probe 2bb1c134"
+      "message": "probe 27538711"
     },
     {
       "sender": "2",
@@ -1122,17 +1142,17 @@
     {
       "sender": "2",
       "receiver": "4",
-      "message": "probe 0f7229c3"
+      "message": "probe 592dea36"
     },
     {
       "sender": "2",
       "receiver": "3",
-      "message": "probe cf51c565"
+      "message": "probe bd20b851"
     },
     {
       "sender": "2",
       "receiver": "4",
-      "message": "probe cf51c565"
+      "message": "probe bd20b851"
     },
     {
       "sender": "3",
@@ -1142,17 +1162,17 @@
     {
       "sender": "3",
       "receiver": "5",
-      "message": "probe 42970591"
+      "message": "probe c8077c7c"
     },
     {
       "sender": "3",
       "receiver": "4",
-      "message": "probe d809864d"
+      "message": "probe f399041f"
     },
     {
       "sender": "3",
       "receiver": "5",
-      "message": "probe d809864d"
+      "message": "probe f399041f"
     },
     {
       "sender": "5",
@@ -1162,17 +1182,17 @@
     {
       "sender": "5",
       "receiver": "7",
-      "message": "probe 5f93a525"
+      "message": "probe 442f47c0"
     },
     {
       "sender": "5",
       "receiver": "6",
-      "message": "probe 68a03923"
+      "message": "probe 1d34f749"
     },
     {
       "sender": "5",
       "receiver": "7",
-      "message": "probe 68a03923"
+      "message": "probe 1d34f749"
     },
     {
       "sender": "6",
@@ -1182,17 +1202,17 @@
     {
       "sender": "6",
       "receiver": "8",
-      "message": "probe 9b6239c5"
+      "message": "probe 6cdb3cd0"
     },
     {
       "sender": "6",
       "receiver": "7",
-      "message": "probe cea7e966"
+      "message": "probe e1b879e8"
     },
     {
       "sender": "6",
       "receiver": "8",
-      "message": "probe cea7e966"
+      "message": "probe e1b879e8"
     },
     {
       "sender": "7",
@@ -1202,17 +1222,17 @@
     {
       "sender": "7",
       "receiver": "9",
-      "message": "probe 52c3c002"
+      "message": "probe db0f095c"
     },
     {
       "sender": "7",
       "receiver": "8",
-      "message": "probe 9ec34439"
+      "message": "probe 24baa232"
     },
     {
       "sender": "7",
       "receiver": "9",
-      "message": "probe 9ec34439"
+      "message": "probe 24baa232"
     },
     {
       "sender": "8",
@@ -1222,7 +1242,7 @@
     {
       "sender": "8",
       "receiver": "0",
-      "message": "probe 8906c337"
+      "message": "probe 92c5bafe"
     },
     {
       "sender": "9",
@@ -1232,17 +1252,17 @@
     {
       "sender": "9",
       "receiver": "1",
-      "message": "probe 4033090f"
+      "message": "probe 62c36ca1"
     },
     {
       "sender": "9",
       "receiver": "0",
-      "message": "probe 36af0307"
+      "message": "probe 2a17868d"
     },
     {
       "sender": "9",
       "receiver": "1",
-      "message": "probe 36af0307"
+      "message": "probe 2a17868d"
     },
     {
       "sender": "8",
@@ -1252,17 +1272,17 @@
     {
       "sender": "8",
       "receiver": "3",
-      "message": "probe 8906c337"
+      "message": "probe 92c5bafe"
     },
     {
       "sender": "8",
       "receiver": "0",
-      "message": "probe a14c1566"
+      "message": "probe 0a73a65b"
     },
     {
       "sender": "8",
       "receiver": "3",
-      "message": "probe a14c1566"
+      "message": "probe 0a73a65b"
     },
     {
       "sender": "4",
@@ -1272,17 +1292,17 @@
     {
       "sender": "4",
       "receiver": "0",
-      "message": "probe 973a7f04"
+      "message": "probe bea59534"
     },
     {
       "sender": "4",
       "receiver": "0",
-      "message": "probe 0a82c1fb"
+      "message": "probe fe181bd1"
     },
     {
       "sender": "4",
       "receiver": "5",
-      "message": "probe 0a82c1fb"
+      "message": "probe fe181bd1"
     }
   ]
 }

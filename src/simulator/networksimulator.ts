@@ -39,6 +39,7 @@ export class NetworkSimulator {
     // no-op
   }
   getBalances(agent: string): { [name: string]: number } {
+    this.ensureNode(agent);
     return (this.nodes[agent] as Saiga).getBalances();
   }
   toSnapshot(): { [index: string]: object } {

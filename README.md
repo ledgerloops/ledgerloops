@@ -54,6 +54,7 @@ The commands `init` and `sim` are deprecated.
 ## Running
 ### Using npx
 ```
+npx ledgerloops new
 npx ledgerloops set-trust alice bob 10 XCH
 npx ledgerloops set-trust bob charlie 10 XCH
 npx ledgerloops set-trust charlie alice 10 XCH

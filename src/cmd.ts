@@ -27,6 +27,11 @@ export function after(networkSimulator: BatchedNetworkSimulator): void {
   writeFileSync(FILE, JSON.stringify(networkSimulator.toSnapshot(), null, 2) + '\n');
 }
 
+export function newSim() {
+  const networkSimulator = new BatchedNetworkSimulator();
+  after(networkSimulator);
+}
+
 export function setTrust(from: string, to: string, amount: number, unit: string) {
   if (unit !== 'XCH') {
     throw new Error("Only XCH units supported");
@@ -47,4 +52,5 @@ export function setBalance(from: string, to: string, amount: number, unit: strin
 export function getBalances(agent: string) {
   const networkSimulator = before();
   console.log(networkSimulator.getBalances(agent));
+  after(networkSimulator);
 }
