@@ -21,7 +21,7 @@ export class Saiga extends EventEmitter implements NetworkNode {
     this.probesEngine = this.connectProbesEngine();
     this.tracesEngine = this.connectTracesEngine(this.probesEngine);
     this.loopsEngine = this.connectLoopsEngine(this.tracesEngine);
-    this.loopsEngine.setProfit(0.01);
+    this.loopsEngine.setProfit(0);
   }
   toSnapshot() {
     return {
@@ -167,7 +167,7 @@ export class Saiga extends EventEmitter implements NetworkNode {
       case `set-balance`: return void this.friendsEngine.setBalance(sender, parseFloat(message.split(' ')[1]));
     }
   }
-  meet(other: string, createProbe: boolean = true, maxBalance: number = 10.0): void {
+  meet(other: string, createProbe: boolean = true, maxBalance: number = 0.0): void {
     const newFriendship = this.friendsEngine.addFriend(other, maxBalance);
     if (!newFriendship) {
       return;

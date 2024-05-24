@@ -22,7 +22,7 @@ export class GiraffeLoopsEngine extends EventEmitter {
     super();
     this.loops = [];
     this.lifts = {};
-    this.profit = 0.01;
+    this.profit = 0;
   }
   toSnapshot(): { loops: string[], lifts: { [hash: string]: { loop: string, legId: string, secret?: string, incomingAmount?: number, outgoingAmount: number } }, profit: number } {
     return {
