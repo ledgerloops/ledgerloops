@@ -28,8 +28,8 @@ export function after(networkSimulator: BatchedNetworkSimulator): void {
 }
 
 export function setTrust(from: string, to: string, amount: number, unit: string) {
-  if (unit !== 'CHIP') {
-    throw new Error("Only CHIP units supported");
+  if (unit !== 'XCH') {
+    throw new Error("Only XCH units supported");
   }
   const networkSimulator = before();
   networkSimulator.setTrust(from, to, amount);
@@ -37,8 +37,8 @@ export function setTrust(from: string, to: string, amount: number, unit: string)
 }
 export function setBalance(from: string, to: string, amount: number, unit: string) {
   const networkSimulator = before();
-  if (unit !== 'CHIP') {
-    throw new Error("Only CHIP units supported");
+  if (unit !== 'XCH') {
+    throw new Error("Only XCH units supported");
   }
   networkSimulator.setBalance(from, to, amount);
   after(networkSimulator);
