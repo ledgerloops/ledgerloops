@@ -1,0 +1,23 @@
+{
+  "name": "synthetic-zero-benchmark-44",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "python3 with_lock.py node build.mjs",
+    "bench": "sh run-all.sh",
+    "summarize": "python3 summarize.py",
+    "verify": "python3 verify_results.py"
+  },
+  "dependencies": {
+    "@rocicorp/zero": "1.11.3",
+    "playwright": "1.64.1",
+    "esbuild": "0.28.2",
+    "pg": "8.23.1",
+    "jose": "5.10.0",
+    "@rocicorp/zero-sqlite3": "1.1.7"
+  },
+  "engines": {
+    "node": "24.22.1"
+  }
+}
