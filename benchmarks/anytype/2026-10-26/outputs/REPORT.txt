@@ -1,0 +1,90 @@
+Any-sync synthetic sync benchmark — issue 46
+https://github.com/ledgerloops/ledgerloops/issues/46
+
+Measured: native any-sync LocalOnly object trees over authenticated loopback
+yamux/DRPC, with native any-store persistence. Both peers run in one process.
+This measures the underlying protocol and adapter, not the Anytype application.
+
+All 3 models completed 3 warmups + 10 measured transfers: 39 fresh receivers.
+Full fixture and update hashes passed every initial and final reopen check.
+Independent Python verification confirmed all values, not just record counts.
+Original fixture: 132 records / 415,448 bytes / expected manifest SHA-256.
+
+Initial sync (10 measured samples per model; time in ms, sizes in bytes)
+Model                  Read p50  Flush p50  Flush p95/max  Protobuf rx  Transport rx
+record_trees             133.728    133.751        151.061      602,656       611,290
+collection_blocks         21.779     21.798         27.971      484,960       485,256
+opaque_collections        12.417     12.443         14.462      418,249       418,532
+
+Nearest-rank p95 is the maximum at n=10. Readable p95/max: 151.046, 27.946,
+14.440 ms respectively. Sender preparation, receiver initialization/reopen,
+app/network setup and authentication are excluded; their raw times are saved.
+Timer starts before the first remote tree request. Read completion includes
+full reconstruction/equality. Flush completion waits for native FSYNC ack.
+
+Incremental changes (medians; time includes full reconstruction)
+Model                  Field       Read ms  Flush ms  Protobuf rx  Transport rx
+record_trees            issue.title    5.704     5.745        4,678         4,794
+record_trees            note.body      4.895     4.910        1,534         1,638
+collection_blocks       issue.title    4.778     4.809        4,675         4,791
+collection_blocks       note.body      4.890     4.905        1,531         1,635
+opaque_collections      issue.title    7.438     7.823       84,288        84,423
+opaque_collections      note.body     16.008    17.409      330,790       330,996
+
+Only issue-000.title changes, then only note-000.body. JSON-encoded old/new
+value sizes are 56/31 and 2,530/29 bytes. Record models replace one record;
+opaque models replace one collection. Opaque notes incur about 216 times
+the protobuf update bytes here, despite their smaller initial transfer.
+
+Data storage after flush/close (median bytes; no compaction)
+Model                  Receiver empty  Receiver total  Net growth  Sender initial  Sender/receiver updated
+record_trees                    94,208       1,273,856   1,179,648       1,273,856                1,282,048
+collection_blocks               94,208         704,512     610,304         704,512                  712,704
+opaque_collections              94,208         516,096     421,888         516,096                  929,792
+
+Allocated bytes equal apparent bytes for these medians; both are in the raw
+results. Native history, indexes and surviving metadata/WAL files count.
+Native stats: 4 collections, 5 indexes. External service storage is zero for
+this direct-peer topology only; official network service storage is unmeasured.
+
+Modeling: record_trees uses 132 trees, one record operation each.
+collection_blocks uses 2 trees with 21/111 record operations; these are adapter
+operations, not Anytype blocks. opaque_collections uses 2 whole-array payloads.
+JSON serialization preserves every source field, nested value, null and order.
+Native Anytype properties, application indexes, discovery, concurrent editing
+and the full server topology are outside the measured scope. Space header,
+ACL/settings and tree IDs are bootstrapped before timing. Synthetic keys are
+retained in memory across DB reopen. ACLs use official LocalOnly full author
+validation, without consensus acceptor signatures. Both peer identities are
+authenticated; CID, signature, encryption and ACL rejection checks pass.
+
+Flush acknowledgement follows the native SDK: FULL/EXTRA SQLite commits
+already synchronize; otherwise its FSYNC API temporarily commits under FULL.
+Reopen checks do not prove power-loss durability or macOS F_FULLFSYNC behavior.
+Wire counters include protobuf envelopes and native yamux/DRPC transport
+framing; they exclude TCP/IP/Ethernet headers, retransmissions and handshake.
+Default RPC compression is off; no compressed-wire estimate is substituted.
+
+Anytype application and official service-stack variants remain unmeasured.
+The Docker daemon socket is absent. Existing services were not restarted.
+These native results must not be labeled as full Anytype performance.
+
+Measured UTC: 2026-10-26T06:52:35.996004+00:00 to 2026-10-26T06:52:44.088915+00:00
+Apple M1 Pro / 10 logical CPUs / 16 GiB RAM / GOMAXPROCS=4; macOS 26.6.2,
+Darwin 25.6.0 arm64; Go 1.26.10; APFS. About 4.9 GiB free at start.
+any-sync 9c00aeeb97370712af8e99bde4a81c586651e903; any-store v1.0.3.
+Six workers shared the host; heavy jobs used the atomic directory lock and
+yielded priority to Atomic Model H. Background load, thermal/cache effects,
+fixed model order and shared process/runtime limit cross-engine comparisons.
+Documents preflight/build reads stalled; successful build/runtime files were
+moved to isolated /private/tmp directories. Exact paths are in environment.json.
+
+Run from the task root:
+  python3 outputs/with_lock.py --timeout 600 -- python3 outputs/build_and_run.py
+Existing results are protected; rename/archive results.jsonl before a rerun.
+RUNNING.txt documents setup, boundaries, source links and limitations.
+results.jsonl / summary.json / verification.json contain the evidence.
+harness/main.go + scripts + go.mod/go.sum + pins.json reproduce the adapter.
+source-review.json links pinned primary source; build-provenance.json records
+actual build hashes; coordination.jsonl records lock ownership and release.
+Only synthetic data/identities were used. No upstream changes were published.

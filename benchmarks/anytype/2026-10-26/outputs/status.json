@@ -1,0 +1,19 @@
+{
+  "issue": "https://github.com/ledgerloops/ledgerloops/issues/46",
+  "status": "native_protocol_subset_measured",
+  "layer": "any-sync LocalOnly object trees; adapter orchestration over native RPCs; not Anytype application",
+  "warmups_per_model": 3,
+  "measurements_per_model": 10,
+  "models": [
+    "record_trees",
+    "collection_blocks",
+    "opaque_collections"
+  ],
+  "verification": "verification.json",
+  "application_objects": "unmeasured",
+  "official_service_stack": "unmeasured; Docker daemon socket unavailable",
+  "official_service_storage_bytes": null,
+  "native_service_storage_bytes": 0,
+  "reopen_scope": "native DB close/open in same process, retained synthetic keys; not power-loss test",
+  "artifacts": "REPORT.txt; RUNNING.txt; results.jsonl; summary.json; harness/main.go; scripts"
+}

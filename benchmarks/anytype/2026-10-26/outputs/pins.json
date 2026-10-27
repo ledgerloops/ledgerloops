@@ -1,0 +1,24 @@
+{
+  "any_sync": {
+    "url": "https://github.com/anyproto/any-sync",
+    "commit": "9c00aeeb97370712af8e99bde4a81c586651e903"
+  },
+  "anytype_heart_review_only": {
+    "url": "https://github.com/anyproto/anytype-heart",
+    "commit": "92f654aa8eefd1abcca4166025c4d782275fb853"
+  },
+  "dockercompose_review_only": {
+    "url": "https://github.com/anyproto/any-sync-dockercompose",
+    "commit": "960805aab318d45854f4cbd735fb28059d835573"
+  },
+  "any_store": "v1.0.3",
+  "go_sqlite": "v1.4.2-any",
+  "toolchain": {
+    "version": "go1.26.10",
+    "os": "darwin",
+    "arch": "arm64",
+    "url": "https://go.dev/dl/go1.26.10.darwin-arm64.tar.gz",
+    "sha256": "0b5183492292ada170f9b561a834863808dd02edba599e4ad0e89899330020b3"
+  },
+  "go_modules": "harness/go.mod + harness/go.sum; any-sync local replace is checked against pinned commit by setup.py"
+}

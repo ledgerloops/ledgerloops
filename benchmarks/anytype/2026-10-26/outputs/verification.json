@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "transfers": 39,
+  "measured": 30,
+  "warmups": 9,
+  "initial_reopens_verified": 39,
+  "updated_reopens_verified": 39,
+  "initial_sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+  "issue_title_update_sha256": "d5709bc6a6dada3723449a571c796c20d7898e1b12c063eb3c82e25f6cdcf4d1",
+  "note_body_update_sha256": "5c89a75e96746052c149fdc59397fd901281133c1534cec568749e233b99748c",
+  "checks": "Python-generated expected fixture hashes matched every Go initial/update/reopen result; checked run counts, wire sizes, monotonic persistence completion, security assertions and disk arithmetic"
+}
