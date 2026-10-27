@@ -1,0 +1,14 @@
+{
+  "name": "powersync-synthetic-benchmark",
+  "private": true,
+  "type": "module",
+  "engines": {"node": "24.22.1"},
+  "scripts": {"benchmark": "node run.mjs"},
+  "dependencies": {
+    "@powersync/service-image": "1.27.2",
+    "@powersync/node": "1.2.0",
+    "better-sqlite3": "13.0.3",
+    "pg": "8.23.1",
+    "jose": "6.2.13"
+  }
+}

@@ -1,0 +1,715 @@
+{
+  "runId": "2026-10-27T08-43-34-519Z",
+  "p95_method": "nearest rank; n=10 means p95 equals maximum; not an estimate of population tails",
+  "models": {
+    "typed": {
+      "measured_n": 10,
+      "warmup_n": 3,
+      "durableMs": null,
+      "timingsMs": {
+        "observableMs": {
+          "n": 10,
+          "p50": 25.89350000000013,
+          "p95_nearest_rank": 83.0861670000013,
+          "max": 83.0861670000013,
+          "min": 22.313999999998487
+        },
+        "checkpointAppliedMs": {
+          "n": 10,
+          "p50": 21.184457999999722,
+          "p95_nearest_rank": 77.76158400000168,
+          "max": 77.76158400000168,
+          "min": 17.85216600000058
+        },
+        "connectionAuthenticationEmptyCheckpointMs": {
+          "n": 10,
+          "p50": 18.124374500000158,
+          "p95_nearest_rank": 25.2879580000008,
+          "max": 25.2879580000008,
+          "min": 17.00616599999921
+        }
+      },
+      "receivedBytes": {
+        "tcpReceivedBytes": {
+          "n": 10,
+          "p50": 121671.0,
+          "p95_nearest_rank": 121671,
+          "max": 121671,
+          "min": 121671
+        },
+        "websocketPayloadBytes": {
+          "n": 10,
+          "p50": 121137.0,
+          "p95_nearest_rank": 121137,
+          "max": 121137,
+          "min": 121137
+        },
+        "decodedWebsocketPayloadBytes": {
+          "n": 10,
+          "p50": 448281.0,
+          "p95_nearest_rank": 448281,
+          "max": 448281,
+          "min": 448281
+        },
+        "rsocketPayloadDataBytes": {
+          "n": 10,
+          "p50": 448263.0,
+          "p95_nearest_rank": 448263,
+          "max": 448263,
+          "min": 448263
+        },
+        "compressedFrames": {
+          "n": 10,
+          "p50": 3.0,
+          "p95_nearest_rank": 3,
+          "max": 3,
+          "min": 3
+        }
+      },
+      "storageBytes": {
+        "apparent": {
+          "baseline": {
+            "n": 10,
+            "p50": 156376.0,
+            "p95_nearest_rank": 156376,
+            "max": 156376,
+            "min": 156376
+          },
+          "total": {
+            "n": 10,
+            "p50": 1429456.0,
+            "p95_nearest_rank": 1433576,
+            "max": 1433576,
+            "min": 1429456
+          },
+          "net": {
+            "n": 10,
+            "p50": 1273080.0,
+            "p95_nearest_rank": 1277200,
+            "max": 1277200,
+            "min": 1273080
+          }
+        },
+        "allocated": {
+          "baseline": {
+            "n": 10,
+            "p50": 159744.0,
+            "p95_nearest_rank": 159744,
+            "max": 159744,
+            "min": 159744
+          },
+          "total": {
+            "n": 10,
+            "p50": 1429504.0,
+            "p95_nearest_rank": 1433600,
+            "max": 1433600,
+            "min": 1429504
+          },
+          "net": {
+            "n": 10,
+            "p50": 1269760.0,
+            "p95_nearest_rank": 1273856,
+            "max": 1273856,
+            "min": 1269760
+          }
+        }
+      },
+      "incremental": {
+        "title": {
+          "observableMs": {
+            "n": 10,
+            "p50": 18.790728999999374,
+            "p95_nearest_rank": 41.74837500000103,
+            "max": 41.74837500000103,
+            "min": 16.08704200000102
+          },
+          "checkpointAppliedMs": {
+            "n": 10,
+            "p50": 22.382791999999426,
+            "p95_nearest_rank": 151.3026659999996,
+            "max": 151.3026659999996,
+            "min": 11.814792000001034
+          },
+          "sourceCommitMs": {
+            "n": 10,
+            "p50": 0.8008335000004081,
+            "p95_nearest_rank": 5.924415999999837,
+            "max": 5.924415999999837,
+            "min": 0.6214170000002923
+          },
+          "sourceDeltaUtf8Bytes": {
+            "n": 10,
+            "p50": 19.0,
+            "p95_nearest_rank": 19,
+            "max": 19,
+            "min": 19
+          },
+          "receivedBytes": {
+            "tcpReceivedBytes": {
+              "n": 10,
+              "p50": 1824.5,
+              "p95_nearest_rank": 1940,
+              "max": 1940,
+              "min": 1752
+            },
+            "websocketPayloadBytes": {
+              "n": 10,
+              "p50": 1526.0,
+              "p95_nearest_rank": 1639,
+              "max": 1639,
+              "min": 1457
+            },
+            "decodedWebsocketPayloadBytes": {
+              "n": 10,
+              "p50": 4636.5,
+              "p95_nearest_rank": 4662,
+              "max": 4662,
+              "min": 4482
+            },
+            "rsocketPayloadDataBytes": {
+              "n": 10,
+              "p50": 4606.5,
+              "p95_nearest_rank": 4632,
+              "max": 4632,
+              "min": 4464
+            }
+          }
+        },
+        "body": {
+          "observableMs": {
+            "n": 10,
+            "p50": 18.642750000000888,
+            "p95_nearest_rank": 33.018833000000086,
+            "max": 33.018833000000086,
+            "min": 13.625167000000147
+          },
+          "checkpointAppliedMs": {
+            "n": 10,
+            "p50": 149.66922949999935,
+            "p95_nearest_rank": 189.78637499999968,
+            "max": 189.78637499999968,
+            "min": 10.849082999999155
+          },
+          "sourceCommitMs": {
+            "n": 10,
+            "p50": 0.6557289999991553,
+            "p95_nearest_rank": 1.169583999999304,
+            "max": 1.169583999999304,
+            "min": 0.5301669999989826
+          },
+          "sourceDeltaUtf8Bytes": {
+            "n": 10,
+            "p50": 19.0,
+            "p95_nearest_rank": 19,
+            "max": 19,
+            "min": 19
+          },
+          "receivedBytes": {
+            "tcpReceivedBytes": {
+              "n": 10,
+              "p50": 1655.0,
+              "p95_nearest_rank": 1663,
+              "max": 1663,
+              "min": 1615
+            },
+            "websocketPayloadBytes": {
+              "n": 10,
+              "p50": 1356.0,
+              "p95_nearest_rank": 1362,
+              "max": 1362,
+              "min": 1321
+            },
+            "decodedWebsocketPayloadBytes": {
+              "n": 10,
+              "p50": 3939.0,
+              "p95_nearest_rank": 3964,
+              "max": 3964,
+              "min": 3784
+            },
+            "rsocketPayloadDataBytes": {
+              "n": 10,
+              "p50": 3909.0,
+              "p95_nearest_rank": 3934,
+              "max": 3934,
+              "min": 3766
+            }
+          }
+        }
+      },
+      "all_reopen_verified": true
+    },
+    "record_json": {
+      "measured_n": 10,
+      "warmup_n": 3,
+      "durableMs": null,
+      "timingsMs": {
+        "observableMs": {
+          "n": 10,
+          "p50": 21.129437499999767,
+          "p95_nearest_rank": 30.57758300000205,
+          "max": 30.57758300000205,
+          "min": 19.5959580000017
+        },
+        "checkpointAppliedMs": {
+          "n": 10,
+          "p50": 17.801853999999366,
+          "p95_nearest_rank": 22.39875000000029,
+          "max": 22.39875000000029,
+          "min": 16.61316600000282
+        },
+        "connectionAuthenticationEmptyCheckpointMs": {
+          "n": 10,
+          "p50": 17.71014600000126,
+          "p95_nearest_rank": 19.7354579999992,
+          "max": 19.7354579999992,
+          "min": 17.109874999998283
+        }
+      },
+      "receivedBytes": {
+        "tcpReceivedBytes": {
+          "n": 10,
+          "p50": 122045.0,
+          "p95_nearest_rank": 122045,
+          "max": 122045,
+          "min": 122045
+        },
+        "websocketPayloadBytes": {
+          "n": 10,
+          "p50": 121511.0,
+          "p95_nearest_rank": 121511,
+          "max": 121511,
+          "min": 121511
+        },
+        "decodedWebsocketPayloadBytes": {
+          "n": 10,
+          "p50": 456101.0,
+          "p95_nearest_rank": 456101,
+          "max": 456101,
+          "min": 456101
+        },
+        "rsocketPayloadDataBytes": {
+          "n": 10,
+          "p50": 456083.0,
+          "p95_nearest_rank": 456083,
+          "max": 456083,
+          "min": 456083
+        },
+        "compressedFrames": {
+          "n": 10,
+          "p50": 3.0,
+          "p95_nearest_rank": 3,
+          "max": 3,
+          "min": 3
+        }
+      },
+      "storageBytes": {
+        "apparent": {
+          "baseline": {
+            "n": 10,
+            "p50": 148136.0,
+            "p95_nearest_rank": 148136,
+            "max": 148136,
+            "min": 148136
+          },
+          "total": {
+            "n": 10,
+            "p50": 1423276.0,
+            "p95_nearest_rank": 1425336,
+            "max": 1425336,
+            "min": 1421216
+          },
+          "net": {
+            "n": 10,
+            "p50": 1275140.0,
+            "p95_nearest_rank": 1277200,
+            "max": 1277200,
+            "min": 1273080
+          }
+        },
+        "allocated": {
+          "baseline": {
+            "n": 10,
+            "p50": 151552.0,
+            "p95_nearest_rank": 151552,
+            "max": 151552,
+            "min": 151552
+          },
+          "total": {
+            "n": 10,
+            "p50": 1423360.0,
+            "p95_nearest_rank": 1425408,
+            "max": 1425408,
+            "min": 1421312
+          },
+          "net": {
+            "n": 10,
+            "p50": 1271808.0,
+            "p95_nearest_rank": 1273856,
+            "max": 1273856,
+            "min": 1269760
+          }
+        }
+      },
+      "incremental": {
+        "title": {
+          "observableMs": {
+            "n": 10,
+            "p50": 15.375999499998215,
+            "p95_nearest_rank": 35.0323750000025,
+            "max": 35.0323750000025,
+            "min": 13.392291000000114
+          },
+          "checkpointAppliedMs": {
+            "n": 10,
+            "p50": 23.72289599999931,
+            "p95_nearest_rank": 180.36016599999857,
+            "max": 180.36016599999857,
+            "min": 15.865958000002138
+          },
+          "sourceCommitMs": {
+            "n": 10,
+            "p50": 0.6981249999989814,
+            "p95_nearest_rank": 1.879624999997759,
+            "max": 1.879624999997759,
+            "min": 0.4937080000017886
+          },
+          "sourceDeltaUtf8Bytes": {
+            "n": 10,
+            "p50": 19.0,
+            "p95_nearest_rank": 19,
+            "max": 19,
+            "min": 19
+          },
+          "receivedBytes": {
+            "tcpReceivedBytes": {
+              "n": 10,
+              "p50": 1834.0,
+              "p95_nearest_rank": 1929,
+              "max": 1929,
+              "min": 1793
+            },
+            "websocketPayloadBytes": {
+              "n": 10,
+              "p50": 1537.0,
+              "p95_nearest_rank": 1630,
+              "max": 1630,
+              "min": 1495
+            },
+            "decodedWebsocketPayloadBytes": {
+              "n": 10,
+              "p50": 4695.0,
+              "p95_nearest_rank": 4720,
+              "max": 4720,
+              "min": 4540
+            },
+            "rsocketPayloadDataBytes": {
+              "n": 10,
+              "p50": 4665.0,
+              "p95_nearest_rank": 4690,
+              "max": 4690,
+              "min": 4522
+            }
+          }
+        },
+        "body": {
+          "observableMs": {
+            "n": 10,
+            "p50": 15.784020499999315,
+            "p95_nearest_rank": 32.380583999998635,
+            "max": 32.380583999998635,
+            "min": 13.917292000001908
+          },
+          "checkpointAppliedMs": {
+            "n": 10,
+            "p50": 195.14147950000006,
+            "p95_nearest_rank": 215.5215410000019,
+            "max": 215.5215410000019,
+            "min": 29.78162499999962
+          },
+          "sourceCommitMs": {
+            "n": 10,
+            "p50": 0.7565000000013242,
+            "p95_nearest_rank": 2.0186670000002778,
+            "max": 2.0186670000002778,
+            "min": 0.5443339999983436
+          },
+          "sourceDeltaUtf8Bytes": {
+            "n": 10,
+            "p50": 19.0,
+            "p95_nearest_rank": 19,
+            "max": 19,
+            "min": 19
+          },
+          "receivedBytes": {
+            "tcpReceivedBytes": {
+              "n": 10,
+              "p50": 1672.0,
+              "p95_nearest_rank": 1693,
+              "max": 1693,
+              "min": 1641
+            },
+            "websocketPayloadBytes": {
+              "n": 10,
+              "p50": 1371.5,
+              "p95_nearest_rank": 1394,
+              "max": 1394,
+              "min": 1345
+            },
+            "decodedWebsocketPayloadBytes": {
+              "n": 10,
+              "p50": 3988.0,
+              "p95_nearest_rank": 4013,
+              "max": 4013,
+              "min": 3833
+            },
+            "rsocketPayloadDataBytes": {
+              "n": 10,
+              "p50": 3958.0,
+              "p95_nearest_rank": 3983,
+              "max": 3983,
+              "min": 3815
+            }
+          }
+        }
+      },
+      "all_reopen_verified": true
+    },
+    "collection_json": {
+      "measured_n": 10,
+      "warmup_n": 3,
+      "durableMs": null,
+      "timingsMs": {
+        "observableMs": {
+          "n": 10,
+          "p50": 18.213041499999235,
+          "p95_nearest_rank": 23.98670900000434,
+          "max": 23.98670900000434,
+          "min": 16.831916999995883
+        },
+        "checkpointAppliedMs": {
+          "n": 10,
+          "p50": 14.188270499998907,
+          "p95_nearest_rank": 17.088000000003376,
+          "max": 17.088000000003376,
+          "min": 13.33312499999738
+        },
+        "connectionAuthenticationEmptyCheckpointMs": {
+          "n": 10,
+          "p50": 17.230062500002532,
+          "p95_nearest_rank": 25.25354199999856,
+          "max": 25.25354199999856,
+          "min": 15.951208000002225
+        }
+      },
+      "receivedBytes": {
+        "tcpReceivedBytes": {
+          "n": 10,
+          "p50": 107381.0,
+          "p95_nearest_rank": 107381,
+          "max": 107381,
+          "min": 107381
+        },
+        "websocketPayloadBytes": {
+          "n": 10,
+          "p50": 106847.0,
+          "p95_nearest_rank": 106847,
+          "max": 106847,
+          "min": 106847
+        },
+        "decodedWebsocketPayloadBytes": {
+          "n": 10,
+          "p50": 427250.0,
+          "p95_nearest_rank": 427250,
+          "max": 427250,
+          "min": 427250
+        },
+        "rsocketPayloadDataBytes": {
+          "n": 10,
+          "p50": 427232.0,
+          "p95_nearest_rank": 427232,
+          "max": 427232,
+          "min": 427232
+        },
+        "compressedFrames": {
+          "n": 10,
+          "p50": 3.0,
+          "p95_nearest_rank": 3,
+          "max": 3,
+          "min": 3
+        }
+      },
+      "storageBytes": {
+        "apparent": {
+          "baseline": {
+            "n": 10,
+            "p50": 139896.0,
+            "p95_nearest_rank": 139896,
+            "max": 139896,
+            "min": 139896
+          },
+          "total": {
+            "n": 10,
+            "p50": 1116336.0,
+            "p95_nearest_rank": 1120456,
+            "max": 1120456,
+            "min": 1116336
+          },
+          "net": {
+            "n": 10,
+            "p50": 976440.0,
+            "p95_nearest_rank": 980560,
+            "max": 980560,
+            "min": 976440
+          }
+        },
+        "allocated": {
+          "baseline": {
+            "n": 10,
+            "p50": 143360.0,
+            "p95_nearest_rank": 143360,
+            "max": 143360,
+            "min": 143360
+          },
+          "total": {
+            "n": 10,
+            "p50": 1118208.0,
+            "p95_nearest_rank": 1122304,
+            "max": 1122304,
+            "min": 1118208
+          },
+          "net": {
+            "n": 10,
+            "p50": 974848.0,
+            "p95_nearest_rank": 978944,
+            "max": 978944,
+            "min": 974848
+          }
+        }
+      },
+      "incremental": {
+        "title": {
+          "observableMs": {
+            "n": 10,
+            "p50": 24.180999999996857,
+            "p95_nearest_rank": 28.796834000000672,
+            "max": 28.796834000000672,
+            "min": 16.612458000003244
+          },
+          "checkpointAppliedMs": {
+            "n": 10,
+            "p50": 25.43079149999903,
+            "p95_nearest_rank": 97.55304099999921,
+            "max": 97.55304099999921,
+            "min": 20.232499999998254
+          },
+          "sourceCommitMs": {
+            "n": 10,
+            "p50": 3.472437500000524,
+            "p95_nearest_rank": 3.8901669999977457,
+            "max": 3.8901669999977457,
+            "min": 2.6687499999970896
+          },
+          "sourceDeltaUtf8Bytes": {
+            "n": 10,
+            "p50": 19.0,
+            "p95_nearest_rank": 19,
+            "max": 19,
+            "min": 19
+          },
+          "receivedBytes": {
+            "tcpReceivedBytes": {
+              "n": 10,
+              "p50": 23879.0,
+              "p95_nearest_rank": 23899,
+              "max": 23899,
+              "min": 23812
+            },
+            "websocketPayloadBytes": {
+              "n": 10,
+              "p50": 23580.0,
+              "p95_nearest_rank": 23598,
+              "max": 23598,
+              "min": 23517
+            },
+            "decodedWebsocketPayloadBytes": {
+              "n": 10,
+              "p50": 87190.0,
+              "p95_nearest_rank": 87215,
+              "max": 87215,
+              "min": 87031
+            },
+            "rsocketPayloadDataBytes": {
+              "n": 10,
+              "p50": 87160.0,
+              "p95_nearest_rank": 87185,
+              "max": 87185,
+              "min": 87013
+            }
+          }
+        },
+        "body": {
+          "observableMs": {
+            "n": 10,
+            "p50": 35.530791500001214,
+            "p95_nearest_rank": 47.88950000000477,
+            "max": 47.88950000000477,
+            "min": 31.39179200000217
+          },
+          "checkpointAppliedMs": {
+            "n": 10,
+            "p50": 31.816062499998225,
+            "p95_nearest_rank": 38.86670800000138,
+            "max": 38.86670800000138,
+            "min": 28.686667000001762
+          },
+          "sourceCommitMs": {
+            "n": 10,
+            "p50": 6.404603999999381,
+            "p95_nearest_rank": 10.342416999999841,
+            "max": 10.342416999999841,
+            "min": 5.8339580000028946
+          },
+          "sourceDeltaUtf8Bytes": {
+            "n": 10,
+            "p50": 19.0,
+            "p95_nearest_rank": 19,
+            "max": 19,
+            "min": 19
+          },
+          "receivedBytes": {
+            "tcpReceivedBytes": {
+              "n": 10,
+              "p50": 83851.0,
+              "p95_nearest_rank": 83888,
+              "max": 83888,
+              "min": 83847
+            },
+            "websocketPayloadBytes": {
+              "n": 10,
+              "p50": 83550.0,
+              "p95_nearest_rank": 83585,
+              "max": 83585,
+              "min": 83546
+            },
+            "decodedWebsocketPayloadBytes": {
+              "n": 10,
+              "p50": 341009.0,
+              "p95_nearest_rank": 341009,
+              "max": 341009,
+              "min": 341002
+            },
+            "rsocketPayloadDataBytes": {
+              "n": 10,
+              "p50": 340991.0,
+              "p95_nearest_rank": 340991,
+              "max": 340991,
+              "min": 340984
+            }
+          }
+        }
+      },
+      "all_reopen_verified": true
+    }
+  },
+  "failures": []
+}

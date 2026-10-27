@@ -1,0 +1,8 @@
+config:
+  edition: 3
+streams:
+  benchmark:
+    auto_subscribe: false
+    queries:
+      - SELECT * FROM "issues" WHERE auth.user_id() = 'synthetic-benchmark-user'
+      - SELECT * FROM "notes" WHERE auth.user_id() = 'synthetic-benchmark-user'

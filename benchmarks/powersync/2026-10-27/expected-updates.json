@@ -1,0 +1,20 @@
+[
+  {
+    "table": "issues",
+    "id": "issue-000",
+    "field": "title",
+    "changed_value_utf8_bytes": 73,
+    "value_delta_utf8_bytes": 19,
+    "fixture_sha256_after_this_update": "cdf1330f051862d7a06192e38c7dce8aceecd921ad854d647e8f8c8d588de660",
+    "fixture_bytes": 415467
+  },
+  {
+    "table": "notes",
+    "id": "note-000",
+    "field": "body",
+    "changed_value_utf8_bytes": 2547,
+    "value_delta_utf8_bytes": 19,
+    "fixture_sha256_after_this_update": "069238c0d123fae17d0c52ef0ff63dfd4a9e65c33755ea4b9f29754deed1b24f",
+    "fixture_bytes": 415486
+  }
+]

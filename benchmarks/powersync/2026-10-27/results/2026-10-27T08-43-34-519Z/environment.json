@@ -1,0 +1,83 @@
+{
+  "utc": "2026-10-27T08:43:34.526Z",
+  "os": "Darwin",
+  "osVersion": "ProductName:\t\tmacOS\nProductVersion:\t\t26.6.2\nBuildVersion:\t\t25G83",
+  "quota": null,
+  "cgroupLimit": null,
+  "browser": null,
+  "kernel": "25.6.0",
+  "architecture": "arm64",
+  "cpu": "Apple M1 Pro",
+  "vcpus": 10,
+  "ramBytes": 17179869184,
+  "runtime": {
+    "node": "24.22.1",
+    "acorn": "8.18.0",
+    "ada": "4.0.0",
+    "amaro": "1.1.11",
+    "ares": "1.34.9",
+    "brotli": "1.2.0",
+    "cldr": "48.0",
+    "icu": "78.3",
+    "llhttp": "9.4.3",
+    "merve": "1.2.2",
+    "modules": "137",
+    "napi": "10",
+    "nbytes": "0.1.4",
+    "ncrypto": "0.0.1",
+    "nghttp2": "1.70.0",
+    "nghttp3": "",
+    "ngtcp2": "",
+    "openssl": "3.5.9",
+    "simdjson": "4.6.11",
+    "simdutf": "6.4.0",
+    "sqlite": "3.53.4",
+    "tz": "2026e",
+    "undici": "7.30.1",
+    "unicode": "17.0",
+    "uv": "1.52.1",
+    "uvwasi": "0.0.23",
+    "v8": "13.6.233.17-node.58",
+    "zlib": "1.3.2.1-motley-285e94b",
+    "zstd": "1.5.7"
+  },
+  "postgres": "postgres (PostgreSQL) 17.11 (Homebrew)",
+  "filesystem": "Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on\n/dev/disk3s5   482797652 237018988 214261316    53% 6455232 2142613160    0%   /System/Volumes/Data",
+  "storagePath": "/var/folders/wt/27c34cxn34vgbq8wj307ln0m0000gn/T/powersync-synthetic-benchmark/2026-10-27T08-43-34-519Z",
+  "container": null,
+  "lockOwner": {
+    "engine": "powersync",
+    "task": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-powersync",
+    "pid": 24098,
+    "token": "148885c0-a9bf-496f-be20-25f9e68e027c",
+    "utc": "2026-10-27T08:43:23.670168+00:00",
+    "command": [
+      "python3",
+      "outputs/isolated_runtime.py"
+    ]
+  },
+  "warmups": 3,
+  "measured": 10,
+  "variants": [
+    "typed",
+    "record_json",
+    "collection_json"
+  ],
+  "nodeDefaultWorkers": "1 writer + 5 readers",
+  "durability": "default SDK/SQLite settings; observed pragmas recorded per run",
+  "indexes": "SDK default id keys and metadata indexes; no application secondary indexes",
+  "contention": "All sustained setup and runs use shared mkdir lock; other workers may perform documentation/network work; OS background activity uncontrolled",
+  "fixture": {
+    "version": "sync-engine-comparison-v1",
+    "records": 132,
+    "issues": 21,
+    "notes": 111,
+    "bytes": 415448,
+    "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+    "collection_bytes": {
+      "issues": 83224,
+      "notes": 332204
+    },
+    "content": "entirely synthetic; no personal source data"
+  }
+}

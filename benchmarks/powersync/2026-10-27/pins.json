@@ -1,0 +1,8 @@
+{
+  "consulted_utc_date": "2026-10-26",
+  "service": {"package": "@powersync/service-image", "version": "1.27.2", "tag": "v1.27.2", "repository_commit": "12fa59d700ded33dc33770855bde90ffb60ebc8f", "integrity": "sha512-cQnrYj7o84cPiE1nWiTZenkdhoH2flsAZT+dV8YEdYmU5eRjoehJYYxexmSEgyppwDQCkqX0UtYV1FRRLNM1GQ==", "license": "FSL-1.1-ALv2"},
+  "sdk": {"package": "@powersync/node", "version": "1.2.0", "integrity": "sha512-wBPIMHxdOV7NYSQP2ozLkCku7ezC+SnMvveyetnZQ0LpI3jZCQ08hXDc+lyZFngkJaLMfj/BOkr/QF261lBcAw=="},
+  "runtime": "Node.js 24.22.1",
+  "postgres": "PostgreSQL 17.11 (Homebrew)",
+  "transitive_dependencies": "package-lock.json"
+}

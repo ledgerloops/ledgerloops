@@ -1,0 +1,3 @@
+import fs from 'node:fs';import path from 'node:path';
+export function diskTree(root){const files=[];function walk(p){for(const entry of fs.readdirSync(p,{withFileTypes:true})){const f=path.join(p,entry.name);if(entry.isDirectory())walk(f);else if(entry.isFile()){const s=fs.statSync(f);files.push({path:path.relative(root,f),apparent:s.size,allocated:s.blocks*512});}}}walk(root);return {apparent:files.reduce((n,x)=>n+x.apparent,0),allocated:files.reduce((n,x)=>n+x.allocated,0),files};}
+export function diskDelta(before,after){return {baseline:before,total:after,net:{apparent:after.apparent-before.apparent,allocated:after.allocated-before.allocated}};}

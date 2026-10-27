@@ -1,0 +1,7 @@
+config:
+  edition: 3
+streams:
+  benchmark:
+    auto_subscribe: false
+    queries:
+      - SELECT * FROM "collections" WHERE auth.user_id() = 'synthetic-benchmark-user'
