@@ -1,0 +1,17 @@
+{
+  "name": "synthetic-replicache-sync-benchmark",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "benchmark": "node runner.mjs"
+  },
+  "dependencies": {
+    "replicache": "15.3.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12",
+    "playwright": "1.64.1"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "version": "sync-engine-comparison-v1",
+  "records": 132,
+  "issues": 21,
+  "notes": 111,
+  "bytes": 415448,
+  "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+  "collection_bytes": {
+    "issues": 83224,
+    "notes": 332204
+  },
+  "content": "entirely synthetic; no personal source data"
+}

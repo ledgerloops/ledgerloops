@@ -1,0 +1,734 @@
+{
+  "environment": {
+    "utc": "2026-10-26T06:26:19.289Z",
+    "node": "v26.8.1",
+    "os": "Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+    "kernel": "25.6.0",
+    "architecture": "arm64",
+    "cpu": "Apple M1 Pro",
+    "logical_cpus": 10,
+    "ram_bytes": 17179869184,
+    "loadavg": [
+      52.54736328125,
+      33.16943359375,
+      18.3720703125
+    ],
+    "platform": "darwin",
+    "container": "none; native macOS",
+    "cpu_quota": "none",
+    "ram_cgroup_limit": "not applicable",
+    "storage_path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2",
+    "filesystem": "Filesystem   1024-blocks      Used Available Capacity iused     ifree %iused  Mounted on\n/dev/disk3s5   482797652 450089540  10109252    98% 6847883 101092520    6%   /System/Volumes/Data\n",
+    "filesystem_mount": [
+      "/dev/disk3s5 on /System/Volumes/Data (apfs, local, journaled, nobrowse, protect, root data)"
+    ],
+    "browser_executable": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "browser_version": "Google Chrome 155.0.8059.85",
+    "engine_version": "replicache@15.3.0",
+    "engine_source_commit": "8684fb19c032e25f7f166f40e8acdfb179e6ca87",
+    "playwright": "1.64.1",
+    "topology": "Node HTTP/1.1 loopback pull server; headless Chromium persistent IndexedDB receiver",
+    "indexes": "default primary key B-tree only; no application secondary indexes",
+    "durability": "unmodified engine default: relaxed IndexedDB",
+    "port": 52405,
+    "warmups": 0,
+    "repetitions": 1,
+    "shared_lock": "wrapper owner.json"
+  },
+  "results": [
+    {
+      "run": "records-0",
+      "model": "records",
+      "warmup": false,
+      "index": 0,
+      "utc": "2026-10-26T06:26:23.483Z",
+      "key_count": 132,
+      "sender_preparation_ms": 33.58337499999999,
+      "service_disk": {
+        "apparent_bytes": 2568383,
+        "allocated_bytes": 2572288,
+        "files": [
+          {
+            "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/service/records/responses.json",
+            "apparent_bytes": 1314753,
+            "allocated_bytes": 1314816
+          },
+          {
+            "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/service/records/views.json",
+            "apparent_bytes": 1253630,
+            "allocated_bytes": 1257472
+          }
+        ]
+      },
+      "baseline": {
+        "apparent_bytes": 9671,
+        "allocated_bytes": 24576,
+        "files": [
+          {
+            "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/000003.log",
+            "apparent_bytes": 9179,
+            "allocated_bytes": 12288
+          },
+          {
+            "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/CURRENT",
+            "apparent_bytes": 16,
+            "allocated_bytes": 4096
+          },
+          {
+            "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/LOCK",
+            "apparent_bytes": 0,
+            "allocated_bytes": 0
+          },
+          {
+            "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/LOG",
+            "apparent_bytes": 453,
+            "allocated_bytes": 4096
+          },
+          {
+            "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/MANIFEST-000001",
+            "apparent_bytes": 23,
+            "allocated_bytes": 4096
+          }
+        ]
+      },
+      "initialized_empty_preparation": {
+        "open_ms": 46.1999999997206,
+        "connection_auth_ms": 3,
+        "idb_name": "rep:synthetic-records-0:7:fixture-v1-records",
+        "databases": [
+          {
+            "name": "rep:synthetic-records-0:7:fixture-v1-records",
+            "version": 1
+          },
+          {
+            "name": "replicache-dbs-v0",
+            "version": 1
+          }
+        ],
+        "persistence_granted": false,
+        "browser_and_open_ms": 716.4553329999999
+      },
+      "receiver_preparation": {
+        "open_ms": 12.599999999627471,
+        "connection_auth_ms": 4.5,
+        "idb_name": "rep:synthetic-records-0:7:fixture-v1-records",
+        "databases": [
+          {
+            "name": "rep:synthetic-records-0:7:fixture-v1-records",
+            "version": 1
+          },
+          {
+            "name": "replicache-dbs-v0",
+            "version": 1
+          }
+        ],
+        "persistence_granted": false,
+        "browser_and_open_ms": 457.0443330000003
+      },
+      "loadavg": [
+        54.42529296875,
+        33.88037109375,
+        18.70947265625
+      ],
+      "stages": [
+        {
+          "kind": "initial",
+          "version": 1,
+          "observable_ms": 21.09999999962747,
+          "pull_ms": 21.199999999720603,
+          "persistence_notification_ms": 31.299999999813735,
+          "durable_ms": null,
+          "persistence_boundary": "source-backed internal BroadcastChannel after default relaxed IndexedDB commit; not a public durability API",
+          "persist_events": [
+            {
+              "elapsed_ms": 31.299999999813735,
+              "clientID": "3fd542sitf5176kl7l",
+              "clientGroupID": "qm1o3cg3hkvfif0ijr"
+            }
+          ],
+          "wire": [
+            {
+              "utc": "2026-10-26T06:26:23.489Z",
+              "run": "records-0",
+              "model": "records",
+              "from_cookie": null,
+              "to_cookie": 1,
+              "request_bytes": 139,
+              "response_bytes": 421208,
+              "patch_keys": [
+                "issue/issue-000",
+                "issue/issue-001",
+                "issue/issue-002",
+                "issue/issue-003",
+                "issue/issue-004",
+                "issue/issue-005",
+                "issue/issue-006",
+                "issue/issue-007",
+                "issue/issue-008",
+                "issue/issue-009",
+                "issue/issue-010",
+                "issue/issue-011",
+                "issue/issue-012",
+                "issue/issue-013",
+                "issue/issue-014",
+                "issue/issue-015",
+                "issue/issue-016",
+                "issue/issue-017",
+                "issue/issue-018",
+                "issue/issue-019",
+                "issue/issue-020",
+                "note/note-000",
+                "note/note-001",
+                "note/note-002",
+                "note/note-003",
+                "note/note-004",
+                "note/note-005",
+                "note/note-006",
+                "note/note-007",
+                "note/note-008",
+                "note/note-009",
+                "note/note-010",
+                "note/note-011",
+                "note/note-012",
+                "note/note-013",
+                "note/note-014",
+                "note/note-015",
+                "note/note-016",
+                "note/note-017",
+                "note/note-018",
+                "note/note-019",
+                "note/note-020",
+                "note/note-021",
+                "note/note-022",
+                "note/note-023",
+                "note/note-024",
+                "note/note-025",
+                "note/note-026",
+                "note/note-027",
+                "note/note-028",
+                "note/note-029",
+                "note/note-030",
+                "note/note-031",
+                "note/note-032",
+                "note/note-033",
+                "note/note-034",
+                "note/note-035",
+                "note/note-036",
+                "note/note-037",
+                "note/note-038",
+                "note/note-039",
+                "note/note-040",
+                "note/note-041",
+                "note/note-042",
+                "note/note-043",
+                "note/note-044",
+                "note/note-045",
+                "note/note-046",
+                "note/note-047",
+                "note/note-048",
+                "note/note-049",
+                "note/note-050",
+                "note/note-051",
+                "note/note-052",
+                "note/note-053",
+                "note/note-054",
+                "note/note-055",
+                "note/note-056",
+                "note/note-057",
+                "note/note-058",
+                "note/note-059",
+                "note/note-060",
+                "note/note-061",
+                "note/note-062",
+                "note/note-063",
+                "note/note-064",
+                "note/note-065",
+                "note/note-066",
+                "note/note-067",
+                "note/note-068",
+                "note/note-069",
+                "note/note-070",
+                "note/note-071",
+                "note/note-072",
+                "note/note-073",
+                "note/note-074",
+                "note/note-075",
+                "note/note-076",
+                "note/note-077",
+                "note/note-078",
+                "note/note-079",
+                "note/note-080",
+                "note/note-081",
+                "note/note-082",
+                "note/note-083",
+                "note/note-084",
+                "note/note-085",
+                "note/note-086",
+                "note/note-087",
+                "note/note-088",
+                "note/note-089",
+                "note/note-090",
+                "note/note-091",
+                "note/note-092",
+                "note/note-093",
+                "note/note-094",
+                "note/note-095",
+                "note/note-096",
+                "note/note-097",
+                "note/note-098",
+                "note/note-099",
+                "note/note-100",
+                "note/note-101",
+                "note/note-102",
+                "note/note-103",
+                "note/note-104",
+                "note/note-105",
+                "note/note-106",
+                "note/note-107",
+                "note/note-108",
+                "note/note-109",
+                "note/note-110"
+              ],
+              "compression": "identity"
+            }
+          ],
+          "received_protocol_bytes": 421208,
+          "received_compressed_body_bytes": 421208,
+          "cdp_response_body_bytes": 421208,
+          "cdp_encoded_bytes_including_http_headers": 421392,
+          "changed_source_field_added_bytes": null,
+          "accounting": {
+            "quota": 10737901363,
+            "usage": 483123,
+            "usageDetails": {
+              "indexedDB": 483123
+            }
+          },
+          "correctness": {
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111,
+            "full_content_equal": true
+          },
+          "reopened": {
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111,
+            "full_content_equal": true
+          },
+          "close_ms": 731.8682499999995,
+          "storage_total": {
+            "apparent_bytes": 483123,
+            "allocated_bytes": 499712,
+            "files": [
+              {
+                "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/000003.log",
+                "apparent_bytes": 482136,
+                "allocated_bytes": 483328
+              },
+              {
+                "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/CURRENT",
+                "apparent_bytes": 16,
+                "allocated_bytes": 4096
+              },
+              {
+                "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/LOCK",
+                "apparent_bytes": 0,
+                "allocated_bytes": 0
+              },
+              {
+                "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/LOG",
+                "apparent_bytes": 495,
+                "allocated_bytes": 4096
+              },
+              {
+                "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/LOG.old",
+                "apparent_bytes": 453,
+                "allocated_bytes": 4096
+              },
+              {
+                "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/MANIFEST-000001",
+                "apparent_bytes": 23,
+                "allocated_bytes": 4096
+              }
+            ]
+          },
+          "storage_net": {
+            "apparent_bytes": 473452,
+            "allocated_bytes": 475136
+          }
+        },
+        {
+          "kind": "issue_title",
+          "version": 2,
+          "observable_ms": 5.600000000093132,
+          "pull_ms": 5.7000000001862645,
+          "persistence_notification_ms": 12.799999999813735,
+          "durable_ms": null,
+          "persistence_boundary": "source-backed internal BroadcastChannel after default relaxed IndexedDB commit; not a public durability API",
+          "persist_events": [
+            {
+              "elapsed_ms": 12.799999999813735,
+              "clientID": "600qeilq0frsmk206o",
+              "clientGroupID": "qm1o3cg3hkvfif0ijr"
+            }
+          ],
+          "wire": [
+            {
+              "utc": "2026-10-26T06:26:24.783Z",
+              "run": "records-0",
+              "model": "records",
+              "from_cookie": 1,
+              "to_cookie": 2,
+              "request_bytes": 136,
+              "response_bytes": 3728,
+              "patch_keys": [
+                "issue/issue-000"
+              ],
+              "compression": "identity"
+            }
+          ],
+          "received_protocol_bytes": 3728,
+          "received_compressed_body_bytes": 3728,
+          "cdp_response_body_bytes": 3728,
+          "cdp_encoded_bytes_including_http_headers": 3910,
+          "changed_source_field_added_bytes": 25,
+          "accounting": {
+            "quota": 10737955739,
+            "usage": 537499,
+            "usageDetails": {
+              "indexedDB": 537499
+            }
+          },
+          "correctness": {
+            "sha256": "07b53f553c0a73c02d055900081f3cc4222d0abdc9805434b2e37fcfad84f334",
+            "bytes": 415473,
+            "issues": 21,
+            "notes": 111,
+            "full_content_equal": true
+          },
+          "reopened": {
+            "sha256": "07b53f553c0a73c02d055900081f3cc4222d0abdc9805434b2e37fcfad84f334",
+            "bytes": 415473,
+            "issues": 21,
+            "notes": 111,
+            "full_content_equal": true
+          },
+          "close_ms": 683.9520829999992,
+          "storage_total": {
+            "apparent_bytes": 537499,
+            "allocated_bytes": 552960,
+            "files": [
+              {
+                "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/000003.log",
+                "apparent_bytes": 536470,
+                "allocated_bytes": 536576
+              },
+              {
+                "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/CURRENT",
+                "apparent_bytes": 16,
+                "allocated_bytes": 4096
+              },
+              {
+                "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/LOCK",
+                "apparent_bytes": 0,
+                "allocated_bytes": 0
+              },
+              {
+                "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/LOG",
+                "apparent_bytes": 495,
+                "allocated_bytes": 4096
+              },
+              {
+                "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/LOG.old",
+                "apparent_bytes": 495,
+                "allocated_bytes": 4096
+              },
+              {
+                "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/MANIFEST-000001",
+                "apparent_bytes": 23,
+                "allocated_bytes": 4096
+              }
+            ]
+          },
+          "storage_net": {
+            "apparent_bytes": 527828,
+            "allocated_bytes": 528384
+          }
+        },
+        {
+          "kind": "note_body",
+          "version": 3,
+          "observable_ms": 5.7000000001862645,
+          "pull_ms": 5.800000000279397,
+          "persistence_notification_ms": 13.600000000093132,
+          "durable_ms": null,
+          "persistence_boundary": "source-backed internal BroadcastChannel after default relaxed IndexedDB commit; not a public durability API",
+          "persist_events": [
+            {
+              "elapsed_ms": 13.600000000093132,
+              "clientID": "74grknmor8ug5o8stl",
+              "clientGroupID": "qm1o3cg3hkvfif0ijr"
+            }
+          ],
+          "wire": [
+            {
+              "utc": "2026-10-26T06:26:26.009Z",
+              "run": "records-0",
+              "model": "records",
+              "from_cookie": 2,
+              "to_cookie": 3,
+              "request_bytes": 136,
+              "response_bytes": 3064,
+              "patch_keys": [
+                "note/note-000"
+              ],
+              "compression": "identity"
+            }
+          ],
+          "received_protocol_bytes": 3064,
+          "received_compressed_body_bytes": 3064,
+          "cdp_response_body_bytes": 3064,
+          "cdp_encoded_bytes_including_http_headers": 3246,
+          "changed_source_field_added_bytes": 29,
+          "accounting": {
+            "quota": 10738009150,
+            "usage": 590910,
+            "usageDetails": {
+              "indexedDB": 590910
+            }
+          },
+          "correctness": {
+            "sha256": "39a16bc4103bb16fc02a2992537ae75d2bd2cfc5e997f3014126b5644ddfefc7",
+            "bytes": 415502,
+            "issues": 21,
+            "notes": 111,
+            "full_content_equal": true
+          },
+          "reopened": {
+            "sha256": "39a16bc4103bb16fc02a2992537ae75d2bd2cfc5e997f3014126b5644ddfefc7",
+            "bytes": 415502,
+            "issues": 21,
+            "notes": 111,
+            "full_content_equal": true
+          },
+          "close_ms": 804.9122079999997,
+          "storage_total": {
+            "apparent_bytes": 590910,
+            "allocated_bytes": 610304,
+            "files": [
+              {
+                "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/000003.log",
+                "apparent_bytes": 589881,
+                "allocated_bytes": 593920
+              },
+              {
+                "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/CURRENT",
+                "apparent_bytes": 16,
+                "allocated_bytes": 4096
+              },
+              {
+                "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/LOCK",
+                "apparent_bytes": 0,
+                "allocated_bytes": 0
+              },
+              {
+                "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/LOG",
+                "apparent_bytes": 495,
+                "allocated_bytes": 4096
+              },
+              {
+                "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/LOG.old",
+                "apparent_bytes": 495,
+                "allocated_bytes": 4096
+              },
+              {
+                "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-2/profiles/records-0/Default/IndexedDB/http_127.0.0.1_52405.indexeddb.leveldb/MANIFEST-000001",
+                "apparent_bytes": 23,
+                "allocated_bytes": 4096
+              }
+            ]
+          },
+          "storage_net": {
+            "apparent_bytes": 581239,
+            "allocated_bytes": 585728
+          }
+        }
+      ]
+    }
+  ],
+  "server_log": [
+    {
+      "utc": "2026-10-26T06:26:23.489Z",
+      "run": "records-0",
+      "model": "records",
+      "from_cookie": null,
+      "to_cookie": 1,
+      "request_bytes": 139,
+      "response_bytes": 421208,
+      "patch_keys": [
+        "issue/issue-000",
+        "issue/issue-001",
+        "issue/issue-002",
+        "issue/issue-003",
+        "issue/issue-004",
+        "issue/issue-005",
+        "issue/issue-006",
+        "issue/issue-007",
+        "issue/issue-008",
+        "issue/issue-009",
+        "issue/issue-010",
+        "issue/issue-011",
+        "issue/issue-012",
+        "issue/issue-013",
+        "issue/issue-014",
+        "issue/issue-015",
+        "issue/issue-016",
+        "issue/issue-017",
+        "issue/issue-018",
+        "issue/issue-019",
+        "issue/issue-020",
+        "note/note-000",
+        "note/note-001",
+        "note/note-002",
+        "note/note-003",
+        "note/note-004",
+        "note/note-005",
+        "note/note-006",
+        "note/note-007",
+        "note/note-008",
+        "note/note-009",
+        "note/note-010",
+        "note/note-011",
+        "note/note-012",
+        "note/note-013",
+        "note/note-014",
+        "note/note-015",
+        "note/note-016",
+        "note/note-017",
+        "note/note-018",
+        "note/note-019",
+        "note/note-020",
+        "note/note-021",
+        "note/note-022",
+        "note/note-023",
+        "note/note-024",
+        "note/note-025",
+        "note/note-026",
+        "note/note-027",
+        "note/note-028",
+        "note/note-029",
+        "note/note-030",
+        "note/note-031",
+        "note/note-032",
+        "note/note-033",
+        "note/note-034",
+        "note/note-035",
+        "note/note-036",
+        "note/note-037",
+        "note/note-038",
+        "note/note-039",
+        "note/note-040",
+        "note/note-041",
+        "note/note-042",
+        "note/note-043",
+        "note/note-044",
+        "note/note-045",
+        "note/note-046",
+        "note/note-047",
+        "note/note-048",
+        "note/note-049",
+        "note/note-050",
+        "note/note-051",
+        "note/note-052",
+        "note/note-053",
+        "note/note-054",
+        "note/note-055",
+        "note/note-056",
+        "note/note-057",
+        "note/note-058",
+        "note/note-059",
+        "note/note-060",
+        "note/note-061",
+        "note/note-062",
+        "note/note-063",
+        "note/note-064",
+        "note/note-065",
+        "note/note-066",
+        "note/note-067",
+        "note/note-068",
+        "note/note-069",
+        "note/note-070",
+        "note/note-071",
+        "note/note-072",
+        "note/note-073",
+        "note/note-074",
+        "note/note-075",
+        "note/note-076",
+        "note/note-077",
+        "note/note-078",
+        "note/note-079",
+        "note/note-080",
+        "note/note-081",
+        "note/note-082",
+        "note/note-083",
+        "note/note-084",
+        "note/note-085",
+        "note/note-086",
+        "note/note-087",
+        "note/note-088",
+        "note/note-089",
+        "note/note-090",
+        "note/note-091",
+        "note/note-092",
+        "note/note-093",
+        "note/note-094",
+        "note/note-095",
+        "note/note-096",
+        "note/note-097",
+        "note/note-098",
+        "note/note-099",
+        "note/note-100",
+        "note/note-101",
+        "note/note-102",
+        "note/note-103",
+        "note/note-104",
+        "note/note-105",
+        "note/note-106",
+        "note/note-107",
+        "note/note-108",
+        "note/note-109",
+        "note/note-110"
+      ],
+      "compression": "identity"
+    },
+    {
+      "utc": "2026-10-26T06:26:24.783Z",
+      "run": "records-0",
+      "model": "records",
+      "from_cookie": 1,
+      "to_cookie": 2,
+      "request_bytes": 136,
+      "response_bytes": 3728,
+      "patch_keys": [
+        "issue/issue-000"
+      ],
+      "compression": "identity"
+    },
+    {
+      "utc": "2026-10-26T06:26:26.009Z",
+      "run": "records-0",
+      "model": "records",
+      "from_cookie": 2,
+      "to_cookie": 3,
+      "request_bytes": 136,
+      "response_bytes": 3064,
+      "patch_keys": [
+        "note/note-000"
+      ],
+      "compression": "identity"
+    }
+  ]
+}

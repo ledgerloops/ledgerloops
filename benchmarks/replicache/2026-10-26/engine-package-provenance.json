@@ -1,0 +1,23 @@
+{
+  "name": "replicache",
+  "version": "15.3.0",
+  "license": "https://roci.dev/terms.html",
+  "repository": {
+    "url": "git+https://github.com/rocicorp/replicache.git",
+    "type": "git"
+  },
+  "gitHead": "8684fb19c032e25f7f166f40e8acdfb179e6ca87",
+  "dist": {
+    "shasum": "e8f899cfaeb3e73ab50906ac89da1d5ea6cee254",
+    "tarball": "https://registry.npmjs.org/replicache/-/replicache-15.3.0.tgz",
+    "fileCount": 10,
+    "integrity": "sha512-XE9NbpG5bVuJNcj61vzbZBwesNx9q51l6/o0J8wT4v1YZhKoqj9GExwc3pLUYSi/AyrQtkX44wOyrSMLHzFIaA==",
+    "signatures": [
+      {
+        "sig": "MEUCIHERpEwpkGyRYGxRQu0FxwkwD14CGANdbaAiwTTiAwxUAiEAxC33wDBE/3hCI5FQKHr4uxxGelDjWKWVzloI6ooJzjQ=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "unpackedSize": 198021
+  }
+}

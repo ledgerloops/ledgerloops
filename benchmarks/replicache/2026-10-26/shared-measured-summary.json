@@ -1,0 +1,223 @@
+{
+  "quantiles": "p50 median; p95 nearest rank; n=10 => sample maximum; exploratory small sample",
+  "durability": "Default relaxed IndexedDB; internal persistence notification observed; power-loss durable timing unavailable",
+  "fixture_sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+  "models": {
+    "shared": {
+      "measured_runs": 10,
+      "key_count": 145,
+      "stages": {
+        "initial": {
+          "observable_ms": {
+            "n": 10,
+            "p50": 14.650000000372529,
+            "p95_nearest_rank": 15.399999999441206,
+            "maximum": 15.399999999441206,
+            "minimum": 13.799999999813735
+          },
+          "pull_ms": {
+            "n": 10,
+            "p50": 14.799999999813735,
+            "p95_nearest_rank": 15.5,
+            "maximum": 15.5,
+            "minimum": 14
+          },
+          "persistence_notification_ms": {
+            "n": 10,
+            "p50": 25.600000000093132,
+            "p95_nearest_rank": 32.799999999813735,
+            "maximum": 32.799999999813735,
+            "minimum": 23.899999999441206
+          },
+          "durable_ms": null,
+          "received_protocol_bytes": {
+            "n": 10,
+            "p50": 415367.0,
+            "p95_nearest_rank": 415367,
+            "maximum": 415367,
+            "minimum": 415367
+          },
+          "storage_total_apparent_bytes": {
+            "n": 10,
+            "p50": 474525.0,
+            "p95_nearest_rank": 474525,
+            "maximum": 474525,
+            "minimum": 474525
+          },
+          "storage_total_allocated_bytes": {
+            "n": 10,
+            "p50": 491520.0,
+            "p95_nearest_rank": 491520,
+            "maximum": 491520,
+            "minimum": 491520
+          },
+          "storage_net_apparent_bytes": {
+            "n": 10,
+            "p50": 464898.0,
+            "p95_nearest_rank": 464898,
+            "maximum": 464898,
+            "minimum": 464898
+          },
+          "storage_net_allocated_bytes": {
+            "n": 10,
+            "p50": 466944.0,
+            "p95_nearest_rank": 466944,
+            "maximum": 466944,
+            "minimum": 466944
+          },
+          "full_live_and_reopened_verification": true
+        },
+        "issue_title": {
+          "observable_ms": {
+            "n": 10,
+            "p50": 5.600000000093132,
+            "p95_nearest_rank": 6.1000000005587935,
+            "maximum": 6.1000000005587935,
+            "minimum": 5.2999999998137355
+          },
+          "pull_ms": {
+            "n": 10,
+            "p50": 5.75,
+            "p95_nearest_rank": 6.2000000001862645,
+            "maximum": 6.2000000001862645,
+            "minimum": 5.3999999994412065
+          },
+          "persistence_notification_ms": {
+            "n": 10,
+            "p50": 12.150000000372529,
+            "p95_nearest_rank": 17.90000000037253,
+            "maximum": 17.90000000037253,
+            "minimum": 11.799999999813735
+          },
+          "durable_ms": null,
+          "received_protocol_bytes": {
+            "n": 10,
+            "p50": 3525.0,
+            "p95_nearest_rank": 3525,
+            "maximum": 3525,
+            "minimum": 3525
+          },
+          "storage_total_apparent_bytes": {
+            "n": 10,
+            "p50": 526352.0,
+            "p95_nearest_rank": 526352,
+            "maximum": 526352,
+            "minimum": 526352
+          },
+          "storage_total_allocated_bytes": {
+            "n": 10,
+            "p50": 544768.0,
+            "p95_nearest_rank": 544768,
+            "maximum": 544768,
+            "minimum": 544768
+          },
+          "storage_net_apparent_bytes": {
+            "n": 10,
+            "p50": 516725.0,
+            "p95_nearest_rank": 516725,
+            "maximum": 516725,
+            "minimum": 516725
+          },
+          "storage_net_allocated_bytes": {
+            "n": 10,
+            "p50": 520192.0,
+            "p95_nearest_rank": 520192,
+            "maximum": 520192,
+            "minimum": 520192
+          },
+          "full_live_and_reopened_verification": true
+        },
+        "note_body": {
+          "observable_ms": {
+            "n": 10,
+            "p50": 5.5,
+            "p95_nearest_rank": 5.800000000745058,
+            "maximum": 5.800000000745058,
+            "minimum": 5.2999999998137355
+          },
+          "pull_ms": {
+            "n": 10,
+            "p50": 5.650000000372529,
+            "p95_nearest_rank": 6,
+            "maximum": 6,
+            "minimum": 5.5
+          },
+          "persistence_notification_ms": {
+            "n": 10,
+            "p50": 12.899999999906868,
+            "p95_nearest_rank": 14,
+            "maximum": 14,
+            "minimum": 11.5
+          },
+          "durable_ms": null,
+          "received_protocol_bytes": {
+            "n": 10,
+            "p50": 3064.0,
+            "p95_nearest_rank": 3064,
+            "maximum": 3064,
+            "minimum": 3064
+          },
+          "storage_total_apparent_bytes": {
+            "n": 10,
+            "p50": 578439.0,
+            "p95_nearest_rank": 578439,
+            "maximum": 578439,
+            "minimum": 578439
+          },
+          "storage_total_allocated_bytes": {
+            "n": 10,
+            "p50": 593920.0,
+            "p95_nearest_rank": 593920,
+            "maximum": 593920,
+            "minimum": 593920
+          },
+          "storage_net_apparent_bytes": {
+            "n": 10,
+            "p50": 568812.0,
+            "p95_nearest_rank": 568812,
+            "maximum": 568812,
+            "minimum": 568812
+          },
+          "storage_net_allocated_bytes": {
+            "n": 10,
+            "p50": 569344.0,
+            "p95_nearest_rank": 569344,
+            "maximum": 569344,
+            "minimum": 569344
+          },
+          "full_live_and_reopened_verification": true
+        }
+      },
+      "storage_baseline_apparent_bytes": {
+        "n": 10,
+        "p50": 9627.0,
+        "p95_nearest_rank": 9627,
+        "maximum": 9627,
+        "minimum": 9627
+      },
+      "storage_baseline_allocated_bytes": {
+        "n": 10,
+        "p50": 24576.0,
+        "p95_nearest_rank": 24576,
+        "maximum": 24576,
+        "minimum": 24576
+      },
+      "service_disk": {
+        "apparent_bytes": 2528330,
+        "allocated_bytes": 2531328,
+        "files": [
+          {
+            "path": "/private/tmp/sync-benchmark-replicache-20261026-01a176de/shared-measured/service/shared/responses.json",
+            "apparent_bytes": 1293198,
+            "allocated_bytes": 1294336
+          },
+          {
+            "path": "/private/tmp/sync-benchmark-replicache-20261026-01a176de/shared-measured/service/shared/views.json",
+            "apparent_bytes": 1235132,
+            "allocated_bytes": 1236992
+          }
+        ]
+      }
+    }
+  }
+}

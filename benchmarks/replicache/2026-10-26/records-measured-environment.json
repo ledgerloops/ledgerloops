@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-26T06:34:56.320Z",
+  "node": "v26.8.1",
+  "os": "Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+  "kernel": "25.6.0",
+  "architecture": "arm64",
+  "macos": "ProductName:\t\tmacOS\nProductVersion:\t\t26.6.2\nBuildVersion:\t\t25G83\n",
+  "cpu": "Apple M1 Pro",
+  "logical_cpus": 10,
+  "ram_bytes": 17179869184,
+  "loadavg": [
+    43.3310546875,
+    42.61376953125,
+    30.55322265625
+  ],
+  "platform": "darwin",
+  "container": "none; native macOS",
+  "cpu_quota": "none",
+  "ram_cgroup_limit": "not applicable",
+  "storage_path": "/private/tmp/sync-benchmark-replicache-20261026-01a176de/records-measured",
+  "filesystem": "Filesystem   1024-blocks      Used Available Capacity iused    ifree %iused  Mounted on\n/dev/disk3s5   482797652 452147260   8051532    99% 6878818 80515320    8%   /System/Volumes/Data\n",
+  "filesystem_mount": [
+    "/dev/disk3s5 on /System/Volumes/Data (apfs, local, journaled, nobrowse, protect, root data)"
+  ],
+  "browser_executable": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+  "browser_version": "Google Chrome 155.0.8059.85",
+  "engine_version": "replicache@15.3.0",
+  "engine_source_commit": "8684fb19c032e25f7f166f40e8acdfb179e6ca87",
+  "playwright": "1.64.1",
+  "topology": "Node HTTP/1.1 loopback pull server; headless Chromium persistent IndexedDB receiver",
+  "indexes": "default primary key B-tree only; no application secondary indexes",
+  "durability": "unmodified engine default: relaxed IndexedDB",
+  "port": 53952,
+  "warmups": 3,
+  "repetitions": 10,
+  "shared_lock": "wrapper owner.json"
+}

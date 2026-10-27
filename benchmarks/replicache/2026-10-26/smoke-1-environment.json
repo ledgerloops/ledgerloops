@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-26T06:25:34.489Z",
+  "node": "v26.8.1",
+  "os": "Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+  "kernel": "25.6.0",
+  "architecture": "arm64",
+  "cpu": "Apple M1 Pro",
+  "logical_cpus": 10,
+  "ram_bytes": 17179869184,
+  "loadavg": [
+    39.2548828125,
+    28.31591796875,
+    15.96142578125
+  ],
+  "platform": "darwin",
+  "container": "none; native macOS",
+  "cpu_quota": "none",
+  "ram_cgroup_limit": "not applicable",
+  "storage_path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/smoke-1",
+  "filesystem": "Filesystem   1024-blocks      Used Available Capacity iused     ifree %iused  Mounted on\n/dev/disk3s5   482797652 449693508  10505284    98% 6844778 105052840    6%   /System/Volumes/Data\n",
+  "filesystem_mount": [
+    "/dev/disk3s5 on /System/Volumes/Data (apfs, local, journaled, nobrowse, protect, root data)"
+  ],
+  "browser_executable": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+  "browser_version": "Google Chrome 155.0.8059.85",
+  "engine_version": "replicache@15.3.0",
+  "engine_source_commit": "8684fb19c032e25f7f166f40e8acdfb179e6ca87",
+  "playwright": "1.64.1",
+  "topology": "Node HTTP/1.1 loopback pull server; headless Chromium persistent IndexedDB receiver",
+  "indexes": "default primary key B-tree only; no application secondary indexes",
+  "durability": "unmodified engine default: relaxed IndexedDB",
+  "port": 52277,
+  "warmups": 0,
+  "repetitions": 1,
+  "shared_lock": "wrapper owner.json"
+}
