@@ -1,0 +1,14 @@
+{
+  "status": "complete_with_durability_limit",
+  "utc": "2026-10-26T06:57:12.363742+00:00",
+  "issue": "https://github.com/ledgerloops/ledgerloops/issues/43",
+  "fixture_verified": true,
+  "measured_runs": 30,
+  "warmup_runs": 9,
+  "models": 3,
+  "full_reopen_verified_phases": 117,
+  "durable_timing_available": false,
+  "report": "REPORT.md",
+  "results": "measured-results.json",
+  "summary": "measured-summary.json"
+}
