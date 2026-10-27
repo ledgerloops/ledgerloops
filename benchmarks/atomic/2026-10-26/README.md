@@ -1,6 +1,6 @@
 # Atomic synthetic sync benchmark
 
-This bundle contains the verified Model H measurements from 2026-10-26 for [issue 41](https://github.com/ledgerloops/ledgerloops/issues/41). Start with [REPORT.md](REPORT.md).
+This bundle contains the verified Model H measurements from 2026-10-26 for [issue 41](https://github.com/ledgerloops/ledgerloops/issues/41). Start with [REPORT.md](REPORT.md). Read the subsequent [fairness and persistence audit](outputs/FAIRNESS-AUDIT.md) before comparing durability or readability boundaries across engines.
 
 The original task's `outputs/` layout is preserved so its runner resolves the external harness, fixture and summaries correctly. From this dated directory:
 

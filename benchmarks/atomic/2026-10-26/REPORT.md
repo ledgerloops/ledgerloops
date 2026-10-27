@@ -1,5 +1,7 @@
 # Atomic Model H benchmark results
 
+> **Methodology audit, 2026-10-27:** The original “durable” labels below denote return from native LAST import/flush, followed by successful normal reopen verification. A **source-inferred, unreproduced** race with periodic flushing means the timestamps do not independently establish a completed covering OS sync in every run. Initial readability was not separately measured; public change notifications and queries could support an external observer. See the [fairness and persistence audit](outputs/FAIRNESS-AUDIT.md) for exact source references and the proposed, unexecuted rerun contract. All original numerical measurements remain unchanged.
+
 Measured on **2026-10-26 UTC** for [issue 41](https://github.com/ledgerloops/ledgerloops/issues/41), using Atomic commit `396f0da075bd514e2c46b2fa33a575b35c14b2a6` and the exact 415,448-byte synthetic fixture. Three warmups and ten measured transfers completed into fresh persistent receivers. All 13 receivers passed complete fixture reconstruction and native resource, CRDT, envelope, table and search-index verification after reopening.
 
 ## Initial replication
