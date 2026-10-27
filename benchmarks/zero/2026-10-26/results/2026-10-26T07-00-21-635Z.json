@@ -1,0 +1,1638 @@
+{
+  "measurement_schema": 2,
+  "issue": "https://github.com/ledgerloops/ledgerloops/issues/44",
+  "runID": "2026-10-26T07-00-21-635Z",
+  "started_utc": "2026-10-26T07:00:21.639Z",
+  "manifest": {
+    "version": "sync-engine-comparison-v1",
+    "records": 132,
+    "issues": 21,
+    "notes": 111,
+    "bytes": 415448,
+    "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+    "collection_bytes": {
+      "issues": 83224,
+      "notes": 332204
+    },
+    "content": "entirely synthetic; no personal source data"
+  },
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "kernel": "25.6.0",
+    "cpu_model": "Apple M1 Pro",
+    "logical_cpu_count": 10,
+    "ram_bytes": 17179869184,
+    "cpu_quota": null,
+    "ram_cgroup_limit": null,
+    "storage_path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-zero/work/2026-10-26T07-00-21-635Z",
+    "container": false,
+    "postgres": "postgres (PostgreSQL) 17.11 (Homebrew)",
+    "os": "ProductName:\t\tmacOS\nProductVersion:\t\t26.6.2\nBuildVersion:\t\t25G83\n",
+    "filesystem": "Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s5   460Gi   435Gi   4.0Gi   100%    7.0M   42M   14%   /System/Volumes/Data\n",
+    "mount": "/dev/disk3s5 on /System/Volumes/Data (apfs, local, journaled, nobrowse, protect, root data)\nmap auto_home on /System/Volumes/Data/home (autofs, automounted, nobrowse)",
+    "dependencies": {
+      "@rocicorp/zero": "1.11.3",
+      "playwright": "1.64.1",
+      "esbuild": "0.28.2",
+      "pg": "8.23.1",
+      "jose": "5.10.0",
+      "@rocicorp/zero-sqlite3": "1.1.7"
+    },
+    "package_lock_sha256": "2d742103e73908d77401e69f1025bd0258f708a622bafd4023d825c63b050379",
+    "ports": {
+      "pg": 19440,
+      "cache": 19442,
+      "api": 19445,
+      "proxy": 19446
+    },
+    "topology": {
+      "sync_workers": 1,
+      "internal_change_streamer": "127.0.0.1:19443",
+      "browser_persistence": "IndexedDB",
+      "sqlite_replica_journal": "native WAL2",
+      "sqlite_replica_synchronous": "native NORMAL"
+    },
+    "browser": "156.0.8078.4"
+  },
+  "variants": [
+    {
+      "variant": "collection",
+      "status": "complete",
+      "runs": [
+        {
+          "label": "warmup-1",
+          "measured": false,
+          "connection": {
+            "connection_ms": 26.09999999962747,
+            "idbName": "rep:zero-synthetic-collection-2026-10-26T07-00-21-635Z-warmup-1-1yn5xd0iwimoy:7:52.18kk68r5e4m22",
+            "storage": "idb",
+            "browser_startup_ms": 415.1122919999998,
+            "receiver_script_startup_ms": 59.96458299999904
+          },
+          "readable_ms": 42.30000000074506,
+          "persistence_transaction_ms": 580.2000000001863,
+          "durable_ms": null,
+          "wire": {
+            "received": 416108,
+            "sent": 131,
+            "frames": 9
+          },
+          "persistence_transactions": [
+            {
+              "at_ms": 580.1000000005588,
+              "puts": 24,
+              "matched": 132,
+              "durability": "relaxed"
+            }
+          ],
+          "transport_bytes": {
+            "received": 416134,
+            "sent": 139
+          },
+          "receiver_storage": {
+            "baseline": {
+              "apparent_bytes": 52286,
+              "allocated_bytes": 98304,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 10059,
+                  "allocated_bytes": 24576,
+                  "files": 5
+                },
+                "Local Storage": {
+                  "apparent_bytes": 692,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "Session Storage": {
+                  "apparent_bytes": 575,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "total": {
+              "apparent_bytes": 202204,
+              "allocated_bytes": 258048,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 159492,
+                  "allocated_bytes": 180224,
+                  "files": 7
+                },
+                "Local Storage": {
+                  "apparent_bytes": 1177,
+                  "allocated_bytes": 20480,
+                  "files": 6
+                },
+                "Session Storage": {
+                  "apparent_bytes": 575,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "net": {
+              "apparent_bytes": 149918,
+              "allocated_bytes": 159744
+            }
+          },
+          "correctness": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          },
+          "reopened": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          }
+        },
+        {
+          "label": "warmup-2",
+          "measured": false,
+          "connection": {
+            "connection_ms": 25.5,
+            "idbName": "rep:zero-synthetic-collection-2026-10-26T07-00-21-635Z-warmup-2-1yn5xd0iwimoy:7:52.18kk68r5e4m22",
+            "storage": "idb",
+            "browser_startup_ms": 397.5247080000008,
+            "receiver_script_startup_ms": 48.12579199999891
+          },
+          "readable_ms": 27.100000000558794,
+          "persistence_transaction_ms": 556.4000000003725,
+          "durable_ms": null,
+          "wire": {
+            "received": 416108,
+            "sent": 131,
+            "frames": 9
+          },
+          "persistence_transactions": [
+            {
+              "at_ms": 556.4000000003725,
+              "puts": 24,
+              "matched": 132,
+              "durability": "relaxed"
+            }
+          ],
+          "transport_bytes": {
+            "received": 416134,
+            "sent": 139
+          },
+          "receiver_storage": {
+            "baseline": {
+              "apparent_bytes": 52286,
+              "allocated_bytes": 98304,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 10059,
+                  "allocated_bytes": 24576,
+                  "files": 5
+                },
+                "Local Storage": {
+                  "apparent_bytes": 692,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "Session Storage": {
+                  "apparent_bytes": 575,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "total": {
+              "apparent_bytes": 202204,
+              "allocated_bytes": 258048,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 159492,
+                  "allocated_bytes": 180224,
+                  "files": 7
+                },
+                "Local Storage": {
+                  "apparent_bytes": 1177,
+                  "allocated_bytes": 20480,
+                  "files": 6
+                },
+                "Session Storage": {
+                  "apparent_bytes": 575,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "net": {
+              "apparent_bytes": 149918,
+              "allocated_bytes": 159744
+            }
+          },
+          "correctness": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          },
+          "reopened": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          }
+        },
+        {
+          "label": "warmup-3",
+          "measured": false,
+          "connection": {
+            "connection_ms": 25.90000000037253,
+            "idbName": "rep:zero-synthetic-collection-2026-10-26T07-00-21-635Z-warmup-3-1yn5xd0iwimoy:7:52.18kk68r5e4m22",
+            "storage": "idb",
+            "browser_startup_ms": 394.10158299999966,
+            "receiver_script_startup_ms": 45.71495899999718
+          },
+          "readable_ms": 26.700000000186265,
+          "persistence_transaction_ms": 556.2000000001863,
+          "durable_ms": null,
+          "wire": {
+            "received": 416108,
+            "sent": 131,
+            "frames": 9
+          },
+          "persistence_transactions": [
+            {
+              "at_ms": 556.2000000001863,
+              "puts": 24,
+              "matched": 132,
+              "durability": "relaxed"
+            }
+          ],
+          "transport_bytes": {
+            "received": 416134,
+            "sent": 139
+          },
+          "receiver_storage": {
+            "baseline": {
+              "apparent_bytes": 52286,
+              "allocated_bytes": 98304,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 10059,
+                  "allocated_bytes": 24576,
+                  "files": 5
+                },
+                "Local Storage": {
+                  "apparent_bytes": 692,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "Session Storage": {
+                  "apparent_bytes": 575,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "total": {
+              "apparent_bytes": 202204,
+              "allocated_bytes": 258048,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 159492,
+                  "allocated_bytes": 180224,
+                  "files": 7
+                },
+                "Local Storage": {
+                  "apparent_bytes": 1177,
+                  "allocated_bytes": 20480,
+                  "files": 6
+                },
+                "Session Storage": {
+                  "apparent_bytes": 575,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "net": {
+              "apparent_bytes": 149918,
+              "allocated_bytes": 159744
+            }
+          },
+          "correctness": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          },
+          "reopened": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          }
+        },
+        {
+          "label": "measured-1",
+          "measured": true,
+          "connection": {
+            "connection_ms": 22.09999999962747,
+            "idbName": "rep:zero-synthetic-collection-2026-10-26T07-00-21-635Z-measured-1-1yn5xd0iwimoy:7:52.18kk68r5e4m22",
+            "storage": "idb",
+            "browser_startup_ms": 386.37225000000035,
+            "receiver_script_startup_ms": 44.27558300000237
+          },
+          "readable_ms": 24,
+          "persistence_transaction_ms": 552,
+          "durable_ms": null,
+          "wire": {
+            "received": 416108,
+            "sent": 131,
+            "frames": 9
+          },
+          "persistence_transactions": [
+            {
+              "at_ms": 551.9000000003725,
+              "puts": 24,
+              "matched": 132,
+              "durability": "relaxed"
+            }
+          ],
+          "transport_bytes": {
+            "received": 416134,
+            "sent": 139
+          },
+          "receiver_storage": {
+            "baseline": {
+              "apparent_bytes": 52313,
+              "allocated_bytes": 98304,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 10078,
+                  "allocated_bytes": 24576,
+                  "files": 5
+                },
+                "Local Storage": {
+                  "apparent_bytes": 696,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "Session Storage": {
+                  "apparent_bytes": 579,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "total": {
+              "apparent_bytes": 202260,
+              "allocated_bytes": 258048,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 159536,
+                  "allocated_bytes": 180224,
+                  "files": 7
+                },
+                "Local Storage": {
+                  "apparent_bytes": 1185,
+                  "allocated_bytes": 20480,
+                  "files": 6
+                },
+                "Session Storage": {
+                  "apparent_bytes": 579,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "net": {
+              "apparent_bytes": 149947,
+              "allocated_bytes": 159744
+            }
+          },
+          "correctness": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          },
+          "reopened": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          }
+        },
+        {
+          "label": "measured-2",
+          "measured": true,
+          "connection": {
+            "connection_ms": 21.90000000037253,
+            "idbName": "rep:zero-synthetic-collection-2026-10-26T07-00-21-635Z-measured-2-1yn5xd0iwimoy:7:52.18kk68r5e4m22",
+            "storage": "idb",
+            "browser_startup_ms": 402.6207919999979,
+            "receiver_script_startup_ms": 51.74620800000048
+          },
+          "readable_ms": 25.90000000037253,
+          "persistence_transaction_ms": 553.9000000003725,
+          "durable_ms": null,
+          "wire": {
+            "received": 416120,
+            "sent": 131,
+            "frames": 9
+          },
+          "persistence_transactions": [
+            {
+              "at_ms": 553.8000000007451,
+              "puts": 24,
+              "matched": 132,
+              "durability": "relaxed"
+            }
+          ],
+          "transport_bytes": {
+            "received": 416146,
+            "sent": 139
+          },
+          "receiver_storage": {
+            "baseline": {
+              "apparent_bytes": 52313,
+              "allocated_bytes": 98304,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 10078,
+                  "allocated_bytes": 24576,
+                  "files": 5
+                },
+                "Local Storage": {
+                  "apparent_bytes": 696,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "Session Storage": {
+                  "apparent_bytes": 579,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "total": {
+              "apparent_bytes": 202266,
+              "allocated_bytes": 258048,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 159542,
+                  "allocated_bytes": 180224,
+                  "files": 7
+                },
+                "Local Storage": {
+                  "apparent_bytes": 1185,
+                  "allocated_bytes": 20480,
+                  "files": 6
+                },
+                "Session Storage": {
+                  "apparent_bytes": 579,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "net": {
+              "apparent_bytes": 149953,
+              "allocated_bytes": 159744
+            }
+          },
+          "correctness": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          },
+          "reopened": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          }
+        },
+        {
+          "label": "measured-3",
+          "measured": true,
+          "connection": {
+            "connection_ms": 26.699999999254942,
+            "idbName": "rep:zero-synthetic-collection-2026-10-26T07-00-21-635Z-measured-3-1yn5xd0iwimoy:7:52.18kk68r5e4m22",
+            "storage": "idb",
+            "browser_startup_ms": 393.59491699999853,
+            "receiver_script_startup_ms": 49.26274999999805
+          },
+          "readable_ms": 25.59999999962747,
+          "persistence_transaction_ms": 570.3999999994412,
+          "durable_ms": null,
+          "wire": {
+            "received": 416108,
+            "sent": 131,
+            "frames": 9
+          },
+          "persistence_transactions": [
+            {
+              "at_ms": 570.3999999994412,
+              "puts": 24,
+              "matched": 132,
+              "durability": "relaxed"
+            }
+          ],
+          "transport_bytes": {
+            "received": 416134,
+            "sent": 139
+          },
+          "receiver_storage": {
+            "baseline": {
+              "apparent_bytes": 52313,
+              "allocated_bytes": 98304,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 10078,
+                  "allocated_bytes": 24576,
+                  "files": 5
+                },
+                "Local Storage": {
+                  "apparent_bytes": 696,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "Session Storage": {
+                  "apparent_bytes": 579,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "total": {
+              "apparent_bytes": 202260,
+              "allocated_bytes": 258048,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 159536,
+                  "allocated_bytes": 180224,
+                  "files": 7
+                },
+                "Local Storage": {
+                  "apparent_bytes": 1185,
+                  "allocated_bytes": 20480,
+                  "files": 6
+                },
+                "Session Storage": {
+                  "apparent_bytes": 579,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "net": {
+              "apparent_bytes": 149947,
+              "allocated_bytes": 159744
+            }
+          },
+          "correctness": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          },
+          "reopened": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          }
+        },
+        {
+          "label": "measured-4",
+          "measured": true,
+          "connection": {
+            "connection_ms": 26.100000000558794,
+            "idbName": "rep:zero-synthetic-collection-2026-10-26T07-00-21-635Z-measured-4-1yn5xd0iwimoy:7:52.18kk68r5e4m22",
+            "storage": "idb",
+            "browser_startup_ms": 397.1260420000035,
+            "receiver_script_startup_ms": 50.74500000000262
+          },
+          "readable_ms": 25.399999999441206,
+          "persistence_transaction_ms": 557.8999999994412,
+          "durable_ms": null,
+          "wire": {
+            "received": 416008,
+            "sent": 131,
+            "frames": 6
+          },
+          "persistence_transactions": [
+            {
+              "at_ms": 557.7999999998137,
+              "puts": 24,
+              "matched": 132,
+              "durability": "relaxed"
+            }
+          ],
+          "transport_bytes": {
+            "received": 416028,
+            "sent": 139
+          },
+          "receiver_storage": {
+            "baseline": {
+              "apparent_bytes": 52313,
+              "allocated_bytes": 98304,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 10078,
+                  "allocated_bytes": 24576,
+                  "files": 5
+                },
+                "Local Storage": {
+                  "apparent_bytes": 696,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "Session Storage": {
+                  "apparent_bytes": 579,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "total": {
+              "apparent_bytes": 202266,
+              "allocated_bytes": 258048,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 159542,
+                  "allocated_bytes": 180224,
+                  "files": 7
+                },
+                "Local Storage": {
+                  "apparent_bytes": 1185,
+                  "allocated_bytes": 20480,
+                  "files": 6
+                },
+                "Session Storage": {
+                  "apparent_bytes": 579,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "net": {
+              "apparent_bytes": 149953,
+              "allocated_bytes": 159744
+            }
+          },
+          "correctness": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          },
+          "reopened": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          }
+        },
+        {
+          "label": "measured-5",
+          "measured": true,
+          "connection": {
+            "connection_ms": 28,
+            "idbName": "rep:zero-synthetic-collection-2026-10-26T07-00-21-635Z-measured-5-1yn5xd0iwimoy:7:52.18kk68r5e4m22",
+            "storage": "idb",
+            "browser_startup_ms": 429.50937500000146,
+            "receiver_script_startup_ms": 61.067416999998386
+          },
+          "readable_ms": 24.5,
+          "persistence_transaction_ms": 534,
+          "durable_ms": null,
+          "wire": {
+            "received": 416108,
+            "sent": 131,
+            "frames": 9
+          },
+          "persistence_transactions": [
+            {
+              "at_ms": 534,
+              "puts": 24,
+              "matched": 132,
+              "durability": "relaxed"
+            }
+          ],
+          "transport_bytes": {
+            "received": 416134,
+            "sent": 139
+          },
+          "receiver_storage": {
+            "baseline": {
+              "apparent_bytes": 52313,
+              "allocated_bytes": 98304,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 10078,
+                  "allocated_bytes": 24576,
+                  "files": 5
+                },
+                "Local Storage": {
+                  "apparent_bytes": 696,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "Session Storage": {
+                  "apparent_bytes": 579,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "total": {
+              "apparent_bytes": 202260,
+              "allocated_bytes": 258048,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 159536,
+                  "allocated_bytes": 180224,
+                  "files": 7
+                },
+                "Local Storage": {
+                  "apparent_bytes": 1185,
+                  "allocated_bytes": 20480,
+                  "files": 6
+                },
+                "Session Storage": {
+                  "apparent_bytes": 579,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "net": {
+              "apparent_bytes": 149947,
+              "allocated_bytes": 159744
+            }
+          },
+          "correctness": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          },
+          "reopened": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          }
+        },
+        {
+          "label": "measured-6",
+          "measured": true,
+          "connection": {
+            "connection_ms": 25.40000000037253,
+            "idbName": "rep:zero-synthetic-collection-2026-10-26T07-00-21-635Z-measured-6-1yn5xd0iwimoy:7:52.18kk68r5e4m22",
+            "storage": "idb",
+            "browser_startup_ms": 379.0712910000002,
+            "receiver_script_startup_ms": 53.35312499999418
+          },
+          "readable_ms": 26.200000000186265,
+          "persistence_transaction_ms": 538.8000000007451,
+          "durable_ms": null,
+          "wire": {
+            "received": 416108,
+            "sent": 131,
+            "frames": 9
+          },
+          "persistence_transactions": [
+            {
+              "at_ms": 538.7000000001863,
+              "puts": 24,
+              "matched": 132,
+              "durability": "relaxed"
+            }
+          ],
+          "transport_bytes": {
+            "received": 416134,
+            "sent": 139
+          },
+          "receiver_storage": {
+            "baseline": {
+              "apparent_bytes": 52313,
+              "allocated_bytes": 98304,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 10078,
+                  "allocated_bytes": 24576,
+                  "files": 5
+                },
+                "Local Storage": {
+                  "apparent_bytes": 696,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "Session Storage": {
+                  "apparent_bytes": 579,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "total": {
+              "apparent_bytes": 202260,
+              "allocated_bytes": 258048,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 159536,
+                  "allocated_bytes": 180224,
+                  "files": 7
+                },
+                "Local Storage": {
+                  "apparent_bytes": 1185,
+                  "allocated_bytes": 20480,
+                  "files": 6
+                },
+                "Session Storage": {
+                  "apparent_bytes": 579,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "net": {
+              "apparent_bytes": 149947,
+              "allocated_bytes": 159744
+            }
+          },
+          "correctness": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          },
+          "reopened": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          }
+        },
+        {
+          "label": "measured-7",
+          "measured": true,
+          "connection": {
+            "connection_ms": 21.399999999441206,
+            "idbName": "rep:zero-synthetic-collection-2026-10-26T07-00-21-635Z-measured-7-1yn5xd0iwimoy:7:52.18kk68r5e4m22",
+            "storage": "idb",
+            "browser_startup_ms": 384.2458750000005,
+            "receiver_script_startup_ms": 49.218291999997746
+          },
+          "readable_ms": 24.5,
+          "persistence_transaction_ms": 547.2999999998137,
+          "durable_ms": null,
+          "wire": {
+            "received": 416120,
+            "sent": 131,
+            "frames": 9
+          },
+          "persistence_transactions": [
+            {
+              "at_ms": 547.2000000001863,
+              "puts": 24,
+              "matched": 132,
+              "durability": "relaxed"
+            }
+          ],
+          "transport_bytes": {
+            "received": 416146,
+            "sent": 139
+          },
+          "receiver_storage": {
+            "baseline": {
+              "apparent_bytes": 52313,
+              "allocated_bytes": 98304,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 10078,
+                  "allocated_bytes": 24576,
+                  "files": 5
+                },
+                "Local Storage": {
+                  "apparent_bytes": 696,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "Session Storage": {
+                  "apparent_bytes": 579,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "total": {
+              "apparent_bytes": 202266,
+              "allocated_bytes": 258048,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 159542,
+                  "allocated_bytes": 180224,
+                  "files": 7
+                },
+                "Local Storage": {
+                  "apparent_bytes": 1185,
+                  "allocated_bytes": 20480,
+                  "files": 6
+                },
+                "Session Storage": {
+                  "apparent_bytes": 579,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "net": {
+              "apparent_bytes": 149953,
+              "allocated_bytes": 159744
+            }
+          },
+          "correctness": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          },
+          "reopened": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          }
+        },
+        {
+          "label": "measured-8",
+          "measured": true,
+          "connection": {
+            "connection_ms": 24.90000000037253,
+            "idbName": "rep:zero-synthetic-collection-2026-10-26T07-00-21-635Z-measured-8-1yn5xd0iwimoy:7:52.18kk68r5e4m22",
+            "storage": "idb",
+            "browser_startup_ms": 400.9092090000049,
+            "receiver_script_startup_ms": 57.44741700000304
+          },
+          "readable_ms": 23.800000000745058,
+          "persistence_transaction_ms": 543.1000000005588,
+          "durable_ms": null,
+          "wire": {
+            "received": 416005,
+            "sent": 131,
+            "frames": 6
+          },
+          "persistence_transactions": [
+            {
+              "at_ms": 543.1000000005588,
+              "puts": 24,
+              "matched": 132,
+              "durability": "relaxed"
+            }
+          ],
+          "transport_bytes": {
+            "received": 416025,
+            "sent": 139
+          },
+          "receiver_storage": {
+            "baseline": {
+              "apparent_bytes": 52313,
+              "allocated_bytes": 98304,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 10078,
+                  "allocated_bytes": 24576,
+                  "files": 5
+                },
+                "Local Storage": {
+                  "apparent_bytes": 696,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "Session Storage": {
+                  "apparent_bytes": 579,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "total": {
+              "apparent_bytes": 202260,
+              "allocated_bytes": 258048,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 159536,
+                  "allocated_bytes": 180224,
+                  "files": 7
+                },
+                "Local Storage": {
+                  "apparent_bytes": 1185,
+                  "allocated_bytes": 20480,
+                  "files": 6
+                },
+                "Session Storage": {
+                  "apparent_bytes": 579,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "net": {
+              "apparent_bytes": 149947,
+              "allocated_bytes": 159744
+            }
+          },
+          "correctness": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          },
+          "reopened": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          }
+        },
+        {
+          "label": "measured-9",
+          "measured": true,
+          "connection": {
+            "connection_ms": 22.200000000186265,
+            "idbName": "rep:zero-synthetic-collection-2026-10-26T07-00-21-635Z-measured-9-1yn5xd0iwimoy:7:52.18kk68r5e4m22",
+            "storage": "idb",
+            "browser_startup_ms": 391.7312079999974,
+            "receiver_script_startup_ms": 54.9910830000008
+          },
+          "readable_ms": 24.600000000558794,
+          "persistence_transaction_ms": 549.1000000005588,
+          "durable_ms": null,
+          "wire": {
+            "received": 416108,
+            "sent": 131,
+            "frames": 9
+          },
+          "persistence_transactions": [
+            {
+              "at_ms": 549.1000000005588,
+              "puts": 24,
+              "matched": 132,
+              "durability": "relaxed"
+            }
+          ],
+          "transport_bytes": {
+            "received": 416134,
+            "sent": 139
+          },
+          "receiver_storage": {
+            "baseline": {
+              "apparent_bytes": 52313,
+              "allocated_bytes": 98304,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 10078,
+                  "allocated_bytes": 24576,
+                  "files": 5
+                },
+                "Local Storage": {
+                  "apparent_bytes": 696,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "Session Storage": {
+                  "apparent_bytes": 579,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "total": {
+              "apparent_bytes": 202260,
+              "allocated_bytes": 258048,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 159536,
+                  "allocated_bytes": 180224,
+                  "files": 7
+                },
+                "Local Storage": {
+                  "apparent_bytes": 1185,
+                  "allocated_bytes": 20480,
+                  "files": 6
+                },
+                "Session Storage": {
+                  "apparent_bytes": 579,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "net": {
+              "apparent_bytes": 149947,
+              "allocated_bytes": 159744
+            }
+          },
+          "correctness": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          },
+          "reopened": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          }
+        },
+        {
+          "label": "measured-10",
+          "measured": true,
+          "connection": {
+            "connection_ms": 21.699999999254942,
+            "idbName": "rep:zero-synthetic-collection-2026-10-26T07-00-21-635Z-measured-10-1yn5xd0iwimoy:7:52.18kk68r5e4m22",
+            "storage": "idb",
+            "browser_startup_ms": 387.68937500000175,
+            "receiver_script_startup_ms": 48.671875
+          },
+          "readable_ms": 25.299999999813735,
+          "persistence_transaction_ms": 554.2000000001863,
+          "durable_ms": null,
+          "wire": {
+            "received": 416066,
+            "sent": 131,
+            "frames": 8
+          },
+          "persistence_transactions": [
+            {
+              "at_ms": 554.2000000001863,
+              "puts": 24,
+              "matched": 132,
+              "durability": "relaxed"
+            }
+          ],
+          "transport_bytes": {
+            "received": 416146,
+            "sent": 139
+          },
+          "receiver_storage": {
+            "baseline": {
+              "apparent_bytes": 52326,
+              "allocated_bytes": 98304,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 10087,
+                  "allocated_bytes": 24576,
+                  "files": 5
+                },
+                "Local Storage": {
+                  "apparent_bytes": 698,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "Session Storage": {
+                  "apparent_bytes": 581,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "total": {
+              "apparent_bytes": 202292,
+              "allocated_bytes": 258048,
+              "parts": {
+                "IndexedDB": {
+                  "apparent_bytes": 159562,
+                  "allocated_bytes": 180224,
+                  "files": 7
+                },
+                "Local Storage": {
+                  "apparent_bytes": 1189,
+                  "allocated_bytes": 20480,
+                  "files": 6
+                },
+                "Session Storage": {
+                  "apparent_bytes": 581,
+                  "allocated_bytes": 16384,
+                  "files": 5
+                },
+                "WebStorage": {
+                  "apparent_bytes": 40960,
+                  "allocated_bytes": 40960,
+                  "files": 2
+                }
+              }
+            },
+            "net": {
+              "apparent_bytes": 149966,
+              "allocated_bytes": 159744
+            }
+          },
+          "correctness": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          },
+          "reopened": {
+            "verified": true,
+            "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+            "bytes": 415448,
+            "issues": 21,
+            "notes": 111
+          }
+        }
+      ],
+      "services": {
+        "initialized_empty_postgres": {
+          "apparent_bytes": 80228348,
+          "allocated_bytes": 80310272,
+          "files": 1866
+        },
+        "initialized_empty_databases": {
+          "postgres": 7804595,
+          "upstream": 7643663,
+          "cvr": 7643663,
+          "change": 7643663
+        },
+        "pre_client_postgres_databases": {
+          "postgres": 7804595,
+          "upstream": 8418995,
+          "cvr": 8124083,
+          "change": 8017587
+        },
+        "pre_client_cache_files": {
+          "zero.db": {
+            "apparent_bytes": 544768,
+            "allocated_bytes": 544768
+          },
+          "zero.db-shm": {
+            "apparent_bytes": 32768,
+            "allocated_bytes": 32768
+          },
+          "zero.db-wal": {
+            "apparent_bytes": 82432,
+            "allocated_bytes": 86016
+          },
+          "zero.db-wal2": {
+            "apparent_bytes": 0,
+            "allocated_bytes": 0
+          }
+        },
+        "final_databases": {
+          "postgres": 7804595,
+          "upstream": 8533683,
+          "cvr": 8345267,
+          "change": 8165043
+        },
+        "final_postgres": {
+          "apparent_bytes": 82473386,
+          "allocated_bytes": 82575360,
+          "files": 1962
+        },
+        "postgres_net": {
+          "apparent_bytes": 2245038,
+          "allocated_bytes": 2265088
+        },
+        "cache_files": {
+          "zero.db": {
+            "apparent_bytes": 880640,
+            "allocated_bytes": 880640
+          },
+          "zero.db-shm": {
+            "apparent_bytes": 32768,
+            "allocated_bytes": 32768
+          },
+          "zero.db-wal": {
+            "apparent_bytes": 568592,
+            "allocated_bytes": 569344
+          },
+          "zero.db-wal2": {
+            "apparent_bytes": 0,
+            "allocated_bytes": 0
+          }
+        }
+      },
+      "sender_preparation_ms": 13666.646708,
+      "sender_replica_verified": {
+        "verified": true,
+        "sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+        "bytes": 415448,
+        "issues": 21,
+        "notes": 111
+      },
+      "postgres_settings": [
+        {
+          "name": "data_checksums",
+          "setting": "off"
+        },
+        {
+          "name": "fsync",
+          "setting": "on"
+        },
+        {
+          "name": "full_page_writes",
+          "setting": "on"
+        },
+        {
+          "name": "synchronous_commit",
+          "setting": "on"
+        },
+        {
+          "name": "wal_level",
+          "setting": "logical"
+        }
+      ],
+      "updates": [
+        {
+          "collection": "issues",
+          "field": "title",
+          "source_added_bytes": 26,
+          "source_new_field_bytes": 80,
+          "sender_commit_ms": 14.794540999995661,
+          "readable_ms": 33.09999999962747,
+          "persistence_transaction_ms": 474.59999999962747,
+          "durable_ms": null,
+          "wire": {
+            "received": 83464,
+            "sent": 0,
+            "frames": 3
+          },
+          "persistence_transactions": [
+            {
+              "at_ms": 474.59999999962747,
+              "puts": 22,
+              "matched": 1,
+              "durability": "relaxed"
+            }
+          ],
+          "transport_bytes": {
+            "received": 83478,
+            "sent": 0
+          },
+          "correctness": {
+            "verified": true,
+            "sha256": "9b3870f275aceecea9c02669b706ca01d73ec26e7ce2e5eea1a65a9f3d2687f7",
+            "bytes": 415474,
+            "issues": 21,
+            "notes": 111
+          }
+        },
+        {
+          "collection": "notes",
+          "field": "body",
+          "source_added_bytes": 25,
+          "source_new_field_bytes": 2553,
+          "sender_commit_ms": 7.167625000001863,
+          "readable_ms": 25.399999999441206,
+          "persistence_transaction_ms": 467.19999999925494,
+          "durable_ms": null,
+          "wire": {
+            "received": 332439,
+            "sent": 0,
+            "frames": 3
+          },
+          "persistence_transactions": [
+            {
+              "at_ms": 467.19999999925494,
+              "puts": 22,
+              "matched": 1,
+              "durability": "relaxed"
+            }
+          ],
+          "transport_bytes": {
+            "received": 332453,
+            "sent": 0
+          },
+          "correctness": {
+            "verified": true,
+            "sha256": "f760c71adb11610b73cfdb869e425a753fd839c5afde7392b90c15531e6dfa6f",
+            "bytes": 415499,
+            "issues": 21,
+            "notes": 111
+          }
+        }
+      ],
+      "incremental_reopened": {
+        "verified": true,
+        "sha256": "f760c71adb11610b73cfdb869e425a753fd839c5afde7392b90c15531e6dfa6f",
+        "bytes": 415499,
+        "issues": 21,
+        "notes": 111
+      },
+      "handshakes": [
+        "HTTP/1.1 101 Switching Protocols\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: ANGWS+wRiln89QsOnG3VXhw5nWU=\r\nSec-WebSocket-Protocol: eyJpbml0Q29ubmVjdGlvbk1lc3NhZ2UiOlsiaW5pdENvbm5lY3Rpb24iLHsiZGVzaXJlZFF1ZXJpZXNQYXRjaCI6W10sImNsaWVudFNjaGVtYSI6eyJ0YWJsZXMiOnsiY29sbGVjdGlvbnMiOnsiY29sdW1ucyI6eyJkYXRhIjp7InR5cGUiOiJqc29uIn0sImlkIjp7InR5cGUiOiJzdHJpbmcifX0sInByaW1hcnlLZXkiOlsiaWQiXX19fSwiYWN0aXZlQ2xpZW50cyI6WyJwZTE5bXJkcmgwN3QxYzZqb2wiXX1dLCJhdXRoVG9rZW4iOiJleUpoYkdjaU9pSklVekkxTmlKOS5leUp6ZFdJaU9pSnplVzUwYUdWMGFXTXRZMjlzYkdWamRHbHZiaTB5TURJMkxURXdMVEkyVkRBM0xUQXdMVEl4TFRZek5Wb3RkMkZ5YlhWd0xURWlMQ0pwYzNNaU9pSnplVzUwYUdWMGFXTXRZbVZ1WTJodFlYSnJJaXdpWVhWa0lqb2llbVZ5Ynkxc2IyTmhiQ0lzSW1WNGNDSTZNVGM1TXpBd05USXpOWDAuVTBnU1BPQ1djR0MxLXVGWFFOdzY4TEt5a092NXdJZTRBREFBcFZ4Ry1UdyJ9",
+        "HTTP/1.1 101 Switching Protocols\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: PEGkGr2Y7me467Ln+LvbB9QlEIg=\r\nSec-WebSocket-Protocol: eyJpbml0Q29ubmVjdGlvbk1lc3NhZ2UiOlsiaW5pdENvbm5lY3Rpb24iLHsiZGVzaXJlZFF1ZXJpZXNQYXRjaCI6W10sImNsaWVudFNjaGVtYSI6eyJ0YWJsZXMiOnsiY29sbGVjdGlvbnMiOnsiY29sdW1ucyI6eyJkYXRhIjp7InR5cGUiOiJqc29uIn0sImlkIjp7InR5cGUiOiJzdHJpbmcifX0sInByaW1hcnlLZXkiOlsiaWQiXX19fSwiYWN0aXZlQ2xpZW50cyI6WyJzMGx2ZDZrNjJuOGtlNzYzNTUiXX1dLCJhdXRoVG9rZW4iOiJleUpoYkdjaU9pSklVekkxTmlKOS5leUp6ZFdJaU9pSnplVzUwYUdWMGFXTXRZMjlzYkdWamRHbHZiaTB5TURJMkxURXdMVEkyVkRBM0xUQXdMVEl4TFRZek5Wb3RkMkZ5YlhWd0xURWlMQ0pwYzNNaU9pSnplVzUwYUdWMGFXTXRZbVZ1WTJodFlYSnJJaXdpWVhWa0lqb2llbVZ5Ynkxc2IyTmhiQ0lzSW1WNGNDSTZNVGM1TXpBd05USXpOWDAuVTBnU1BPQ1djR0MxLXVGWFFOdzY4TEt5a092NXdJZTRBREFBcFZ4Ry1UdyJ9"
+      ],
+      "summary": {
+        "readable_ms": {
+          "n": 10,
+          "p50": 24.950000000186265,
+          "p95_nearest_rank": 26.200000000186265,
+          "max": 26.200000000186265
+        },
+        "persistence_transaction_ms": {
+          "n": 10,
+          "p50": 550.5500000002794,
+          "p95_nearest_rank": 570.3999999994412,
+          "max": 570.3999999994412
+        },
+        "received_application_bytes": {
+          "n": 10,
+          "p50": 416108,
+          "p95_nearest_rank": 416120,
+          "max": 416120
+        },
+        "received_transport_bytes": {
+          "n": 10,
+          "p50": 416134,
+          "p95_nearest_rank": 416146,
+          "max": 416146
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Native IndexedDB writes use relaxed durability: no strict durable completion timing is claimed.",
+    "Persistence instrumentation times committed transactions containing all payload IDs (or update marker); full reconstruction and indexes are verified by native offline reopening outside timing.",
+    "Six local workers; sustained work serialized by shared lock, Atomic priority honored, OS/background activity uncontrolled. Browser-platform instrumentation overhead is included.",
+    "Wire counts exclude TLS/IP/TCP headers, retransmits, loopback framing and PG/cache/API internal traffic."
+  ],
+  "wire_definition": {
+    "application": "UTF-8 WebSocket message payloads after browser decompression",
+    "transport": "server-to-client TCP stream bytes across dedicated proxy, including WebSocket frame headers and compressed payloads; connection handshake is excluded by timer snapshots"
+  },
+  "durability": {
+    "mode": "native IDB relaxed; unchanged",
+    "durable_ms": null,
+    "persistence_transaction_ms": "weaker IDB payload transaction complete acknowledgement; not fsync/power-loss durability"
+  },
+  "method": {
+    "warmups": 3,
+    "measured": 10,
+    "fresh_persistent_receiver": true,
+    "normal_replication": "PG logical WAL -> zero-cache SQLite -> named-query WebSocket -> Zero native IDB",
+    "timer_start": "after transport connected, immediately before materialize all unbounded named queries",
+    "indexes": "Postgres primary keys only; cache derives native indexes; Zero native client metadata/indexes",
+    "compaction": "none explicitly requested"
+  },
+  "finished_utc": "2026-10-26T07:01:20.622Z"
+}
