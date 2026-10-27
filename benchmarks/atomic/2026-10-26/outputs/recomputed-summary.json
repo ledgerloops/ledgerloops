@@ -1,0 +1,128 @@
+{
+  "requestToDurableMs": {
+    "n": 10,
+    "minimum": 361.99674999999996,
+    "p50": 379.897,
+    "p95NearestRank": 430.936667,
+    "maximum": 430.936667
+  },
+  "readableConfirmedMs": {
+    "n": 10,
+    "minimum": 394.926333,
+    "p50": 413.216854,
+    "p95NearestRank": 466.34975000000003,
+    "maximum": 466.34975000000003
+  },
+  "connectionAuthMsExcluded": {
+    "n": 10,
+    "minimum": 0.662959,
+    "p50": 0.7262705,
+    "p95NearestRank": 0.916417,
+    "maximum": 0.916417
+  },
+  "wireBytes": 2867466,
+  "signedEnvelopeJsonBytes": 1661318,
+  "protocolMetadataBytes": 47191,
+  "crdtSnapshotBytes": 1158957,
+  "disk": {
+    "receiverBaselineDisk": {
+      "apparentBytes": {
+        "n": 10,
+        "minimum": 2109440,
+        "p50": 2109440.0,
+        "p95NearestRank": 2109440,
+        "maximum": 2109440
+      },
+      "allocatedBytes": {
+        "n": 10,
+        "minimum": 2043904,
+        "p50": 2060288.0,
+        "p95NearestRank": 2076672,
+        "maximum": 2076672
+      }
+    },
+    "receiverTotalDisk": {
+      "apparentBytes": {
+        "n": 10,
+        "minimum": 16846848,
+        "p50": 16846848.0,
+        "p95NearestRank": 16846848,
+        "maximum": 16846848
+      },
+      "allocatedBytes": {
+        "n": 10,
+        "minimum": 9850880,
+        "p50": 10285056.0,
+        "p95NearestRank": 10342400,
+        "maximum": 10342400
+      }
+    },
+    "receiverNetDisk": {
+      "apparentBytes": {
+        "n": 10,
+        "minimum": 14737408,
+        "p50": 14737408.0,
+        "p95NearestRank": 14737408,
+        "maximum": 14737408
+      },
+      "allocatedBytes": {
+        "n": 10,
+        "minimum": 7806976,
+        "p50": 8224768.0,
+        "p95NearestRank": 8282112,
+        "maximum": 8282112
+      }
+    }
+  },
+  "sourceDisk": {
+    "allocatedBytes": 9048064,
+    "apparentBytes": 16846848,
+    "files": [
+      {
+        "allocatedBytes": 9048064,
+        "apparentBytes": 16846848,
+        "path": "atomic.redb"
+      }
+    ]
+  },
+  "incremental": {
+    "receiverDiskAfterChanges": {
+      "allocatedBytes": 10309632,
+      "apparentBytes": 16846848,
+      "files": [
+        {
+          "allocatedBytes": 10309632,
+          "apparentBytes": 16846848,
+          "path": "atomic.redb"
+        }
+      ]
+    },
+    "runs": [
+      {
+        "collection": "issues",
+        "crdtUpdateBytes": 194,
+        "durability": "explicit receiver Db::flush after live UPDATE; full fixture verification excluded",
+        "durableMs": 25.650959,
+        "field": "title",
+        "newFieldBytes": 31,
+        "oldFieldBytes": 56,
+        "readableMs": 6.203374999999999,
+        "senderWriteMs": 3.197667,
+        "wireBytes": 293
+      },
+      {
+        "collection": "notes",
+        "crdtUpdateBytes": 2778,
+        "durability": "explicit receiver Db::flush after live UPDATE; full fixture verification excluded",
+        "durableMs": 21.408541,
+        "field": "body",
+        "newFieldBytes": 2558,
+        "oldFieldBytes": 2530,
+        "readableMs": 5.29375,
+        "senderWriteMs": 2.768416,
+        "wireBytes": 2877
+      }
+    ],
+    "verifiedAfterReopen": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "applicationProtocolBytes": 2867466,
+  "signedEnvelopeJsonBytes": 1661318,
+  "protocolMetadataBytes": 47191,
+  "crdtSnapshotBytes": 1158957,
+  "method": "Derived exactly from measured wire bytes, unchanged stored envelope JSON byte lengths, resource IDs/counts, observed chunk count and fixed-width pinned protocol framing. No replay or extra timed run.",
+  "syncDiffBytes": 15406,
+  "syncPushHeaderBytes": 303,
+  "resourceEntryMetadataBytes": 15741,
+  "envelopeEntryMetadataBytes": 15741
+}

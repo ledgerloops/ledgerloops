@@ -1,0 +1,40 @@
+{
+  "receiverDiskAfterChanges": {
+    "allocatedBytes": 10309632,
+    "apparentBytes": 16846848,
+    "files": [
+      {
+        "allocatedBytes": 10309632,
+        "apparentBytes": 16846848,
+        "path": "atomic.redb"
+      }
+    ]
+  },
+  "runs": [
+    {
+      "collection": "issues",
+      "crdtUpdateBytes": 194,
+      "durability": "explicit receiver Db::flush after live UPDATE; full fixture verification excluded",
+      "durableMs": 25.650959,
+      "field": "title",
+      "newFieldBytes": 31,
+      "oldFieldBytes": 56,
+      "readableMs": 6.203374999999999,
+      "senderWriteMs": 3.197667,
+      "wireBytes": 293
+    },
+    {
+      "collection": "notes",
+      "crdtUpdateBytes": 2778,
+      "durability": "explicit receiver Db::flush after live UPDATE; full fixture verification excluded",
+      "durableMs": 21.408541,
+      "field": "body",
+      "newFieldBytes": 2558,
+      "oldFieldBytes": 2530,
+      "readableMs": 5.29375,
+      "senderWriteMs": 2.768416,
+      "wireBytes": 2877
+    }
+  ],
+  "verifiedAfterReopen": true
+}

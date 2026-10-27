@@ -1,0 +1,265 @@
+{
+  "model": "H",
+  "fixtureBytes": 415448,
+  "fixtureSha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+  "warmups": 3,
+  "measuredRuns": 10,
+  "requestToDurableMs": {
+    "n": 10,
+    "min": 361.99674999999996,
+    "p50": 379.897,
+    "p95NearestRank": 430.936667,
+    "max": 430.936667
+  },
+  "readableConfirmedMs": {
+    "n": 10,
+    "min": 394.926333,
+    "p50": 413.216854,
+    "p95NearestRank": 466.34975000000003,
+    "max": 466.34975000000003
+  },
+  "earlierReadableMs": null,
+  "connectionAuthMsExcluded": {
+    "n": 10,
+    "min": 0.662959,
+    "p50": 0.7262705,
+    "p95NearestRank": 0.916417,
+    "max": 0.916417
+  },
+  "receiverStartupMsExcluded": {
+    "n": 10,
+    "min": 290.935458,
+    "p50": 300.24052099999994,
+    "p95NearestRank": 313.42512500000004,
+    "max": 313.42512500000004
+  },
+  "wireBytes": [
+    2867466
+  ],
+  "wireToFixtureRatio": 6.90210567868903,
+  "sourceDisk": {
+    "allocatedBytes": 9048064,
+    "apparentBytes": 16846848,
+    "files": [
+      {
+        "allocatedBytes": 9048064,
+        "apparentBytes": 16846848,
+        "path": "atomic.redb"
+      }
+    ]
+  },
+  "sourcePreparationMsExcluded": 1107.832291,
+  "resources": {
+    "payload": 132,
+    "customProperties": 20,
+    "customClasses": 2,
+    "containers": 5,
+    "driveTotal": 159,
+    "baselineReceiverIncludingBuiltinsAndPublicOwner": 415,
+    "receiverResourceRowsAfterSync": 574,
+    "sourceResourceRowsIncludingSignedCommitMaterializations": 733,
+    "retainedEnvelopes": 159
+  },
+  "disk": {
+    "receiverBaselineDisk": {
+      "apparentBytes": {
+        "n": 10,
+        "min": 2109440,
+        "p50": 2109440.0,
+        "p95NearestRank": 2109440,
+        "max": 2109440
+      },
+      "allocatedBytes": {
+        "n": 10,
+        "min": 2043904,
+        "p50": 2060288.0,
+        "p95NearestRank": 2076672,
+        "max": 2076672
+      }
+    },
+    "receiverTotalDisk": {
+      "apparentBytes": {
+        "n": 10,
+        "min": 16846848,
+        "p50": 16846848.0,
+        "p95NearestRank": 16846848,
+        "max": 16846848
+      },
+      "allocatedBytes": {
+        "n": 10,
+        "min": 9850880,
+        "p50": 10285056.0,
+        "p95NearestRank": 10342400,
+        "max": 10342400
+      }
+    },
+    "receiverNetDisk": {
+      "apparentBytes": {
+        "n": 10,
+        "min": 14737408,
+        "p50": 14737408.0,
+        "p95NearestRank": 14737408,
+        "max": 14737408
+      },
+      "allocatedBytes": {
+        "n": 10,
+        "min": 7806976,
+        "p50": 8224768.0,
+        "p95NearestRank": 8282112,
+        "max": 8282112
+      }
+    }
+  },
+  "incremental": {
+    "receiverDiskAfterChanges": {
+      "allocatedBytes": 10309632,
+      "apparentBytes": 16846848,
+      "files": [
+        {
+          "allocatedBytes": 10309632,
+          "apparentBytes": 16846848,
+          "path": "atomic.redb"
+        }
+      ]
+    },
+    "runs": [
+      {
+        "collection": "issues",
+        "crdtUpdateBytes": 194,
+        "durability": "explicit receiver Db::flush after live UPDATE; full fixture verification excluded",
+        "durableMs": 25.650959,
+        "field": "title",
+        "newFieldBytes": 31,
+        "oldFieldBytes": 56,
+        "readableMs": 6.203374999999999,
+        "senderWriteMs": 3.197667,
+        "wireBytes": 293
+      },
+      {
+        "collection": "notes",
+        "crdtUpdateBytes": 2778,
+        "durability": "explicit receiver Db::flush after live UPDATE; full fixture verification excluded",
+        "durableMs": 21.408541,
+        "field": "body",
+        "newFieldBytes": 2558,
+        "oldFieldBytes": 2530,
+        "readableMs": 5.29375,
+        "senderWriteMs": 2.768416,
+        "wireBytes": 2877
+      }
+    ],
+    "verifiedAfterReopen": true
+  },
+  "allReceiversVerifiedAfterReopen": true,
+  "target100msMetCount": 0,
+  "runtimeDirectory": "/private/tmp/atomic-sync-model-h-yjgxp2e7",
+  "status": "Model H measured; R/C/O/G deferred by subsequent Model H-only priority, not unsupported",
+  "receiverLogicalStorageNet": {
+    "AppAgent": {
+      "entries": 0,
+      "keyBytes": 0,
+      "valueBytes": 0
+    },
+    "Blobs": {
+      "entries": 0,
+      "keyBytes": 0,
+      "valueBytes": 0
+    },
+    "DidMapping": {
+      "entries": 0,
+      "keyBytes": 0,
+      "valueBytes": 0
+    },
+    "DriveMapping": {
+      "entries": 0,
+      "keyBytes": 0,
+      "valueBytes": 0
+    },
+    "Envelopes": {
+      "entries": 159,
+      "keyBytes": 30051,
+      "valueBytes": 1661318
+    },
+    "LoroSnapshots": {
+      "entries": 159,
+      "keyBytes": 14787,
+      "valueBytes": 1158957
+    },
+    "Outbox": {
+      "entries": 0,
+      "keyBytes": 0,
+      "valueBytes": 0
+    },
+    "PluginMeta": {
+      "entries": 0,
+      "keyBytes": 0,
+      "valueBytes": 0
+    },
+    "PluginSchedule": {
+      "entries": 0,
+      "keyBytes": 0,
+      "valueBytes": 0
+    },
+    "PluginSecret": {
+      "entries": 0,
+      "keyBytes": 0,
+      "valueBytes": 0
+    },
+    "PluginTrigger": {
+      "entries": 0,
+      "keyBytes": 0,
+      "valueBytes": 0
+    },
+    "PropValSub": {
+      "entries": 2574,
+      "keyBytes": 848036,
+      "valueBytes": 0
+    },
+    "QueryMembers": {
+      "entries": 132,
+      "keyBytes": 14916,
+      "valueBytes": 0
+    },
+    "Resources": {
+      "entries": 159,
+      "keyBytes": 14787,
+      "valueBytes": 717204
+    },
+    "SearchDocs": {
+      "entries": 159,
+      "keyBytes": 1272,
+      "valueBytes": 23445
+    },
+    "SearchPostings": {
+      "entries": 637,
+      "keyBytes": 9778,
+      "valueBytes": 637
+    },
+    "SearchTrigrams": {
+      "entries": 11,
+      "keyBytes": 187,
+      "valueBytes": 0
+    },
+    "ValPropSub": {
+      "entries": 733,
+      "keyBytes": 135563,
+      "valueBytes": 0
+    },
+    "WatchedQueries": {
+      "entries": 0,
+      "keyBytes": 0,
+      "valueBytes": 0
+    }
+  },
+  "wireBreakdown": {
+    "applicationProtocolBytes": 2867466,
+    "signedEnvelopeJsonBytes": 1661318,
+    "protocolMetadataBytes": 47191,
+    "crdtSnapshotBytes": 1158957,
+    "method": "Derived exactly from measured wire bytes, unchanged stored envelope JSON byte lengths, resource IDs/counts, observed chunk count and fixed-width pinned protocol framing. No replay or extra timed run.",
+    "syncDiffBytes": 15406,
+    "syncPushHeaderBytes": 303,
+    "resourceEntryMetadataBytes": 15741,
+    "envelopeEntryMetadataBytes": 15741
+  }
+}

@@ -1,0 +1,21 @@
+[package]
+name = "atomic-sync-benchmark"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+atomic_lib = { path = "../../work/atomic-server/lib", features = ["db-redb", "ws"] }
+tokio = { version = "1.52.3", features = ["rt-multi-thread", "macros", "net", "time"] }
+tokio-tungstenite = "0.29.0"
+futures = "0.3"
+serde_json = "1"
+serde_jcs = "0.2"
+sha2 = "0.10"
+hex = "0.4"
+blake3 = "1.8.5"
+
+[profile.release]
+opt-level = 2
+lto = false
+codegen-units = 16
+debug = false

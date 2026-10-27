@@ -1,0 +1,97 @@
+{
+  "AppAgent": {
+    "entries": 0,
+    "keyBytes": 0,
+    "valueBytes": 0
+  },
+  "Blobs": {
+    "entries": 0,
+    "keyBytes": 0,
+    "valueBytes": 0
+  },
+  "DidMapping": {
+    "entries": 0,
+    "keyBytes": 0,
+    "valueBytes": 0
+  },
+  "DriveMapping": {
+    "entries": 1,
+    "keyBytes": 18,
+    "valueBytes": 0
+  },
+  "Envelopes": {
+    "entries": 159,
+    "keyBytes": 30051,
+    "valueBytes": 1661318
+  },
+  "LoroSnapshots": {
+    "entries": 574,
+    "keyBytes": 33666,
+    "valueBytes": 1617872
+  },
+  "Outbox": {
+    "entries": 0,
+    "keyBytes": 0,
+    "valueBytes": 0
+  },
+  "PluginMeta": {
+    "entries": 4,
+    "keyBytes": 67,
+    "valueBytes": 67
+  },
+  "PluginSchedule": {
+    "entries": 0,
+    "keyBytes": 0,
+    "valueBytes": 0
+  },
+  "PluginSecret": {
+    "entries": 0,
+    "keyBytes": 0,
+    "valueBytes": 0
+  },
+  "PluginTrigger": {
+    "entries": 0,
+    "keyBytes": 0,
+    "valueBytes": 0
+  },
+  "PropValSub": {
+    "entries": 5053,
+    "keyBytes": 1112451,
+    "valueBytes": 0
+  },
+  "QueryMembers": {
+    "entries": 132,
+    "keyBytes": 14916,
+    "valueBytes": 0
+  },
+  "Resources": {
+    "entries": 574,
+    "keyBytes": 33666,
+    "valueBytes": 975334
+  },
+  "SearchDocs": {
+    "entries": 568,
+    "keyBytes": 4544,
+    "valueBytes": 117976
+  },
+  "SearchPostings": {
+    "entries": 9091,
+    "keyBytes": 136228,
+    "valueBytes": 9091
+  },
+  "SearchTrigrams": {
+    "entries": 930,
+    "keyBytes": 19161,
+    "valueBytes": 0
+  },
+  "ValPropSub": {
+    "entries": 2355,
+    "keyBytes": 288392,
+    "valueBytes": 0
+  },
+  "WatchedQueries": {
+    "entries": 2,
+    "keyBytes": 814,
+    "valueBytes": 0
+  }
+}

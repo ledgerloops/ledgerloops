@@ -1,0 +1,114 @@
+Atomic Model H — verified synthetic loopback benchmark
+2026-10-26 UTC, native macOS, commit 396f0da075bd514e2c46b2fa33a575b35c14b2a6
+
+RESULT
+Three warmups and ten measured fresh persistent receivers completed. All 13
+receivers reconstructed the exact complete fixture after close/reopen. The
+100 ms request-to-durable target was met by 0/10 measured runs.
+
+Request to durable: median 379.897 ms; p95/max 430.937 ms; minimum 361.997 ms.
+p95 uses nearest rank on n=10, so it equals the sample maximum.
+Connection/authentication: median 0.726 ms, excluded from the main timer.
+Full readable confirmation: median 413.217 ms, performed after durable return.
+An earlier readable instant is unobservable through the native bulk import API;
+it is explicitly null in the results, not claimed equal to durable completion.
+
+Received application protocol: 2,867,466 bytes per transfer, 6.90 times the
+415,448-byte canonical fixture. The exact framing-derived breakdown is:
+  Loro snapshots/history:       1,158,957 bytes
+  Retained signed envelope JSON:1,661,318 bytes
+  Protocol metadata:              47,191 bytes
+There were three SYNC_PUSH chunks, 159 entries and 159 signed envelopes.
+The split is derived from measured bytes, stored envelope lengths, observed
+chunk counts and the pinned fixed-width encoder. No additional timed run was
+used. WebSocket/TCP/IP overhead and setup traffic are excluded. No transport
+compression is negotiated; native Loro encoding/compression remains included.
+
+RECEIVER DISK, measured after flush/close and reopen, no compaction
+                          Baseline       Total          Net growth
+Apparent file bytes       2,109,440     16,846,848      14,737,408
+Median allocated bytes    2,060,288     10,285,056       8,224,768
+Allocated totals ranged from 9,850,880 to 10,342,400 bytes. Every run's actual
+baseline, total and paired net growth are retained. The only data file was
+atomic.redb; executables, dependencies, logs and build trees are excluded.
+Sender/service data separately: 16,846,848 apparent / 9,048,064 allocated bytes.
+
+The receiver begins with 415 resource rows (built-ins plus public test owner),
+and ends with 574. Net storage includes 159 materialized resources (717,204
+value bytes), 159 CRDT snapshots (1,158,957 value bytes), 159 envelopes
+(1,661,318 value bytes), reference indexes, 132 query memberships and native
+full-text indexes. Counts/keys/values for every KV tree are in the logical
+storage files. The sender has 733 resource rows, including 159 signed commit
+materializations; its envelope tree references those commit resources. The
+receiver stores envelope JSON directly. These are distinct from payload rows.
+
+INCREMENTAL, one observation per field on an already subscribed receiver
+Issue title: 293 protocol bytes / 194 CRDT update bytes; readable 6.203 ms;
+durable 25.651 ms. Note body: 2,877 protocol bytes / 2,778 CRDT update bytes;
+readable 5.294 ms; durable 21.409 ms. These include source set/sign/save and
+receiver merge/indexing. Full fixture verification follows outside timing;
+both changed records and the complete changed fixture survived reopen.
+A field update did not retransmit the complete issue/note. The generic scalar
+setter replaces that field's value. These are native live UPDATE deltas, not
+a deep-JSON-edit test. Live UPDATE fanout does not carry a newly signed audit
+envelope; the durable incremental metric covers the live state/index delta,
+not synchronization of that new audit envelope. Initial transfers verify all
+159 retained envelopes, CRDT state, tables and search indexes against sender.
+
+MODEL AND FIDELITY
+132 payload resources: 21 issues, 111 notes; all 30 comments remain embedded.
+20 custom properties + 2 shared classes; five containers (drive, two account
+folders, two tables). Built-in Name is the title. No duplicate raw-record JSON.
+Nested objects/arrays, including 273 checklist items, use Value::Json and native
+recursive Loro containers. IDs/numbers/flags/body/URLs/timestamps use scalar
+columns. UTC timestamps are native milliseconds and reconstruct their exact
+fixture spelling. Null closed_at is absent optional typed data and decodes to
+JSON null; other nulls are native JSON null. Canonical order follows known
+fixture IDs. Complete equality checks cover fields, nulls, arrays and types;
+integers in this fixture are within exact numeric range. No broader precision
+claim is made. Attachment metadata is preserved; no file contents were fetched.
+
+METHOD AND LIMITATIONS
+The sender is fully prepared, with native binary engine responses cached before
+timing. Fresh persistent receivers are already open; TCP/WebSocket challenge
+and owner authentication finish before the SYNC request timer starts. Native
+import_sync_push runs with trust_owned=false. Table queries are registered on
+the empty receiver so normal import maintains their indexes during timing.
+The native LAST import returns after Db::flush, a nonempty redb Immediate
+transaction that persists preceding Durability::None writes. Default periodic
+flush remains enabled. This is an OS/filesystem boundary, not a power-loss test.
+Live UPDATE uses normal DbEvent deltas, checked owner write rights and native
+ws_apply resolution/persistence; its durable metric adds an explicit Db::flush.
+
+Environment: Apple M1 Pro, 10 logical CPUs, 16 GiB RAM, macOS 26.6.2/Darwin
+25.6.0 arm64, Rust 1.99.1, redb 4.1.0, Loro 1.12.0, native same-process Db
+instances over real loopback WebSockets on an ephemeral 127.0.0.1 port. Measured
+stores, code and caches are under /private/tmp/atomic-sync-model-h-yjgxp2e7 on
+APFS, outside the Documents provider. No existing server/database/drive/key was
+used or restarted. Temporary test secret removed after completion.
+
+Shared atomic-mkdir measurement lock held for heavy build/import/run work and
+released only by its owner. Contention is logged. Documents/Git-index reads
+had timed out before measurement, prompting the move to /private/tmp. Disk
+space declined from 14 GiB at setup to about 8.3 GiB after build/runs. Other
+workers and ordinary laptop workloads can affect results; the lock is not
+proof of matched hardware, cold caches or zero background load.
+
+SCOPE
+R, C, O and G are deferred under the later Model H-only instruction, not marked
+unsupported. H preserves per-record native rows/links/ACL granularity; its nested
+JSON fields have no separate resource identities. R would retain record units
+with fewer typed columns. C would trade native per-record rows/links/ACLs for
+two structured collection documents. O would replace whole opaque collection
+strings. G would use recursive resources; no synthetic count is assumed. None
+of those alternatives was measured here. Earlier initial readability is the
+specific unmeasured API limitation. Incremental audit-envelope convergence is
+also outside this native live-delta test.
+
+ARTIFACTS
+summary.json; report.txt; model-h-notes.txt; environment.json; source-provenance.json
+model-h-20261026T063214Z/: results.json, raw.jsonl, incremental.json, per-receiver
+verification JSON, config, logical storage and wire-breakdown-derived.json.
+harness/: complete external Rust adapter, Cargo.toml and Cargo.lock.
+generate_fixture.py + fixture/: exact generator, bytes and manifest.
+run.py / with_measurement_lock.py / summarize.py: reproducible commands below.
