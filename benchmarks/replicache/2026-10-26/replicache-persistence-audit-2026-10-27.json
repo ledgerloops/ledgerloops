@@ -1,0 +1,347 @@
+{
+  "audit_utc": "2026-10-27T09:35:47.738082+00:00",
+  "audit_mode": "read-only methodology and source; no engine imports, builds, reruns, publications or chat messages",
+  "original_artifacts_modified": false,
+  "sources": {
+    "engine_source_commit": "8684fb19c032e25f7f166f40e8acdfb179e6ca87",
+    "comparison_snapshot": "104eb59e4ef50b4375413dc4192083c5f0c4b0b3",
+    "engine_sources": [
+      {
+        "path": "replicache-impl.ts",
+        "blob_sha": "bd4df1c9c905af4acb7160b53c85c24f1e13466d",
+        "url": "https://github.com/rocicorp/mono/blob/8684fb19c032e25f7f166f40e8acdfb179e6ca87/packages/replicache/src/replicache-impl.ts"
+      },
+      {
+        "path": "replicache.ts",
+        "blob_sha": "e13a5efb228c0ba32f85a2330cf83f4ccde64089",
+        "url": "https://github.com/rocicorp/mono/blob/8684fb19c032e25f7f166f40e8acdfb179e6ca87/packages/replicache/src/replicache.ts"
+      },
+      {
+        "path": "replicache-options.ts",
+        "blob_sha": "7ed08910ec92109069d2f592b9c39e4d4dc6b8cd",
+        "url": "https://github.com/rocicorp/mono/blob/8684fb19c032e25f7f166f40e8acdfb179e6ca87/packages/replicache/src/replicache-options.ts"
+      },
+      {
+        "path": "process-scheduler.ts",
+        "blob_sha": "0aa9d65a6c09143c2f8a31debb67f29de8deae18",
+        "url": "https://github.com/rocicorp/mono/blob/8684fb19c032e25f7f166f40e8acdfb179e6ca87/packages/replicache/src/process-scheduler.ts"
+      },
+      {
+        "path": "request-idle.ts",
+        "blob_sha": "6d967e8bb5040e5716cd3abaf7f425013e439213",
+        "url": "https://github.com/rocicorp/mono/blob/8684fb19c032e25f7f166f40e8acdfb179e6ca87/packages/replicache/src/request-idle.ts"
+      },
+      {
+        "path": "kv/idb-store.ts",
+        "blob_sha": "37de8d1ed86e1b63896b64256704eca07f98b741",
+        "url": "https://github.com/rocicorp/mono/blob/8684fb19c032e25f7f166f40e8acdfb179e6ca87/packages/replicache/src/kv/idb-store.ts"
+      },
+      {
+        "path": "kv/idb-store-with-mem-fallback.ts",
+        "blob_sha": "6746f543c8cd0c577283c877395e36baf67f7668",
+        "url": "https://github.com/rocicorp/mono/blob/8684fb19c032e25f7f166f40e8acdfb179e6ca87/packages/replicache/src/kv/idb-store-with-mem-fallback.ts"
+      },
+      {
+        "path": "kv/store.ts",
+        "blob_sha": "820871487233c0aad8386ccb791c60d0cb76eba1",
+        "url": "https://github.com/rocicorp/mono/blob/8684fb19c032e25f7f166f40e8acdfb179e6ca87/packages/replicache/src/kv/store.ts"
+      },
+      {
+        "path": "persist/persist.ts",
+        "blob_sha": "5deeeaf4dbba7b48c1a4cf48cf10e6bb10de6199",
+        "url": "https://github.com/rocicorp/mono/blob/8684fb19c032e25f7f166f40e8acdfb179e6ca87/packages/replicache/src/persist/persist.ts"
+      },
+      {
+        "path": "on-persist-channel.ts",
+        "blob_sha": "e35031855a754a99eb2707c41bb3cca4ed3869c5",
+        "url": "https://github.com/rocicorp/mono/blob/8684fb19c032e25f7f166f40e8acdfb179e6ca87/packages/replicache/src/on-persist-channel.ts"
+      },
+      {
+        "path": "dag/lazy-store.ts",
+        "blob_sha": "32a46ea266c7e507356c716ac4ddd1313729f9d5",
+        "url": "https://github.com/rocicorp/mono/blob/8684fb19c032e25f7f166f40e8acdfb179e6ca87/packages/replicache/src/dag/lazy-store.ts"
+      },
+      {
+        "path": "dag/store-impl.ts",
+        "blob_sha": "4f943f673d6ad5d5595bda2cd95797ed36b009ad",
+        "url": "https://github.com/rocicorp/mono/blob/8684fb19c032e25f7f166f40e8acdfb179e6ca87/packages/replicache/src/dag/store-impl.ts"
+      },
+      {
+        "path": "with-transactions.ts",
+        "blob_sha": "5dd7d7c2dfd5a2da1076c890c52bb1d3397da8cc",
+        "url": "https://github.com/rocicorp/mono/blob/8684fb19c032e25f7f166f40e8acdfb179e6ca87/packages/replicache/src/with-transactions.ts"
+      },
+      {
+        "path": "connection-loop.ts",
+        "blob_sha": "d83ecbce86f883b0d86f541a0e62ab25a32b11e3",
+        "url": "https://github.com/rocicorp/mono/blob/8684fb19c032e25f7f166f40e8acdfb179e6ca87/packages/replicache/src/connection-loop.ts"
+      },
+      {
+        "path": "btree/node.ts",
+        "blob_sha": "d8e56cbffdb67ec0137463bd6e03195ab23a1e57",
+        "url": "https://github.com/rocicorp/mono/blob/8684fb19c032e25f7f166f40e8acdfb179e6ca87/packages/replicache/src/btree/node.ts"
+      },
+      {
+        "path": "persist/idb-databases-store.ts",
+        "blob_sha": "1725ab9a6895c07f108cedd7694108eb7764286c",
+        "url": "https://github.com/rocicorp/mono/blob/8684fb19c032e25f7f166f40e8acdfb179e6ca87/packages/replicache/src/persist/idb-databases-store.ts"
+      }
+    ],
+    "published_sources": [
+      {
+        "path": "browser.js",
+        "blob_sha": "408368078fe81e58061b1f6539c03458b79df2dd",
+        "url": "https://github.com/ledgerloops/ledgerloops/blob/104eb59e4ef50b4375413dc4192083c5f0c4b0b3/benchmarks/replicache/2026-10-26/browser.js"
+      },
+      {
+        "path": "runner.mjs",
+        "blob_sha": "a9570273c6ac8ce80d5ff66dcd9c38f3843dc24a",
+        "url": "https://github.com/ledgerloops/ledgerloops/blob/104eb59e4ef50b4375413dc4192083c5f0c4b0b3/benchmarks/replicache/2026-10-26/runner.mjs"
+      },
+      {
+        "path": "model.js",
+        "blob_sha": "cb6214cefa2f33dcd0f889325576ed707977ee11",
+        "url": "https://github.com/ledgerloops/ledgerloops/blob/104eb59e4ef50b4375413dc4192083c5f0c4b0b3/benchmarks/replicache/2026-10-26/model.js"
+      },
+      {
+        "path": "SHA256SUMS",
+        "blob_sha": "130de1fba77c33fef165bd1deec649cf599ac95b",
+        "url": "https://github.com/ledgerloops/ledgerloops/blob/104eb59e4ef50b4375413dc4192083c5f0c4b0b3/benchmarks/replicache/2026-10-26/SHA256SUMS"
+      }
+    ]
+  },
+  "models": {
+    "records": {
+      "stages": {
+        "initial": {
+          "n": 10,
+          "observable_p50_ms": 14.350000000093132,
+          "pull_p50_ms": 14.5,
+          "persistence_notification_p50_ms": 25.399999999906868,
+          "paired_notification_minus_observable_p50_ms": 11.199999999953434,
+          "paired_gap_min_ms": 10.100000000093132,
+          "paired_gap_max_ms": 13.699999999720603,
+          "persist_events_per_phase": [
+            1
+          ],
+          "response_body_bytes": [
+            421208
+          ],
+          "all_live_and_reopen_checks_passed": true,
+          "all_durable_ms_null": true
+        },
+        "issue_title": {
+          "n": 10,
+          "observable_p50_ms": 5.5,
+          "pull_p50_ms": 5.600000000093132,
+          "persistence_notification_p50_ms": 12.399999999906868,
+          "paired_notification_minus_observable_p50_ms": 6.949999999953434,
+          "paired_gap_min_ms": 6.199999999720603,
+          "paired_gap_max_ms": 8.799999999813735,
+          "persist_events_per_phase": [
+            1
+          ],
+          "response_body_bytes": [
+            3728
+          ],
+          "all_live_and_reopen_checks_passed": true,
+          "all_durable_ms_null": true
+        },
+        "note_body": {
+          "n": 10,
+          "observable_p50_ms": 5.550000000046566,
+          "pull_p50_ms": 5.650000000139698,
+          "persistence_notification_p50_ms": 12.450000000186265,
+          "paired_notification_minus_observable_p50_ms": 7.100000000093132,
+          "paired_gap_min_ms": 6.600000000093132,
+          "paired_gap_max_ms": 12.599999999627471,
+          "persist_events_per_phase": [
+            1
+          ],
+          "response_body_bytes": [
+            3064
+          ],
+          "all_live_and_reopen_checks_passed": true,
+          "all_durable_ms_null": true
+        }
+      },
+      "initial_apparent_disk_total_median": 483071.0
+    },
+    "shared": {
+      "stages": {
+        "initial": {
+          "n": 10,
+          "observable_p50_ms": 14.650000000372529,
+          "pull_p50_ms": 14.799999999813735,
+          "persistence_notification_p50_ms": 25.600000000093132,
+          "paired_notification_minus_observable_p50_ms": 10.950000000186265,
+          "paired_gap_min_ms": 9.399999999441206,
+          "paired_gap_max_ms": 17.90000000037253,
+          "persist_events_per_phase": [
+            1
+          ],
+          "response_body_bytes": [
+            415367
+          ],
+          "all_live_and_reopen_checks_passed": true,
+          "all_durable_ms_null": true
+        },
+        "issue_title": {
+          "n": 10,
+          "observable_p50_ms": 5.600000000093132,
+          "pull_p50_ms": 5.75,
+          "persistence_notification_p50_ms": 12.150000000372529,
+          "paired_notification_minus_observable_p50_ms": 6.7000000001862645,
+          "paired_gap_min_ms": 6.2000000001862645,
+          "paired_gap_max_ms": 11.799999999813735,
+          "persist_events_per_phase": [
+            1
+          ],
+          "response_body_bytes": [
+            3525
+          ],
+          "all_live_and_reopen_checks_passed": true,
+          "all_durable_ms_null": true
+        },
+        "note_body": {
+          "n": 10,
+          "observable_p50_ms": 5.5,
+          "pull_p50_ms": 5.650000000372529,
+          "persistence_notification_p50_ms": 12.899999999906868,
+          "paired_notification_minus_observable_p50_ms": 7.399999999906868,
+          "paired_gap_min_ms": 5.699999999254942,
+          "paired_gap_max_ms": 8.200000000186265,
+          "persist_events_per_phase": [
+            1
+          ],
+          "response_body_bytes": [
+            3064
+          ],
+          "all_live_and_reopen_checks_passed": true,
+          "all_durable_ms_null": true
+        }
+      },
+      "initial_apparent_disk_total_median": 474525.0
+    },
+    "collections": {
+      "stages": {
+        "initial": {
+          "n": 10,
+          "observable_p50_ms": 6.350000000093132,
+          "pull_p50_ms": 6.4500000001862645,
+          "persistence_notification_p50_ms": 16.149999999906868,
+          "paired_notification_minus_observable_p50_ms": 9.349999999627471,
+          "paired_gap_min_ms": 8.700000000186265,
+          "paired_gap_max_ms": 12.299999999813735,
+          "persist_events_per_phase": [
+            1
+          ],
+          "response_body_bytes": [
+            415587
+          ],
+          "all_live_and_reopen_checks_passed": true,
+          "all_durable_ms_null": true
+        },
+        "issue_title": {
+          "n": 10,
+          "observable_p50_ms": 5.100000000093132,
+          "pull_p50_ms": 5.25,
+          "persistence_notification_p50_ms": 14.25,
+          "paired_notification_minus_observable_p50_ms": 9.249999999534339,
+          "paired_gap_min_ms": 8.599999999627471,
+          "paired_gap_max_ms": 12.299999999813735,
+          "persist_events_per_phase": [
+            1
+          ],
+          "response_body_bytes": [
+            83346
+          ],
+          "all_live_and_reopen_checks_passed": true,
+          "all_durable_ms_null": true
+        },
+        "note_body": {
+          "n": 10,
+          "observable_p50_ms": 5.3999999994412065,
+          "pull_p50_ms": 5.5499999998137355,
+          "persistence_notification_p50_ms": 14.75,
+          "paired_notification_minus_observable_p50_ms": 9.300000000279397,
+          "paired_gap_min_ms": 7.7000000001862645,
+          "paired_gap_max_ms": 11.799999999813735,
+          "persist_events_per_phase": [
+            1
+          ],
+          "response_body_bytes": [
+            332329
+          ],
+          "all_live_and_reopen_checks_passed": true,
+          "all_durable_ms_null": true
+        }
+      },
+      "initial_apparent_disk_total_median": 145750.0
+    }
+  },
+  "native_commit_timestamp_recorded": false,
+  "restart_verification_timed": false,
+  "fsync_acknowledged": false,
+  "published_restart_protocol": "await persistence notification; normal Replicache close and browser shutdown; reopen same profile with /pull blocked; full canonical comparison outside timer",
+  "all_initializations_persistence_granted": [
+    false
+  ],
+  "incremental_sequence": "original fixture -> append issue title suffix -> retain changed title and append note body suffix; no reset between phases; browser/client recreated between every phase",
+  "incremental_edits": [
+    {
+      "record_id": "issue-000",
+      "field": "title",
+      "operation": "append",
+      "suffix": " [synthetic title update]",
+      "added_utf8_bytes": 25,
+      "before_utf8_bytes": 54,
+      "after_utf8_bytes": 79,
+      "before_sha256": "92739d4b8cccdabaded5ce059a4c6e8a0c9ace5e8e01b43350f402dbb8b79f1e",
+      "after_sha256": "1651265ace7662b605ee352370997e4d3541a316db59bc1c6a3812e3399f9fde"
+    },
+    {
+      "record_id": "note-000",
+      "field": "body",
+      "operation": "append",
+      "suffix": " [synthetic note body update]",
+      "added_utf8_bytes": 29,
+      "before_utf8_bytes": 2528,
+      "after_utf8_bytes": 2557,
+      "before_sha256": "f7433624072f15c625985f2baf77be8e3ad9a2c728d9b483c5bc214d6057b06f",
+      "after_sha256": "3fee3c06f4e0e053152d74ec84ab685fe475c7ee2179cca7d908fce0f87f2d34"
+    }
+  ],
+  "cached_packages": {
+    "replicache": "15.3.0",
+    "playwright": "1.64.1",
+    "esbuild": "0.25.12"
+  },
+  "cached_bundle": {
+    "path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-replicache/work/receiver.js",
+    "exists": true
+  },
+  "cached_runtime_root": "/private/tmp/sync-benchmark-replicache-20261026-01a176de",
+  "cached_profile_counts": {
+    "records": 13,
+    "shared": 13,
+    "collections": 13
+  },
+  "original_browser_version": "155.0.8059.85",
+  "currently_installed_browser_version": "156.0.8078.48",
+  "exact_old_browser_binary_cached": "not established; original used installed Chrome rather than downloaded browser",
+  "future_lock_path": "$HOME/Documents/Codex/2026-10-24/th/work/sync-engine-comparison/measurement.lock",
+  "coordinator_contention_observation": {
+    "local_datetime": "2026-10-27T10:34:00",
+    "timezone": "Europe/Amsterdam",
+    "source": "relayed by coordinating Zero chat; not measured by this audit",
+    "aggregate_cpu_busy_percent": 39,
+    "logical_cpus": 10,
+    "ram_used_GB": 15,
+    "ram_total_GB": 16,
+    "compressed_memory_GB": 6.9,
+    "shared_lock_present": false,
+    "new_timing_permitted_under_this_pressure": false
+  },
+  "report": "FAIRNESS-AUDIT.md"
+}

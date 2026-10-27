@@ -21,3 +21,12 @@ Installed dependencies, browser profiles, binaries and temporary service stores
 are excluded. The authorization value in browser.js and runner.mjs is a public,
 synthetic test identity. Confirmed power-loss durable times remain unavailable;
 the report explicitly distinguishes the weaker persistence notification.
+
+## Audit publication, 2026-10-27
+
+FAIRNESS-AUDIT.md and replicache-persistence-audit-2026-10-27.json were added at
+the user's request after the read-only audit. Audit statements about no publication
+refer to the audit phase itself. Personal home-directory prefixes in these files
+are represented as `$HOME`, consistently with the original result publication.
+The audit findings and numerical evidence are otherwise unchanged. No builds,
+benchmark reruns or changes to original measurement artifacts were made.
