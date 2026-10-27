@@ -1,0 +1,7 @@
+{
+  "url": "https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium/1194/chromium-headless-shell-mac-arm64.zip",
+  "build": 1194,
+  "version": "141.0.7390.37",
+  "archive_sha256": "c4c97caab34c16f9a2bb411da0e68505deacb35c86d70db63dc117381a5e6d60",
+  "extraction": "macOS /usr/bin/unzip"
+}

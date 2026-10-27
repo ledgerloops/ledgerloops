@@ -1,0 +1,82 @@
+Jazz synthetic sync benchmark
+https://github.com/ledgerloops/ledgerloops/issues/45
+
+Pinned relational Jazz 2.0.0-alpha.59, native RocksDB and browser IndexedDB, loopback.
+Fixture: 132 records, 415448 bytes; complete hash verified after every measured offline reopen.
+Timings exclude sender preparation and receiver startup/auth. Three warmups + ten samples.
+p95 is nearest-rank; for ten samples it equals the maximum. No cross-engine ranking.
+
+Variant                 observable p50/p95/max ms   native close durability p50 ms    receive WS bytes p50
+native/embedded           40.37/136.38/136.38 ms     42.00                    107468
+  Receiver apparent baseline/total/net bytes: 197743/1472859/1275116
+  Receiver allocated baseline/total/net bytes: 221184/1503232/1282048
+  Sender apparent/allocated: {'apparent': 2137429, 'allocated': 2158592}; Core: {'apparent': 1584712, 'allocated': 1642496}
+  Reopened correct: yes, n=10; warmups=3.
+  Decoded engine channel payload p50: 697619 bytes; frame parse errors 0.
+  Incremental title: n=10, p50 17.11 ms, receive 98 bytes.
+    First suffix append: 17.83 ms, 1098 receive bytes; later edits change one suffix digit.
+  Incremental body: n=10, p50 17.48 ms, receive 98 bytes.
+    First suffix append: 17.68 ms, 1025 receive bytes; later edits change one suffix digit.
+native/containers         160.66/165.34/165.34 ms     163.70                    193320
+  Receiver apparent baseline/total/net bytes: 194519/3675643/3481124
+  Receiver allocated baseline/total/net bytes: 217088/3706880/3489792
+  Sender apparent/allocated: {'apparent': 5870249, 'allocated': 5894144}; Core: {'apparent': 3887452, 'allocated': 3948544}
+  Reopened correct: yes, n=10; warmups=3.
+  Decoded engine channel payload p50: 2991544 bytes; frame parse errors 0.
+  Incremental title: n=10, p50 18.88 ms, receive 102 bytes.
+    First suffix append: 18.65 ms, 2045 receive bytes; later edits change one suffix digit.
+  Incremental body: n=10, p50 18.88 ms, receive 102 bytes.
+    First suffix append: 19.16 ms, 923 receive bytes; later edits change one suffix digit.
+native/collections        103.84/122.01/122.01 ms     105.52                    89691
+  Receiver apparent baseline/total/net bytes: 193811/815901/622090
+  Receiver allocated baseline/total/net bytes: 217088/847872/630784
+  Sender apparent/allocated: {'apparent': 4970634, 'allocated': 4993024}; Core: {'apparent': 5066955, 'allocated': 5128192}
+  Reopened correct: yes, n=10; warmups=3.
+  Decoded engine channel payload p50: 420245 bytes; frame parse errors 0.
+  Incremental title: n=10, p50 72.84 ms, receive 18002 bytes.
+    First suffix append: 70.20 ms, 18078 receive bytes; later edits change one suffix digit.
+  Incremental body: n=10, p50 102.67 ms, receive 70955 bytes.
+    First suffix append: 103.52 ms, 70986 receive bytes; later edits change one suffix digit.
+browser/embedded          169.55/288.00/288.00 ms     unmeasured                    107430
+  Receiver apparent baseline/total/net bytes: 84342/1399725/1315381
+  Receiver allocated baseline/total/net bytes: 114688/1437696/1323008
+  Sender apparent/allocated: {'apparent': 2163988, 'allocated': 2183168}; Core: {'apparent': 1617267, 'allocated': 1671168}
+  Reopened correct: yes, n=10; warmups=3.
+  Browser graceful-close p50/p95/max: 577.94/3048.63/3048.63 ms; weak persistence boundary.
+  Decoded engine channel payload p50: 697619 bytes; frame parse errors 0.
+  Incremental title: n=10, p50 22.60 ms, receive 99 bytes.
+    First suffix append: 54.97 ms, 1108 receive bytes; later edits change one suffix digit.
+  Incremental body: n=10, p50 25.22 ms, receive 98 bytes.
+    First suffix append: 22.56 ms, 1037 receive bytes; later edits change one suffix digit.
+browser/containers        575.45/686.40/686.40 ms     unmeasured                    193585
+  Receiver apparent baseline/total/net bytes: 74921/1467322/1392400
+  Receiver allocated baseline/total/net bytes: 102400/1503232/1400832
+  Sender apparent/allocated: {'apparent': 5897077, 'allocated': 5918720}; Core: {'apparent': 3926062, 'allocated': 3981312}
+  Reopened correct: yes, n=10; warmups=3.
+  Browser graceful-close p50/p95/max: 685.73/4329.43/4329.43 ms; weak persistence boundary.
+  Decoded engine channel payload p50: 2991544 bytes; frame parse errors 0.
+  Incremental title: n=10, p50 63.22 ms, receive 102 bytes.
+    First suffix append: 75.56 ms, 2054 receive bytes; later edits change one suffix digit.
+  Incremental body: n=10, p50 62.87 ms, receive 103 bytes.
+    First suffix append: 57.12 ms, 926 receive bytes; later edits change one suffix digit.
+browser/collections       150.55/187.10/187.10 ms     unmeasured                    89776
+  Receiver apparent baseline/total/net bytes: 72385/993311/920926
+  Receiver allocated baseline/total/net bytes: 102400/1028096/925696
+  Sender apparent/allocated: {'apparent': 4970706, 'allocated': 4993024}; Core: {'apparent': 5105444, 'allocated': 5160960}
+  Reopened correct: yes, n=10; warmups=3.
+  Browser graceful-close p50/p95/max: 216.90/293.51/293.51 ms; weak persistence boundary.
+  Decoded engine channel payload p50: 420245 bytes; frame parse errors 0.
+  Incremental title: n=10, p50 55.48 ms, receive 18026 bytes.
+    First suffix append: 81.37 ms, 18104 receive bytes; later edits change one suffix digit.
+  Incremental body: n=10, p50 130.20 ms, receive 71006 bytes.
+    First suffix append: 132.74 ms, 71032 receive bytes; later edits change one suffix digit.
+
+Native durable timings are conservative upper bounds through session.close, including teardown.
+Browser IndexedDB uses relaxed durability: durable_ms is null; close/reopen confirms persisted content only.
+Incremental times measure observable convergence; no independent incoming-write durable receipt.
+Wire counts include engine metadata and WS payload; stream-byte counts include WS headers, exclude TCP/IP.
+Current docs and main source describe SQLite, but the pinned binary actually creates RocksDB stores.
+Native build provenance records a dirty-diff hash; exact unpublished diff is unavailable. Package lock pins the actual binary.
+Exploratory collection JSON reset failed to restore the original note body within 120s; final tests use successive unique values. See README.txt.
+Shared laptop, serialized heavy work, uncontrolled background activity/cache/thermal state.
+See README.txt for models, boundaries, commands and limitations; results.json for raw samples and file inventories.

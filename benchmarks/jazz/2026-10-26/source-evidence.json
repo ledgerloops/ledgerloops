@@ -1,0 +1,345 @@
+{
+  "retrieved_utc": "2026-10-26T06:34:50.839009+00:00",
+  "registry_tags": {
+    "hotfixes": "0.7.33-hotfixes.5",
+    "neverthrow": "0.7.34-neverthrow.8",
+    "new-auth": "0.7.35-new-auth.0",
+    "unique": "0.7.35-unique.2",
+    "guest-auth": "0.7.35-guest-auth.6",
+    "group-inheritance": "0.8.19-group-inheritance.0",
+    "jazz-bridge-preview": "0.9.10-jazz-bridge-preview.0",
+    "latest": "0.20.19",
+    "alpha": "2.0.0-alpha.59"
+  },
+  "selected_version": "2.0.0-alpha.59",
+  "native_provenance": {
+    "schema": 1,
+    "kind": "napi",
+    "profile": "release",
+    "git": {
+      "head": "204dc5b9c164de78267d63b35624e28848402790",
+      "tree": "55c3449a8a05153ffb84c82174e7900096dded6d",
+      "dirtyDiff": "0437c0384997d1a071aafea634c6ecb43f0d8a16f372881755e4afaf591f18b1"
+    },
+    "cargoLock": "229bd443ac4b3e769434c05a742229bdc8bbbeccdb4e82889d9c6c1be5540e81",
+    "rustToolchain": "94829243c47c76917df64fb0a88044d05004e390b67b02544cb702823445eec9",
+    "tools": {
+      "rustc": "rustc 1.93.1 (01f6ddf75 2026-02-11)\nbinary: rustc\ncommit-hash: 01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf\ncommit-date: 2026-02-11\nhost: aarch64-apple-darwin\nrelease: 1.93.1\nLLVM version: 21.1.8",
+      "wasmPack": "not-applicable",
+      "wasmBindgen": "not-applicable",
+      "wasmOpt": "not-applicable",
+      "napi": "unavailable: napi is not on PATH"
+    },
+    "toolchainInputs": "3a8ce11dd23f26f3cf56e5e8ca1f49ee6bc348e75d06a77e3da806553c77f927",
+    "target": "aarch64-apple-darwin",
+    "features": "default",
+    "packageInputs": "df99c6c3aca5b3b553518b575566d36764d92cd5507dc1d6062b5214004e9510",
+    "artifacts": [
+      {
+        "file": "jazz-napi.darwin-arm64.node",
+        "sha256": "f22b6162edb14627d70504bfcb9e29102da556f47d80fc1e92941e76c0185b41"
+      }
+    ],
+    "nativeArtifactFingerprint": "b3dbc494a524515cc337fe323169de529dba6b171600bf385ae76823fe706982"
+  },
+  "package_integrities": {
+    "jazz-tools": {
+      "version": "2.0.0-alpha.59",
+      "resolved": "https://registry.npmjs.org/jazz-tools/-/jazz-tools-2.0.0-alpha.59.tgz",
+      "integrity": "sha512-LwRv/QU5QuJIM5tAUj+Mw/0M9O1GdSYTC5KzIjF+dYRoOWDYyXMFOrNMP3iA407nbNhDNtXVRY8BzVbdNt7E6A==",
+      "license": "MIT",
+      "dependencies": {
+        "@noble/hashes": "2.0.1",
+        "@opentelemetry/api": "^1.9.1",
+        "@opentelemetry/exporter-logs-otlp-http": "^0.216.0",
+        "@opentelemetry/exporter-trace-otlp-http": "^0.216.0",
+        "@opentelemetry/resources": "^2.7.1",
+        "@opentelemetry/sdk-logs": "^0.216.0",
+        "@opentelemetry/sdk-trace-base": "^2.7.1",
+        "@scure/bip39": "^2.0.1",
+        "@standard-schema/spec": "^1.1.0",
+        "esbuild": "^0.27.0",
+        "fs-native-extensions": "1.5.0",
+        "jazz-wasm": "2.0.0-alpha.59",
+        "jose": "^6.2.1",
+        "json-schema-to-ts": "^3.1.1",
+        "tr46": "5.1.1",
+        "web-streams-polyfill": "^4.2.0",
+        "whatwg-url-without-unicode": "8.0.0-3"
+      },
+      "bin": {
+        "jazz-tools": "bin/jazz-tools.js"
+      },
+      "engines": {
+        "node": ">=22.12"
+      },
+      "optionalDependencies": {
+        "jazz-napi": "2.0.0-alpha.59"
+      },
+      "peerDependencies": {
+        "better-auth": "1.7.1",
+        "effect": "^4.0.0-rc.118",
+        "expo": ">=54",
+        "expo-crypto": ">=14.0.0",
+        "expo-secure-store": ">=14.0.0",
+        "jazz-rn": "2.0.0-alpha.59",
+        "react": ">=19",
+        "react-native": ">=0.76",
+        "solid-js": ">=1.9.13",
+        "svelte": "^5.0.0",
+        "vue": "^3.5.0"
+      },
+      "peerDependenciesMeta": {
+        "better-auth": {
+          "optional": true
+        },
+        "effect": {
+          "optional": true
+        },
+        "expo": {
+          "optional": true
+        },
+        "expo-crypto": {
+          "optional": true
+        },
+        "expo-secure-store": {
+          "optional": true
+        },
+        "jazz-rn": {
+          "optional": true
+        },
+        "react": {
+          "optional": true
+        },
+        "react-native": {
+          "optional": true
+        },
+        "solid-js": {
+          "optional": true
+        },
+        "svelte": {
+          "optional": true
+        },
+        "vue": {
+          "optional": true
+        }
+      }
+    },
+    "jazz-napi": {
+      "version": "2.0.0-alpha.59",
+      "resolved": "https://registry.npmjs.org/jazz-napi/-/jazz-napi-2.0.0-alpha.59.tgz",
+      "integrity": "sha512-Xf5Dj0ITpdpDeq8M3IgeVS9bGqphnPhdPxcTqQF/h5Ps9+yEAB5oqrGnJjmpUlQ8mkGOD5eT73m5Bk1WAOxo2w==",
+      "license": "MIT",
+      "optionalDependencies": {
+        "@garden-co/jazz-napi-darwin-arm64": "2.0.0-alpha.59",
+        "@garden-co/jazz-napi-darwin-x64": "2.0.0-alpha.59",
+        "@garden-co/jazz-napi-linux-arm64-gnu": "2.0.0-alpha.59",
+        "@garden-co/jazz-napi-linux-x64-gnu": "2.0.0-alpha.59",
+        "@garden-co/jazz-napi-win32-x64-msvc": "2.0.0-alpha.59"
+      }
+    },
+    "jazz-wasm": {
+      "version": "2.0.0-alpha.59",
+      "resolved": "https://registry.npmjs.org/jazz-wasm/-/jazz-wasm-2.0.0-alpha.59.tgz",
+      "integrity": "sha512-jb+s8X0uL2N5XM7YccXrZyltQC/wMK9DkepcaQgLEVFH7uCn3UqAa2uXNhuuSzJWKo/6FFhak6s/6fq/uCPhtg==",
+      "license": "MIT"
+    },
+    "playwright": {
+      "version": "1.56.1",
+      "resolved": "https://registry.npmjs.org/playwright/-/playwright-1.56.1.tgz",
+      "integrity": "sha512-aFi5B0WovBHTEvpM3DzXTUaeN6eN0qWnTkKx4NQaH4Wvcmc153PdaY2UBdSYKaGYw+UyWXSVyxDUg5DoPEttjw==",
+      "license": "Apache-2.0",
+      "dependencies": {
+        "playwright-core": "1.56.1"
+      },
+      "bin": {
+        "playwright": "cli.js"
+      },
+      "engines": {
+        "node": ">=18"
+      },
+      "optionalDependencies": {
+        "fsevents": "2.3.2"
+      }
+    },
+    "vite": {
+      "version": "7.1.12",
+      "resolved": "https://registry.npmjs.org/vite/-/vite-7.1.12.tgz",
+      "integrity": "sha512-ZWyE8YXEXqJrrSLvYgrRP7p62OziLW7xI5HYGWFzOvupfAlrLvURSzv/FyGyy0eidogEM3ujU+kUG1zuHgb6Ug==",
+      "license": "MIT",
+      "dependencies": {
+        "esbuild": "^0.25.0",
+        "fdir": "^6.5.0",
+        "picomatch": "^4.0.3",
+        "postcss": "^8.5.6",
+        "rollup": "^4.43.0",
+        "tinyglobby": "^0.2.15"
+      },
+      "bin": {
+        "vite": "bin/vite.js"
+      },
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "funding": {
+        "url": "https://github.com/vitejs/vite?sponsor=1"
+      },
+      "optionalDependencies": {
+        "fsevents": "~2.3.3"
+      },
+      "peerDependencies": {
+        "@types/node": "^20.19.0 || >=22.12.0",
+        "jiti": ">=1.21.0",
+        "less": "^4.0.0",
+        "lightningcss": "^1.21.0",
+        "sass": "^1.70.0",
+        "sass-embedded": "^1.70.0",
+        "stylus": ">=0.54.8",
+        "sugarss": "^5.0.0",
+        "terser": "^5.16.0",
+        "tsx": "^4.8.1",
+        "yaml": "^2.4.2"
+      },
+      "peerDependenciesMeta": {
+        "@types/node": {
+          "optional": true
+        },
+        "jiti": {
+          "optional": true
+        },
+        "less": {
+          "optional": true
+        },
+        "lightningcss": {
+          "optional": true
+        },
+        "sass": {
+          "optional": true
+        },
+        "sass-embedded": {
+          "optional": true
+        },
+        "stylus": {
+          "optional": true
+        },
+        "sugarss": {
+          "optional": true
+        },
+        "terser": {
+          "optional": true
+        },
+        "tsx": {
+          "optional": true
+        },
+        "yaml": {
+          "optional": true
+        }
+      }
+    }
+  },
+  "source_excerpts": [
+    {
+      "path": "node_modules/jazz-tools/dist/backend/create-jazz-session.js",
+      "excerpts": [
+        {
+          "start_line": 33,
+          "end_line": 40,
+          "text": "    host;\n    account;\n    supportsPolicyBypass = false;\n    flush() {\n        // Native writes already cross the local durability boundary when committed.\n    }\n    constructor(host, account) {\n        super();"
+        },
+        {
+          "start_line": 62,
+          "end_line": 77,
+          "text": "        ]))\n            .digest(\"hex\");\n        const runtime = new NativeRuntimeAdapter(NapiDb, runtimeSchema, this.host.driver.type === \"persistent\"\n            ? deterministicBytes(`${this.host.appId}:${this.host.env ?? \"dev\"}:${this.host.driver.dataPath}.accounts/${scope}:node`)\n            : uuidBytes(randomUUID()), authorBytesForSession(session), 1, false, {\n            ...(this.host.driver.type === \"persistent\"\n                ? { persistentPath: `${this.host.driver.dataPath}.accounts/${scope}` }\n                : {}),\n            selfSignedClientProof: selfSignedClientProofFromConfig(config, session),\n            readAuthorizationHost: \"client-local\",\n        });\n        const context = { ...config, schema: runtimeSchema, tier: \"local\" };\n        setTrustedReservedSession(context, trustedReservedSession);\n        return RuntimeClient.connectWithRuntime(runtime, context, { onAuthFailure });\n    }\n}"
+        }
+      ]
+    },
+    {
+      "path": "node_modules/jazz-tools/dist/runtime/default-runtime-source.js",
+      "excerpts": [
+        {
+          "start_line": 100,
+          "end_line": 112,
+          "text": "        token: config.jwtToken,\n        appId: config.appId,\n        claimedAuthor: canonicalAuthorSubject(session.issuer, session.user_id, session.account_id),\n    };\n}\nfunction initialSyncFlushEvery(config) {\n    const value = config.initialSyncFlushEvery ?? 512;\n    if (!Number.isSafeInteger(value) || value < 1) {\n        throw new Error(\"initialSyncFlushEvery must be a positive integer\");\n    }\n    return value;\n}\nfunction browserWorkerRuntimeSources(config) {"
+        }
+      ]
+    },
+    {
+      "path": "node_modules/jazz-tools/dist/runtime/indexeddb-page-store.js",
+      "excerpts": [
+        {
+          "start_line": 609,
+          "end_line": 615,
+          "text": "    }\n}\nfunction relaxedReadWriteTransaction(db, stores) {\n    return db.transaction(stores, \"readwrite\", { durability: \"relaxed\" });\n}\nfunction randomReplicaNodeBytes() {\n    const bytes = new Uint8Array(INDEXEDDB_REPLICA_NODE_BYTES);"
+        }
+      ]
+    },
+    {
+      "path": "node_modules/jazz-tools/dist/runtime/native-runtime/native-runtime-adapter.js",
+      "excerpts": [
+        {
+          "start_line": 650,
+          "end_line": 684,
+          "text": "    async close() {\n        if (this !== this.ownerRuntime) {\n            this.closeRuntimeState();\n            return;\n        }\n        if (this.physicalCloseStarted)\n            return;\n        if (this.closed && !this.foregroundLeaseQuiesced)\n            return;\n        this.physicalCloseStarted = true;\n        // Stop admitting/scheduling work first, but keep every WASM receiver alive\n        // until the evaluator future that may currently borrow it has unwound.\n        this.closed = true;\n        this.clearCoreDeadline();\n        for (const cancel of this.pendingNativeAdmissionCancels)\n            cancel();\n        for (const cancel of this.pendingNativeReadCancels)\n            cancel();\n        await this.foregroundLeaseCapture?.catch(() => undefined);\n        if (this.pendingStreamingMutations.size > 0) {\n            await Promise.all(this.pendingStreamingMutations);\n        }\n        if (this.pendingLocalSettlements.size > 0) {\n            await Promise.all(this.pendingLocalSettlements);\n        }\n        await this.coreOperation?.completion.catch(() => undefined);\n        this.closeRuntimeState(true);\n        await this.db.close?.();\n        // wasm-bindgen futures may retain this receiver after logical closure.\n        // Its registered finalizer owns physical release; explicit `free()` here\n        // creates a second, unsynchronised lifetime and can corrupt the WASM heap.\n    }\n    /** Discard a runtime whose persistence epoch is no longer usable. */\n    discard() {\n        // Do not explicitly free the WASM wrapper here. A forced IndexedDB close"
+        }
+      ]
+    },
+    {
+      "path": "node_modules/jazz-tools/dist/classic-api.js",
+      "excerpts": [
+        {
+          "start_line": 1,
+          "end_line": 10,
+          "text": "function failClassicApi(operation) {\n    const error = new Error(`[JAZZ_CLASSIC_API_REMOVED] ${operation} belongs to Jazz Classic (0.x) ` +\n        `and is not supported by this Jazz 2 package.\\n\\n` +\n        `Jazz 2 uses relational tables, queries, and row-level permission policies. ` +\n        `This is not a rename-only migration.\\n\\n` +\n        `Read node_modules/jazz-tools/README.md or https://jazz.tools/llms-full.txt before continuing.`);\n    throw Object.assign(error, { code: \"JAZZ_CLASSIC_API_REMOVED\" });\n}\nconst classicProviderProps = [\"sync\", \"AccountSchema\", \"accountSchema\", \"account-schema\"];\n/** @internal Reused provider names must reject Classic configuration, not valid Jazz 2 usage. */"
+        }
+      ]
+    },
+    {
+      "source_commit": "204dc5b9c164de78267d63b35624e28848402790",
+      "path": "crates/jazz-storage-rocksdb/src/lib.rs",
+      "excerpts": [
+        {
+          "start_line": 54,
+          "end_line": 62,
+          "text": "const ROCKSDB_DEFAULT_BLOCK_BYTES: usize = 16 * 1024;\nconst ROCKSDB_LARGE_BLOCK_BYTES: usize = 64 * 1024;\nconst ROCKSDB_APPEND_TARGET_FILE_BYTES: u64 = 128 * 1024 * 1024;\nconst ROCKSDB_OVERWRITE_TARGET_FILE_BYTES: u64 = 64 * 1024 * 1024;\n// `WalNoSync` trades per-commit fsync latency for a bounded loss window. A\n// successful boundary syncs the WAL after this many backend write batches.\nconst ROCKSDB_WAL_SYNC_WRITE_BATCHES: usize = 64;\n\nconst CLASS_HISTORY_CF: &str = \"__groove_class_history\";"
+        },
+        {
+          "start_line": 242,
+          "end_line": 260,
+          "text": "    pending: usize,\n}\n\nimpl RocksDbStorage {\n    /// Open with the default durability tier.\n    ///\n    /// Default is [`Durability::WalNoSync`]: the WAL preserves batch atomicity,\n    /// while a real synchronous WAL flush every 64 backend write batches\n    /// bounds the power-loss window without fsyncing every commit. Explicit\n    /// durability boundaries and close also synchronously flush all preceding\n    /// writes. RocksDB's background WAL byte syncing only smooths write I/O; it\n    /// is not the durable receipt. Callers that need strict per-commit\n    /// power-loss durability opt in via [`Self::open_with_durability`] with\n    /// [`Durability::FullSync`].\n    pub fn open(path: impl AsRef<Path>, column_families: &[&str]) -> Result<Self, Error> {\n        Self::open_with_durability_and_codec_profile(\n            path,\n            column_families,\n            Durability::WalNoSync,"
+        },
+        {
+          "start_line": 970,
+          "end_line": 992,
+          "text": "    fn close(&self) -> StorageFuture<'_, Result<(), Error>> {\n        self.flush_write_boundary()\n    }\n\n    fn set_write_flush_cadence(&self, every: usize) -> StorageFuture<'_, Result<(), Error>> {\n        Box::pin(async move {\n            assert!(every > 0, \"write flush cadence must be non-zero\");\n            *self.write_flush_cadence.borrow_mut() = Some(WriteFlushCadence { every, pending: 0 });\n            Ok(())\n        })\n    }\n\n    fn flush_write_boundary(&self) -> StorageFuture<'_, Result<(), Error>> {\n        Box::pin(async move {\n            self.flush_wal(true)?;\n            if let Some(cadence) = self.write_flush_cadence.borrow_mut().as_mut() {\n                cadence.pending = 0;\n            }\n            Ok(())\n        })\n    }\n\n    fn scan(&self, request: ScanRequest) -> StorageFuture<'_, Result<StorageScan<'_>, Error>> {"
+        }
+      ]
+    },
+    {
+      "source_commit": "204dc5b9c164de78267d63b35624e28848402790",
+      "path": "crates/jazz-napi/src/lib.rs",
+      "excerpts": [
+        {
+          "start_line": 3824,
+          "end_line": 3839,
+          "text": "fn open_persistent_core_storage(\n    data_path: String,\n    schema: &JazzSchema,\n) -> napi::Result<CoreRocksDbStorage> {\n    let refs = schema.column_families();\n    let refs = refs.iter().map(String::as_str).collect::<Vec<_>>();\n    let codec_profile = epoch_1_storage_codec_profile().map_err(napi_error)?;\n    CoreRocksDbStorage::open_with_durability_and_codec_profile(\n        data_path,\n        &refs,\n        CoreRocksDbDurability::WalNoSync,\n        &codec_profile,\n    )\n    .map_err(napi_error)\n}\n"
+        },
+        {
+          "start_line": 3742,
+          "end_line": 3761,
+          "text": "async fn close_owned_napi_runtime<S>(\n    db: Rc<CoreDb<S>>,\n    lifecycle: Rc<StreamingOwnerLifecycle>,\n) -> napi::Result<()>\nwhere\n    S: CoreOrderedKvStorage + CoreReopenableStorage + 'static,\n{\n    let cleanup_db = Rc::clone(&db);\n    lifecycle.drain_cleanups().await;\n    let cleanup_error = lifecycle.take_cleanup_error();\n    let close_result = close_after_cleanup(\n        move || {\n            cleanup_db.set_tick_scheduler(None);\n            cleanup_db.clear_mutation_error_callback();\n        },\n        async move { db.close().await.map_err(napi_error) },\n    )\n    .await;\n    compose_close_result(close_result, cleanup_error)\n}"
+        }
+      ]
+    },
+    {
+      "source_commit": "204dc5b9c164de78267d63b35624e28848402790",
+      "path": "crates/jazz/layers/node/src/node/state/lifecycle.rs",
+      "excerpts": [
+        {
+          "start_line": 912,
+          "end_line": 920,
+          "text": "            permissions_ready: true,\n            catalogue_activation_failed: false,\n            #[cfg(any(test, feature = \"testing\"))]\n            catalogue_activation_failpoint: None,\n            initial_sync_flush_cadence: None,\n            initial_sync_flush_active: false,\n            initial_sync_flush_completed: false,\n        };\n        #[cfg(feature = \"testing\")]"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "utc": "2026-10-26T12:57:08.769Z",
+  "node": "v26.8.1",
+  "npm": "11.19.0",
+  "os": "ProductName:\t\tmacOS\nProductVersion:\t\t26.6.2\nBuildVersion:\t\t25G83",
+  "kernel": "Darwin 25.6.0 Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+  "architecture": "arm64",
+  "cpu": "Apple M1 Pro",
+  "logical_cpu_count": "10",
+  "ram_bytes": "17179869184",
+  "filesystem": "Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s5   460Gi   437Gi   1.5Gi   100%    7.1M   15M   31%   /System/Volumes/Data",
+  "storage_path": "/private/tmp/sync-benchmark-jazz-20261026-runtime/stores/final",
+  "container": null,
+  "cgroup_limit": null,
+  "filesystem_type": "APFS on internal solid-state Apple Fabric storage (diskutil info /System/Volumes/Data)",
+  "cpu_quota": null,
+  "ram_quota": null,
+  "versions": {
+    "jazz-tools": "2.0.0-alpha.59",
+    "jazz-napi": "2.0.0-alpha.59",
+    "playwright": "1.56.1"
+  },
+  "contention": "All worker heavy work serialized by atomic mkdir lock; six chats share laptop, OS/user/background activity and thermal state uncontrolled.",
+  "lock_owner": {
+    "engine": "jazz",
+    "task": "sync-benchmark-jazz",
+    "pid": 40862,
+    "token": "f490d3c8-5457-4380-a9af-701140d33d78",
+    "cwd": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-jazz",
+    "utc": "2026-10-26T12:56:29.379953+00:00",
+    "command": [
+      "python3",
+      "outputs/jazz-benchmark/stage-final.py"
+    ]
+  },
+  "models": [
+    "embedded",
+    "containers",
+    "collections"
+  ],
+  "runtimes": [
+    "native",
+    "browser"
+  ],
+  "warmups": 3,
+  "repetitions": 10,
+  "persistence": {
+    "native": "Pinned NAPI RocksDB WalNoSync; synchronous flush_wal(true) on storage close; normal batching defaults",
+    "browser": "IndexedDB SharedWorker page store, readwrite durability relaxed; initialSyncFlushEvery default 512",
+    "native_initial_sync_batching": "Node user runtime passes no initialSyncFlushEvery override; core cadence None, storage WAL sync cadence 64 write batches",
+    "indexes": "Engine default schema/history/current-state/metadata indexes; no extra application indexes; no manual compaction",
+    "identity": "Fresh synthetic local-first user accounts, ordinary Core permission checks; explicit allow policies for synthetic app",
+    "encryption": "Ordinary local HTTP/WebSocket, no TLS, no optional application encryption; default identity/integrity checks retained"
+  },
+  "adapter_source_sha256": {
+    "run.mjs": "c8f472ca59f8acd285da8e96a25ac6369ccf9022879481f16f09c1130091daf1",
+    "model.mjs": "4a9af740936603e51f6519f27cc45a10781d00ac1b90b0725616429124bf8238",
+    "wire.mjs": "472b2cc0cb68adb7e63285ca594cc5c148ab11febf0c6331fe9a0b23106c5051",
+    "util.mjs": "b8e8a03dad5877004a079d42f46810ccc29786f0aabbc4c6b3a7385562ef2f65",
+    "browser.mjs": "7e56ada4eaa5fc796d9bf9c1290306fb0d161734a002725f2ffa3623b07ceeee",
+    "browser-runner.mjs": "53f3365d6dccd3d33660de55f9740d24ec3e82baf0fdd463098b94cb0cf8b341",
+    "package-lock.json": "8db581927618bdd8733273f2522b0f3417d79dee03b0cfcb4b92cf3dce221edf"
+  }
+}

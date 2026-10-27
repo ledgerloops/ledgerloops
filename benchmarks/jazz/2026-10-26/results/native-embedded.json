@@ -1,0 +1,2851 @@
+[
+  {
+    "runtime": "native",
+    "model": "embedded",
+    "run": 0,
+    "warmup": true,
+    "connection_auth_open_ms": 24.87649999999985,
+    "observable_ms": 48.49733300000025,
+    "durable_ms": 50.48400000000038,
+    "durability_boundary": "Conservative upper bound: awaited native session.close, including subscription teardown/transport shutdown; RocksDB storage close synchronously flushes WAL.",
+    "wire": {
+      "received_tcp_stream_bytes": 107490,
+      "sent_tcp_stream_bytes": 229,
+      "received_ws_payload_bytes": 107468,
+      "sent_ws_payload_bytes": 221,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107153,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "wire_at_close": {
+      "received_tcp_stream_bytes": 107492,
+      "sent_tcp_stream_bytes": 268,
+      "received_ws_payload_bytes": 107468,
+      "sent_ws_payload_bytes": 248,
+      "received_ws_frames": 7,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107153,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 197743,
+        "allocated": 221184,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/e562327ac4aa3e97f7d3dc7821ccaf0718d74cb76434232fad987a092beb2e24/000004.log",
+            "apparent": 8683,
+            "allocated": 12288
+          },
+          {
+            "path": "data.accounts/e562327ac4aa3e97f7d3dc7821ccaf0718d74cb76434232fad987a092beb2e24/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/e562327ac4aa3e97f7d3dc7821ccaf0718d74cb76434232fad987a092beb2e24/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/e562327ac4aa3e97f7d3dc7821ccaf0718d74cb76434232fad987a092beb2e24/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/e562327ac4aa3e97f7d3dc7821ccaf0718d74cb76434232fad987a092beb2e24/LOG",
+            "apparent": 131953,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/e562327ac4aa3e97f7d3dc7821ccaf0718d74cb76434232fad987a092beb2e24/MANIFEST-000005",
+            "apparent": 789,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/e562327ac4aa3e97f7d3dc7821ccaf0718d74cb76434232fad987a092beb2e24/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1472859,
+        "allocated": 1503232,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/e562327ac4aa3e97f7d3dc7821ccaf0718d74cb76434232fad987a092beb2e24/000008.sst",
+            "apparent": 1471,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/e562327ac4aa3e97f7d3dc7821ccaf0718d74cb76434232fad987a092beb2e24/000009.sst",
+            "apparent": 2588,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/e562327ac4aa3e97f7d3dc7821ccaf0718d74cb76434232fad987a092beb2e24/000010.sst",
+            "apparent": 1798,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/e562327ac4aa3e97f7d3dc7821ccaf0718d74cb76434232fad987a092beb2e24/000011.log",
+            "apparent": 1083069,
+            "allocated": 1085440
+          },
+          {
+            "path": "data.accounts/e562327ac4aa3e97f7d3dc7821ccaf0718d74cb76434232fad987a092beb2e24/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/e562327ac4aa3e97f7d3dc7821ccaf0718d74cb76434232fad987a092beb2e24/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/e562327ac4aa3e97f7d3dc7821ccaf0718d74cb76434232fad987a092beb2e24/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/e562327ac4aa3e97f7d3dc7821ccaf0718d74cb76434232fad987a092beb2e24/LOG",
+            "apparent": 138105,
+            "allocated": 139264
+          },
+          {
+            "path": "data.accounts/e562327ac4aa3e97f7d3dc7821ccaf0718d74cb76434232fad987a092beb2e24/LOG.old.1793019429251301",
+            "apparent": 131953,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/e562327ac4aa3e97f7d3dc7821ccaf0718d74cb76434232fad987a092beb2e24/MANIFEST-000012",
+            "apparent": 1410,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/e562327ac4aa3e97f7d3dc7821ccaf0718d74cb76434232fad987a092beb2e24/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          },
+          {
+            "path": "data.accounts/e562327ac4aa3e97f7d3dc7821ccaf0718d74cb76434232fad987a092beb2e24/OPTIONS-000014",
+            "apparent": 56147,
+            "allocated": 57344
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1275116,
+        "allocated": 1282048
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "bytes": 415448,
+      "elapsed_ms": 25.688458999999966
+    }
+  },
+  {
+    "runtime": "native",
+    "model": "embedded",
+    "run": 1,
+    "warmup": true,
+    "connection_auth_open_ms": 21.437832999999955,
+    "observable_ms": 40.30183300000044,
+    "durable_ms": 42.13783299999977,
+    "durability_boundary": "Conservative upper bound: awaited native session.close, including subscription teardown/transport shutdown; RocksDB storage close synchronously flushes WAL.",
+    "wire": {
+      "received_tcp_stream_bytes": 107490,
+      "sent_tcp_stream_bytes": 229,
+      "received_ws_payload_bytes": 107468,
+      "sent_ws_payload_bytes": 221,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107153,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "wire_at_close": {
+      "received_tcp_stream_bytes": 107490,
+      "sent_tcp_stream_bytes": 268,
+      "received_ws_payload_bytes": 107468,
+      "sent_ws_payload_bytes": 248,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107153,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 197743,
+        "allocated": 221184,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/eb93ad9aa59a9bd0be988c1a2fea2a13ff2b4947bb261f564680b93a9b93e8b1/000004.log",
+            "apparent": 8683,
+            "allocated": 12288
+          },
+          {
+            "path": "data.accounts/eb93ad9aa59a9bd0be988c1a2fea2a13ff2b4947bb261f564680b93a9b93e8b1/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/eb93ad9aa59a9bd0be988c1a2fea2a13ff2b4947bb261f564680b93a9b93e8b1/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/eb93ad9aa59a9bd0be988c1a2fea2a13ff2b4947bb261f564680b93a9b93e8b1/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/eb93ad9aa59a9bd0be988c1a2fea2a13ff2b4947bb261f564680b93a9b93e8b1/LOG",
+            "apparent": 131953,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/eb93ad9aa59a9bd0be988c1a2fea2a13ff2b4947bb261f564680b93a9b93e8b1/MANIFEST-000005",
+            "apparent": 789,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/eb93ad9aa59a9bd0be988c1a2fea2a13ff2b4947bb261f564680b93a9b93e8b1/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1472859,
+        "allocated": 1503232,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/eb93ad9aa59a9bd0be988c1a2fea2a13ff2b4947bb261f564680b93a9b93e8b1/000008.sst",
+            "apparent": 1471,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/eb93ad9aa59a9bd0be988c1a2fea2a13ff2b4947bb261f564680b93a9b93e8b1/000009.sst",
+            "apparent": 2588,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/eb93ad9aa59a9bd0be988c1a2fea2a13ff2b4947bb261f564680b93a9b93e8b1/000010.sst",
+            "apparent": 1798,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/eb93ad9aa59a9bd0be988c1a2fea2a13ff2b4947bb261f564680b93a9b93e8b1/000011.log",
+            "apparent": 1083069,
+            "allocated": 1085440
+          },
+          {
+            "path": "data.accounts/eb93ad9aa59a9bd0be988c1a2fea2a13ff2b4947bb261f564680b93a9b93e8b1/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/eb93ad9aa59a9bd0be988c1a2fea2a13ff2b4947bb261f564680b93a9b93e8b1/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/eb93ad9aa59a9bd0be988c1a2fea2a13ff2b4947bb261f564680b93a9b93e8b1/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/eb93ad9aa59a9bd0be988c1a2fea2a13ff2b4947bb261f564680b93a9b93e8b1/LOG",
+            "apparent": 138105,
+            "allocated": 139264
+          },
+          {
+            "path": "data.accounts/eb93ad9aa59a9bd0be988c1a2fea2a13ff2b4947bb261f564680b93a9b93e8b1/LOG.old.1793019429401266",
+            "apparent": 131953,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/eb93ad9aa59a9bd0be988c1a2fea2a13ff2b4947bb261f564680b93a9b93e8b1/MANIFEST-000012",
+            "apparent": 1410,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/eb93ad9aa59a9bd0be988c1a2fea2a13ff2b4947bb261f564680b93a9b93e8b1/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          },
+          {
+            "path": "data.accounts/eb93ad9aa59a9bd0be988c1a2fea2a13ff2b4947bb261f564680b93a9b93e8b1/OPTIONS-000014",
+            "apparent": 56147,
+            "allocated": 57344
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1275116,
+        "allocated": 1282048
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "bytes": 415448,
+      "elapsed_ms": 31.137915999999677
+    }
+  },
+  {
+    "runtime": "native",
+    "model": "embedded",
+    "run": 2,
+    "warmup": true,
+    "connection_auth_open_ms": 23.69537500000024,
+    "observable_ms": 59.68529099999978,
+    "durable_ms": 61.66924999999992,
+    "durability_boundary": "Conservative upper bound: awaited native session.close, including subscription teardown/transport shutdown; RocksDB storage close synchronously flushes WAL.",
+    "wire": {
+      "received_tcp_stream_bytes": 107491,
+      "sent_tcp_stream_bytes": 229,
+      "received_ws_payload_bytes": 107469,
+      "sent_ws_payload_bytes": 221,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107154,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "wire_at_close": {
+      "received_tcp_stream_bytes": 107493,
+      "sent_tcp_stream_bytes": 268,
+      "received_ws_payload_bytes": 107469,
+      "sent_ws_payload_bytes": 248,
+      "received_ws_frames": 7,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107154,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 197743,
+        "allocated": 221184,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/644601b364eba478d17337f64dd053ebef4be705c5c69e0c917b5f065226d919/000004.log",
+            "apparent": 8683,
+            "allocated": 12288
+          },
+          {
+            "path": "data.accounts/644601b364eba478d17337f64dd053ebef4be705c5c69e0c917b5f065226d919/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/644601b364eba478d17337f64dd053ebef4be705c5c69e0c917b5f065226d919/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/644601b364eba478d17337f64dd053ebef4be705c5c69e0c917b5f065226d919/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/644601b364eba478d17337f64dd053ebef4be705c5c69e0c917b5f065226d919/LOG",
+            "apparent": 131953,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/644601b364eba478d17337f64dd053ebef4be705c5c69e0c917b5f065226d919/MANIFEST-000005",
+            "apparent": 789,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/644601b364eba478d17337f64dd053ebef4be705c5c69e0c917b5f065226d919/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1472859,
+        "allocated": 1503232,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/644601b364eba478d17337f64dd053ebef4be705c5c69e0c917b5f065226d919/000008.sst",
+            "apparent": 1471,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/644601b364eba478d17337f64dd053ebef4be705c5c69e0c917b5f065226d919/000009.sst",
+            "apparent": 2588,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/644601b364eba478d17337f64dd053ebef4be705c5c69e0c917b5f065226d919/000010.sst",
+            "apparent": 1798,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/644601b364eba478d17337f64dd053ebef4be705c5c69e0c917b5f065226d919/000011.log",
+            "apparent": 1083069,
+            "allocated": 1085440
+          },
+          {
+            "path": "data.accounts/644601b364eba478d17337f64dd053ebef4be705c5c69e0c917b5f065226d919/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/644601b364eba478d17337f64dd053ebef4be705c5c69e0c917b5f065226d919/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/644601b364eba478d17337f64dd053ebef4be705c5c69e0c917b5f065226d919/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/644601b364eba478d17337f64dd053ebef4be705c5c69e0c917b5f065226d919/LOG",
+            "apparent": 138105,
+            "allocated": 139264
+          },
+          {
+            "path": "data.accounts/644601b364eba478d17337f64dd053ebef4be705c5c69e0c917b5f065226d919/LOG.old.1793019429556681",
+            "apparent": 131953,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/644601b364eba478d17337f64dd053ebef4be705c5c69e0c917b5f065226d919/MANIFEST-000012",
+            "apparent": 1410,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/644601b364eba478d17337f64dd053ebef4be705c5c69e0c917b5f065226d919/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          },
+          {
+            "path": "data.accounts/644601b364eba478d17337f64dd053ebef4be705c5c69e0c917b5f065226d919/OPTIONS-000014",
+            "apparent": 56147,
+            "allocated": 57344
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1275116,
+        "allocated": 1282048
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "bytes": 415448,
+      "elapsed_ms": 33.65508299999965
+    }
+  },
+  {
+    "runtime": "native",
+    "model": "embedded",
+    "run": 3,
+    "warmup": false,
+    "connection_auth_open_ms": 25.109542000000147,
+    "observable_ms": 40.50091599999996,
+    "durable_ms": 42.155791000000136,
+    "durability_boundary": "Conservative upper bound: awaited native session.close, including subscription teardown/transport shutdown; RocksDB storage close synchronously flushes WAL.",
+    "wire": {
+      "received_tcp_stream_bytes": 107489,
+      "sent_tcp_stream_bytes": 229,
+      "received_ws_payload_bytes": 107467,
+      "sent_ws_payload_bytes": 221,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107152,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "wire_at_close": {
+      "received_tcp_stream_bytes": 107491,
+      "sent_tcp_stream_bytes": 268,
+      "received_ws_payload_bytes": 107467,
+      "sent_ws_payload_bytes": 248,
+      "received_ws_frames": 7,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107152,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 197743,
+        "allocated": 221184,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9cb1175f1ece3ad7bf767215939c5178d5c8652a564fc49eea125eff402b9473/000004.log",
+            "apparent": 8683,
+            "allocated": 12288
+          },
+          {
+            "path": "data.accounts/9cb1175f1ece3ad7bf767215939c5178d5c8652a564fc49eea125eff402b9473/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9cb1175f1ece3ad7bf767215939c5178d5c8652a564fc49eea125eff402b9473/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9cb1175f1ece3ad7bf767215939c5178d5c8652a564fc49eea125eff402b9473/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/9cb1175f1ece3ad7bf767215939c5178d5c8652a564fc49eea125eff402b9473/LOG",
+            "apparent": 131953,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/9cb1175f1ece3ad7bf767215939c5178d5c8652a564fc49eea125eff402b9473/MANIFEST-000005",
+            "apparent": 789,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9cb1175f1ece3ad7bf767215939c5178d5c8652a564fc49eea125eff402b9473/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1472859,
+        "allocated": 1503232,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9cb1175f1ece3ad7bf767215939c5178d5c8652a564fc49eea125eff402b9473/000008.sst",
+            "apparent": 1471,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9cb1175f1ece3ad7bf767215939c5178d5c8652a564fc49eea125eff402b9473/000009.sst",
+            "apparent": 2588,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9cb1175f1ece3ad7bf767215939c5178d5c8652a564fc49eea125eff402b9473/000010.sst",
+            "apparent": 1798,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9cb1175f1ece3ad7bf767215939c5178d5c8652a564fc49eea125eff402b9473/000011.log",
+            "apparent": 1083069,
+            "allocated": 1085440
+          },
+          {
+            "path": "data.accounts/9cb1175f1ece3ad7bf767215939c5178d5c8652a564fc49eea125eff402b9473/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9cb1175f1ece3ad7bf767215939c5178d5c8652a564fc49eea125eff402b9473/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9cb1175f1ece3ad7bf767215939c5178d5c8652a564fc49eea125eff402b9473/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/9cb1175f1ece3ad7bf767215939c5178d5c8652a564fc49eea125eff402b9473/LOG",
+            "apparent": 138105,
+            "allocated": 139264
+          },
+          {
+            "path": "data.accounts/9cb1175f1ece3ad7bf767215939c5178d5c8652a564fc49eea125eff402b9473/LOG.old.1793019429727686",
+            "apparent": 131953,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/9cb1175f1ece3ad7bf767215939c5178d5c8652a564fc49eea125eff402b9473/MANIFEST-000012",
+            "apparent": 1410,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9cb1175f1ece3ad7bf767215939c5178d5c8652a564fc49eea125eff402b9473/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          },
+          {
+            "path": "data.accounts/9cb1175f1ece3ad7bf767215939c5178d5c8652a564fc49eea125eff402b9473/OPTIONS-000014",
+            "apparent": 56147,
+            "allocated": 57344
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1275116,
+        "allocated": 1282048
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "bytes": 415448,
+      "elapsed_ms": 24.980458
+    }
+  },
+  {
+    "runtime": "native",
+    "model": "embedded",
+    "run": 4,
+    "warmup": false,
+    "connection_auth_open_ms": 20.68249999999989,
+    "observable_ms": 39.28429199999937,
+    "durable_ms": 41.052584000000024,
+    "durability_boundary": "Conservative upper bound: awaited native session.close, including subscription teardown/transport shutdown; RocksDB storage close synchronously flushes WAL.",
+    "wire": {
+      "received_tcp_stream_bytes": 107490,
+      "sent_tcp_stream_bytes": 229,
+      "received_ws_payload_bytes": 107468,
+      "sent_ws_payload_bytes": 221,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107153,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "wire_at_close": {
+      "received_tcp_stream_bytes": 107492,
+      "sent_tcp_stream_bytes": 268,
+      "received_ws_payload_bytes": 107468,
+      "sent_ws_payload_bytes": 248,
+      "received_ws_frames": 7,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107153,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 197743,
+        "allocated": 221184,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/3e3075c61741742010808885c86f15bcce045fa568d56200de161477db9cde09/000004.log",
+            "apparent": 8683,
+            "allocated": 12288
+          },
+          {
+            "path": "data.accounts/3e3075c61741742010808885c86f15bcce045fa568d56200de161477db9cde09/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/3e3075c61741742010808885c86f15bcce045fa568d56200de161477db9cde09/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/3e3075c61741742010808885c86f15bcce045fa568d56200de161477db9cde09/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/3e3075c61741742010808885c86f15bcce045fa568d56200de161477db9cde09/LOG",
+            "apparent": 131953,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/3e3075c61741742010808885c86f15bcce045fa568d56200de161477db9cde09/MANIFEST-000005",
+            "apparent": 789,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/3e3075c61741742010808885c86f15bcce045fa568d56200de161477db9cde09/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1472859,
+        "allocated": 1503232,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/3e3075c61741742010808885c86f15bcce045fa568d56200de161477db9cde09/000008.sst",
+            "apparent": 1471,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/3e3075c61741742010808885c86f15bcce045fa568d56200de161477db9cde09/000009.sst",
+            "apparent": 2588,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/3e3075c61741742010808885c86f15bcce045fa568d56200de161477db9cde09/000010.sst",
+            "apparent": 1798,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/3e3075c61741742010808885c86f15bcce045fa568d56200de161477db9cde09/000011.log",
+            "apparent": 1083069,
+            "allocated": 1085440
+          },
+          {
+            "path": "data.accounts/3e3075c61741742010808885c86f15bcce045fa568d56200de161477db9cde09/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/3e3075c61741742010808885c86f15bcce045fa568d56200de161477db9cde09/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/3e3075c61741742010808885c86f15bcce045fa568d56200de161477db9cde09/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/3e3075c61741742010808885c86f15bcce045fa568d56200de161477db9cde09/LOG",
+            "apparent": 138105,
+            "allocated": 139264
+          },
+          {
+            "path": "data.accounts/3e3075c61741742010808885c86f15bcce045fa568d56200de161477db9cde09/LOG.old.1793019429871757",
+            "apparent": 131953,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/3e3075c61741742010808885c86f15bcce045fa568d56200de161477db9cde09/MANIFEST-000012",
+            "apparent": 1410,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/3e3075c61741742010808885c86f15bcce045fa568d56200de161477db9cde09/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          },
+          {
+            "path": "data.accounts/3e3075c61741742010808885c86f15bcce045fa568d56200de161477db9cde09/OPTIONS-000014",
+            "apparent": 56147,
+            "allocated": 57344
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1275116,
+        "allocated": 1282048
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "bytes": 415448,
+      "elapsed_ms": 22.77458299999944
+    }
+  },
+  {
+    "runtime": "native",
+    "model": "embedded",
+    "run": 5,
+    "warmup": false,
+    "connection_auth_open_ms": 21.015833000000384,
+    "observable_ms": 39.9717499999997,
+    "durable_ms": 41.55149999999958,
+    "durability_boundary": "Conservative upper bound: awaited native session.close, including subscription teardown/transport shutdown; RocksDB storage close synchronously flushes WAL.",
+    "wire": {
+      "received_tcp_stream_bytes": 107492,
+      "sent_tcp_stream_bytes": 229,
+      "received_ws_payload_bytes": 107470,
+      "sent_ws_payload_bytes": 221,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107155,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "wire_at_close": {
+      "received_tcp_stream_bytes": 107494,
+      "sent_tcp_stream_bytes": 268,
+      "received_ws_payload_bytes": 107470,
+      "sent_ws_payload_bytes": 248,
+      "received_ws_frames": 7,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107155,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 197743,
+        "allocated": 221184,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6f51ccd5191c4a5c74675a598aa0f8734461f8fa163bcf9772b09852f41d1ad5/000004.log",
+            "apparent": 8683,
+            "allocated": 12288
+          },
+          {
+            "path": "data.accounts/6f51ccd5191c4a5c74675a598aa0f8734461f8fa163bcf9772b09852f41d1ad5/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6f51ccd5191c4a5c74675a598aa0f8734461f8fa163bcf9772b09852f41d1ad5/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6f51ccd5191c4a5c74675a598aa0f8734461f8fa163bcf9772b09852f41d1ad5/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/6f51ccd5191c4a5c74675a598aa0f8734461f8fa163bcf9772b09852f41d1ad5/LOG",
+            "apparent": 131953,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/6f51ccd5191c4a5c74675a598aa0f8734461f8fa163bcf9772b09852f41d1ad5/MANIFEST-000005",
+            "apparent": 789,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6f51ccd5191c4a5c74675a598aa0f8734461f8fa163bcf9772b09852f41d1ad5/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1472859,
+        "allocated": 1503232,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6f51ccd5191c4a5c74675a598aa0f8734461f8fa163bcf9772b09852f41d1ad5/000008.sst",
+            "apparent": 1471,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6f51ccd5191c4a5c74675a598aa0f8734461f8fa163bcf9772b09852f41d1ad5/000009.sst",
+            "apparent": 2588,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6f51ccd5191c4a5c74675a598aa0f8734461f8fa163bcf9772b09852f41d1ad5/000010.sst",
+            "apparent": 1798,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6f51ccd5191c4a5c74675a598aa0f8734461f8fa163bcf9772b09852f41d1ad5/000011.log",
+            "apparent": 1083069,
+            "allocated": 1085440
+          },
+          {
+            "path": "data.accounts/6f51ccd5191c4a5c74675a598aa0f8734461f8fa163bcf9772b09852f41d1ad5/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6f51ccd5191c4a5c74675a598aa0f8734461f8fa163bcf9772b09852f41d1ad5/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6f51ccd5191c4a5c74675a598aa0f8734461f8fa163bcf9772b09852f41d1ad5/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/6f51ccd5191c4a5c74675a598aa0f8734461f8fa163bcf9772b09852f41d1ad5/LOG",
+            "apparent": 138105,
+            "allocated": 139264
+          },
+          {
+            "path": "data.accounts/6f51ccd5191c4a5c74675a598aa0f8734461f8fa163bcf9772b09852f41d1ad5/LOG.old.1793019430004595",
+            "apparent": 131953,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/6f51ccd5191c4a5c74675a598aa0f8734461f8fa163bcf9772b09852f41d1ad5/MANIFEST-000012",
+            "apparent": 1410,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6f51ccd5191c4a5c74675a598aa0f8734461f8fa163bcf9772b09852f41d1ad5/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          },
+          {
+            "path": "data.accounts/6f51ccd5191c4a5c74675a598aa0f8734461f8fa163bcf9772b09852f41d1ad5/OPTIONS-000014",
+            "apparent": 56147,
+            "allocated": 57344
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1275116,
+        "allocated": 1282048
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "bytes": 415448,
+      "elapsed_ms": 26.928624999999556
+    }
+  },
+  {
+    "runtime": "native",
+    "model": "embedded",
+    "run": 6,
+    "warmup": false,
+    "connection_auth_open_ms": 18.964708000000428,
+    "observable_ms": 47.61275000000023,
+    "durable_ms": 49.24712499999987,
+    "durability_boundary": "Conservative upper bound: awaited native session.close, including subscription teardown/transport shutdown; RocksDB storage close synchronously flushes WAL.",
+    "wire": {
+      "received_tcp_stream_bytes": 107491,
+      "sent_tcp_stream_bytes": 229,
+      "received_ws_payload_bytes": 107469,
+      "sent_ws_payload_bytes": 221,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107154,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "wire_at_close": {
+      "received_tcp_stream_bytes": 107493,
+      "sent_tcp_stream_bytes": 268,
+      "received_ws_payload_bytes": 107469,
+      "sent_ws_payload_bytes": 248,
+      "received_ws_frames": 7,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107154,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 197743,
+        "allocated": 221184,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9ee0725faf52db112278a7ef3a284c73338d7a89c5c96add196af7f7269d0254/000004.log",
+            "apparent": 8683,
+            "allocated": 12288
+          },
+          {
+            "path": "data.accounts/9ee0725faf52db112278a7ef3a284c73338d7a89c5c96add196af7f7269d0254/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9ee0725faf52db112278a7ef3a284c73338d7a89c5c96add196af7f7269d0254/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9ee0725faf52db112278a7ef3a284c73338d7a89c5c96add196af7f7269d0254/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/9ee0725faf52db112278a7ef3a284c73338d7a89c5c96add196af7f7269d0254/LOG",
+            "apparent": 131953,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/9ee0725faf52db112278a7ef3a284c73338d7a89c5c96add196af7f7269d0254/MANIFEST-000005",
+            "apparent": 789,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9ee0725faf52db112278a7ef3a284c73338d7a89c5c96add196af7f7269d0254/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1472859,
+        "allocated": 1503232,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9ee0725faf52db112278a7ef3a284c73338d7a89c5c96add196af7f7269d0254/000008.sst",
+            "apparent": 1471,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9ee0725faf52db112278a7ef3a284c73338d7a89c5c96add196af7f7269d0254/000009.sst",
+            "apparent": 2588,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9ee0725faf52db112278a7ef3a284c73338d7a89c5c96add196af7f7269d0254/000010.sst",
+            "apparent": 1798,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9ee0725faf52db112278a7ef3a284c73338d7a89c5c96add196af7f7269d0254/000011.log",
+            "apparent": 1083069,
+            "allocated": 1085440
+          },
+          {
+            "path": "data.accounts/9ee0725faf52db112278a7ef3a284c73338d7a89c5c96add196af7f7269d0254/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9ee0725faf52db112278a7ef3a284c73338d7a89c5c96add196af7f7269d0254/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9ee0725faf52db112278a7ef3a284c73338d7a89c5c96add196af7f7269d0254/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/9ee0725faf52db112278a7ef3a284c73338d7a89c5c96add196af7f7269d0254/LOG",
+            "apparent": 138105,
+            "allocated": 139264
+          },
+          {
+            "path": "data.accounts/9ee0725faf52db112278a7ef3a284c73338d7a89c5c96add196af7f7269d0254/LOG.old.1793019430143423",
+            "apparent": 131953,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/9ee0725faf52db112278a7ef3a284c73338d7a89c5c96add196af7f7269d0254/MANIFEST-000012",
+            "apparent": 1410,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/9ee0725faf52db112278a7ef3a284c73338d7a89c5c96add196af7f7269d0254/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          },
+          {
+            "path": "data.accounts/9ee0725faf52db112278a7ef3a284c73338d7a89c5c96add196af7f7269d0254/OPTIONS-000014",
+            "apparent": 56147,
+            "allocated": 57344
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1275116,
+        "allocated": 1282048
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "bytes": 415448,
+      "elapsed_ms": 26.268958999999995
+    }
+  },
+  {
+    "runtime": "native",
+    "model": "embedded",
+    "run": 7,
+    "warmup": false,
+    "connection_auth_open_ms": 20.48937500000011,
+    "observable_ms": 40.925750000000335,
+    "durable_ms": 42.64708299999984,
+    "durability_boundary": "Conservative upper bound: awaited native session.close, including subscription teardown/transport shutdown; RocksDB storage close synchronously flushes WAL.",
+    "wire": {
+      "received_tcp_stream_bytes": 107491,
+      "sent_tcp_stream_bytes": 229,
+      "received_ws_payload_bytes": 107469,
+      "sent_ws_payload_bytes": 221,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107154,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "wire_at_close": {
+      "received_tcp_stream_bytes": 107493,
+      "sent_tcp_stream_bytes": 268,
+      "received_ws_payload_bytes": 107469,
+      "sent_ws_payload_bytes": 248,
+      "received_ws_frames": 7,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107154,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 197743,
+        "allocated": 221184,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/b01003c972e55ab36c253d48df0122d78f073397561f262342115c691921752d/000004.log",
+            "apparent": 8683,
+            "allocated": 12288
+          },
+          {
+            "path": "data.accounts/b01003c972e55ab36c253d48df0122d78f073397561f262342115c691921752d/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/b01003c972e55ab36c253d48df0122d78f073397561f262342115c691921752d/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/b01003c972e55ab36c253d48df0122d78f073397561f262342115c691921752d/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/b01003c972e55ab36c253d48df0122d78f073397561f262342115c691921752d/LOG",
+            "apparent": 131953,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/b01003c972e55ab36c253d48df0122d78f073397561f262342115c691921752d/MANIFEST-000005",
+            "apparent": 789,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/b01003c972e55ab36c253d48df0122d78f073397561f262342115c691921752d/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1472859,
+        "allocated": 1503232,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/b01003c972e55ab36c253d48df0122d78f073397561f262342115c691921752d/000008.sst",
+            "apparent": 1471,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/b01003c972e55ab36c253d48df0122d78f073397561f262342115c691921752d/000009.sst",
+            "apparent": 2588,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/b01003c972e55ab36c253d48df0122d78f073397561f262342115c691921752d/000010.sst",
+            "apparent": 1798,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/b01003c972e55ab36c253d48df0122d78f073397561f262342115c691921752d/000011.log",
+            "apparent": 1083069,
+            "allocated": 1085440
+          },
+          {
+            "path": "data.accounts/b01003c972e55ab36c253d48df0122d78f073397561f262342115c691921752d/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/b01003c972e55ab36c253d48df0122d78f073397561f262342115c691921752d/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/b01003c972e55ab36c253d48df0122d78f073397561f262342115c691921752d/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/b01003c972e55ab36c253d48df0122d78f073397561f262342115c691921752d/LOG",
+            "apparent": 138105,
+            "allocated": 139264
+          },
+          {
+            "path": "data.accounts/b01003c972e55ab36c253d48df0122d78f073397561f262342115c691921752d/LOG.old.1793019430289214",
+            "apparent": 131953,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/b01003c972e55ab36c253d48df0122d78f073397561f262342115c691921752d/MANIFEST-000012",
+            "apparent": 1410,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/b01003c972e55ab36c253d48df0122d78f073397561f262342115c691921752d/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          },
+          {
+            "path": "data.accounts/b01003c972e55ab36c253d48df0122d78f073397561f262342115c691921752d/OPTIONS-000014",
+            "apparent": 56147,
+            "allocated": 57344
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1275116,
+        "allocated": 1282048
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "bytes": 415448,
+      "elapsed_ms": 23.848833000000013
+    }
+  },
+  {
+    "runtime": "native",
+    "model": "embedded",
+    "run": 8,
+    "warmup": false,
+    "connection_auth_open_ms": 22.039209000000483,
+    "observable_ms": 39.409209000000374,
+    "durable_ms": 41.00329200000033,
+    "durability_boundary": "Conservative upper bound: awaited native session.close, including subscription teardown/transport shutdown; RocksDB storage close synchronously flushes WAL.",
+    "wire": {
+      "received_tcp_stream_bytes": 107490,
+      "sent_tcp_stream_bytes": 229,
+      "received_ws_payload_bytes": 107468,
+      "sent_ws_payload_bytes": 221,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107153,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "wire_at_close": {
+      "received_tcp_stream_bytes": 107492,
+      "sent_tcp_stream_bytes": 268,
+      "received_ws_payload_bytes": 107468,
+      "sent_ws_payload_bytes": 248,
+      "received_ws_frames": 7,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107153,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 197743,
+        "allocated": 221184,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6036da7450180a04aae28c05a1c8d68634e4b621fa2f121e9fce498789542862/000004.log",
+            "apparent": 8683,
+            "allocated": 12288
+          },
+          {
+            "path": "data.accounts/6036da7450180a04aae28c05a1c8d68634e4b621fa2f121e9fce498789542862/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6036da7450180a04aae28c05a1c8d68634e4b621fa2f121e9fce498789542862/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6036da7450180a04aae28c05a1c8d68634e4b621fa2f121e9fce498789542862/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/6036da7450180a04aae28c05a1c8d68634e4b621fa2f121e9fce498789542862/LOG",
+            "apparent": 131953,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/6036da7450180a04aae28c05a1c8d68634e4b621fa2f121e9fce498789542862/MANIFEST-000005",
+            "apparent": 789,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6036da7450180a04aae28c05a1c8d68634e4b621fa2f121e9fce498789542862/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1472859,
+        "allocated": 1503232,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6036da7450180a04aae28c05a1c8d68634e4b621fa2f121e9fce498789542862/000008.sst",
+            "apparent": 1471,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6036da7450180a04aae28c05a1c8d68634e4b621fa2f121e9fce498789542862/000009.sst",
+            "apparent": 2588,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6036da7450180a04aae28c05a1c8d68634e4b621fa2f121e9fce498789542862/000010.sst",
+            "apparent": 1798,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6036da7450180a04aae28c05a1c8d68634e4b621fa2f121e9fce498789542862/000011.log",
+            "apparent": 1083069,
+            "allocated": 1085440
+          },
+          {
+            "path": "data.accounts/6036da7450180a04aae28c05a1c8d68634e4b621fa2f121e9fce498789542862/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6036da7450180a04aae28c05a1c8d68634e4b621fa2f121e9fce498789542862/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6036da7450180a04aae28c05a1c8d68634e4b621fa2f121e9fce498789542862/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/6036da7450180a04aae28c05a1c8d68634e4b621fa2f121e9fce498789542862/LOG",
+            "apparent": 138105,
+            "allocated": 139264
+          },
+          {
+            "path": "data.accounts/6036da7450180a04aae28c05a1c8d68634e4b621fa2f121e9fce498789542862/LOG.old.1793019430421265",
+            "apparent": 131953,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/6036da7450180a04aae28c05a1c8d68634e4b621fa2f121e9fce498789542862/MANIFEST-000012",
+            "apparent": 1410,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/6036da7450180a04aae28c05a1c8d68634e4b621fa2f121e9fce498789542862/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          },
+          {
+            "path": "data.accounts/6036da7450180a04aae28c05a1c8d68634e4b621fa2f121e9fce498789542862/OPTIONS-000014",
+            "apparent": 56147,
+            "allocated": 57344
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1275116,
+        "allocated": 1282048
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "bytes": 415448,
+      "elapsed_ms": 22.41791700000067
+    }
+  },
+  {
+    "runtime": "native",
+    "model": "embedded",
+    "run": 9,
+    "warmup": false,
+    "connection_auth_open_ms": 23.551499999999578,
+    "observable_ms": 40.87341599999945,
+    "durable_ms": 42.53899999999976,
+    "durability_boundary": "Conservative upper bound: awaited native session.close, including subscription teardown/transport shutdown; RocksDB storage close synchronously flushes WAL.",
+    "wire": {
+      "received_tcp_stream_bytes": 107490,
+      "sent_tcp_stream_bytes": 229,
+      "received_ws_payload_bytes": 107468,
+      "sent_ws_payload_bytes": 221,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107153,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "wire_at_close": {
+      "received_tcp_stream_bytes": 107492,
+      "sent_tcp_stream_bytes": 268,
+      "received_ws_payload_bytes": 107468,
+      "sent_ws_payload_bytes": 248,
+      "received_ws_frames": 7,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107153,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 197743,
+        "allocated": 221184,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/1442122a4b452dbb2b2f9ede0d476ce16932181190466939ea78125e930af112/000004.log",
+            "apparent": 8683,
+            "allocated": 12288
+          },
+          {
+            "path": "data.accounts/1442122a4b452dbb2b2f9ede0d476ce16932181190466939ea78125e930af112/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/1442122a4b452dbb2b2f9ede0d476ce16932181190466939ea78125e930af112/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/1442122a4b452dbb2b2f9ede0d476ce16932181190466939ea78125e930af112/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/1442122a4b452dbb2b2f9ede0d476ce16932181190466939ea78125e930af112/LOG",
+            "apparent": 131953,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/1442122a4b452dbb2b2f9ede0d476ce16932181190466939ea78125e930af112/MANIFEST-000005",
+            "apparent": 789,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/1442122a4b452dbb2b2f9ede0d476ce16932181190466939ea78125e930af112/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1472859,
+        "allocated": 1503232,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/1442122a4b452dbb2b2f9ede0d476ce16932181190466939ea78125e930af112/000008.sst",
+            "apparent": 1471,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/1442122a4b452dbb2b2f9ede0d476ce16932181190466939ea78125e930af112/000009.sst",
+            "apparent": 2588,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/1442122a4b452dbb2b2f9ede0d476ce16932181190466939ea78125e930af112/000010.sst",
+            "apparent": 1798,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/1442122a4b452dbb2b2f9ede0d476ce16932181190466939ea78125e930af112/000011.log",
+            "apparent": 1083069,
+            "allocated": 1085440
+          },
+          {
+            "path": "data.accounts/1442122a4b452dbb2b2f9ede0d476ce16932181190466939ea78125e930af112/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/1442122a4b452dbb2b2f9ede0d476ce16932181190466939ea78125e930af112/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/1442122a4b452dbb2b2f9ede0d476ce16932181190466939ea78125e930af112/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/1442122a4b452dbb2b2f9ede0d476ce16932181190466939ea78125e930af112/LOG",
+            "apparent": 138105,
+            "allocated": 139264
+          },
+          {
+            "path": "data.accounts/1442122a4b452dbb2b2f9ede0d476ce16932181190466939ea78125e930af112/LOG.old.1793019430555073",
+            "apparent": 131953,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/1442122a4b452dbb2b2f9ede0d476ce16932181190466939ea78125e930af112/MANIFEST-000012",
+            "apparent": 1410,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/1442122a4b452dbb2b2f9ede0d476ce16932181190466939ea78125e930af112/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          },
+          {
+            "path": "data.accounts/1442122a4b452dbb2b2f9ede0d476ce16932181190466939ea78125e930af112/OPTIONS-000014",
+            "apparent": 56147,
+            "allocated": 57344
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1275116,
+        "allocated": 1282048
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "bytes": 415448,
+      "elapsed_ms": 22.380291999999827
+    }
+  },
+  {
+    "runtime": "native",
+    "model": "embedded",
+    "run": 10,
+    "warmup": false,
+    "connection_auth_open_ms": 22.864708000000064,
+    "observable_ms": 39.136625000000095,
+    "durable_ms": 41.07012500000019,
+    "durability_boundary": "Conservative upper bound: awaited native session.close, including subscription teardown/transport shutdown; RocksDB storage close synchronously flushes WAL.",
+    "wire": {
+      "received_tcp_stream_bytes": 107489,
+      "sent_tcp_stream_bytes": 229,
+      "received_ws_payload_bytes": 107467,
+      "sent_ws_payload_bytes": 221,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107152,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "wire_at_close": {
+      "received_tcp_stream_bytes": 107491,
+      "sent_tcp_stream_bytes": 268,
+      "received_ws_payload_bytes": 107467,
+      "sent_ws_payload_bytes": 248,
+      "received_ws_frames": 7,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107152,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 197747,
+        "allocated": 221184,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/0c66dafb6e5414bd23ae02e7e7c55b86ec0d9c1eb40dbe1e8edaa8a70f12db37/000004.log",
+            "apparent": 8683,
+            "allocated": 12288
+          },
+          {
+            "path": "data.accounts/0c66dafb6e5414bd23ae02e7e7c55b86ec0d9c1eb40dbe1e8edaa8a70f12db37/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/0c66dafb6e5414bd23ae02e7e7c55b86ec0d9c1eb40dbe1e8edaa8a70f12db37/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/0c66dafb6e5414bd23ae02e7e7c55b86ec0d9c1eb40dbe1e8edaa8a70f12db37/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/0c66dafb6e5414bd23ae02e7e7c55b86ec0d9c1eb40dbe1e8edaa8a70f12db37/LOG",
+            "apparent": 131957,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/0c66dafb6e5414bd23ae02e7e7c55b86ec0d9c1eb40dbe1e8edaa8a70f12db37/MANIFEST-000005",
+            "apparent": 789,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/0c66dafb6e5414bd23ae02e7e7c55b86ec0d9c1eb40dbe1e8edaa8a70f12db37/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1472868,
+        "allocated": 1503232,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/0c66dafb6e5414bd23ae02e7e7c55b86ec0d9c1eb40dbe1e8edaa8a70f12db37/000008.sst",
+            "apparent": 1471,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/0c66dafb6e5414bd23ae02e7e7c55b86ec0d9c1eb40dbe1e8edaa8a70f12db37/000009.sst",
+            "apparent": 2588,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/0c66dafb6e5414bd23ae02e7e7c55b86ec0d9c1eb40dbe1e8edaa8a70f12db37/000010.sst",
+            "apparent": 1798,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/0c66dafb6e5414bd23ae02e7e7c55b86ec0d9c1eb40dbe1e8edaa8a70f12db37/000011.log",
+            "apparent": 1083069,
+            "allocated": 1085440
+          },
+          {
+            "path": "data.accounts/0c66dafb6e5414bd23ae02e7e7c55b86ec0d9c1eb40dbe1e8edaa8a70f12db37/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/0c66dafb6e5414bd23ae02e7e7c55b86ec0d9c1eb40dbe1e8edaa8a70f12db37/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/0c66dafb6e5414bd23ae02e7e7c55b86ec0d9c1eb40dbe1e8edaa8a70f12db37/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/0c66dafb6e5414bd23ae02e7e7c55b86ec0d9c1eb40dbe1e8edaa8a70f12db37/LOG",
+            "apparent": 138110,
+            "allocated": 139264
+          },
+          {
+            "path": "data.accounts/0c66dafb6e5414bd23ae02e7e7c55b86ec0d9c1eb40dbe1e8edaa8a70f12db37/LOG.old.1793019430692804",
+            "apparent": 131957,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/0c66dafb6e5414bd23ae02e7e7c55b86ec0d9c1eb40dbe1e8edaa8a70f12db37/MANIFEST-000012",
+            "apparent": 1410,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/0c66dafb6e5414bd23ae02e7e7c55b86ec0d9c1eb40dbe1e8edaa8a70f12db37/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          },
+          {
+            "path": "data.accounts/0c66dafb6e5414bd23ae02e7e7c55b86ec0d9c1eb40dbe1e8edaa8a70f12db37/OPTIONS-000014",
+            "apparent": 56147,
+            "allocated": 57344
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1275121,
+        "allocated": 1282048
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "bytes": 415448,
+      "elapsed_ms": 27.08195799999976
+    }
+  },
+  {
+    "runtime": "native",
+    "model": "embedded",
+    "run": 11,
+    "warmup": false,
+    "connection_auth_open_ms": 19.607250000000022,
+    "observable_ms": 136.37824999999975,
+    "durable_ms": 141.52079199999935,
+    "durability_boundary": "Conservative upper bound: awaited native session.close, including subscription teardown/transport shutdown; RocksDB storage close synchronously flushes WAL.",
+    "wire": {
+      "received_tcp_stream_bytes": 107491,
+      "sent_tcp_stream_bytes": 229,
+      "received_ws_payload_bytes": 107469,
+      "sent_ws_payload_bytes": 221,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107154,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "wire_at_close": {
+      "received_tcp_stream_bytes": 107493,
+      "sent_tcp_stream_bytes": 268,
+      "received_ws_payload_bytes": 107469,
+      "sent_ws_payload_bytes": 248,
+      "received_ws_frames": 7,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107154,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 197747,
+        "allocated": 221184,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/950ac1443d7c7f5f24b1a6071ea9de02f1f1e7cbecc3da037d34808057ecae25/000004.log",
+            "apparent": 8683,
+            "allocated": 12288
+          },
+          {
+            "path": "data.accounts/950ac1443d7c7f5f24b1a6071ea9de02f1f1e7cbecc3da037d34808057ecae25/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/950ac1443d7c7f5f24b1a6071ea9de02f1f1e7cbecc3da037d34808057ecae25/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/950ac1443d7c7f5f24b1a6071ea9de02f1f1e7cbecc3da037d34808057ecae25/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/950ac1443d7c7f5f24b1a6071ea9de02f1f1e7cbecc3da037d34808057ecae25/LOG",
+            "apparent": 131957,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/950ac1443d7c7f5f24b1a6071ea9de02f1f1e7cbecc3da037d34808057ecae25/MANIFEST-000005",
+            "apparent": 789,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/950ac1443d7c7f5f24b1a6071ea9de02f1f1e7cbecc3da037d34808057ecae25/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1472868,
+        "allocated": 1503232,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/950ac1443d7c7f5f24b1a6071ea9de02f1f1e7cbecc3da037d34808057ecae25/000008.sst",
+            "apparent": 1471,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/950ac1443d7c7f5f24b1a6071ea9de02f1f1e7cbecc3da037d34808057ecae25/000009.sst",
+            "apparent": 2588,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/950ac1443d7c7f5f24b1a6071ea9de02f1f1e7cbecc3da037d34808057ecae25/000010.sst",
+            "apparent": 1798,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/950ac1443d7c7f5f24b1a6071ea9de02f1f1e7cbecc3da037d34808057ecae25/000011.log",
+            "apparent": 1083069,
+            "allocated": 1085440
+          },
+          {
+            "path": "data.accounts/950ac1443d7c7f5f24b1a6071ea9de02f1f1e7cbecc3da037d34808057ecae25/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/950ac1443d7c7f5f24b1a6071ea9de02f1f1e7cbecc3da037d34808057ecae25/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/950ac1443d7c7f5f24b1a6071ea9de02f1f1e7cbecc3da037d34808057ecae25/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/950ac1443d7c7f5f24b1a6071ea9de02f1f1e7cbecc3da037d34808057ecae25/LOG",
+            "apparent": 138110,
+            "allocated": 139264
+          },
+          {
+            "path": "data.accounts/950ac1443d7c7f5f24b1a6071ea9de02f1f1e7cbecc3da037d34808057ecae25/LOG.old.1793019430830759",
+            "apparent": 131957,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/950ac1443d7c7f5f24b1a6071ea9de02f1f1e7cbecc3da037d34808057ecae25/MANIFEST-000012",
+            "apparent": 1410,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/950ac1443d7c7f5f24b1a6071ea9de02f1f1e7cbecc3da037d34808057ecae25/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          },
+          {
+            "path": "data.accounts/950ac1443d7c7f5f24b1a6071ea9de02f1f1e7cbecc3da037d34808057ecae25/OPTIONS-000014",
+            "apparent": 56147,
+            "allocated": 57344
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1275121,
+        "allocated": 1282048
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "bytes": 415448,
+      "elapsed_ms": 52.861917000000176
+    }
+  },
+  {
+    "runtime": "native",
+    "model": "embedded",
+    "run": 12,
+    "warmup": false,
+    "connection_auth_open_ms": 19.621334000000388,
+    "observable_ms": 40.242042000000765,
+    "durable_ms": 41.853667000000314,
+    "durability_boundary": "Conservative upper bound: awaited native session.close, including subscription teardown/transport shutdown; RocksDB storage close synchronously flushes WAL.",
+    "wire": {
+      "received_tcp_stream_bytes": 107491,
+      "sent_tcp_stream_bytes": 229,
+      "received_ws_payload_bytes": 107469,
+      "sent_ws_payload_bytes": 221,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107154,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "wire_at_close": {
+      "received_tcp_stream_bytes": 107493,
+      "sent_tcp_stream_bytes": 268,
+      "received_ws_payload_bytes": 107469,
+      "sent_ws_payload_bytes": 248,
+      "received_ws_frames": 7,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107154,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 197747,
+        "allocated": 221184,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/78cbbe706706b0f9f5e2ce4ccf94aa9b0c8b52e5c980519352f85429bf51bb6a/000004.log",
+            "apparent": 8683,
+            "allocated": 12288
+          },
+          {
+            "path": "data.accounts/78cbbe706706b0f9f5e2ce4ccf94aa9b0c8b52e5c980519352f85429bf51bb6a/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/78cbbe706706b0f9f5e2ce4ccf94aa9b0c8b52e5c980519352f85429bf51bb6a/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/78cbbe706706b0f9f5e2ce4ccf94aa9b0c8b52e5c980519352f85429bf51bb6a/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/78cbbe706706b0f9f5e2ce4ccf94aa9b0c8b52e5c980519352f85429bf51bb6a/LOG",
+            "apparent": 131957,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/78cbbe706706b0f9f5e2ce4ccf94aa9b0c8b52e5c980519352f85429bf51bb6a/MANIFEST-000005",
+            "apparent": 789,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/78cbbe706706b0f9f5e2ce4ccf94aa9b0c8b52e5c980519352f85429bf51bb6a/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1472868,
+        "allocated": 1503232,
+        "files": [
+          {
+            "path": "account.json",
+            "apparent": 120,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/78cbbe706706b0f9f5e2ce4ccf94aa9b0c8b52e5c980519352f85429bf51bb6a/000008.sst",
+            "apparent": 1471,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/78cbbe706706b0f9f5e2ce4ccf94aa9b0c8b52e5c980519352f85429bf51bb6a/000009.sst",
+            "apparent": 2588,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/78cbbe706706b0f9f5e2ce4ccf94aa9b0c8b52e5c980519352f85429bf51bb6a/000010.sst",
+            "apparent": 1798,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/78cbbe706706b0f9f5e2ce4ccf94aa9b0c8b52e5c980519352f85429bf51bb6a/000011.log",
+            "apparent": 1083069,
+            "allocated": 1085440
+          },
+          {
+            "path": "data.accounts/78cbbe706706b0f9f5e2ce4ccf94aa9b0c8b52e5c980519352f85429bf51bb6a/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/78cbbe706706b0f9f5e2ce4ccf94aa9b0c8b52e5c980519352f85429bf51bb6a/IDENTITY",
+            "apparent": 36,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/78cbbe706706b0f9f5e2ce4ccf94aa9b0c8b52e5c980519352f85429bf51bb6a/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "data.accounts/78cbbe706706b0f9f5e2ce4ccf94aa9b0c8b52e5c980519352f85429bf51bb6a/LOG",
+            "apparent": 138110,
+            "allocated": 139264
+          },
+          {
+            "path": "data.accounts/78cbbe706706b0f9f5e2ce4ccf94aa9b0c8b52e5c980519352f85429bf51bb6a/LOG.old.1793019431098631",
+            "apparent": 131957,
+            "allocated": 135168
+          },
+          {
+            "path": "data.accounts/78cbbe706706b0f9f5e2ce4ccf94aa9b0c8b52e5c980519352f85429bf51bb6a/MANIFEST-000012",
+            "apparent": 1410,
+            "allocated": 4096
+          },
+          {
+            "path": "data.accounts/78cbbe706706b0f9f5e2ce4ccf94aa9b0c8b52e5c980519352f85429bf51bb6a/OPTIONS-000007",
+            "apparent": 56146,
+            "allocated": 57344
+          },
+          {
+            "path": "data.accounts/78cbbe706706b0f9f5e2ce4ccf94aa9b0c8b52e5c980519352f85429bf51bb6a/OPTIONS-000014",
+            "apparent": 56147,
+            "allocated": 57344
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1275121,
+        "allocated": 1282048
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "bytes": 415448,
+      "elapsed_ms": 22.680083000000195
+    },
+    "incrementals": [
+      {
+        "repetition": 0,
+        "collection": "issues",
+        "field": "title",
+        "logical_old_value_bytes": 54,
+        "logical_new_value_bytes": 74,
+        "changed_bytes_removed": 0,
+        "changed_bytes_inserted": 20,
+        "replacement_api_patch_bytes": 86,
+        "observable_ms": 17.83324999999968,
+        "sender_global_confirmation_ms": 5.976875000000291,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 1102,
+          "sent_tcp_stream_bytes": 33,
+          "received_ws_payload_bytes": 1098,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5972,
+          "received_engine_compressed_channel_bytes": 1078,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "7799886a91f2bbddbea6f91bc56816bd20b7c6136696d8669bf1df9fb1599921"
+      },
+      {
+        "repetition": 0,
+        "collection": "notes",
+        "field": "body",
+        "logical_old_value_bytes": 2528,
+        "logical_new_value_bytes": 2547,
+        "changed_bytes_removed": 0,
+        "changed_bytes_inserted": 19,
+        "replacement_api_patch_bytes": 2558,
+        "observable_ms": 17.68395799999962,
+        "sender_global_confirmation_ms": 4.832915999999386,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 1029,
+          "sent_tcp_stream_bytes": 32,
+          "received_ws_payload_bytes": 1025,
+          "sent_ws_payload_bytes": 26,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5301,
+          "received_engine_compressed_channel_bytes": 1005,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "ef6de0017cebe885c46306bb0d9869d00bfe5d8792526524885eb976d0996f46"
+      },
+      {
+        "repetition": 1,
+        "collection": "issues",
+        "field": "title",
+        "logical_old_value_bytes": 74,
+        "logical_new_value_bytes": 74,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 86,
+        "observable_ms": 16.048625000000357,
+        "sender_global_confirmation_ms": 4.697250000000167,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 97,
+          "sent_tcp_stream_bytes": 32,
+          "received_ws_payload_bytes": 95,
+          "sent_ws_payload_bytes": 26,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5972,
+          "received_engine_compressed_channel_bytes": 77,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "94da2f23153595873f75a80652df0e1516d2e8743285a8275da7ba04b39d1ee7"
+      },
+      {
+        "repetition": 1,
+        "collection": "notes",
+        "field": "body",
+        "logical_old_value_bytes": 2547,
+        "logical_new_value_bytes": 2547,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 2558,
+        "observable_ms": 17.845000000000255,
+        "sender_global_confirmation_ms": 5.190333999999893,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 97,
+          "sent_tcp_stream_bytes": 32,
+          "received_ws_payload_bytes": 95,
+          "sent_ws_payload_bytes": 26,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5301,
+          "received_engine_compressed_channel_bytes": 77,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "cc092846a18008c8e9ddf71f810b6e79e758ceef2859396a92fb9f1e45e92933"
+      },
+      {
+        "repetition": 2,
+        "collection": "issues",
+        "field": "title",
+        "logical_old_value_bytes": 74,
+        "logical_new_value_bytes": 74,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 86,
+        "observable_ms": 18.097499999999854,
+        "sender_global_confirmation_ms": 3.78899999999976,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 103,
+          "sent_tcp_stream_bytes": 32,
+          "received_ws_payload_bytes": 101,
+          "sent_ws_payload_bytes": 26,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5972,
+          "received_engine_compressed_channel_bytes": 83,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "fcd2122cf644d907ff8a5f443e7a2c6f31a484021ec75d52bc8adcdb3dae4a35"
+      },
+      {
+        "repetition": 2,
+        "collection": "notes",
+        "field": "body",
+        "logical_old_value_bytes": 2547,
+        "logical_new_value_bytes": 2547,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 2558,
+        "observable_ms": 16.94250000000011,
+        "sender_global_confirmation_ms": 3.4299999999993815,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 98,
+          "sent_tcp_stream_bytes": 32,
+          "received_ws_payload_bytes": 96,
+          "sent_ws_payload_bytes": 26,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5301,
+          "received_engine_compressed_channel_bytes": 78,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "db41b708e68f0f3445304b047cc0bde924be7c606809d9cf471715bad6554d8f"
+      },
+      {
+        "repetition": 3,
+        "collection": "issues",
+        "field": "title",
+        "logical_old_value_bytes": 74,
+        "logical_new_value_bytes": 74,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 86,
+        "observable_ms": 17.00749999999971,
+        "sender_global_confirmation_ms": 3.501541999999972,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 100,
+          "sent_tcp_stream_bytes": 32,
+          "received_ws_payload_bytes": 98,
+          "sent_ws_payload_bytes": 26,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5972,
+          "received_engine_compressed_channel_bytes": 80,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "f5a32a7b4f544f0ddf325d041a211d8f03a442d59223c7fa5daac28b3e56ecc6"
+      },
+      {
+        "repetition": 3,
+        "collection": "notes",
+        "field": "body",
+        "logical_old_value_bytes": 2547,
+        "logical_new_value_bytes": 2547,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 2558,
+        "observable_ms": 17.55291699999998,
+        "sender_global_confirmation_ms": 3.720542000000023,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 98,
+          "sent_tcp_stream_bytes": 32,
+          "received_ws_payload_bytes": 96,
+          "sent_ws_payload_bytes": 26,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5301,
+          "received_engine_compressed_channel_bytes": 78,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "558b24575b83298ccf6f529b3c3eab1242ecc515b025df9cea662c1dd8d85020"
+      },
+      {
+        "repetition": 4,
+        "collection": "issues",
+        "field": "title",
+        "logical_old_value_bytes": 74,
+        "logical_new_value_bytes": 74,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 86,
+        "observable_ms": 18.528332999999293,
+        "sender_global_confirmation_ms": 3.77599999999984,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 101,
+          "sent_tcp_stream_bytes": 32,
+          "received_ws_payload_bytes": 99,
+          "sent_ws_payload_bytes": 26,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5972,
+          "received_engine_compressed_channel_bytes": 81,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "a1e98ff01685f56e52f68af9abb5c69d48cdf138de5d993a3c71e13754950c60"
+      },
+      {
+        "repetition": 4,
+        "collection": "notes",
+        "field": "body",
+        "logical_old_value_bytes": 2547,
+        "logical_new_value_bytes": 2547,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 2558,
+        "observable_ms": 17.72400000000016,
+        "sender_global_confirmation_ms": 4.243417000000591,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 98,
+          "sent_tcp_stream_bytes": 32,
+          "received_ws_payload_bytes": 96,
+          "sent_ws_payload_bytes": 26,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5301,
+          "received_engine_compressed_channel_bytes": 78,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "459e9e30cdd4fc22dfb8f596e9f0dc333ec103db971655d7b1a5d7d6c939a29c"
+      },
+      {
+        "repetition": 5,
+        "collection": "issues",
+        "field": "title",
+        "logical_old_value_bytes": 74,
+        "logical_new_value_bytes": 74,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 86,
+        "observable_ms": 16.413582999999562,
+        "sender_global_confirmation_ms": 4.1890829999993,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 97,
+          "sent_tcp_stream_bytes": 32,
+          "received_ws_payload_bytes": 95,
+          "sent_ws_payload_bytes": 26,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5972,
+          "received_engine_compressed_channel_bytes": 77,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "29e4a6eb5d0b567490a4efaf00d0148a3af52b598153438ce453e3c517a4c185"
+      },
+      {
+        "repetition": 5,
+        "collection": "notes",
+        "field": "body",
+        "logical_old_value_bytes": 2547,
+        "logical_new_value_bytes": 2547,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 2558,
+        "observable_ms": 17.146499999999833,
+        "sender_global_confirmation_ms": 3.7962500000003274,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 101,
+          "sent_tcp_stream_bytes": 32,
+          "received_ws_payload_bytes": 99,
+          "sent_ws_payload_bytes": 26,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5301,
+          "received_engine_compressed_channel_bytes": 81,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "22023c3461a29b1f841fcc55479685fe50eac7aea2fd4d505c7808ca64e5f8f1"
+      },
+      {
+        "repetition": 6,
+        "collection": "issues",
+        "field": "title",
+        "logical_old_value_bytes": 74,
+        "logical_new_value_bytes": 74,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 86,
+        "observable_ms": 17.15454200000022,
+        "sender_global_confirmation_ms": 3.9653750000006767,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 98,
+          "sent_tcp_stream_bytes": 32,
+          "received_ws_payload_bytes": 96,
+          "sent_ws_payload_bytes": 26,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5972,
+          "received_engine_compressed_channel_bytes": 78,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "94afdf0a3d6d0e6c0603b5b59ea541edde317c5323df2e22b70b7b4e1ea1a524"
+      },
+      {
+        "repetition": 6,
+        "collection": "notes",
+        "field": "body",
+        "logical_old_value_bytes": 2547,
+        "logical_new_value_bytes": 2547,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 2558,
+        "observable_ms": 18.027667000000292,
+        "sender_global_confirmation_ms": 3.6540830000003552,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 100,
+          "sent_tcp_stream_bytes": 32,
+          "received_ws_payload_bytes": 98,
+          "sent_ws_payload_bytes": 26,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5301,
+          "received_engine_compressed_channel_bytes": 80,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "d899b1eb304c2af5b6b30965c963b79ae93df0761b4a8fad48322743c3f46f94"
+      },
+      {
+        "repetition": 7,
+        "collection": "issues",
+        "field": "title",
+        "logical_old_value_bytes": 74,
+        "logical_new_value_bytes": 74,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 86,
+        "observable_ms": 17.058375000000524,
+        "sender_global_confirmation_ms": 3.634791000000405,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 101,
+          "sent_tcp_stream_bytes": 32,
+          "received_ws_payload_bytes": 99,
+          "sent_ws_payload_bytes": 26,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5972,
+          "received_engine_compressed_channel_bytes": 81,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "7d0bf54f4fb732a972e0020d2f1567197b77e88ef8de8ded61c6d938f0aefbfe"
+      },
+      {
+        "repetition": 7,
+        "collection": "notes",
+        "field": "body",
+        "logical_old_value_bytes": 2547,
+        "logical_new_value_bytes": 2547,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 2558,
+        "observable_ms": 16.96220799999992,
+        "sender_global_confirmation_ms": 4.2497080000002825,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 101,
+          "sent_tcp_stream_bytes": 32,
+          "received_ws_payload_bytes": 99,
+          "sent_ws_payload_bytes": 26,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5301,
+          "received_engine_compressed_channel_bytes": 81,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "8cb2928344afb31227cde359bea5bbbf1445192527bf9f491cf42a5461787064"
+      },
+      {
+        "repetition": 8,
+        "collection": "issues",
+        "field": "title",
+        "logical_old_value_bytes": 74,
+        "logical_new_value_bytes": 74,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 86,
+        "observable_ms": 16.885583000000224,
+        "sender_global_confirmation_ms": 3.5102080000006026,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 100,
+          "sent_tcp_stream_bytes": 32,
+          "received_ws_payload_bytes": 98,
+          "sent_ws_payload_bytes": 26,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5972,
+          "received_engine_compressed_channel_bytes": 80,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "8bfc4f04b59bacbbe8f11c3a8006ceeb45bcaf3b09a2e2ce1421e8a7dd2f6f7b"
+      },
+      {
+        "repetition": 8,
+        "collection": "notes",
+        "field": "body",
+        "logical_old_value_bytes": 2547,
+        "logical_new_value_bytes": 2547,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 2558,
+        "observable_ms": 17.024875000000065,
+        "sender_global_confirmation_ms": 4.027124999999614,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 101,
+          "sent_tcp_stream_bytes": 32,
+          "received_ws_payload_bytes": 99,
+          "sent_ws_payload_bytes": 26,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5301,
+          "received_engine_compressed_channel_bytes": 81,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "44a8818746304077a57bbaea35cd4cd506e68cf1a573dbce444e32fdb2b35242"
+      },
+      {
+        "repetition": 9,
+        "collection": "issues",
+        "field": "title",
+        "logical_old_value_bytes": 74,
+        "logical_new_value_bytes": 74,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 86,
+        "observable_ms": 17.486958999999842,
+        "sender_global_confirmation_ms": 3.788209000000279,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 101,
+          "sent_tcp_stream_bytes": 32,
+          "received_ws_payload_bytes": 99,
+          "sent_ws_payload_bytes": 26,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5972,
+          "received_engine_compressed_channel_bytes": 81,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "95a35067c76b2563fa93a0f0d0e0e0f1e2bb9893fa0fea9b1e8a9ed2e6c9268f"
+      },
+      {
+        "repetition": 9,
+        "collection": "notes",
+        "field": "body",
+        "logical_old_value_bytes": 2547,
+        "logical_new_value_bytes": 2547,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 2558,
+        "observable_ms": 17.398791999999958,
+        "sender_global_confirmation_ms": 4.0405000000000655,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 100,
+          "sent_tcp_stream_bytes": 32,
+          "received_ws_payload_bytes": 98,
+          "sent_ws_payload_bytes": 26,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5301,
+          "received_engine_compressed_channel_bytes": 80,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "4e257deebf8ecabc41aa1b88a5d138b119477875edf060195dd5e36b2dc0909c"
+      }
+    ],
+    "incrementals_final_reopen": {
+      "verified_hash": "4e257deebf8ecabc41aa1b88a5d138b119477875edf060195dd5e36b2dc0909c",
+      "offline_proxy_blocked": true
+    }
+  }
+]

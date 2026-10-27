@@ -1,0 +1,7 @@
+{
+  "name": "synthetic-jazz-sync-benchmark",
+  "private": true,
+  "type": "module",
+  "scripts": {"benchmark": "python3 locked.py node run.mjs", "browser:serve": "vite --host 127.0.0.1"},
+  "dependencies": {"jazz-tools": "2.0.0-alpha.59", "jazz-napi": "2.0.0-alpha.59", "vite": "7.1.12", "playwright": "1.56.1"}
+}

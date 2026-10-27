@@ -1,0 +1,1353 @@
+{
+  "issue": "https://github.com/ledgerloops/ledgerloops/issues/45",
+  "fixture_sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+  "quantiles": "p50=median; p95=nearest rank ceil(.95*n), n=10 implies sample maximum",
+  "variants": [
+    {
+      "runtime": "native",
+      "model": "embedded",
+      "status": "measured",
+      "warmups": 3,
+      "n": 10,
+      "row_counts": {
+        "issues": 21,
+        "notes": 111
+      },
+      "observable_ms": {
+        "n": 10,
+        "p50": 40.37147900000036,
+        "p95_nearest_rank": 136.37824999999975,
+        "maximum": 136.37824999999975,
+        "minimum": 39.136625000000095
+      },
+      "durable_upper_bound_ms": {
+        "n": 10,
+        "p50": 42.004729000000225,
+        "p95_nearest_rank": 141.52079199999935,
+        "maximum": 141.52079199999935,
+        "minimum": 41.00329200000033
+      },
+      "browser_graceful_close_upper_bound_ms": null,
+      "received_ws_payload_bytes": {
+        "n": 10,
+        "p50": 107468.5,
+        "p95_nearest_rank": 107470,
+        "maximum": 107470,
+        "minimum": 107467
+      },
+      "received_tcp_stream_bytes": {
+        "n": 10,
+        "p50": 107490.5,
+        "p95_nearest_rank": 107492,
+        "maximum": 107492,
+        "minimum": 107489
+      },
+      "received_engine_decoded_channel_bytes": {
+        "n": 10,
+        "p50": 697619.0,
+        "p95_nearest_rank": 697619,
+        "maximum": 697619,
+        "minimum": 697619
+      },
+      "received_engine_compressed_channel_bytes": {
+        "n": 10,
+        "p50": 107153.5,
+        "p95_nearest_rank": 107155,
+        "maximum": 107155,
+        "minimum": 107152
+      },
+      "engine_frame_parse_errors": 0,
+      "engine_codecs": [
+        {
+          "zstd": 11
+        },
+        {
+          "zstd": 11
+        },
+        {
+          "zstd": 11
+        },
+        {
+          "zstd": 11
+        },
+        {
+          "zstd": 11
+        },
+        {
+          "zstd": 11
+        },
+        {
+          "zstd": 11
+        },
+        {
+          "zstd": 11
+        },
+        {
+          "zstd": 11
+        },
+        {
+          "zstd": 11
+        }
+      ],
+      "compressed_ws_frames": 0,
+      "receiver_storage": {
+        "baseline": {
+          "apparent": {
+            "n": 10,
+            "p50": 197743.0,
+            "p95_nearest_rank": 197747,
+            "maximum": 197747,
+            "minimum": 197743
+          },
+          "allocated": {
+            "n": 10,
+            "p50": 221184.0,
+            "p95_nearest_rank": 221184,
+            "maximum": 221184,
+            "minimum": 221184
+          }
+        },
+        "total": {
+          "apparent": {
+            "n": 10,
+            "p50": 1472859.0,
+            "p95_nearest_rank": 1472868,
+            "maximum": 1472868,
+            "minimum": 1472859
+          },
+          "allocated": {
+            "n": 10,
+            "p50": 1503232.0,
+            "p95_nearest_rank": 1503232,
+            "maximum": 1503232,
+            "minimum": 1503232
+          }
+        },
+        "net": {
+          "apparent": {
+            "n": 10,
+            "p50": 1275116.0,
+            "p95_nearest_rank": 1275121,
+            "maximum": 1275121,
+            "minimum": 1275116
+          },
+          "allocated": {
+            "n": 10,
+            "p50": 1282048.0,
+            "p95_nearest_rank": 1282048,
+            "maximum": 1282048,
+            "minimum": 1282048
+          }
+        }
+      },
+      "sender_storage": {
+        "apparent": 2137429,
+        "allocated": 2158592
+      },
+      "required_service_storage": {
+        "apparent": 1584712,
+        "allocated": 1642496
+      },
+      "all_reopened_correct": true,
+      "incremental_errors": [],
+      "edited_fixture_reopen_verified": true,
+      "incrementals": {
+        "title": {
+          "n": 10,
+          "observable_ms": {
+            "n": 10,
+            "p50": 17.10645850000037,
+            "p95_nearest_rank": 18.528332999999293,
+            "maximum": 18.528332999999293,
+            "minimum": 16.048625000000357
+          },
+          "received_ws_payload_bytes": {
+            "n": 10,
+            "p50": 98.5,
+            "p95_nearest_rank": 1098,
+            "maximum": 1098,
+            "minimum": 95
+          },
+          "first_received_ws_payload_bytes": 1098,
+          "first_observable_ms": 17.83324999999968,
+          "replacement_api_patch_bytes": {
+            "n": 10,
+            "p50": 86.0,
+            "p95_nearest_rank": 86,
+            "maximum": 86,
+            "minimum": 86
+          }
+        },
+        "body": {
+          "n": 10,
+          "observable_ms": {
+            "n": 10,
+            "p50": 17.47585449999997,
+            "p95_nearest_rank": 18.027667000000292,
+            "maximum": 18.027667000000292,
+            "minimum": 16.94250000000011
+          },
+          "received_ws_payload_bytes": {
+            "n": 10,
+            "p50": 98.0,
+            "p95_nearest_rank": 1025,
+            "maximum": 1025,
+            "minimum": 95
+          },
+          "first_received_ws_payload_bytes": 1025,
+          "first_observable_ms": 17.68395799999962,
+          "replacement_api_patch_bytes": {
+            "n": 10,
+            "p50": 2558.0,
+            "p95_nearest_rank": 2558,
+            "maximum": 2558,
+            "minimum": 2558
+          }
+        }
+      }
+    },
+    {
+      "runtime": "native",
+      "model": "containers",
+      "status": "measured",
+      "warmups": 3,
+      "n": 10,
+      "row_counts": {
+        "nodes": 1215
+      },
+      "observable_ms": {
+        "n": 10,
+        "p50": 160.6561670000001,
+        "p95_nearest_rank": 165.33662500000173,
+        "maximum": 165.33662500000173,
+        "minimum": 156.70658399999957
+      },
+      "durable_upper_bound_ms": {
+        "n": 10,
+        "p50": 163.7002295000002,
+        "p95_nearest_rank": 168.74695900000006,
+        "maximum": 168.74695900000006,
+        "minimum": 159.7782499999994
+      },
+      "browser_graceful_close_upper_bound_ms": null,
+      "received_ws_payload_bytes": {
+        "n": 10,
+        "p50": 193320.0,
+        "p95_nearest_rank": 193321,
+        "maximum": 193321,
+        "minimum": 193318
+      },
+      "received_tcp_stream_bytes": {
+        "n": 10,
+        "p50": 193348.0,
+        "p95_nearest_rank": 193353,
+        "maximum": 193353,
+        "minimum": 193346
+      },
+      "received_engine_decoded_channel_bytes": {
+        "n": 10,
+        "p50": 2991544.0,
+        "p95_nearest_rank": 2991544,
+        "maximum": 2991544,
+        "minimum": 2991544
+      },
+      "received_engine_compressed_channel_bytes": {
+        "n": 10,
+        "p50": 192390.0,
+        "p95_nearest_rank": 192391,
+        "maximum": 192391,
+        "minimum": 192388
+      },
+      "engine_frame_parse_errors": 0,
+      "engine_codecs": [
+        {
+          "zstd": 46
+        },
+        {
+          "zstd": 46
+        },
+        {
+          "zstd": 46
+        },
+        {
+          "zstd": 46
+        },
+        {
+          "zstd": 46
+        },
+        {
+          "zstd": 46
+        },
+        {
+          "zstd": 46
+        },
+        {
+          "zstd": 46
+        },
+        {
+          "zstd": 46
+        },
+        {
+          "zstd": 46
+        }
+      ],
+      "compressed_ws_frames": 0,
+      "receiver_storage": {
+        "baseline": {
+          "apparent": {
+            "n": 10,
+            "p50": 194519.0,
+            "p95_nearest_rank": 194523,
+            "maximum": 194523,
+            "minimum": 194519
+          },
+          "allocated": {
+            "n": 10,
+            "p50": 217088.0,
+            "p95_nearest_rank": 217088,
+            "maximum": 217088,
+            "minimum": 217088
+          }
+        },
+        "total": {
+          "apparent": {
+            "n": 10,
+            "p50": 3675643.0,
+            "p95_nearest_rank": 3675652,
+            "maximum": 3675652,
+            "minimum": 3675643
+          },
+          "allocated": {
+            "n": 10,
+            "p50": 3706880.0,
+            "p95_nearest_rank": 3706880,
+            "maximum": 3706880,
+            "minimum": 3706880
+          }
+        },
+        "net": {
+          "apparent": {
+            "n": 10,
+            "p50": 3481124.0,
+            "p95_nearest_rank": 3481129,
+            "maximum": 3481129,
+            "minimum": 3481124
+          },
+          "allocated": {
+            "n": 10,
+            "p50": 3489792.0,
+            "p95_nearest_rank": 3489792,
+            "maximum": 3489792,
+            "minimum": 3489792
+          }
+        }
+      },
+      "sender_storage": {
+        "apparent": 5870249,
+        "allocated": 5894144
+      },
+      "required_service_storage": {
+        "apparent": 3887452,
+        "allocated": 3948544
+      },
+      "all_reopened_correct": true,
+      "incremental_errors": [],
+      "edited_fixture_reopen_verified": true,
+      "incrementals": {
+        "title": {
+          "n": 10,
+          "observable_ms": {
+            "n": 10,
+            "p50": 18.87756250000075,
+            "p95_nearest_rank": 20.246917000000394,
+            "maximum": 20.246917000000394,
+            "minimum": 17.764500000001135
+          },
+          "received_ws_payload_bytes": {
+            "n": 10,
+            "p50": 102.0,
+            "p95_nearest_rank": 2045,
+            "maximum": 2045,
+            "minimum": 99
+          },
+          "first_received_ws_payload_bytes": 2045,
+          "first_observable_ms": 18.65220799999952,
+          "replacement_api_patch_bytes": {
+            "n": 10,
+            "p50": 3311.0,
+            "p95_nearest_rank": 3311,
+            "maximum": 3311,
+            "minimum": 3311
+          }
+        },
+        "body": {
+          "n": 10,
+          "observable_ms": {
+            "n": 10,
+            "p50": 18.88122899999962,
+            "p95_nearest_rank": 19.80029100000138,
+            "maximum": 19.80029100000138,
+            "minimum": 18.16804200000115
+          },
+          "received_ws_payload_bytes": {
+            "n": 10,
+            "p50": 102.0,
+            "p95_nearest_rank": 923,
+            "maximum": 923,
+            "minimum": 101
+          },
+          "first_received_ws_payload_bytes": 923,
+          "first_observable_ms": 19.15837499999907,
+          "replacement_api_patch_bytes": {
+            "n": 10,
+            "p50": 2715.0,
+            "p95_nearest_rank": 2715,
+            "maximum": 2715,
+            "minimum": 2715
+          }
+        }
+      }
+    },
+    {
+      "runtime": "native",
+      "model": "collections",
+      "status": "measured",
+      "warmups": 3,
+      "n": 10,
+      "row_counts": {
+        "collections": 2
+      },
+      "observable_ms": {
+        "n": 10,
+        "p50": 103.84120799999891,
+        "p95_nearest_rank": 122.01250000000073,
+        "maximum": 122.01250000000073,
+        "minimum": 99.92475000000013
+      },
+      "durable_upper_bound_ms": {
+        "n": 10,
+        "p50": 105.52474949999942,
+        "p95_nearest_rank": 123.3040830000009,
+        "maximum": 123.3040830000009,
+        "minimum": 101.2195840000004
+      },
+      "browser_graceful_close_upper_bound_ms": null,
+      "received_ws_payload_bytes": {
+        "n": 10,
+        "p50": 89691.0,
+        "p95_nearest_rank": 89692,
+        "maximum": 89692,
+        "minimum": 89689
+      },
+      "received_tcp_stream_bytes": {
+        "n": 10,
+        "p50": 89721.0,
+        "p95_nearest_rank": 89722,
+        "maximum": 89722,
+        "minimum": 89719
+      },
+      "received_engine_decoded_channel_bytes": {
+        "n": 10,
+        "p50": 420245.0,
+        "p95_nearest_rank": 420245,
+        "maximum": 420245,
+        "minimum": 420245
+      },
+      "received_engine_compressed_channel_bytes": {
+        "n": 10,
+        "p50": 89303.0,
+        "p95_nearest_rank": 89304,
+        "maximum": 89304,
+        "minimum": 89301
+      },
+      "engine_frame_parse_errors": 0,
+      "engine_codecs": [
+        {
+          "zstd": 12
+        },
+        {
+          "zstd": 12
+        },
+        {
+          "zstd": 12
+        },
+        {
+          "zstd": 12
+        },
+        {
+          "zstd": 12
+        },
+        {
+          "zstd": 12
+        },
+        {
+          "zstd": 12
+        },
+        {
+          "zstd": 12
+        },
+        {
+          "zstd": 12
+        },
+        {
+          "zstd": 12
+        }
+      ],
+      "compressed_ws_frames": 0,
+      "receiver_storage": {
+        "baseline": {
+          "apparent": {
+            "n": 10,
+            "p50": 193811.0,
+            "p95_nearest_rank": 193815,
+            "maximum": 193815,
+            "minimum": 193811
+          },
+          "allocated": {
+            "n": 10,
+            "p50": 217088.0,
+            "p95_nearest_rank": 217088,
+            "maximum": 217088,
+            "minimum": 217088
+          }
+        },
+        "total": {
+          "apparent": {
+            "n": 10,
+            "p50": 815901.0,
+            "p95_nearest_rank": 815910,
+            "maximum": 815910,
+            "minimum": 815901
+          },
+          "allocated": {
+            "n": 10,
+            "p50": 847872.0,
+            "p95_nearest_rank": 847872,
+            "maximum": 847872,
+            "minimum": 847872
+          }
+        },
+        "net": {
+          "apparent": {
+            "n": 10,
+            "p50": 622090.0,
+            "p95_nearest_rank": 622095,
+            "maximum": 622095,
+            "minimum": 622090
+          },
+          "allocated": {
+            "n": 10,
+            "p50": 630784.0,
+            "p95_nearest_rank": 630784,
+            "maximum": 630784,
+            "minimum": 630784
+          }
+        }
+      },
+      "sender_storage": {
+        "apparent": 4970634,
+        "allocated": 4993024
+      },
+      "required_service_storage": {
+        "apparent": 5066955,
+        "allocated": 5128192
+      },
+      "all_reopened_correct": true,
+      "incremental_errors": [],
+      "edited_fixture_reopen_verified": true,
+      "incrementals": {
+        "title": {
+          "n": 10,
+          "observable_ms": {
+            "n": 10,
+            "p50": 72.83987499999967,
+            "p95_nearest_rank": 73.80554099999972,
+            "maximum": 73.80554099999972,
+            "minimum": 64.63816700000098
+          },
+          "received_ws_payload_bytes": {
+            "n": 10,
+            "p50": 18002.0,
+            "p95_nearest_rank": 18168,
+            "maximum": 18168,
+            "minimum": 18000
+          },
+          "first_received_ws_payload_bytes": 18078,
+          "first_observable_ms": 70.1977079999997,
+          "replacement_api_patch_bytes": {
+            "n": 10,
+            "p50": 83257.0,
+            "p95_nearest_rank": 83257,
+            "maximum": 83257,
+            "minimum": 83257
+          }
+        },
+        "body": {
+          "n": 10,
+          "observable_ms": {
+            "n": 10,
+            "p50": 102.6689164999998,
+            "p95_nearest_rank": 160.05612499999916,
+            "maximum": 160.05612499999916,
+            "minimum": 98.06770900000083
+          },
+          "received_ws_payload_bytes": {
+            "n": 10,
+            "p50": 70955.0,
+            "p95_nearest_rank": 70986,
+            "maximum": 70986,
+            "minimum": 70951
+          },
+          "first_received_ws_payload_bytes": 70986,
+          "first_observable_ms": 103.51850000000013,
+          "replacement_api_patch_bytes": {
+            "n": 10,
+            "p50": 332236.0,
+            "p95_nearest_rank": 332236,
+            "maximum": 332236,
+            "minimum": 332236
+          }
+        }
+      }
+    },
+    {
+      "runtime": "browser",
+      "model": "embedded",
+      "status": "measured",
+      "warmups": 3,
+      "n": 10,
+      "row_counts": {
+        "issues": 21,
+        "notes": 111
+      },
+      "observable_ms": {
+        "n": 10,
+        "p50": 169.55000000074506,
+        "p95_nearest_rank": 288,
+        "maximum": 288,
+        "minimum": 156.7000000011176
+      },
+      "durable_upper_bound_ms": null,
+      "browser_graceful_close_upper_bound_ms": {
+        "n": 10,
+        "p50": 577.9358334999979,
+        "p95_nearest_rank": 3048.634207999996,
+        "maximum": 3048.634207999996,
+        "minimum": 226.93737500000134
+      },
+      "received_ws_payload_bytes": {
+        "n": 10,
+        "p50": 107430.5,
+        "p95_nearest_rank": 107437,
+        "maximum": 107437,
+        "minimum": 107426
+      },
+      "received_tcp_stream_bytes": {
+        "n": 10,
+        "p50": 107452.5,
+        "p95_nearest_rank": 107459,
+        "maximum": 107459,
+        "minimum": 107448
+      },
+      "received_engine_decoded_channel_bytes": {
+        "n": 10,
+        "p50": 697619.0,
+        "p95_nearest_rank": 697619,
+        "maximum": 697619,
+        "minimum": 697619
+      },
+      "received_engine_compressed_channel_bytes": {
+        "n": 10,
+        "p50": 107113.5,
+        "p95_nearest_rank": 107120,
+        "maximum": 107120,
+        "minimum": 107109
+      },
+      "engine_frame_parse_errors": 0,
+      "engine_codecs": [
+        {
+          "zstd": 11
+        },
+        {
+          "zstd": 11
+        },
+        {
+          "zstd": 11
+        },
+        {
+          "zstd": 11
+        },
+        {
+          "zstd": 11
+        },
+        {
+          "zstd": 11
+        },
+        {
+          "zstd": 11
+        },
+        {
+          "zstd": 11
+        },
+        {
+          "zstd": 11
+        },
+        {
+          "zstd": 11
+        }
+      ],
+      "compressed_ws_frames": 0,
+      "receiver_storage": {
+        "baseline": {
+          "apparent": {
+            "n": 10,
+            "p50": 84342.0,
+            "p95_nearest_rank": 84346,
+            "maximum": 84346,
+            "minimum": 84342
+          },
+          "allocated": {
+            "n": 10,
+            "p50": 114688.0,
+            "p95_nearest_rank": 114688,
+            "maximum": 114688,
+            "minimum": 114688
+          }
+        },
+        "total": {
+          "apparent": {
+            "n": 10,
+            "p50": 1399725.0,
+            "p95_nearest_rank": 1399861,
+            "maximum": 1399861,
+            "minimum": 1399721
+          },
+          "allocated": {
+            "n": 10,
+            "p50": 1437696.0,
+            "p95_nearest_rank": 1437696,
+            "maximum": 1437696,
+            "minimum": 1437696
+          }
+        },
+        "net": {
+          "apparent": {
+            "n": 10,
+            "p50": 1315381.0,
+            "p95_nearest_rank": 1315519,
+            "maximum": 1315519,
+            "minimum": 1315379
+          },
+          "allocated": {
+            "n": 10,
+            "p50": 1323008.0,
+            "p95_nearest_rank": 1323008,
+            "maximum": 1323008,
+            "minimum": 1323008
+          }
+        }
+      },
+      "sender_storage": {
+        "apparent": 2163988,
+        "allocated": 2183168
+      },
+      "required_service_storage": {
+        "apparent": 1617267,
+        "allocated": 1671168
+      },
+      "all_reopened_correct": true,
+      "incremental_errors": [],
+      "edited_fixture_reopen_verified": true,
+      "incrementals": {
+        "title": {
+          "n": 10,
+          "observable_ms": {
+            "n": 10,
+            "p50": 22.60162499999933,
+            "p95_nearest_rank": 54.968416000003344,
+            "maximum": 54.968416000003344,
+            "minimum": 20.60295799999585
+          },
+          "received_ws_payload_bytes": {
+            "n": 10,
+            "p50": 99.0,
+            "p95_nearest_rank": 1108,
+            "maximum": 1108,
+            "minimum": 96
+          },
+          "first_received_ws_payload_bytes": 1108,
+          "first_observable_ms": 54.968416000003344,
+          "replacement_api_patch_bytes": {
+            "n": 10,
+            "p50": 86.0,
+            "p95_nearest_rank": 86,
+            "maximum": 86,
+            "minimum": 86
+          }
+        },
+        "body": {
+          "n": 10,
+          "observable_ms": {
+            "n": 10,
+            "p50": 25.216687500000262,
+            "p95_nearest_rank": 28.659417000002577,
+            "maximum": 28.659417000002577,
+            "minimum": 22.413042000000132
+          },
+          "received_ws_payload_bytes": {
+            "n": 10,
+            "p50": 98.5,
+            "p95_nearest_rank": 1037,
+            "maximum": 1037,
+            "minimum": 95
+          },
+          "first_received_ws_payload_bytes": 1037,
+          "first_observable_ms": 22.563750000001164,
+          "replacement_api_patch_bytes": {
+            "n": 10,
+            "p50": 2558.0,
+            "p95_nearest_rank": 2558,
+            "maximum": 2558,
+            "minimum": 2558
+          }
+        }
+      }
+    },
+    {
+      "runtime": "browser",
+      "model": "containers",
+      "status": "measured",
+      "warmups": 3,
+      "n": 10,
+      "row_counts": {
+        "nodes": 1215
+      },
+      "observable_ms": {
+        "n": 10,
+        "p50": 575.4500000001863,
+        "p95_nearest_rank": 686.4000000003725,
+        "maximum": 686.4000000003725,
+        "minimum": 549.5999999996275
+      },
+      "durable_upper_bound_ms": null,
+      "browser_graceful_close_upper_bound_ms": {
+        "n": 10,
+        "p50": 685.7265830000033,
+        "p95_nearest_rank": 4329.4251670000085,
+        "maximum": 4329.4251670000085,
+        "minimum": 630.9199170000065
+      },
+      "received_ws_payload_bytes": {
+        "n": 10,
+        "p50": 193585.0,
+        "p95_nearest_rank": 193590,
+        "maximum": 193590,
+        "minimum": 193584
+      },
+      "received_tcp_stream_bytes": {
+        "n": 10,
+        "p50": 193613.5,
+        "p95_nearest_rank": 193622,
+        "maximum": 193622,
+        "minimum": 193610
+      },
+      "received_engine_decoded_channel_bytes": {
+        "n": 10,
+        "p50": 2991544.0,
+        "p95_nearest_rank": 2991544,
+        "maximum": 2991544,
+        "minimum": 2991544
+      },
+      "received_engine_compressed_channel_bytes": {
+        "n": 10,
+        "p50": 192654.0,
+        "p95_nearest_rank": 192658,
+        "maximum": 192658,
+        "minimum": 192652
+      },
+      "engine_frame_parse_errors": 0,
+      "engine_codecs": [
+        {
+          "zstd": 46
+        },
+        {
+          "zstd": 46
+        },
+        {
+          "zstd": 46
+        },
+        {
+          "zstd": 46
+        },
+        {
+          "zstd": 46
+        },
+        {
+          "zstd": 46
+        },
+        {
+          "zstd": 46
+        },
+        {
+          "zstd": 46
+        },
+        {
+          "zstd": 46
+        },
+        {
+          "zstd": 46
+        }
+      ],
+      "compressed_ws_frames": 0,
+      "receiver_storage": {
+        "baseline": {
+          "apparent": {
+            "n": 10,
+            "p50": 74921.0,
+            "p95_nearest_rank": 74925,
+            "maximum": 74925,
+            "minimum": 74921
+          },
+          "allocated": {
+            "n": 10,
+            "p50": 102400.0,
+            "p95_nearest_rank": 102400,
+            "maximum": 102400,
+            "minimum": 102400
+          }
+        },
+        "total": {
+          "apparent": {
+            "n": 10,
+            "p50": 1467322.0,
+            "p95_nearest_rank": 1467385,
+            "maximum": 1467385,
+            "minimum": 1467234
+          },
+          "allocated": {
+            "n": 10,
+            "p50": 1503232.0,
+            "p95_nearest_rank": 1503232,
+            "maximum": 1503232,
+            "minimum": 1503232
+          }
+        },
+        "net": {
+          "apparent": {
+            "n": 10,
+            "p50": 1392400.0,
+            "p95_nearest_rank": 1392460,
+            "maximum": 1392460,
+            "minimum": 1392313
+          },
+          "allocated": {
+            "n": 10,
+            "p50": 1400832.0,
+            "p95_nearest_rank": 1400832,
+            "maximum": 1400832,
+            "minimum": 1400832
+          }
+        }
+      },
+      "sender_storage": {
+        "apparent": 5897077,
+        "allocated": 5918720
+      },
+      "required_service_storage": {
+        "apparent": 3926062,
+        "allocated": 3981312
+      },
+      "all_reopened_correct": true,
+      "incremental_errors": [],
+      "edited_fixture_reopen_verified": true,
+      "incrementals": {
+        "title": {
+          "n": 10,
+          "observable_ms": {
+            "n": 10,
+            "p50": 63.21925000000192,
+            "p95_nearest_rank": 75.55695800000103,
+            "maximum": 75.55695800000103,
+            "minimum": 41.85645900000236
+          },
+          "received_ws_payload_bytes": {
+            "n": 10,
+            "p50": 102.5,
+            "p95_nearest_rank": 2054,
+            "maximum": 2054,
+            "minimum": 99
+          },
+          "first_received_ws_payload_bytes": 2054,
+          "first_observable_ms": 75.55695800000103,
+          "replacement_api_patch_bytes": {
+            "n": 10,
+            "p50": 3311.0,
+            "p95_nearest_rank": 3311,
+            "maximum": 3311,
+            "minimum": 3311
+          }
+        },
+        "body": {
+          "n": 10,
+          "observable_ms": {
+            "n": 10,
+            "p50": 62.868520999989414,
+            "p95_nearest_rank": 67.25400000000081,
+            "maximum": 67.25400000000081,
+            "minimum": 41.62179200000537
+          },
+          "received_ws_payload_bytes": {
+            "n": 10,
+            "p50": 103.0,
+            "p95_nearest_rank": 926,
+            "maximum": 926,
+            "minimum": 95
+          },
+          "first_received_ws_payload_bytes": 926,
+          "first_observable_ms": 57.1215830000001,
+          "replacement_api_patch_bytes": {
+            "n": 10,
+            "p50": 2715.0,
+            "p95_nearest_rank": 2715,
+            "maximum": 2715,
+            "minimum": 2715
+          }
+        }
+      }
+    },
+    {
+      "runtime": "browser",
+      "model": "collections",
+      "status": "measured",
+      "warmups": 3,
+      "n": 10,
+      "row_counts": {
+        "collections": 2
+      },
+      "observable_ms": {
+        "n": 10,
+        "p50": 150.54999999981374,
+        "p95_nearest_rank": 187.09999999962747,
+        "maximum": 187.09999999962747,
+        "minimum": 130.80000000074506
+      },
+      "durable_upper_bound_ms": null,
+      "browser_graceful_close_upper_bound_ms": {
+        "n": 10,
+        "p50": 216.90145800000028,
+        "p95_nearest_rank": 293.5134169999801,
+        "maximum": 293.5134169999801,
+        "minimum": 182.96791600002325
+      },
+      "received_ws_payload_bytes": {
+        "n": 10,
+        "p50": 89775.5,
+        "p95_nearest_rank": 89777,
+        "maximum": 89777,
+        "minimum": 89773
+      },
+      "received_tcp_stream_bytes": {
+        "n": 10,
+        "p50": 89811.5,
+        "p95_nearest_rank": 89813,
+        "maximum": 89813,
+        "minimum": 89809
+      },
+      "received_engine_decoded_channel_bytes": {
+        "n": 10,
+        "p50": 420245.0,
+        "p95_nearest_rank": 420245,
+        "maximum": 420245,
+        "minimum": 420245
+      },
+      "received_engine_compressed_channel_bytes": {
+        "n": 10,
+        "p50": 89313.5,
+        "p95_nearest_rank": 89315,
+        "maximum": 89315,
+        "minimum": 89311
+      },
+      "engine_frame_parse_errors": 0,
+      "engine_codecs": [
+        {
+          "zstd": 12
+        },
+        {
+          "zstd": 12
+        },
+        {
+          "zstd": 12
+        },
+        {
+          "zstd": 12
+        },
+        {
+          "zstd": 12
+        },
+        {
+          "zstd": 12
+        },
+        {
+          "zstd": 12
+        },
+        {
+          "zstd": 12
+        },
+        {
+          "zstd": 12
+        },
+        {
+          "zstd": 12
+        }
+      ],
+      "compressed_ws_frames": 0,
+      "receiver_storage": {
+        "baseline": {
+          "apparent": {
+            "n": 10,
+            "p50": 72385.0,
+            "p95_nearest_rank": 72389,
+            "maximum": 72389,
+            "minimum": 72385
+          },
+          "allocated": {
+            "n": 10,
+            "p50": 102400.0,
+            "p95_nearest_rank": 102400,
+            "maximum": 102400,
+            "minimum": 102400
+          }
+        },
+        "total": {
+          "apparent": {
+            "n": 10,
+            "p50": 993311.0,
+            "p95_nearest_rank": 993319,
+            "maximum": 993319,
+            "minimum": 993184
+          },
+          "allocated": {
+            "n": 10,
+            "p50": 1028096.0,
+            "p95_nearest_rank": 1028096,
+            "maximum": 1028096,
+            "minimum": 1028096
+          }
+        },
+        "net": {
+          "apparent": {
+            "n": 10,
+            "p50": 920926.0,
+            "p95_nearest_rank": 920930,
+            "maximum": 920930,
+            "minimum": 920799
+          },
+          "allocated": {
+            "n": 10,
+            "p50": 925696.0,
+            "p95_nearest_rank": 925696,
+            "maximum": 925696,
+            "minimum": 925696
+          }
+        }
+      },
+      "sender_storage": {
+        "apparent": 4970706,
+        "allocated": 4993024
+      },
+      "required_service_storage": {
+        "apparent": 5105444,
+        "allocated": 5160960
+      },
+      "all_reopened_correct": true,
+      "incremental_errors": [],
+      "edited_fixture_reopen_verified": true,
+      "incrementals": {
+        "title": {
+          "n": 10,
+          "observable_ms": {
+            "n": 10,
+            "p50": 55.48220850000507,
+            "p95_nearest_rank": 81.36833300002036,
+            "maximum": 81.36833300002036,
+            "minimum": 51.42483299999731
+          },
+          "received_ws_payload_bytes": {
+            "n": 10,
+            "p50": 18025.5,
+            "p95_nearest_rank": 18194,
+            "maximum": 18194,
+            "minimum": 18017
+          },
+          "first_received_ws_payload_bytes": 18104,
+          "first_observable_ms": 81.36833300002036,
+          "replacement_api_patch_bytes": {
+            "n": 10,
+            "p50": 83257.0,
+            "p95_nearest_rank": 83257,
+            "maximum": 83257,
+            "minimum": 83257
+          }
+        },
+        "body": {
+          "n": 10,
+          "observable_ms": {
+            "n": 10,
+            "p50": 130.19779199999175,
+            "p95_nearest_rank": 144.32854200000293,
+            "maximum": 144.32854200000293,
+            "minimum": 121.11141599999974
+          },
+          "received_ws_payload_bytes": {
+            "n": 10,
+            "p50": 71005.5,
+            "p95_nearest_rank": 71032,
+            "maximum": 71032,
+            "minimum": 71001
+          },
+          "first_received_ws_payload_bytes": 71032,
+          "first_observable_ms": 132.74116599999252,
+          "replacement_api_patch_bytes": {
+            "n": 10,
+            "p50": 332236.0,
+            "p95_nearest_rank": 332236,
+            "maximum": 332236,
+            "minimum": 332236
+          }
+        }
+      }
+    }
+  ],
+  "environment": {
+    "native": {
+      "utc": "2026-10-26T12:57:08.769Z",
+      "node": "v26.8.1",
+      "npm": "11.19.0",
+      "os": "ProductName:\t\tmacOS\nProductVersion:\t\t26.6.2\nBuildVersion:\t\t25G83",
+      "kernel": "Darwin 25.6.0 Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+      "architecture": "arm64",
+      "cpu": "Apple M1 Pro",
+      "logical_cpu_count": "10",
+      "ram_bytes": "17179869184",
+      "filesystem": "Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s5   460Gi   437Gi   1.5Gi   100%    7.1M   15M   31%   /System/Volumes/Data",
+      "storage_path": "/private/tmp/sync-benchmark-jazz-20261026-runtime/stores/final",
+      "container": null,
+      "cgroup_limit": null,
+      "filesystem_type": "APFS on internal solid-state Apple Fabric storage (diskutil info /System/Volumes/Data)",
+      "cpu_quota": null,
+      "ram_quota": null,
+      "versions": {
+        "jazz-tools": "2.0.0-alpha.59",
+        "jazz-napi": "2.0.0-alpha.59",
+        "playwright": "1.56.1"
+      },
+      "contention": "All worker heavy work serialized by atomic mkdir lock; six chats share laptop, OS/user/background activity and thermal state uncontrolled.",
+      "lock_owner": {
+        "engine": "jazz",
+        "task": "sync-benchmark-jazz",
+        "pid": 40862,
+        "token": "f490d3c8-5457-4380-a9af-701140d33d78",
+        "cwd": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-jazz",
+        "utc": "2026-10-26T12:56:29.379953+00:00",
+        "command": [
+          "python3",
+          "outputs/jazz-benchmark/stage-final.py"
+        ]
+      },
+      "models": [
+        "embedded",
+        "containers",
+        "collections"
+      ],
+      "runtimes": [
+        "native",
+        "browser"
+      ],
+      "warmups": 3,
+      "repetitions": 10,
+      "persistence": {
+        "native": "Pinned NAPI RocksDB WalNoSync; synchronous flush_wal(true) on storage close; normal batching defaults",
+        "browser": "IndexedDB SharedWorker page store, readwrite durability relaxed; initialSyncFlushEvery default 512",
+        "native_initial_sync_batching": "Node user runtime passes no initialSyncFlushEvery override; core cadence None, storage WAL sync cadence 64 write batches",
+        "indexes": "Engine default schema/history/current-state/metadata indexes; no extra application indexes; no manual compaction",
+        "identity": "Fresh synthetic local-first user accounts, ordinary Core permission checks; explicit allow policies for synthetic app",
+        "encryption": "Ordinary local HTTP/WebSocket, no TLS, no optional application encryption; default identity/integrity checks retained"
+      },
+      "adapter_source_sha256": {
+        "run.mjs": "c8f472ca59f8acd285da8e96a25ac6369ccf9022879481f16f09c1130091daf1",
+        "model.mjs": "4a9af740936603e51f6519f27cc45a10781d00ac1b90b0725616429124bf8238",
+        "wire.mjs": "472b2cc0cb68adb7e63285ca594cc5c148ab11febf0c6331fe9a0b23106c5051",
+        "util.mjs": "b8e8a03dad5877004a079d42f46810ccc29786f0aabbc4c6b3a7385562ef2f65",
+        "browser.mjs": "7e56ada4eaa5fc796d9bf9c1290306fb0d161734a002725f2ffa3623b07ceeee",
+        "browser-runner.mjs": "53f3365d6dccd3d33660de55f9740d24ec3e82baf0fdd463098b94cb0cf8b341",
+        "package-lock.json": "8db581927618bdd8733273f2522b0f3417d79dee03b0cfcb4b92cf3dce221edf"
+      }
+    },
+    "browser": {
+      "utc": "2026-10-26T13:01:07.605Z",
+      "node": "v26.8.1",
+      "npm": "11.19.0",
+      "os": "ProductName:\t\tmacOS\nProductVersion:\t\t26.6.2\nBuildVersion:\t\t25G83",
+      "kernel": "Darwin 25.6.0 Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+      "architecture": "arm64",
+      "cpu": "Apple M1 Pro",
+      "logical_cpu_count": "10",
+      "ram_bytes": "17179869184",
+      "filesystem": "Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s5   460Gi   438Gi   1.2Gi   100%    7.1M   13M   36%   /System/Volumes/Data",
+      "storage_path": "/private/tmp/sync-benchmark-jazz-20261026-runtime/stores/browser-measured-final",
+      "container": null,
+      "cgroup_limit": null,
+      "filesystem_type": "APFS on internal solid-state Apple Fabric storage (diskutil info /System/Volumes/Data)",
+      "cpu_quota": null,
+      "ram_quota": null,
+      "versions": {
+        "jazz-tools": "2.0.0-alpha.59",
+        "jazz-napi": "2.0.0-alpha.59",
+        "playwright": "1.56.1"
+      },
+      "contention": "All worker heavy work serialized by atomic mkdir lock; six chats share laptop, OS/user/background activity and thermal state uncontrolled.",
+      "lock_owner": {
+        "engine": "jazz",
+        "task": "sync-benchmark-jazz",
+        "pid": 41704,
+        "token": "139542a4-9665-41f1-9f88-913f310eb559",
+        "cwd": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-jazz",
+        "utc": "2026-10-26T13:01:07.134845+00:00",
+        "command": [
+          "env",
+          "JAZZ_RUN_NAME=browser-measured-final",
+          "JAZZ_RUNTIMES=browser",
+          "node",
+          "/private/tmp/sync-benchmark-jazz-20261026-runtime/harness/run.mjs"
+        ]
+      },
+      "models": [
+        "embedded",
+        "containers",
+        "collections"
+      ],
+      "runtimes": [
+        "browser"
+      ],
+      "warmups": 3,
+      "repetitions": 10,
+      "persistence": {
+        "native": "Pinned NAPI RocksDB WalNoSync; synchronous flush_wal(true) on storage close; normal batching defaults",
+        "browser": "IndexedDB SharedWorker page store, readwrite durability relaxed; initialSyncFlushEvery default 512",
+        "native_initial_sync_batching": "Node user runtime passes no initialSyncFlushEvery override; core cadence None, storage WAL sync cadence 64 write batches",
+        "indexes": "Engine default schema/history/current-state/metadata indexes; no extra application indexes; no manual compaction",
+        "identity": "Fresh synthetic local-first user accounts, ordinary Core permission checks; explicit allow policies for synthetic app",
+        "encryption": "Ordinary local HTTP/WebSocket, no TLS, no optional application encryption; default identity/integrity checks retained"
+      },
+      "adapter_source_sha256": {
+        "run.mjs": "c8f472ca59f8acd285da8e96a25ac6369ccf9022879481f16f09c1130091daf1",
+        "model.mjs": "4a9af740936603e51f6519f27cc45a10781d00ac1b90b0725616429124bf8238",
+        "wire.mjs": "472b2cc0cb68adb7e63285ca594cc5c148ab11febf0c6331fe9a0b23106c5051",
+        "util.mjs": "b8e8a03dad5877004a079d42f46810ccc29786f0aabbc4c6b3a7385562ef2f65",
+        "browser.mjs": "b8a284a2335ff7723c2438d2cf981c0f803792ef6c9a3aee54b16f70bf33a4cf",
+        "browser-runner.mjs": "53f3365d6dccd3d33660de55f9740d24ec3e82baf0fdd463098b94cb0cf8b341",
+        "package-lock.json": "8db581927618bdd8733273f2522b0f3417d79dee03b0cfcb4b92cf3dce221edf"
+      }
+    }
+  }
+}

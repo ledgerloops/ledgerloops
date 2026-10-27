@@ -1,0 +1,3034 @@
+[
+  {
+    "runtime": "browser",
+    "browser": "141.0.7390.37",
+    "storage": "IndexedDB page store in SharedWorker; synthetic local account in localStorage",
+    "model": "embedded",
+    "run": 0,
+    "warmup": true,
+    "connection_auth_open_ms": 761.4896250000002,
+    "observable_ms": 188.19999999925494,
+    "host_observable_ms": 201.14404100000047,
+    "durable_ms": null,
+    "graceful_close_upper_bound_ms": 1060.0907080000006,
+    "durability_boundary": "Awaited Jazz session close and Chromium context close; IndexedDB transaction commit is weaker than an explicit power-loss fsync receipt. Do not rank as native durable timing.",
+    "wire": {
+      "received_tcp_stream_bytes": 107449,
+      "sent_tcp_stream_bytes": 1662,
+      "received_ws_payload_bytes": 107427,
+      "sent_ws_payload_bytes": 1642,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107110,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 84342,
+        "allocated": 114688,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 42043,
+            "allocated": 45056
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 457,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 381,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 405,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1399721,
+        "allocated": 1437696,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 1356413,
+            "allocated": 1359872
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 499,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG.old",
+            "apparent": 457,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 444,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 447,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG.old",
+            "apparent": 405,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1315379,
+        "allocated": 1323008
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "equal": true,
+      "bytes": 415448,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "elapsed_ms": 838.4632080000001
+    }
+  },
+  {
+    "runtime": "browser",
+    "browser": "141.0.7390.37",
+    "storage": "IndexedDB page store in SharedWorker; synthetic local account in localStorage",
+    "model": "embedded",
+    "run": 1,
+    "warmup": true,
+    "connection_auth_open_ms": 722.7909999999993,
+    "observable_ms": 220.7000000011176,
+    "host_observable_ms": 233.45616599999994,
+    "durable_ms": null,
+    "graceful_close_upper_bound_ms": 283.6487500000003,
+    "durability_boundary": "Awaited Jazz session close and Chromium context close; IndexedDB transaction commit is weaker than an explicit power-loss fsync receipt. Do not rank as native durable timing.",
+    "wire": {
+      "received_tcp_stream_bytes": 107451,
+      "sent_tcp_stream_bytes": 1711,
+      "received_ws_payload_bytes": 107429,
+      "sent_ws_payload_bytes": 1671,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107112,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 84342,
+        "allocated": 114688,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 42043,
+            "allocated": 45056
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 457,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 381,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 405,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1546735,
+        "allocated": 1585152,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 1503427,
+            "allocated": 1507328
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 499,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG.old",
+            "apparent": 457,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 444,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 447,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG.old",
+            "apparent": 405,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1462393,
+        "allocated": 1470464
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "equal": true,
+      "bytes": 415448,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "elapsed_ms": 862.2215830000005
+    }
+  },
+  {
+    "runtime": "browser",
+    "browser": "141.0.7390.37",
+    "storage": "IndexedDB page store in SharedWorker; synthetic local account in localStorage",
+    "model": "embedded",
+    "run": 2,
+    "warmup": true,
+    "connection_auth_open_ms": 710.3577920000007,
+    "observable_ms": 321.5,
+    "host_observable_ms": 330.68874999999935,
+    "durable_ms": null,
+    "graceful_close_upper_bound_ms": 419.6960829999989,
+    "durability_boundary": "Awaited Jazz session close and Chromium context close; IndexedDB transaction commit is weaker than an explicit power-loss fsync receipt. Do not rank as native durable timing.",
+    "wire": {
+      "received_tcp_stream_bytes": 107450,
+      "sent_tcp_stream_bytes": 1662,
+      "received_ws_payload_bytes": 107428,
+      "sent_ws_payload_bytes": 1642,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107111,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 84342,
+        "allocated": 114688,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 42043,
+            "allocated": 45056
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 457,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 381,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 405,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1399721,
+        "allocated": 1437696,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 1356413,
+            "allocated": 1359872
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 499,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG.old",
+            "apparent": 457,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 444,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 447,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG.old",
+            "apparent": 405,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1315379,
+        "allocated": 1323008
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "equal": true,
+      "bytes": 415448,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "elapsed_ms": 943.7033339999998
+    }
+  },
+  {
+    "runtime": "browser",
+    "browser": "141.0.7390.37",
+    "storage": "IndexedDB page store in SharedWorker; synthetic local account in localStorage",
+    "model": "embedded",
+    "run": 3,
+    "warmup": false,
+    "connection_auth_open_ms": 728.7654170000005,
+    "observable_ms": 164.40000000037253,
+    "host_observable_ms": 179.18975000000137,
+    "durable_ms": null,
+    "graceful_close_upper_bound_ms": 235.11816700000054,
+    "durability_boundary": "Awaited Jazz session close and Chromium context close; IndexedDB transaction commit is weaker than an explicit power-loss fsync receipt. Do not rank as native durable timing.",
+    "wire": {
+      "received_tcp_stream_bytes": 107452,
+      "sent_tcp_stream_bytes": 1662,
+      "received_ws_payload_bytes": 107430,
+      "sent_ws_payload_bytes": 1642,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107113,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 84342,
+        "allocated": 114688,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 42043,
+            "allocated": 45056
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 457,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 381,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 405,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1399861,
+        "allocated": 1437696,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 1356553,
+            "allocated": 1359872
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 499,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG.old",
+            "apparent": 457,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 444,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 447,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG.old",
+            "apparent": 405,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1315519,
+        "allocated": 1323008
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "equal": true,
+      "bytes": 415448,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "elapsed_ms": 821.4041250000009
+    }
+  },
+  {
+    "runtime": "browser",
+    "browser": "141.0.7390.37",
+    "storage": "IndexedDB page store in SharedWorker; synthetic local account in localStorage",
+    "model": "embedded",
+    "run": 4,
+    "warmup": false,
+    "connection_auth_open_ms": 696.5627080000013,
+    "observable_ms": 158.5,
+    "host_observable_ms": 170.7834580000017,
+    "durable_ms": null,
+    "graceful_close_upper_bound_ms": 254.72120800000266,
+    "durability_boundary": "Awaited Jazz session close and Chromium context close; IndexedDB transaction commit is weaker than an explicit power-loss fsync receipt. Do not rank as native durable timing.",
+    "wire": {
+      "received_tcp_stream_bytes": 107448,
+      "sent_tcp_stream_bytes": 1662,
+      "received_ws_payload_bytes": 107426,
+      "sent_ws_payload_bytes": 1642,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107109,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 84342,
+        "allocated": 114688,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 42043,
+            "allocated": 45056
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 457,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 381,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 405,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1399721,
+        "allocated": 1437696,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 1356413,
+            "allocated": 1359872
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 499,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG.old",
+            "apparent": 457,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 444,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 447,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG.old",
+            "apparent": 405,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1315379,
+        "allocated": 1323008
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "equal": true,
+      "bytes": 415448,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "elapsed_ms": 747.9632499999971
+    }
+  },
+  {
+    "runtime": "browser",
+    "browser": "141.0.7390.37",
+    "storage": "IndexedDB page store in SharedWorker; synthetic local account in localStorage",
+    "model": "embedded",
+    "run": 5,
+    "warmup": false,
+    "connection_auth_open_ms": 739.0164169999989,
+    "observable_ms": 159.09999999962747,
+    "host_observable_ms": 168.18937500000175,
+    "durable_ms": null,
+    "graceful_close_upper_bound_ms": 226.93737500000134,
+    "durability_boundary": "Awaited Jazz session close and Chromium context close; IndexedDB transaction commit is weaker than an explicit power-loss fsync receipt. Do not rank as native durable timing.",
+    "wire": {
+      "received_tcp_stream_bytes": 107450,
+      "sent_tcp_stream_bytes": 1662,
+      "received_ws_payload_bytes": 107428,
+      "sent_ws_payload_bytes": 1642,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107111,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 84342,
+        "allocated": 114688,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 42043,
+            "allocated": 45056
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 457,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 381,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 405,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1399721,
+        "allocated": 1437696,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 1356413,
+            "allocated": 1359872
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 499,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG.old",
+            "apparent": 457,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 444,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 447,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG.old",
+            "apparent": 405,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1315379,
+        "allocated": 1323008
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "equal": true,
+      "bytes": 415448,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "elapsed_ms": 784.992542
+    }
+  },
+  {
+    "runtime": "browser",
+    "browser": "141.0.7390.37",
+    "storage": "IndexedDB page store in SharedWorker; synthetic local account in localStorage",
+    "model": "embedded",
+    "run": 6,
+    "warmup": false,
+    "connection_auth_open_ms": 784.2458340000012,
+    "observable_ms": 219.30000000074506,
+    "host_observable_ms": 251.28099999999904,
+    "durable_ms": null,
+    "graceful_close_upper_bound_ms": 555.3971669999992,
+    "durability_boundary": "Awaited Jazz session close and Chromium context close; IndexedDB transaction commit is weaker than an explicit power-loss fsync receipt. Do not rank as native durable timing.",
+    "wire": {
+      "received_tcp_stream_bytes": 107450,
+      "sent_tcp_stream_bytes": 1662,
+      "received_ws_payload_bytes": 107428,
+      "sent_ws_payload_bytes": 1642,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107111,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 84342,
+        "allocated": 114688,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 42043,
+            "allocated": 45056
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 457,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 381,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 405,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1399721,
+        "allocated": 1437696,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 1356413,
+            "allocated": 1359872
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 499,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG.old",
+            "apparent": 457,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 444,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 447,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG.old",
+            "apparent": 405,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1315379,
+        "allocated": 1323008
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "equal": true,
+      "bytes": 415448,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "elapsed_ms": 768.0391249999993
+    }
+  },
+  {
+    "runtime": "browser",
+    "browser": "141.0.7390.37",
+    "storage": "IndexedDB page store in SharedWorker; synthetic local account in localStorage",
+    "model": "embedded",
+    "run": 7,
+    "warmup": false,
+    "connection_auth_open_ms": 1118.039499999999,
+    "observable_ms": 288,
+    "host_observable_ms": 297.51141700000153,
+    "durable_ms": null,
+    "graceful_close_upper_bound_ms": 626.0140420000025,
+    "durability_boundary": "Awaited Jazz session close and Chromium context close; IndexedDB transaction commit is weaker than an explicit power-loss fsync receipt. Do not rank as native durable timing.",
+    "wire": {
+      "received_tcp_stream_bytes": 107450,
+      "sent_tcp_stream_bytes": 1662,
+      "received_ws_payload_bytes": 107428,
+      "sent_ws_payload_bytes": 1642,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107111,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 84342,
+        "allocated": 114688,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 42043,
+            "allocated": 45056
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 457,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 381,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 405,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1399721,
+        "allocated": 1437696,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 1356413,
+            "allocated": 1359872
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 499,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG.old",
+            "apparent": 457,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 444,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 447,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG.old",
+            "apparent": 405,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1315379,
+        "allocated": 1323008
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "equal": true,
+      "bytes": 415448,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "elapsed_ms": 851.3670839999977
+    }
+  },
+  {
+    "runtime": "browser",
+    "browser": "141.0.7390.37",
+    "storage": "IndexedDB page store in SharedWorker; synthetic local account in localStorage",
+    "model": "embedded",
+    "run": 8,
+    "warmup": false,
+    "connection_auth_open_ms": 710.5458749999998,
+    "observable_ms": 162.59999999962747,
+    "host_observable_ms": 175.42062500000247,
+    "durable_ms": null,
+    "graceful_close_upper_bound_ms": 1898.637375000002,
+    "durability_boundary": "Awaited Jazz session close and Chromium context close; IndexedDB transaction commit is weaker than an explicit power-loss fsync receipt. Do not rank as native durable timing.",
+    "wire": {
+      "received_tcp_stream_bytes": 107459,
+      "sent_tcp_stream_bytes": 1662,
+      "received_ws_payload_bytes": 107437,
+      "sent_ws_payload_bytes": 1642,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107120,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 84342,
+        "allocated": 114688,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 42043,
+            "allocated": 45056
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 457,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 381,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 405,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1399721,
+        "allocated": 1437696,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 1356413,
+            "allocated": 1359872
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 499,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG.old",
+            "apparent": 457,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 444,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 447,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG.old",
+            "apparent": 405,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1315379,
+        "allocated": 1323008
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "equal": true,
+      "bytes": 415448,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "elapsed_ms": 739.6792910000004
+    }
+  },
+  {
+    "runtime": "browser",
+    "browser": "141.0.7390.37",
+    "storage": "IndexedDB page store in SharedWorker; synthetic local account in localStorage",
+    "model": "embedded",
+    "run": 9,
+    "warmup": false,
+    "connection_auth_open_ms": 658.3119579999984,
+    "observable_ms": 174.7000000011176,
+    "host_observable_ms": 184.77454100000614,
+    "durable_ms": null,
+    "graceful_close_upper_bound_ms": 332.3467080000046,
+    "durability_boundary": "Awaited Jazz session close and Chromium context close; IndexedDB transaction commit is weaker than an explicit power-loss fsync receipt. Do not rank as native durable timing.",
+    "wire": {
+      "received_tcp_stream_bytes": 107454,
+      "sent_tcp_stream_bytes": 1662,
+      "received_ws_payload_bytes": 107432,
+      "sent_ws_payload_bytes": 1642,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107115,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 84342,
+        "allocated": 114688,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 42043,
+            "allocated": 45056
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 457,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 381,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 405,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1399861,
+        "allocated": 1437696,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 1356553,
+            "allocated": 1359872
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 499,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG.old",
+            "apparent": 457,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 444,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 447,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG.old",
+            "apparent": 405,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1315519,
+        "allocated": 1323008
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "equal": true,
+      "bytes": 415448,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "elapsed_ms": 760.2568749999991
+    }
+  },
+  {
+    "runtime": "browser",
+    "browser": "141.0.7390.37",
+    "storage": "IndexedDB page store in SharedWorker; synthetic local account in localStorage",
+    "model": "embedded",
+    "run": 10,
+    "warmup": false,
+    "connection_auth_open_ms": 685.0342919999966,
+    "observable_ms": 156.7000000011176,
+    "host_observable_ms": 167.27108299999963,
+    "durable_ms": null,
+    "graceful_close_upper_bound_ms": 3048.634207999996,
+    "durability_boundary": "Awaited Jazz session close and Chromium context close; IndexedDB transaction commit is weaker than an explicit power-loss fsync receipt. Do not rank as native durable timing.",
+    "wire": {
+      "received_tcp_stream_bytes": 107453,
+      "sent_tcp_stream_bytes": 1662,
+      "received_ws_payload_bytes": 107431,
+      "sent_ws_payload_bytes": 1642,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107114,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 84346,
+        "allocated": 114688,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 42043,
+            "allocated": 45056
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 459,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 381,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 407,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1399729,
+        "allocated": 1437696,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 1356413,
+            "allocated": 1359872
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 501,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG.old",
+            "apparent": 459,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 444,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 449,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG.old",
+            "apparent": 407,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1315383,
+        "allocated": 1323008
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "equal": true,
+      "bytes": 415448,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "elapsed_ms": 846.8812079999989
+    }
+  },
+  {
+    "runtime": "browser",
+    "browser": "141.0.7390.37",
+    "storage": "IndexedDB page store in SharedWorker; synthetic local account in localStorage",
+    "model": "embedded",
+    "run": 11,
+    "warmup": false,
+    "connection_auth_open_ms": 741.2750840000008,
+    "observable_ms": 187,
+    "host_observable_ms": 196.70333299999766,
+    "durable_ms": null,
+    "graceful_close_upper_bound_ms": 691.518624999997,
+    "durability_boundary": "Awaited Jazz session close and Chromium context close; IndexedDB transaction commit is weaker than an explicit power-loss fsync receipt. Do not rank as native durable timing.",
+    "wire": {
+      "received_tcp_stream_bytes": 107453,
+      "sent_tcp_stream_bytes": 1662,
+      "received_ws_payload_bytes": 107431,
+      "sent_ws_payload_bytes": 1642,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107114,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 84346,
+        "allocated": 114688,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 42043,
+            "allocated": 45056
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 459,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 381,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 407,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1399729,
+        "allocated": 1437696,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 1356413,
+            "allocated": 1359872
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 501,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG.old",
+            "apparent": 459,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 444,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 449,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG.old",
+            "apparent": 407,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1315383,
+        "allocated": 1323008
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "equal": true,
+      "bytes": 415448,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "elapsed_ms": 785.7750840000008
+    }
+  },
+  {
+    "runtime": "browser",
+    "browser": "141.0.7390.37",
+    "storage": "IndexedDB page store in SharedWorker; synthetic local account in localStorage",
+    "model": "embedded",
+    "run": 12,
+    "warmup": false,
+    "connection_auth_open_ms": 835.5330419999955,
+    "observable_ms": 216.40000000037253,
+    "host_observable_ms": 229.13520900000003,
+    "durable_ms": null,
+    "graceful_close_upper_bound_ms": 600.4744999999966,
+    "durability_boundary": "Awaited Jazz session close and Chromium context close; IndexedDB transaction commit is weaker than an explicit power-loss fsync receipt. Do not rank as native durable timing.",
+    "wire": {
+      "received_tcp_stream_bytes": 107453,
+      "sent_tcp_stream_bytes": 1662,
+      "received_ws_payload_bytes": 107431,
+      "sent_ws_payload_bytes": 1642,
+      "received_ws_frames": 6,
+      "compressed_ws_frames": 0,
+      "http_bytes": 0,
+      "received_engine_decoded_channel_bytes": 697619,
+      "received_engine_compressed_channel_bytes": 107114,
+      "received_engine_channel_frames": 11,
+      "engine_codecs": {
+        "zstd": 11
+      },
+      "engine_frame_parse_errors": 0
+    },
+    "receiver_storage": {
+      "baseline": {
+        "apparent": 84346,
+        "allocated": 114688,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 42043,
+            "allocated": 45056
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 459,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 381,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 407,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "total": {
+        "apparent": 1399729,
+        "allocated": 1437696,
+        "files": [
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/000003.log",
+            "apparent": 1356413,
+            "allocated": 1359872
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG",
+            "apparent": 501,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/LOG.old",
+            "apparent": 459,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/IndexedDB/http_127.0.0.1_5173.indexeddb.leveldb/MANIFEST-000001",
+            "apparent": 23,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/000003.log",
+            "apparent": 444,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/CURRENT",
+            "apparent": 16,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOCK",
+            "apparent": 0,
+            "allocated": 0
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG",
+            "apparent": 449,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/LOG.old",
+            "apparent": 407,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/Local Storage/leveldb/MANIFEST-000001",
+            "apparent": 41,
+            "allocated": 4096
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager",
+            "apparent": 40960,
+            "allocated": 40960
+          },
+          {
+            "path": "Default/WebStorage/QuotaManager-journal",
+            "apparent": 0,
+            "allocated": 0
+          }
+        ]
+      },
+      "net": {
+        "apparent": 1315383,
+        "allocated": 1323008
+      }
+    },
+    "reopen": {
+      "offline_proxy_blocked": true,
+      "equal": true,
+      "bytes": 415448,
+      "verified_hash": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a",
+      "elapsed_ms": 773.6395829999965
+    },
+    "incrementals": [
+      {
+        "repetition": 0,
+        "collection": "issues",
+        "field": "title",
+        "logical_old_value_bytes": 54,
+        "logical_new_value_bytes": 74,
+        "changed_bytes_removed": 0,
+        "changed_bytes_inserted": 20,
+        "replacement_api_patch_bytes": 86,
+        "observable_ms": 54.968416000003344,
+        "sender_global_confirmation_ms": 18.255291000001307,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 1112,
+          "sent_tcp_stream_bytes": 39,
+          "received_ws_payload_bytes": 1108,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5972,
+          "received_engine_compressed_channel_bytes": 1088,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "7799886a91f2bbddbea6f91bc56816bd20b7c6136696d8669bf1df9fb1599921"
+      },
+      {
+        "repetition": 0,
+        "collection": "notes",
+        "field": "body",
+        "logical_old_value_bytes": 2528,
+        "logical_new_value_bytes": 2547,
+        "changed_bytes_removed": 0,
+        "changed_bytes_inserted": 19,
+        "replacement_api_patch_bytes": 2558,
+        "observable_ms": 22.563750000001164,
+        "sender_global_confirmation_ms": 5.669750000000931,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 1041,
+          "sent_tcp_stream_bytes": 39,
+          "received_ws_payload_bytes": 1037,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5301,
+          "received_engine_compressed_channel_bytes": 1017,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "ef6de0017cebe885c46306bb0d9869d00bfe5d8792526524885eb976d0996f46"
+      },
+      {
+        "repetition": 1,
+        "collection": "issues",
+        "field": "title",
+        "logical_old_value_bytes": 74,
+        "logical_new_value_bytes": 74,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 86,
+        "observable_ms": 20.60295799999585,
+        "sender_global_confirmation_ms": 6.987374999996973,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 98,
+          "sent_tcp_stream_bytes": 39,
+          "received_ws_payload_bytes": 96,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5972,
+          "received_engine_compressed_channel_bytes": 78,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "94da2f23153595873f75a80652df0e1516d2e8743285a8275da7ba04b39d1ee7"
+      },
+      {
+        "repetition": 1,
+        "collection": "notes",
+        "field": "body",
+        "logical_old_value_bytes": 2547,
+        "logical_new_value_bytes": 2547,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 2558,
+        "observable_ms": 25.106084000006376,
+        "sender_global_confirmation_ms": 5.275834000000032,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 98,
+          "sent_tcp_stream_bytes": 39,
+          "received_ws_payload_bytes": 96,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5301,
+          "received_engine_compressed_channel_bytes": 78,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "cc092846a18008c8e9ddf71f810b6e79e758ceef2859396a92fb9f1e45e92933"
+      },
+      {
+        "repetition": 2,
+        "collection": "issues",
+        "field": "title",
+        "logical_old_value_bytes": 74,
+        "logical_new_value_bytes": 74,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 86,
+        "observable_ms": 22.07987499999581,
+        "sender_global_confirmation_ms": 6.497875000000931,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 103,
+          "sent_tcp_stream_bytes": 39,
+          "received_ws_payload_bytes": 101,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5972,
+          "received_engine_compressed_channel_bytes": 83,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "fcd2122cf644d907ff8a5f443e7a2c6f31a484021ec75d52bc8adcdb3dae4a35"
+      },
+      {
+        "repetition": 2,
+        "collection": "notes",
+        "field": "body",
+        "logical_old_value_bytes": 2547,
+        "logical_new_value_bytes": 2547,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 2558,
+        "observable_ms": 23.420916999995825,
+        "sender_global_confirmation_ms": 5.3463339999943855,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 103,
+          "sent_tcp_stream_bytes": 39,
+          "received_ws_payload_bytes": 101,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5301,
+          "received_engine_compressed_channel_bytes": 83,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "db41b708e68f0f3445304b047cc0bde924be7c606809d9cf471715bad6554d8f"
+      },
+      {
+        "repetition": 3,
+        "collection": "issues",
+        "field": "title",
+        "logical_old_value_bytes": 74,
+        "logical_new_value_bytes": 74,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 86,
+        "observable_ms": 23.817167000001064,
+        "sender_global_confirmation_ms": 5.443833000004815,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 101,
+          "sent_tcp_stream_bytes": 39,
+          "received_ws_payload_bytes": 99,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5972,
+          "received_engine_compressed_channel_bytes": 81,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "f5a32a7b4f544f0ddf325d041a211d8f03a442d59223c7fa5daac28b3e56ecc6"
+      },
+      {
+        "repetition": 3,
+        "collection": "notes",
+        "field": "body",
+        "logical_old_value_bytes": 2547,
+        "logical_new_value_bytes": 2547,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 2558,
+        "observable_ms": 28.659417000002577,
+        "sender_global_confirmation_ms": 9.231874999997672,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 101,
+          "sent_tcp_stream_bytes": 39,
+          "received_ws_payload_bytes": 99,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5301,
+          "received_engine_compressed_channel_bytes": 81,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "558b24575b83298ccf6f529b3c3eab1242ecc515b025df9cea662c1dd8d85020"
+      },
+      {
+        "repetition": 4,
+        "collection": "issues",
+        "field": "title",
+        "logical_old_value_bytes": 74,
+        "logical_new_value_bytes": 74,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 86,
+        "observable_ms": 22.812749999997322,
+        "sender_global_confirmation_ms": 7.829417000000831,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 100,
+          "sent_tcp_stream_bytes": 39,
+          "received_ws_payload_bytes": 98,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5972,
+          "received_engine_compressed_channel_bytes": 80,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "a1e98ff01685f56e52f68af9abb5c69d48cdf138de5d993a3c71e13754950c60"
+      },
+      {
+        "repetition": 4,
+        "collection": "notes",
+        "field": "body",
+        "logical_old_value_bytes": 2547,
+        "logical_new_value_bytes": 2547,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 2558,
+        "observable_ms": 25.81329199999891,
+        "sender_global_confirmation_ms": 6.541582999998354,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 102,
+          "sent_tcp_stream_bytes": 39,
+          "received_ws_payload_bytes": 100,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5301,
+          "received_engine_compressed_channel_bytes": 82,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "459e9e30cdd4fc22dfb8f596e9f0dc333ec103db971655d7b1a5d7d6c939a29c"
+      },
+      {
+        "repetition": 5,
+        "collection": "issues",
+        "field": "title",
+        "logical_old_value_bytes": 74,
+        "logical_new_value_bytes": 74,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 86,
+        "observable_ms": 45.27316599999904,
+        "sender_global_confirmation_ms": 16.283957999999984,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 104,
+          "sent_tcp_stream_bytes": 39,
+          "received_ws_payload_bytes": 102,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5972,
+          "received_engine_compressed_channel_bytes": 84,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "29e4a6eb5d0b567490a4efaf00d0148a3af52b598153438ce453e3c517a4c185"
+      },
+      {
+        "repetition": 5,
+        "collection": "notes",
+        "field": "body",
+        "logical_old_value_bytes": 2547,
+        "logical_new_value_bytes": 2547,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 2558,
+        "observable_ms": 22.413042000000132,
+        "sender_global_confirmation_ms": 5.781542000004265,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 98,
+          "sent_tcp_stream_bytes": 39,
+          "received_ws_payload_bytes": 96,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5301,
+          "received_engine_compressed_channel_bytes": 78,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "22023c3461a29b1f841fcc55479685fe50eac7aea2fd4d505c7808ca64e5f8f1"
+      },
+      {
+        "repetition": 6,
+        "collection": "issues",
+        "field": "title",
+        "logical_old_value_bytes": 74,
+        "logical_new_value_bytes": 74,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 86,
+        "observable_ms": 21.254124999999476,
+        "sender_global_confirmation_ms": 5.028833000003942,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 101,
+          "sent_tcp_stream_bytes": 39,
+          "received_ws_payload_bytes": 99,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5972,
+          "received_engine_compressed_channel_bytes": 81,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "94afdf0a3d6d0e6c0603b5b59ea541edde317c5323df2e22b70b7b4e1ea1a524"
+      },
+      {
+        "repetition": 6,
+        "collection": "notes",
+        "field": "body",
+        "logical_old_value_bytes": 2547,
+        "logical_new_value_bytes": 2547,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 2558,
+        "observable_ms": 25.562625000005937,
+        "sender_global_confirmation_ms": 4.137000000002445,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 97,
+          "sent_tcp_stream_bytes": 39,
+          "received_ws_payload_bytes": 95,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5301,
+          "received_engine_compressed_channel_bytes": 77,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "d899b1eb304c2af5b6b30965c963b79ae93df0761b4a8fad48322743c3f46f94"
+      },
+      {
+        "repetition": 7,
+        "collection": "issues",
+        "field": "title",
+        "logical_old_value_bytes": 74,
+        "logical_new_value_bytes": 74,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 86,
+        "observable_ms": 23.485333000004175,
+        "sender_global_confirmation_ms": 4.006375000004482,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 101,
+          "sent_tcp_stream_bytes": 39,
+          "received_ws_payload_bytes": 99,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5972,
+          "received_engine_compressed_channel_bytes": 81,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "7d0bf54f4fb732a972e0020d2f1567197b77e88ef8de8ded61c6d938f0aefbfe"
+      },
+      {
+        "repetition": 7,
+        "collection": "notes",
+        "field": "body",
+        "logical_old_value_bytes": 2547,
+        "logical_new_value_bytes": 2547,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 2558,
+        "observable_ms": 25.921958999999333,
+        "sender_global_confirmation_ms": 4.353084000002127,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 98,
+          "sent_tcp_stream_bytes": 39,
+          "received_ws_payload_bytes": 96,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5301,
+          "received_engine_compressed_channel_bytes": 78,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "8cb2928344afb31227cde359bea5bbbf1445192527bf9f491cf42a5461787064"
+      },
+      {
+        "repetition": 8,
+        "collection": "issues",
+        "field": "title",
+        "logical_old_value_bytes": 74,
+        "logical_new_value_bytes": 74,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 86,
+        "observable_ms": 22.3504580000008,
+        "sender_global_confirmation_ms": 3.879625000001397,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 101,
+          "sent_tcp_stream_bytes": 39,
+          "received_ws_payload_bytes": 99,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5972,
+          "received_engine_compressed_channel_bytes": 81,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "8bfc4f04b59bacbbe8f11c3a8006ceeb45bcaf3b09a2e2ce1421e8a7dd2f6f7b"
+      },
+      {
+        "repetition": 8,
+        "collection": "notes",
+        "field": "body",
+        "logical_old_value_bytes": 2547,
+        "logical_new_value_bytes": 2547,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 2558,
+        "observable_ms": 25.056708999996772,
+        "sender_global_confirmation_ms": 3.821084000002884,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 100,
+          "sent_tcp_stream_bytes": 39,
+          "received_ws_payload_bytes": 98,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5301,
+          "received_engine_compressed_channel_bytes": 80,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "44a8818746304077a57bbaea35cd4cd506e68cf1a573dbce444e32fdb2b35242"
+      },
+      {
+        "repetition": 9,
+        "collection": "issues",
+        "field": "title",
+        "logical_old_value_bytes": 74,
+        "logical_new_value_bytes": 74,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 86,
+        "observable_ms": 22.39050000000134,
+        "sender_global_confirmation_ms": 3.9480419999963487,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 102,
+          "sent_tcp_stream_bytes": 39,
+          "received_ws_payload_bytes": 100,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5972,
+          "received_engine_compressed_channel_bytes": 82,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "95a35067c76b2563fa93a0f0d0e0e0f1e2bb9893fa0fea9b1e8a9ed2e6c9268f"
+      },
+      {
+        "repetition": 9,
+        "collection": "notes",
+        "field": "body",
+        "logical_old_value_bytes": 2547,
+        "logical_new_value_bytes": 2547,
+        "changed_bytes_removed": 1,
+        "changed_bytes_inserted": 1,
+        "replacement_api_patch_bytes": 2558,
+        "observable_ms": 25.327290999994148,
+        "sender_global_confirmation_ms": 3.7542499999981374,
+        "durable_ms": null,
+        "durability_note": "Receiver incoming-update durability has no separate public receipt; observable convergence only.",
+        "wire": {
+          "received_tcp_stream_bytes": 102,
+          "sent_tcp_stream_bytes": 39,
+          "received_ws_payload_bytes": 100,
+          "sent_ws_payload_bytes": 27,
+          "received_ws_frames": 1,
+          "compressed_ws_frames": 0,
+          "http_bytes": 0,
+          "received_engine_decoded_channel_bytes": 5301,
+          "received_engine_compressed_channel_bytes": 82,
+          "received_engine_channel_frames": 1,
+          "engine_codecs": {
+            "zstd": 1
+          },
+          "engine_frame_parse_errors": 0
+        },
+        "verified_hash": "4e257deebf8ecabc41aa1b88a5d138b119477875edf060195dd5e36b2dc0909c"
+      }
+    ],
+    "incremental_clock_note": "Observable convergence measured at host callback, includes Playwright evaluation IPC.",
+    "incrementals_final_reopen": {
+      "verified_hash": "4e257deebf8ecabc41aa1b88a5d138b119477875edf060195dd5e36b2dc0909c",
+      "offline_proxy_blocked": true
+    }
+  }
+]
