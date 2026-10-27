@@ -7,6 +7,14 @@ a normal Replicache pull server, a persistent Chromium receiver harness, pinned 
 dependencies and raw measurement artifacts. It uses entirely synthetic records and
 a hardcoded synthetic local authorization identity. It never fetches fixture URLs.
 
+## Methodology audit
+
+The [2026-10-27 fairness and persistence audit](FAIRNESS-AUDIT.md) qualifies
+the completion boundaries, scheduler behavior, incremental-edit lifecycle, storage
+scope, and host contention in these results. [Supporting evidence](replicache-persistence-audit-2026-10-27.json)
+contains paired calculations and pinned source references. No benchmark was rerun
+for this audit.
+
 ## Run
 
 Use Node 26.8.1, Python 3 and the recorded Google Chrome 155.0.8059.85 executable.
