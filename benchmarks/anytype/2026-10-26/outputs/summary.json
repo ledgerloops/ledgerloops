@@ -1,0 +1,900 @@
+{
+  "scope": "native any-sync LocalOnly object-tree protocol experiment; not Anytype application or official service-stack benchmark",
+  "raw_source": "results.jsonl",
+  "models": {
+    "record_trees": {
+      "measured_runs": 10,
+      "warmup_runs": 3,
+      "trees": 132,
+      "initial_reopens_verified": 10,
+      "updated_reopens_verified": 10,
+      "updates": {
+        "issues.0.title": {
+          "observable_ms": {
+            "n": 10,
+            "p50": 5.704333999999999,
+            "p95_nearest_rank": 11.525875,
+            "max": 11.525875,
+            "min": 4.731791
+          },
+          "fsync_completion_ms": {
+            "n": 10,
+            "p50": 5.7448545,
+            "p95_nearest_rank": 11.560625,
+            "max": 11.560625,
+            "min": 4.760625
+          },
+          "received_protobuf_bytes": {
+            "n": 10,
+            "p50": 4678.0,
+            "p95_nearest_rank": 4678,
+            "max": 4678,
+            "min": 4678
+          },
+          "received_transport_bytes": {
+            "n": 10,
+            "p50": 4794.0,
+            "p95_nearest_rank": 4794,
+            "max": 4794,
+            "min": 4794
+          },
+          "operation_bytes": {
+            "n": 10,
+            "p50": 3625.0,
+            "p95_nearest_rank": 3625,
+            "max": 3625,
+            "min": 3625
+          },
+          "source_old_value_bytes": {
+            "n": 10,
+            "p50": 56.0,
+            "p95_nearest_rank": 56,
+            "max": 56,
+            "min": 56
+          },
+          "source_new_value_bytes": {
+            "n": 10,
+            "p50": 31.0,
+            "p95_nearest_rank": 31,
+            "max": 31,
+            "min": 31
+          }
+        },
+        "notes.0.body": {
+          "observable_ms": {
+            "n": 10,
+            "p50": 4.8947705,
+            "p95_nearest_rank": 5.62975,
+            "max": 5.62975,
+            "min": 4.344084
+          },
+          "fsync_completion_ms": {
+            "n": 10,
+            "p50": 4.9101875,
+            "p95_nearest_rank": 5.651125,
+            "max": 5.651125,
+            "min": 4.356084
+          },
+          "received_protobuf_bytes": {
+            "n": 10,
+            "p50": 1534.0,
+            "p95_nearest_rank": 1534,
+            "max": 1534,
+            "min": 1534
+          },
+          "received_transport_bytes": {
+            "n": 10,
+            "p50": 1638.0,
+            "p95_nearest_rank": 1638,
+            "max": 1638,
+            "min": 1638
+          },
+          "operation_bytes": {
+            "n": 10,
+            "p50": 482.0,
+            "p95_nearest_rank": 482,
+            "max": 482,
+            "min": 482
+          },
+          "source_old_value_bytes": {
+            "n": 10,
+            "p50": 2530.0,
+            "p95_nearest_rank": 2530,
+            "max": 2530,
+            "min": 2530
+          },
+          "source_new_value_bytes": {
+            "n": 10,
+            "p50": 29.0,
+            "p95_nearest_rank": 29,
+            "max": 29,
+            "min": 29
+          }
+        }
+      },
+      "observable_ms": {
+        "n": 10,
+        "p50": 133.72787499999998,
+        "p95_nearest_rank": 151.045875,
+        "max": 151.045875,
+        "min": 117.912792
+      },
+      "fsync_completion_ms": {
+        "n": 10,
+        "p50": 133.75120850000002,
+        "p95_nearest_rank": 151.061334,
+        "max": 151.061334,
+        "min": 117.933958
+      },
+      "received_protobuf_bytes": {
+        "n": 10,
+        "p50": 602656.0,
+        "p95_nearest_rank": 602656,
+        "max": 602656,
+        "min": 602656
+      },
+      "received_transport_bytes": {
+        "n": 10,
+        "p50": 611290.0,
+        "p95_nearest_rank": 611290,
+        "max": 611290,
+        "min": 611290
+      },
+      "sender_prepare_ms": {
+        "n": 10,
+        "p50": 127.99152099999999,
+        "p95_nearest_rank": 150.666709,
+        "max": 150.666709,
+        "min": 109.895334
+      },
+      "receiver_prepare_ms": {
+        "n": 10,
+        "p50": 5.651521000000001,
+        "p95_nearest_rank": 7.899459,
+        "max": 7.899459,
+        "min": 5.159459
+      },
+      "connection_auth_and_network_setup_ms": {
+        "n": 10,
+        "p50": 2.308667,
+        "p95_nearest_rank": 2.606583,
+        "max": 2.606583,
+        "min": 2.182542
+      },
+      "receiver_baseline": {
+        "apparent_bytes": {
+          "n": 10,
+          "p50": 94208.0,
+          "p95_nearest_rank": 94208,
+          "max": 94208,
+          "min": 94208
+        },
+        "allocated_bytes": {
+          "n": 10,
+          "p50": 94208.0,
+          "p95_nearest_rank": 94208,
+          "max": 94208,
+          "min": 94208
+        },
+        "files": {
+          "n": 10,
+          "p50": 1.0,
+          "p95_nearest_rank": 1,
+          "max": 1,
+          "min": 1
+        }
+      },
+      "receiver_total": {
+        "apparent_bytes": {
+          "n": 10,
+          "p50": 1273856.0,
+          "p95_nearest_rank": 1277952,
+          "max": 1277952,
+          "min": 1269760
+        },
+        "allocated_bytes": {
+          "n": 10,
+          "p50": 1273856.0,
+          "p95_nearest_rank": 1277952,
+          "max": 1277952,
+          "min": 1269760
+        },
+        "files": {
+          "n": 10,
+          "p50": 1.0,
+          "p95_nearest_rank": 1,
+          "max": 1,
+          "min": 1
+        }
+      },
+      "receiver_net": {
+        "apparent_bytes": {
+          "n": 10,
+          "p50": 1179648.0,
+          "p95_nearest_rank": 1183744,
+          "max": 1183744,
+          "min": 1175552
+        },
+        "allocated_bytes": {
+          "n": 10,
+          "p50": 1179648.0,
+          "p95_nearest_rank": 1183744,
+          "max": 1183744,
+          "min": 1175552
+        },
+        "files": {
+          "n": 10,
+          "p50": 0.0,
+          "p95_nearest_rank": 0,
+          "max": 0,
+          "min": 0
+        }
+      },
+      "sender_initial_total": {
+        "apparent_bytes": {
+          "n": 10,
+          "p50": 1273856.0,
+          "p95_nearest_rank": 1277952,
+          "max": 1277952,
+          "min": 1269760
+        },
+        "allocated_bytes": {
+          "n": 10,
+          "p50": 1273856.0,
+          "p95_nearest_rank": 1277952,
+          "max": 1277952,
+          "min": 1269760
+        },
+        "files": {
+          "n": 10,
+          "p50": 1.0,
+          "p95_nearest_rank": 1,
+          "max": 1,
+          "min": 1
+        }
+      },
+      "sender_total": {
+        "apparent_bytes": {
+          "n": 10,
+          "p50": 1282048.0,
+          "p95_nearest_rank": 1286144,
+          "max": 1286144,
+          "min": 1277952
+        },
+        "allocated_bytes": {
+          "n": 10,
+          "p50": 1282048.0,
+          "p95_nearest_rank": 1286144,
+          "max": 1286144,
+          "min": 1277952
+        },
+        "files": {
+          "n": 10,
+          "p50": 1.0,
+          "p95_nearest_rank": 1,
+          "max": 1,
+          "min": 1
+        }
+      },
+      "receiver_after_updates": {
+        "apparent_bytes": {
+          "n": 10,
+          "p50": 1282048.0,
+          "p95_nearest_rank": 1286144,
+          "max": 1286144,
+          "min": 1277952
+        },
+        "allocated_bytes": {
+          "n": 10,
+          "p50": 1282048.0,
+          "p95_nearest_rank": 1286144,
+          "max": 1286144,
+          "min": 1277952
+        },
+        "files": {
+          "n": 10,
+          "p50": 1.0,
+          "p95_nearest_rank": 1,
+          "max": 1,
+          "min": 1
+        }
+      }
+    },
+    "collection_blocks": {
+      "measured_runs": 10,
+      "warmup_runs": 3,
+      "trees": 2,
+      "initial_reopens_verified": 10,
+      "updated_reopens_verified": 10,
+      "updates": {
+        "issues.0.title": {
+          "observable_ms": {
+            "n": 10,
+            "p50": 4.7781035,
+            "p95_nearest_rank": 5.148084,
+            "max": 5.148084,
+            "min": 4.294958
+          },
+          "fsync_completion_ms": {
+            "n": 10,
+            "p50": 4.8094785,
+            "p95_nearest_rank": 5.209709,
+            "max": 5.209709,
+            "min": 4.3205
+          },
+          "received_protobuf_bytes": {
+            "n": 10,
+            "p50": 4675.0,
+            "p95_nearest_rank": 4675,
+            "max": 4675,
+            "min": 4675
+          },
+          "received_transport_bytes": {
+            "n": 10,
+            "p50": 4791.0,
+            "p95_nearest_rank": 4791,
+            "max": 4791,
+            "min": 4791
+          },
+          "operation_bytes": {
+            "n": 10,
+            "p50": 3625.0,
+            "p95_nearest_rank": 3625,
+            "max": 3625,
+            "min": 3625
+          },
+          "source_old_value_bytes": {
+            "n": 10,
+            "p50": 56.0,
+            "p95_nearest_rank": 56,
+            "max": 56,
+            "min": 56
+          },
+          "source_new_value_bytes": {
+            "n": 10,
+            "p50": 31.0,
+            "p95_nearest_rank": 31,
+            "max": 31,
+            "min": 31
+          }
+        },
+        "notes.0.body": {
+          "observable_ms": {
+            "n": 10,
+            "p50": 4.8898125,
+            "p95_nearest_rank": 5.623417,
+            "max": 5.623417,
+            "min": 4.229167
+          },
+          "fsync_completion_ms": {
+            "n": 10,
+            "p50": 4.9051455,
+            "p95_nearest_rank": 5.637042,
+            "max": 5.637042,
+            "min": 4.239583
+          },
+          "received_protobuf_bytes": {
+            "n": 10,
+            "p50": 1531.0,
+            "p95_nearest_rank": 1531,
+            "max": 1531,
+            "min": 1531
+          },
+          "received_transport_bytes": {
+            "n": 10,
+            "p50": 1635.0,
+            "p95_nearest_rank": 1635,
+            "max": 1635,
+            "min": 1635
+          },
+          "operation_bytes": {
+            "n": 10,
+            "p50": 482.0,
+            "p95_nearest_rank": 482,
+            "max": 482,
+            "min": 482
+          },
+          "source_old_value_bytes": {
+            "n": 10,
+            "p50": 2530.0,
+            "p95_nearest_rank": 2530,
+            "max": 2530,
+            "min": 2530
+          },
+          "source_new_value_bytes": {
+            "n": 10,
+            "p50": 29.0,
+            "p95_nearest_rank": 29,
+            "max": 29,
+            "min": 29
+          }
+        }
+      },
+      "observable_ms": {
+        "n": 10,
+        "p50": 21.778708,
+        "p95_nearest_rank": 27.946333,
+        "max": 27.946333,
+        "min": 20.005625
+      },
+      "fsync_completion_ms": {
+        "n": 10,
+        "p50": 21.79825,
+        "p95_nearest_rank": 27.970667,
+        "max": 27.970667,
+        "min": 20.019833
+      },
+      "received_protobuf_bytes": {
+        "n": 10,
+        "p50": 484960.0,
+        "p95_nearest_rank": 484960,
+        "max": 484960,
+        "min": 484960
+      },
+      "received_transport_bytes": {
+        "n": 10,
+        "p50": 485256.0,
+        "p95_nearest_rank": 485256,
+        "max": 485256,
+        "min": 485244
+      },
+      "sender_prepare_ms": {
+        "n": 10,
+        "p50": 59.2044785,
+        "p95_nearest_rank": 84.7035,
+        "max": 84.7035,
+        "min": 44.991583
+      },
+      "receiver_prepare_ms": {
+        "n": 10,
+        "p50": 5.6105,
+        "p95_nearest_rank": 13.576833,
+        "max": 13.576833,
+        "min": 4.302459
+      },
+      "connection_auth_and_network_setup_ms": {
+        "n": 10,
+        "p50": 2.4129375,
+        "p95_nearest_rank": 2.862042,
+        "max": 2.862042,
+        "min": 1.897916
+      },
+      "receiver_baseline": {
+        "apparent_bytes": {
+          "n": 10,
+          "p50": 94208.0,
+          "p95_nearest_rank": 94208,
+          "max": 94208,
+          "min": 94208
+        },
+        "allocated_bytes": {
+          "n": 10,
+          "p50": 94208.0,
+          "p95_nearest_rank": 94208,
+          "max": 94208,
+          "min": 94208
+        },
+        "files": {
+          "n": 10,
+          "p50": 1.0,
+          "p95_nearest_rank": 1,
+          "max": 1,
+          "min": 1
+        }
+      },
+      "receiver_total": {
+        "apparent_bytes": {
+          "n": 10,
+          "p50": 704512.0,
+          "p95_nearest_rank": 704512,
+          "max": 704512,
+          "min": 704512
+        },
+        "allocated_bytes": {
+          "n": 10,
+          "p50": 704512.0,
+          "p95_nearest_rank": 704512,
+          "max": 704512,
+          "min": 704512
+        },
+        "files": {
+          "n": 10,
+          "p50": 1.0,
+          "p95_nearest_rank": 1,
+          "max": 1,
+          "min": 1
+        }
+      },
+      "receiver_net": {
+        "apparent_bytes": {
+          "n": 10,
+          "p50": 610304.0,
+          "p95_nearest_rank": 610304,
+          "max": 610304,
+          "min": 610304
+        },
+        "allocated_bytes": {
+          "n": 10,
+          "p50": 610304.0,
+          "p95_nearest_rank": 610304,
+          "max": 610304,
+          "min": 610304
+        },
+        "files": {
+          "n": 10,
+          "p50": 0.0,
+          "p95_nearest_rank": 0,
+          "max": 0,
+          "min": 0
+        }
+      },
+      "sender_initial_total": {
+        "apparent_bytes": {
+          "n": 10,
+          "p50": 704512.0,
+          "p95_nearest_rank": 704512,
+          "max": 704512,
+          "min": 704512
+        },
+        "allocated_bytes": {
+          "n": 10,
+          "p50": 704512.0,
+          "p95_nearest_rank": 704512,
+          "max": 704512,
+          "min": 704512
+        },
+        "files": {
+          "n": 10,
+          "p50": 1.0,
+          "p95_nearest_rank": 1,
+          "max": 1,
+          "min": 1
+        }
+      },
+      "sender_total": {
+        "apparent_bytes": {
+          "n": 10,
+          "p50": 712704.0,
+          "p95_nearest_rank": 712704,
+          "max": 712704,
+          "min": 712704
+        },
+        "allocated_bytes": {
+          "n": 10,
+          "p50": 712704.0,
+          "p95_nearest_rank": 712704,
+          "max": 712704,
+          "min": 712704
+        },
+        "files": {
+          "n": 10,
+          "p50": 1.0,
+          "p95_nearest_rank": 1,
+          "max": 1,
+          "min": 1
+        }
+      },
+      "receiver_after_updates": {
+        "apparent_bytes": {
+          "n": 10,
+          "p50": 712704.0,
+          "p95_nearest_rank": 712704,
+          "max": 712704,
+          "min": 712704
+        },
+        "allocated_bytes": {
+          "n": 10,
+          "p50": 712704.0,
+          "p95_nearest_rank": 712704,
+          "max": 712704,
+          "min": 712704
+        },
+        "files": {
+          "n": 10,
+          "p50": 1.0,
+          "p95_nearest_rank": 1,
+          "max": 1,
+          "min": 1
+        }
+      }
+    },
+    "opaque_collections": {
+      "measured_runs": 10,
+      "warmup_runs": 3,
+      "trees": 2,
+      "initial_reopens_verified": 10,
+      "updated_reopens_verified": 10,
+      "updates": {
+        "issues.0.title": {
+          "observable_ms": {
+            "n": 10,
+            "p50": 7.4383755,
+            "p95_nearest_rank": 8.115208,
+            "max": 8.115208,
+            "min": 6.894208
+          },
+          "fsync_completion_ms": {
+            "n": 10,
+            "p50": 7.8225625,
+            "p95_nearest_rank": 8.47025,
+            "max": 8.47025,
+            "min": 7.226958
+          },
+          "received_protobuf_bytes": {
+            "n": 10,
+            "p50": 84288.0,
+            "p95_nearest_rank": 84288,
+            "max": 84288,
+            "min": 84288
+          },
+          "received_transport_bytes": {
+            "n": 10,
+            "p50": 84423.0,
+            "p95_nearest_rank": 84423,
+            "max": 84423,
+            "min": 84423
+          },
+          "operation_bytes": {
+            "n": 10,
+            "p50": 83231.0,
+            "p95_nearest_rank": 83231,
+            "max": 83231,
+            "min": 83231
+          },
+          "source_old_value_bytes": {
+            "n": 10,
+            "p50": 56.0,
+            "p95_nearest_rank": 56,
+            "max": 56,
+            "min": 56
+          },
+          "source_new_value_bytes": {
+            "n": 10,
+            "p50": 31.0,
+            "p95_nearest_rank": 31,
+            "max": 31,
+            "min": 31
+          }
+        },
+        "notes.0.body": {
+          "observable_ms": {
+            "n": 10,
+            "p50": 16.0076455,
+            "p95_nearest_rank": 20.487542,
+            "max": 20.487542,
+            "min": 14.08175
+          },
+          "fsync_completion_ms": {
+            "n": 10,
+            "p50": 17.409104,
+            "p95_nearest_rank": 21.824625,
+            "max": 21.824625,
+            "min": 15.297792
+          },
+          "received_protobuf_bytes": {
+            "n": 10,
+            "p50": 330790.0,
+            "p95_nearest_rank": 330790,
+            "max": 330790,
+            "min": 330790
+          },
+          "received_transport_bytes": {
+            "n": 10,
+            "p50": 330996.0,
+            "p95_nearest_rank": 330996,
+            "max": 330996,
+            "min": 330996
+          },
+          "operation_bytes": {
+            "n": 10,
+            "p50": 329734.0,
+            "p95_nearest_rank": 329734,
+            "max": 329734,
+            "min": 329734
+          },
+          "source_old_value_bytes": {
+            "n": 10,
+            "p50": 2530.0,
+            "p95_nearest_rank": 2530,
+            "max": 2530,
+            "min": 2530
+          },
+          "source_new_value_bytes": {
+            "n": 10,
+            "p50": 29.0,
+            "p95_nearest_rank": 29,
+            "max": 29,
+            "min": 29
+          }
+        }
+      },
+      "observable_ms": {
+        "n": 10,
+        "p50": 12.416540999999999,
+        "p95_nearest_rank": 14.43975,
+        "max": 14.43975,
+        "min": 11.433875
+      },
+      "fsync_completion_ms": {
+        "n": 10,
+        "p50": 12.442582999999999,
+        "p95_nearest_rank": 14.461667,
+        "max": 14.461667,
+        "min": 11.446292
+      },
+      "received_protobuf_bytes": {
+        "n": 10,
+        "p50": 418249.0,
+        "p95_nearest_rank": 418249,
+        "max": 418249,
+        "min": 418249
+      },
+      "received_transport_bytes": {
+        "n": 10,
+        "p50": 418532.0,
+        "p95_nearest_rank": 418544,
+        "max": 418544,
+        "min": 418532
+      },
+      "sender_prepare_ms": {
+        "n": 10,
+        "p50": 16.453229,
+        "p95_nearest_rank": 22.004916,
+        "max": 22.004916,
+        "min": 13.444041
+      },
+      "receiver_prepare_ms": {
+        "n": 10,
+        "p50": 5.9654585,
+        "p95_nearest_rank": 8.2565,
+        "max": 8.2565,
+        "min": 4.608208
+      },
+      "connection_auth_and_network_setup_ms": {
+        "n": 10,
+        "p50": 2.404229,
+        "p95_nearest_rank": 2.580667,
+        "max": 2.580667,
+        "min": 2.259375
+      },
+      "receiver_baseline": {
+        "apparent_bytes": {
+          "n": 10,
+          "p50": 94208.0,
+          "p95_nearest_rank": 94208,
+          "max": 94208,
+          "min": 94208
+        },
+        "allocated_bytes": {
+          "n": 10,
+          "p50": 94208.0,
+          "p95_nearest_rank": 94208,
+          "max": 94208,
+          "min": 94208
+        },
+        "files": {
+          "n": 10,
+          "p50": 1.0,
+          "p95_nearest_rank": 1,
+          "max": 1,
+          "min": 1
+        }
+      },
+      "receiver_total": {
+        "apparent_bytes": {
+          "n": 10,
+          "p50": 516096.0,
+          "p95_nearest_rank": 516096,
+          "max": 516096,
+          "min": 516096
+        },
+        "allocated_bytes": {
+          "n": 10,
+          "p50": 516096.0,
+          "p95_nearest_rank": 516096,
+          "max": 516096,
+          "min": 516096
+        },
+        "files": {
+          "n": 10,
+          "p50": 1.0,
+          "p95_nearest_rank": 1,
+          "max": 1,
+          "min": 1
+        }
+      },
+      "receiver_net": {
+        "apparent_bytes": {
+          "n": 10,
+          "p50": 421888.0,
+          "p95_nearest_rank": 421888,
+          "max": 421888,
+          "min": 421888
+        },
+        "allocated_bytes": {
+          "n": 10,
+          "p50": 421888.0,
+          "p95_nearest_rank": 421888,
+          "max": 421888,
+          "min": 421888
+        },
+        "files": {
+          "n": 10,
+          "p50": 0.0,
+          "p95_nearest_rank": 0,
+          "max": 0,
+          "min": 0
+        }
+      },
+      "sender_initial_total": {
+        "apparent_bytes": {
+          "n": 10,
+          "p50": 516096.0,
+          "p95_nearest_rank": 516096,
+          "max": 516096,
+          "min": 516096
+        },
+        "allocated_bytes": {
+          "n": 10,
+          "p50": 516096.0,
+          "p95_nearest_rank": 516096,
+          "max": 516096,
+          "min": 516096
+        },
+        "files": {
+          "n": 10,
+          "p50": 1.0,
+          "p95_nearest_rank": 1,
+          "max": 1,
+          "min": 1
+        }
+      },
+      "sender_total": {
+        "apparent_bytes": {
+          "n": 10,
+          "p50": 929792.0,
+          "p95_nearest_rank": 929792,
+          "max": 929792,
+          "min": 929792
+        },
+        "allocated_bytes": {
+          "n": 10,
+          "p50": 929792.0,
+          "p95_nearest_rank": 929792,
+          "max": 929792,
+          "min": 929792
+        },
+        "files": {
+          "n": 10,
+          "p50": 1.0,
+          "p95_nearest_rank": 1,
+          "max": 1,
+          "min": 1
+        }
+      },
+      "receiver_after_updates": {
+        "apparent_bytes": {
+          "n": 10,
+          "p50": 929792.0,
+          "p95_nearest_rank": 929792,
+          "max": 929792,
+          "min": 929792
+        },
+        "allocated_bytes": {
+          "n": 10,
+          "p50": 929792.0,
+          "p95_nearest_rank": 929792,
+          "max": 929792,
+          "min": 929792
+        },
+        "files": {
+          "n": 10,
+          "p50": 1.0,
+          "p95_nearest_rank": 1,
+          "max": 1,
+          "min": 1
+        }
+      }
+    }
+  }
+}

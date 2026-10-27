@@ -1,0 +1,69 @@
+{
+  "utc": "2026-10-26T06:30:32.912803+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "os": {
+    "exit_code": 0,
+    "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t26.6.2\nBuildVersion:\t\t25G83",
+    "stderr": ""
+  },
+  "kernel": {
+    "exit_code": 0,
+    "stdout": "Darwin 25.6.0 Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+    "stderr": ""
+  },
+  "architecture": "arm64",
+  "cpu": {
+    "exit_code": 0,
+    "stdout": "Apple M1 Pro",
+    "stderr": ""
+  },
+  "logical_cpus": 10,
+  "ram": {
+    "exit_code": 0,
+    "stdout": "17179869184",
+    "stderr": ""
+  },
+  "vm_quota": "none; native macOS host",
+  "container": "none for native protocol experiment",
+  "runtime": {
+    "exit_code": 0,
+    "stdout": "go version go1.26.10 darwin/arm64",
+    "stderr": ""
+  },
+  "python": "3.9.6",
+  "storage_path": "/private/tmp/sync-benchmark-anytype-20261026-01a176de-5f5052e2/measured",
+  "storage": {
+    "exit_code": 0,
+    "stdout": "Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s5   460Gi   430Gi   8.8Gi    98%    6.9M   93M    7%   /System/Volumes/Data",
+    "stderr": ""
+  },
+  "filesystem": {
+    "type": "APFS",
+    "evidence": "native macOS data volume /dev/disk3s5; diskutil path lookup returned no metadata; verify with mount below",
+    "mount_output": "/dev/disk3s5 on /System/Volumes/Data (apfs, local, journaled, nobrowse, protect, root data)"
+  },
+  "docker_probe": {
+    "exit_code": 1,
+    "stdout": "Client:\n Version:           29.7.2\n API version:       1.55\n Go version:        go1.26.5\n Git commit:        a7dcaa6\n Built:             Wed Aug  5 18:27:50 2026\n OS/Arch:           darwin/arm64\n Context:           desktop-linux",
+    "stderr": "failed to connect to the docker API at unix://$HOME/.docker/run/docker.sock; check if the path is correct and if the daemon is running: dial unix $HOME/.docker/run/docker.sock: connect: no such file or directory"
+  },
+  "concurrency": "Six workers share host; all sustained builds/imports/runs use shared mkdir lock. Background non-benchmark host activity is uncontrolled. Atomic Model H priority marker blocks new heavy jobs.",
+  "gomaxprocs": 4,
+  "browser": "not used",
+  "topology": "two native loopback peers, synthetic shared signing identity and separate device keys; no discovery/coordinator/consensus/file nodes",
+  "durability": "any-store default options; native Flush(ctx,0,FlushModeFsync) after complete reconstruction; close/reopen outside timer; no power-loss test",
+  "indexes": "Native any-store reports 4 collections and 5 indexes; space storage adds unique (tree,order). No Anytype application/full-text index.",
+  "source_path": "$HOME/Documents/Codex/2026-10-26/sync-benchmark-anytype",
+  "storage_path_reason": "Documents preflight git status stalled and was terminated; a later build saw a transient missing Go language directive despite unchanged go.mod. Successful source checkout, compiler/module caches, fixture input and all measurement databases/raw runtime output were moved to task-specific /private/tmp paths. No filesystem error occurred during successful timed runs.",
+  "raw_runtime_path": "/private/tmp/sync-benchmark-anytype-20261026-01a176de-5f5052e2/results.jsonl",
+  "utc_measurement_start": "2026-10-26T06:52:35.996004+00:00",
+  "runtime_filesystem": "Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s5   460Gi   434Gi   4.9Gi    99%    7.0M   52M   12%   /System/Volumes/Data\n",
+  "utc_measurement_end": "2026-10-26T06:52:44.088915+00:00",
+  "build_path": "/private/tmp/sync-benchmark-anytype-20261026-01a176de-build",
+  "measurement_order": [
+    "record_trees",
+    "collection_blocks",
+    "opaque_collections"
+  ],
+  "peer_process_layout": "Both native peers in one process with independent keys, TCP sessions and persistent databases; shared Go runtime and page cache."
+}

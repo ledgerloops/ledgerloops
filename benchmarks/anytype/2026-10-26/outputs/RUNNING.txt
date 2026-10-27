@@ -1,0 +1,127 @@
+Anytype / any-sync synthetic benchmark, issue 46
+https://github.com/ledgerloops/ledgerloops/issues/46
+
+Scope
+The runnable harness is a native any-sync LocalOnly object-tree experiment.
+It does not run Anytype Heart, application objects, application indexes, full
+text search, discovery, or the official coordinator/consensus/node/file stack.
+The latter requires Docker services; the Docker client in this environment has
+no running daemon. Do not rank these protocol results as full Anytype results.
+
+The harness uses unmodified pinned any-sync code for signed encrypted DAGs,
+native any-store persistence, SyncTree remote fetch and response production,
+native yamux TCP transport, native SecureService identity authentication, and
+the native SpaceSync ObjectSyncRequestStream / ObjectSync RPC wire messages.
+Its adapter supplies static peer topology, RPC routing and payload replay.
+ACL validation uses the engine's official LocalOnly full-author-validation
+mode (NewValidateFull), with no consensus acceptor signatures. Both endpoints
+require signed identity authentication; data RPCs check ACL membership.
+
+Models
+record_trees: 132 trees; each initial record is one JSON-valued operation.
+collection_blocks: 2 trees; each record is one JSON-valued operation (21/111).
+opaque_collections: 2 trees; each complete collection is one JSON-valued operation.
+"collection_blocks" names a low-level analogy: these are not Anytype blocks.
+Source IDs, all nested values, nulls, array order, booleans and numeric values
+are retained. The adapter serializes complete JSON values into encrypted
+ChangesData and replays them; any-sync does not interpret typed JSON fields.
+There are no native Anytype property-schema claims and no tested concurrent
+merge semantics. No attachment URLs are fetched. A set view is never counted
+as a single sync object.
+
+Two same-account devices use fresh synthetic account/device keys per run.
+Keys exist in memory; receiver reopening in the harness retains the same
+synthetic keys. The receiver is opened with just a synthetic space header,
+ACL root and settings root before timing. Tree IDs are known out of band;
+discovery, ACL bootstrap and service-stack initialization are outside scope.
+All fixture content arrives through native tree replication and validation.
+
+Commands (from this task's root)
+  python3 outputs/generate_fixture.py outputs/fixture
+  python3 outputs/with_lock.py --timeout 600 -- python3 outputs/build_and_run.py
+
+The command builds, smokes all models, runs the suite and verifies/summarizes.
+For build-only setup:
+  python3 outputs/with_lock.py --timeout 600 -- python3 outputs/setup.py
+
+Smoke before measuring, using a new store directory/output every time:
+  python3 outputs/with_lock.py --timeout 600 -- env GOMAXPROCS=4 /private/tmp/sync-benchmark-anytype-20261026-01a176de-build/syncbench --warmups 0 --runs 1 --model opaque_collections --stores work/smoke-new --out work/smoke-new.jsonl
+
+Full experiment (39 fresh receivers, 3 warmups + 10 measurements per model):
+  python3 outputs/with_lock.py --timeout 600 -- env GOMAXPROCS=4 /private/tmp/sync-benchmark-anytype-20261026-01a176de-build/syncbench --stores /private/tmp/sync-benchmark-anytype-20261026-01a176de --out outputs/results.jsonl
+  python3 outputs/summarize.py outputs/results.jsonl
+
+setup.py verifies the Go toolchain SHA-256 and exact clean any-sync commit.
+go.mod/go.sum pin module dependencies. It keeps executable build dependencies, module caches and source checkout
+under /private/tmp/sync-benchmark-anytype-20261026-01a176de-build. The adapter
+source and lockfiles remain in outputs/. build-provenance.json records hashes
+of the copied adapter, source commit and toolchain. Only the module replace
+path changes to address the identical checkout in that build directory. Toolchain pin is macOS arm64; other hosts need an explicit platform pin.
+The fixture generator is copied verbatim from the issue; the harness refuses
+any fixture with a different SHA-256. Existing receivers/results are never
+overwritten by the harness. Early investigation source/caches are in work/; the successful build uses
+the task-specific /private/tmp build path. Measurement stores are retained
+at the exact task-specific /private/tmp path in environment.json and each row. Only code, synthetic fixture and results are deliverables in outputs/.
+
+Coordination
+with_lock.py uses atomic mkdir on the shared measurement.lock and writes
+its owner PID, command and unique token. It releases only a matching token.
+The originating chat's atomic-model-h-priority.json marker and Atomic waiting
+markers prevent any new heavy command. Waits are bounded; a timeout reports
+owner PID liveness and leaves the foreign lock intact. No shared service is
+restarted, no vendor account or cloud service is used, and no upstream changes
+are published. An alternate host can set SYNCBENCH_LOCK to its own shared lock.
+
+Measurement boundary
+Each sender is fully prepared, flushed, closed, reopened and ready. A receiver
+is initialized, flushed and closed for the empty baseline, then reopened.
+Both peer apps, TCP authentication and reusable RPC connections are established
+before the main timer. Timer starts before the first remote tree fetch.
+Observable completion follows native validation/storage, full JSON replay and
+byte-for-byte comparison with the expected fixture. Flush completion includes
+waiting for adapter broadcasts and db.Flush(ctx,0,FlushModeFsync).
+
+The any-store driver Fsync implementation checks SQLite synchronous. FULL or
+EXTRA is already synced per commit; otherwise it temporarily uses FULL for a
+commit and restores the setting. No default durability pragma is weakened.
+This is the SDK flush acknowledgement; reopening is a separate correctness
+check. Neither is a power-loss or physical-device cache test. No extra macOS
+F_FULLFSYNC policy or Anytype application durability boundary is claimed.
+
+Before transfer, each run also asserts encrypted/signed payload heads and
+rejects corrupted CIDs, corrupted signatures and unrelated ACL identities.
+These assertions do not change engine behavior or disable checks.
+
+The initial receiver is closed and reopened outside timing; the complete
+fixture hash must match. Reopened trees are subscribed again before the two
+incremental updates. The issue-title value changes first; note-body follows.
+Record models replace their affected record operation; opaque models replace
+the affected collection. Each update replays and verifies the entire expected
+fixture, then flushes. A final close/reopen checks the complete changed fixture.
+Updated_at and every other field remain as in the source, as only one source
+field is changed in each incremental test.
+
+Received protobuf bytes count serialized native ObjectSyncMessage envelopes
+received for tree responses and pushed changes. Transport bytes use native
+MultiConn.BytesRead deltas, include yamux/DRPC framing, and exclude initial
+authentication, OS TCP/IP headers/retransmissions, loopback ACKs and Ethernet.
+Snappy is disabled by the native RPC default; no compressed-byte estimate is
+reported. Source changed-value and actual operation sizes are separate.
+Wire counters are not packet capture and are not network-interface byte totals.
+
+Storage sizes are measured after normal Flush/Close, without compaction or
+VACUUM, summing all receiver files (including any surviving WAL/log/metadata).
+Apparent bytes sum stat size; allocated bytes sum stat blocks * 512, excluding
+directory blocks. Total, initialized baseline and net growth are all retained.
+Sender data is separate; no external service data exists in this topology.
+Zero service bytes applies only to this direct-peer experiment, not to the
+official server stack. Executables, toolchains, source and caches are excluded.
+APFS compression/clones/snapshots and system free-space effects are not modeled.
+
+Results
+Raw JSONL includes all warmups and measured runs. summary.json enforces 3+10
+per model and both reopen checks, and reports medians, nearest-rank p95 and max.
+For n=10 the nearest-rank p95 is the maximum. This is not a precise tail estimate.
+Six workers share this laptop; the heavy-work lock limits benchmark contention,
+but background processes, thermal state and OS cache state remain uncontrolled.
+These are warm-process, loopback measurements, not cold boot or WAN results.

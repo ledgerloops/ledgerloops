@@ -1,0 +1,10 @@
+{
+  "main.go": "c008306e62a8ab41da08f04b988c8cb6cc94d7bec54822c14873d2c3f4d59ee0",
+  "go.mod": "1f87c6691fc2ae26391fd701f23ccb25990935fca21a2bb0fe6ff3162118a526",
+  "go.sum": "d5163c1c53434e23b4fbaa56e78a037e565655adc49ac54105235e9d6bc9817e",
+  "build_path": "/private/tmp/sync-benchmark-anytype-20261026-01a176de-build",
+  "engine_commit": "9c00aeeb97370712af8e99bde4a81c586651e903",
+  "toolchain_sha256": "0b5183492292ada170f9b561a834863808dd02edba599e4ad0e89899330020b3",
+  "module_replace": "../any-sync",
+  "fixture_sha256": "9b8f0b8e52345b95d0bd3434d125ef2dc1a688ad537c0c3a1ccc8348981a101a"
+}
